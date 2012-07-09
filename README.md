@@ -4,11 +4,11 @@ The website for the **Zigorat** company
 
 ###Contributing
 
-* Check our projec's website and report any bugs or ideas in [issues](https://github.com/1dws/arcpanel3d/issues)
+* Check our projec's website and report any bugs or ideas in [issues](https://github.com/1dws/zigorat/issues)
 
 * Clone this project and check source code
 ```
-    git clone https://github.com/1dws/arcpanel3d.git
+    git clone https://github.com/1dws/zigorat.git
 ```
 
 * Fork this for your self and do some develope and pull request to us ;)
