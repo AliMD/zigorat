@@ -1,0 +1,56 @@
+div {
+	outline: 1px dotted red;
+	min-height: 100px;
+}
+
+
+div.container {
+	width           : 900px;
+	min-height      : 720px;
+	background-image:url('images/demo.jpg');
+	position        : relative;
+}
+
+div.logo {
+	width   : 280px;
+	height  : 125px;
+	position: absolute;
+	left    : 100px;
+	top     : 70px;
+}
+
+div.nav {
+	width     : 140px;
+	min-height: 300px;
+	margin-top: 220px;
+}
+
+div.nav ul {
+	list-style-type: none;
+	outline        : 1px dotted yellow;
+	margin-top     : 10px;
+
+}
+
+div.nav ul li {
+	border: 1px dotted red;
+	
+}
+
+div.nav ul li a{
+	display: block;
+	padding: 15px 5px;
+	text-decoration: none;
+	font-family: ;
+	font-size:15px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #fff;
+	
+	text-align: right;
+
+}
+
+div.nav ul li:hover a {
+	color: #555;
+}
