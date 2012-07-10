@@ -7,7 +7,7 @@ div {
 div.container {
 	width            : 900px;
 	min-height       : 720px;
-	background-image : url('images/demo.jpg');
+	background-image: url('images/demo.jpg');
 	background-repeat: no-repeat;
 	position         : relative;
 }
@@ -90,3 +90,38 @@ div.links ul li a {
 	outline        : 1px solid green;
 }
 
+div.pic1 {
+	position        : absolute;
+	top             : 10px;
+	left            : 510px;
+	width           : 250px;
+	height          : 270px;
+	background-color: transparent;
+}
+
+div.pic2 {
+	position        : absolute;
+	top             : 190px;
+	left            : 460px;
+	width           : 250px;
+	height          : 270px;
+	background-color: transparent;
+}
+
+div.pic3 {
+	position        : absolute;
+	top             : 360px;
+	left            : 420px;
+	width           : 250px;
+	height          : 270px;
+	background-color: transparent;
+}
+
+div.pic4 {
+	position        : absolute;
+	top             : 435px;
+	left            : 555px;
+	width           : 250px;
+	height          : 270px;
+	background-color: transparent;
+}
