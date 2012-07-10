@@ -7,7 +7,7 @@ div {
 div.container {
 	width            : 900px;
 	min-height       : 720px;
-	background-image: url('images/bg.jpg');
+	background-image: url('images/bg_with_menu.jpg');
 	background-repeat: no-repeat;
 	position         : relative;
 }
@@ -26,6 +26,7 @@ div.logo {
 div.left-col {
 	height: 720px;
 	width : 140px;
+
 }
 
 div.right-col {
