@@ -11,7 +11,7 @@ The website for the **Zigorat** company
     git clone https://github.com/1dws/zigorat.git
 ```
 
-* Fork this for your self and do some develope and pull request to us  ;)
+* Fork this for your self and do some develope and pull request to us ;)
 
 
 ###Buliding Technologies
@@ -33,10 +33,11 @@ The website for the **Zigorat** company
 * [Mohammad Sedaghat](http://127.0.0.1/) Team Manager / Director
 * [Ali Abdollahi](https://github.com/aliab) Project Manager / Director
 * [Ali Mihandoost](https://github.com/alimd) Technical Manager / Developer
+* [Ali Aghasizadeh](https://github.com/aligh) Technical Supporter / Developer
 * [Mohammad Rahimpour](https://127.0.0.1) Designer / Idealiser
 * [Aida Naderi](hhttps://github.com/ainaderi) Developer / Programmer
 * [Naser Rahmani](https://github.com/naserr) Developer / Programmer
-* [Ali Aghasizadeh](https://github.com/aligh) Developer / Programmer
+
 
 ### All rights reserved ###
 Please note that Yazdarmin.com is a curated site and that we reserve the right to refuse any listing for any reason.
