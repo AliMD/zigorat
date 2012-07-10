@@ -36,7 +36,7 @@ The website for the **Zigorat** company
 * [Mohammad Rahimpour](https://127.0.0.1) Designer / Idealiser
 * [Aida Naderi](hhttps://github.com/ainaderi) Developer / Programmer
 * [Naser Rahmani](https://github.com/naserr) Developer / Programmer
-
+* [Ali Aghasizadeh](https://github.com/aligh) Developer / Programmer
 
 ### All rights reserved ###
 Please note that Yazdarmin.com is a curated site and that we reserve the right to refuse any listing for any reason.
