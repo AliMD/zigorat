@@ -11,7 +11,7 @@ The website for the **Zigorat** company
     git clone https://github.com/1dws/zigorat.git
 ```
 
-* Fork this for your self and do some develope and pull request to us ;)
+* Fork this for your self and do some develope and pull request to us  ;)
 
 
 ###Buliding Technologies
