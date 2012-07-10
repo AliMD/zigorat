@@ -13,11 +13,14 @@ div.container {
 }
 
 div.logo {
-	width   : 280px;
-	height  : 125px;
+	width   : 315px;
+	height  : 140px;
 	position: absolute;
 	left    : 100px;
 	top     : 70px;
+	background: url('images/logo.png') top right no-repeat ;
+
+
 }
 
 div.left-col {
@@ -92,35 +95,42 @@ div.links ul li a {
 
 div.pic1 {
 	position        : absolute;
-	top             : 10px;
+	top             : 0px;
 	left            : 520px;
-	width           : 240px;
-	height          : 270px;
+	width           : 260px;
+	height          : 290px;
 	background-color: transparent;
+	background:url('images/pic1.png');
 }
 div.pic2 {
 	position        : absolute;
-	top             : 190px;
+	top             : 175px;
 	left            : 470px;
-	width           : 240px;
-	height          : 270px;
+	width           : 260px;
+	height          : 290px;
 	background-color: transparent;
+	background:url('images/pic2.png');
+
 }
 
 div.pic3 {
 	position        : absolute;
-	top             : 360px;
+	top             : 345px;
 	left            : 430px;
-	width           : 240px;
-	height          : 270px;
+	width           : 260px;
+	height          : 290px;
 	background-color: transparent;
+	background:url('images/pic3.png');
+
 }
 
 div.pic4 {
 	position        : absolute;
-	top             : 435px;
+	top             : 415px;
 	left            : 565px;
-	width           : 240px;
-	height          : 270px;
+	width           : 260px;
+	height          : 290px;
 	background-color: transparent;
+	background:url('images/pic4.png');
+
 }
