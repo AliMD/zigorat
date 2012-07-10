@@ -5,10 +5,11 @@ div {
 
 
 div.container {
-	width           : 900px;
-	min-height      : 720px;
-	background-image:url('images/demo.jpg');
-	position        : relative;
+	width            : 900px;
+	min-height       : 720px;
+	background-image : url('images/demo.jpg');
+	background-repeat: no-repeat;
+	position         : relative;
 }
 
 div.logo {
@@ -19,6 +20,16 @@ div.logo {
 	top     : 70px;
 }
 
+div.left-col {
+	height: 720px;
+	width : 140px;
+}
+
+div.right-col {
+	margin-left: 140px;
+	height: 720px;
+}
+/*-----------------Menu--------------------*/
 div.nav {
 	width     : 140px;
 	min-height: 300px;
@@ -33,24 +44,49 @@ div.nav ul {
 }
 
 div.nav ul li {
-	border: 1px dotted red;
+	outline: 1px dotted red;
 	
 }
 
 div.nav ul li a{
-	display: block;
-	padding: 15px 5px;
+	display        : block;
+	padding        : 15px 5px;
 	text-decoration: none;
-	font-family: ;
-	font-size:15px;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	color: #fff;
+	font-family    : ;
+	font-size      :15px;
+	letter-spacing : -1px;
+	text-transform : uppercase;
+	color          : #fff;
 	
-	text-align: right;
+	text-align     : right;
 
 }
 
 div.nav ul li:hover a {
-	color: #555;
+	color: #444;
 }
+
+/*----------------End-menu-----------------*/
+
+div.links {
+	position: absolute;
+	left: 145px;
+	top: 520px;
+}
+
+div.links ul {
+	list-style-type: none;
+	outline        : 1px dotted yellow;
+}
+
+div.links ul li {
+	margin: 5px 0;
+}
+
+div.links ul li a {
+	display        : block;
+	text-decoration: none;
+	padding        : 7px 30px;
+	outline        : 1px solid green;
+}
+
