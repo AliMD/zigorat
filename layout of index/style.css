@@ -93,17 +93,16 @@ div.links ul li a {
 div.pic1 {
 	position        : absolute;
 	top             : 10px;
-	left            : 510px;
-	width           : 250px;
+	left            : 520px;
+	width           : 240px;
 	height          : 270px;
 	background-color: transparent;
 }
-
 div.pic2 {
 	position        : absolute;
 	top             : 190px;
-	left            : 460px;
-	width           : 250px;
+	left            : 470px;
+	width           : 240px;
 	height          : 270px;
 	background-color: transparent;
 }
@@ -111,8 +110,8 @@ div.pic2 {
 div.pic3 {
 	position        : absolute;
 	top             : 360px;
-	left            : 420px;
-	width           : 250px;
+	left            : 430px;
+	width           : 240px;
 	height          : 270px;
 	background-color: transparent;
 }
@@ -120,8 +119,8 @@ div.pic3 {
 div.pic4 {
 	position        : absolute;
 	top             : 435px;
-	left            : 555px;
-	width           : 250px;
+	left            : 565px;
+	width           : 240px;
 	height          : 270px;
 	background-color: transparent;
 }
