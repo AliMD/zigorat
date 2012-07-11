@@ -42,7 +42,7 @@ The website for the **Zigorat** company
 ### All rights reserved ###
 Please note that Yazdarmin.com is a curated site and that we reserve the right to refuse any listing for any reason.
 
-The [zigorat.com](http://zigorat.com) code and website is released under a MIT License.
+The [zigorat.co](http://zigorat.co) code and website is released under a MIT License.
 
 
 ###A 1devs website
