@@ -1,137 +1,136 @@
 div {
-	outline: 1px dotted red;
-	min-height: 100px;
+min-height       : 100px;
 }
 
 
 div.container {
-	width            : 900px;
-	min-height       : 720px;
-	background-image: url('images/bg_with_menu.jpg');
-	background-repeat: no-repeat;
-	position         : relative;
+width            : 900px;
+min-height       : 720px;
+background-image : url('images/bg_with_menu.jpg');
+background-repeat: no-repeat;
+position         : relative;
 }
 
 div.logo {
-	width   : 315px;
-	height  : 140px;
-	position: absolute;
-	left    : 100px;
-	top     : 70px;
-	background: url('images/logo.png') top right no-repeat ;
+width            : 315px;
+height           : 140px;
+position         : absolute;
+left             : 100px;
+top              : 70px;
+background       : url('images/logo.png') top right no-repeat ;
 
 
 }
 
 div.left-col {
-	height: 720px;
-	width : 140px;
+height           : 720px;
+width            : 140px;
 
 }
 
+
 div.right-col {
-	margin-left: 140px;
-	height: 720px;
+margin-left      : 140px;
+height           : 720px;
 }
 /*-----------------Menu--------------------*/
 div.nav {
-	width     : 140px;
-	min-height: 300px;
-	margin-top: 220px;
+width            : 140px;
+min-height       : 300px;
+margin-top       : 220px;
 }
 
 div.nav ul {
-	list-style-type: none;
-	outline        : 1px dotted yellow;
-	margin-top     : 10px;
+list-style-type  : none;
+margin-top       : 10px;
 
 }
 
 div.nav ul li {
-	outline: 1px dotted red;
-	
+
 }
 
 div.nav ul li a{
-	display        : block;
-	padding        : 15px 5px;
-	text-decoration: none;
-	font-family    : ;
-	font-size      :15px;
-	letter-spacing : -1px;
-	text-transform : uppercase;
-	color          : #fff;
-	
-	text-align     : right;
+display        : block;
+padding        : 15px 5px;
+text-decoration: none;
+font-family    : ;
+font-size      :15px;
+letter-spacing : -1px;
+text-transform : uppercase;
+color          : #fff;
+
+text-align     : right;
 
 }
 
-div.nav ul li:hover a {
-	color: #444;
+div.nav ul li a:hover{
+color            : #444;
 }
+
 
 /*----------------End-menu-----------------*/
 
 div.links {
-	position: absolute;
-	left: 145px;
-	top: 520px;
+position         : absolute;
+left             : 45px;
+top              : 520px;
 }
 
 div.links ul {
-	list-style-type: none;
-	outline        : 1px dotted yellow;
+list-style-type  : none;
 }
 
 div.links ul li {
-	margin: 5px 0;
+margin           : 0px 0;
 }
 
 div.links ul li a {
-	display        : block;
-	text-decoration: none;
-	padding        : 7px 30px;
-	outline        : 1px solid green;
+display          : block;
+text-decoration  : none;
+padding          : 3px 30px;
 }
 
 div.pic1 {
-	position        : absolute;
-	top             : 0px;
-	left            : 520px;
-	width           : 260px;
-	height          : 290px;
-	background-color: transparent;
-	background:url('images/pic1.png');
+position         : absolute;
+top              : 0px;
+left             : 520px;
+width            : 260px;
+height           : 290px;
+background-color : transparent;
+background       :url('images/pic1.png');
+
 }
+
 div.pic2 {
-	position        : absolute;
-	top             : 175px;
-	left            : 470px;
-	width           : 260px;
-	height          : 290px;
-	background-color: transparent;
-	background:url('images/pic2.png');
+position         : absolute;
+top              : 175px;
+left             : 470px;
+width            : 260px;
+height           : 290px;
+background-color : transparent;
+background       :url('images/pic2.png');
 
 }
 
 div.pic3 {
-	position        : absolute;
-	top             : 345px;
-	left            : 430px;
-	width           : 260px;
-	height          : 290px;
-	background-color: transparent;
-	background:url('images/pic3.png');
+position         : absolute;
+top              : 345px;
+left             : 430px;
+width            : 260px;
+height           : 290px;
+background-color : transparent;
+background       :url('images/pic3.png');
 
 }
 
 div.pic4 {
-	position        : absolute;
-	top             : 415px;
-	left            : 565px;
-	width           : 260px;
-	height          : 290px;
-	background-color: transparent;
-	background:url('images/pic4.png');
+position         : absolute;
+top              : 415px;
+left             : 565px;
+width            : 260px;
+height           : 290px;
+background-color : transparent;
+background       :url('images/pic4.png');
 
 }
