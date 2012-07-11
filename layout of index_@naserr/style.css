@@ -74,12 +74,21 @@ color            : #444;
 
 div.links {
 position         : absolute;
-left             : 45px;
+left             : 141px;
 top              : 520px;
+outline:2px dashed red;
+overflow: hidden;
+width:80px;
+min-height:190px;
 }
 
 div.links ul {
 list-style-type  : none;
+position: absolute;
+left:0px;
+right:0px;
+bottom:0px;
+top:0px;
 }
 
 div.links ul li {
@@ -89,7 +98,8 @@ margin           : 0px 0;
 div.links ul li a {
 display          : block;
 text-decoration  : none;
-padding          : 3px 30px;
+padding          : 3px 0px;
+
 }
 
 div.pic1 {
