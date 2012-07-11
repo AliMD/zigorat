@@ -51,16 +51,17 @@ div.nav ul li {
 }
 
 div.nav ul li a{
-display        : block;
-padding        : 15px 5px;
-text-decoration: none;
-font-family    : ;
-font-size      :15px;
-letter-spacing : -1px;
-text-transform : uppercase;
-color          : #fff;
-
-text-align     : right;
+	display        : block;
+	padding        : 15px 5px;
+	text-decoration: none;
+	font-family    : ;
+	font-size      :15px;
+	letter-spacing : -1px;
+	text-transform : uppercase;
+	color          : #fff;
+	text-transform:uppercase;
+	text-align     : right;
+	font-family:Verdana, Geneva, sans-serif;
 
 }
 
