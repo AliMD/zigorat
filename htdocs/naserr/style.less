@@ -18,8 +18,6 @@ position         : absolute;
 left             : 100px;
 top              : 70px;
 background       : url('images/logo.png') top right no-repeat ;
-
-
 }
 
 div.left-col {
@@ -28,11 +26,24 @@ width            : 140px;
 
 }
 
-
+img#shadow{
+	display: none;
+}
 div.right-col {
 margin-left      : 140px;
 height           : 720px;
 }
+div.right-col  {
+
+}
+div.right-col > div:hover {
+	cursor: pointer;
+		img#shadow {
+		display: block;
+		}
+}
+
+
 /*-----------------Menu--------------------*/
 div.nav {
 width            : 140px;
@@ -76,7 +87,7 @@ div.links {
 position         : absolute;
 left             : 141px;
 top              : 520px;
-outline:2px dashed red;
+outline:1px dashed white;
 overflow: hidden;
 width:80px;
 min-height:190px;
@@ -85,7 +96,7 @@ min-height:190px;
 div.links ul {
 list-style-type  : none;
 position: absolute;
-left:0px;
+left:-100px;
 right:0px;
 bottom:0px;
 top:0px;
@@ -102,6 +113,10 @@ padding          : 3px 0px;
 
 }
 
+
+/*----------------Content-----------------*/
+
+
 div.pic1 {
 position         : absolute;
 top              : 0px;
@@ -110,7 +125,8 @@ width            : 260px;
 height           : 290px;
 background-color : transparent;
 background       :url('images/pic1.png');
-
+outline:7px dashed orange;
+overflow: hidden;
 }
 
 div.pic2 {
@@ -143,5 +159,25 @@ width            : 260px;
 height           : 290px;
 background-color : transparent;
 background       :url('images/pic4.png');
-
 }
+
+div.on_pics{
+	width:120px;
+	height:195px;
+	position: absolute;
+	margin: 0px auto;
+	left:0;
+	right:0;
+	bottom:0;
+	top:50px;
+	
+	outline:2px dashed red;
+	img#under{
+		position: absolute;
+	}
+	img#above{
+		position: absolute;
+	}
+}
+
+
