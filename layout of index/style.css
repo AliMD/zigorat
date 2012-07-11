@@ -61,8 +61,9 @@ div.nav ul li a{
 	letter-spacing : -1px;
 	text-transform : uppercase;
 	color          : #fff;
-	
+	text-transform:uppercase;
 	text-align     : right;
+	font-family:Verdana, Geneva, sans-serif;
 
 }
 
