@@ -1,184 +1,189 @@
-div {
-min-height       : 100px;
-}
 
-
-div.container {
-width            : 900px;
-min-height       : 720px;
-background-image : url('images/bg_with_menu.jpg');
-background-repeat: no-repeat;
-position         : relative;
-}
-
-div.logo {
-width            : 315px;
-height           : 140px;
-position         : absolute;
-left             : 100px;
-top              : 70px;
-background       : url('images/logo.png') top right no-repeat ;
-}
-
-div.left-col {
-height           : 720px;
-width            : 140px;
-
-}
-
-img#shadow{
+	div {
+	min-height       : 100px;
+	}
+	
+	
+	div.container {
+	width            : 900px;
+	min-height       : 720px;
+	background-image : url('images/bg_with_menu.jpg');
+	background-repeat: no-repeat;
+	position         : relative;
+	}
+	
+	div.logo {
+	width            : 315px;
+	height           : 140px;
+	position         : absolute;
+	left             : 100px;
+	top              : 70px;
+	background       : url('images/logo.png') top right no-repeat ;
+	}
+	
+	div.left-col {
+	height           : 720px;
+	width            : 140px;
+	
+	}
+	
+	img#shadow{
 	display: none;
-}
-div.right-col {
-margin-left      : 140px;
-height           : 720px;
-}
-div.right-col  {
-
-}
-div.right-col > div:hover {
+	}
+	div.right-col {
+	margin-left      : 140px;
+	height           : 720px;
+	}
+	div.right-col  {
+	
+	}
+	div.right-col > div:hover {
 	cursor: pointer;
 	opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=10);
-		img#shadow {
-		display: block;
-		}
-		img#on{
-			opacity: 0;
-			-moz-opacity: 0;
-			filter:alpha(opacity=0);
-		}
-}
-
-
-/*-----------------Menu--------------------*/
-div.nav {
-width            : 140px;
-min-height       : 300px;
-margin-top       : 220px;
-}
-
-div.nav ul {
-list-style-type  : none;
-margin-top       : 10px;
-
-}
-
-div.nav ul li {
-
-}
-
-div.nav ul li a{
+	img#shadow {
+	display: block;
+	}
+	img#on{
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	}
+	a{
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	}
+	}
+	
+	
+	/*-----------------Menu--------------------*/
+	div.nav {
+	width            : 140px;
+	min-height       : 300px;
+	margin-top       : 220px;
+	}
+	
+	div.nav ul {
+	list-style-type  : none;
+	margin-top       : 10px;
+	
+	}
+	
+	div.nav ul li {
+	
+	}
+	
+	div.nav ul li a{
 	display        : block;
 	padding        : 15px 5px;
 	text-decoration: none;
-	font-family    : ;
-	font-size      :15px;
+	font-family    :'MyriadProCondRegular';
+	font-size      :18px;
 	letter-spacing : -1px;
 	text-transform : uppercase;
 	color          : #fff;
 	text-transform:uppercase;
 	text-align     : right;
-	font-family:Verdana, Geneva, sans-serif;
-
-}
-
-div.nav ul li a:hover{
-color            : #444;
-}
-
-
-/*----------------End-menu-----------------*/
-
-div.links {
-position         : absolute;
-left             : 141px;
-top              : 520px;
-outline:1px dashed white;
-overflow: hidden;
-width:80px;
-min-height:190px;
-}
-
-div.links ul {
-list-style-type  : none;
-position: absolute;
-left:-100px;
-right:0px;
-bottom:0px;
-top:0px;
-}
-
-div.links ul li {
-margin           : 0px 0;
-}
-
-div.links ul li a {
-display          : block;
-text-decoration  : none;
-padding          : 3px 0px;
-
-}
-
-
-/*----------------Content-----------------*/
-
-
-div.pic1 {
-position         : absolute;
-top              : 0px;
-left             : 520px;
-width            : 260px;
-height           : 290px;
-background-color : transparent;
-background       :url('images/pic1.png');
-opacity: 0.9;
--moz-opacity: 0.9;
-filter:alpha(opacity=9);
-
-}
-
-div.pic2 {
-position         : absolute;
-top              : 175px;
-left             : 470px;
-width            : 260px;
-height           : 290px;
-background-color : transparent;
-background       :url('images/pic2.png');
-opacity: 0.9;
--moz-opacity: 0.9;
-filter:alpha(opacity=9);
-}
-
-div.pic3 {
-position         : absolute;
-top              : 345px;
-left             : 430px;
-width            : 260px;
-height           : 290px;
-background-color : transparent;
-background       :url('images/pic3.png');
-opacity: 0.9;
--moz-opacity: 0.9;
-filter:alpha(opacity=9);
-}
-
-div.pic4 {
-position         : absolute;
-top              : 415px;
-left             : 565px;
-width            : 260px;
-height           : 290px;
-background-color : transparent;
-background       :url('images/pic4.png');
-opacity: 0.9;
--moz-opacity: 0.9;
-filter:alpha(opacity=9);
-}
-
-div.on_pics{
+	}
+	
+	div.nav ul li a:hover{
+	color            : #444;
+	}
+	
+	
+	/*----------------End-menu-----------------*/
+	
+	div.links {
+	position         : absolute;
+	left             : 141px;
+	top              : 520px;
+	overflow: hidden;
+	width:80px;
+	min-height:190px;
+	}
+	
+	div.links ul {
+	list-style-type  : none;
+	position: absolute;
+	left:-100px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	}
+	
+	div.links ul li {
+	margin           : 0px 0;
+	}
+	
+	div.links ul li a {
+	display          : block;
+	text-decoration  : none;
+	padding          : 3px 0px;
+	
+	}
+	
+	
+	/*----------------Content-----------------*/
+	
+	
+	div.pic1 {
+	position         : absolute;
+	top              : 0px;
+	left             : 520px;
+	width            : 260px;
+	height           : 290px;
+	background-color : transparent;
+	background       :url('images/pic1.png');
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);
+	
+	}
+	
+	div.pic2 {
+	position         : absolute;
+	top              : 175px;
+	left             : 470px;
+	width            : 260px;
+	height           : 290px;
+	background-color : transparent;
+	background       :url('images/pic2.png');
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);
+	z-index:1;
+	}
+	
+	div.pic3 {
+	position         : absolute;
+	top              : 345px;
+	left             : 420px;
+	width            : 260px;
+	height           : 290px;
+	background-color : transparent;
+	background       :url('images/pic3.png');
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);
+	z-index: 2;
+	}
+	
+	div.pic4 {
+	position         : absolute;
+	top              : 415px;
+	left             : 565px;
+	width            : 260px;
+	height           : 290px;
+	background-color : transparent;
+	background       :url('images/pic4.png');
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);
+	}
+	
+	div.on_pics{
 	width:120px;
 	height:195px;
 	position: absolute;
@@ -189,16 +194,80 @@ div.on_pics{
 	top:40px;
 	
 	img#on{
-		opacity: 1;
-		-moz-opacity: 1;
-		filter:alpha(opacity=10);
-
-		-webkit-transition:all 1s;
-		-moz-transition:all 1s;
-		-o-transition:all 1s;
-		-ms-transition:all 1s;
-
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	
 	}
-}
-
-
+	a{
+	display        : block;
+	font-family    :'MyriadProCondRegular';
+	font-size      :25px;
+	letter-spacing : -1px;
+	text-transform : uppercase;
+	color          : #fff;
+	text-transform:uppercase;
+	text-align     : right;
+	}
+	a.pic1{
+	position: absolute;
+	top:90px;
+	left:30px;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	}
+	
+	a.pic2{
+	position: absolute;
+	top:90px;
+	left:20px;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	
+	}
+	
+	a.pic3{
+	position: absolute;
+	top:90px;
+	left:40px;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	
+	}
+	
+	a.pic4{
+	position: absolute;
+	top:90px;
+	left:40px;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	
+	}
+	}
+	
+	
