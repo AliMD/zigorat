@@ -15,6 +15,7 @@
 	-webkit-transform: skewY(-30deg);
 	-moz-transform: skewY(-30deg);
 	-o-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
 	
 	/* for dear iE */
