@@ -1,11 +1,21 @@
-
-	.container {
-	width            : 900px;
-	min-height       : 720px;
-	background-image : url('images/bg_with_menu.jpg');
-	background-repeat: no-repeat;
-	position         : relative;
-	}
+body{
+	position:relative;
+	background-color:#CCCCCC;
+}
+.container {
+  width: 900px;
+  height: 720px;
+  background-image: url('images/bg_with_menu.jpg');
+  background-repeat: no-repeat;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  margin:auto;
+  -webkit-box-shadow:2px 3px 10px 2px #444;
+  -webkit-border-radius:15px;
+}
 	
 	.logo {
 	width            : 315px;
@@ -73,22 +83,25 @@
 	
 	}
 	
-	.nav ul li a{
-	display        : block;
-	padding        : 15px 5px;
-	text-decoration: none;
-	font-family    :'MyriadProCondRegular';
-	font-size      :19px;
-	letter-spacing : -1px;
-	color          : #fff;
-	text-transform:uppercase;
-	text-align     : right;
-	margin-right:10px;
-	}
-	
-	.nav ul li a:hover{
-	color            : #444;
-	}
+.nav ul li a {
+  display: block;
+  padding: 15px 5px;
+  text-decoration: none;
+  font-family: 'MyriadProCondRegular';
+  font-size: 19px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 10px;
+  -webkit-transition:all 400ms ease-in-out;
+}
+.nav ul li a:hover {
+	-webkit-transition:all 400ms ease-in-out;
+	color: #444;
+	margin-right:15px;
+	letter-spacing:1px;
+}
 	
 	
 	/*----------------End-menu-----------------*/
