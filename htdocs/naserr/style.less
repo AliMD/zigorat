@@ -131,8 +131,8 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
+	overflow: hidden;
+	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -149,16 +149,13 @@
 		-moz-opacity:1;
 	}
 	
-	
 	div.pic2 {
 	position         : absolute;
-	top              : 246px;
+	top              : 240px;
 	left             : 470px;
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -168,6 +165,7 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic2:hover{
@@ -178,13 +176,11 @@
 	
 	div.pic3 {
 	position         : absolute;
-	top              : 425px;
+	top              : 418px;
 	left             : 420px;
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -194,6 +190,7 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic3:hover{
@@ -205,13 +202,12 @@
 	
 	div.pic4 {
 	position         : absolute;
-	top              : 490px;
+	top              : 483px;
 	left             : 565px;
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
+	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -221,13 +217,68 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic4:hover{
 		opacity:1;
 		-moz-opacity:1;
 	}
+	
+	/********************** Background PICS *******************/
 
+	div.bg1{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic1.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg2{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic2.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg3{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic3.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg4{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic4.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
 
 	div.on_pics{
 		width:137px;
@@ -246,18 +297,11 @@
 		-moz-opacity: 1;
 		filter:alpha(opacity=10);
 		background: url("images/on.png");
-
 		-webkit-transition:opacity 1s;
 		-moz-transition:opacity 1s;
 		-o-transition:opacity 1s;
 		-ms-transition:opacity 1s;
 		transition:opacity 1s;
-
-		-webkit-transform: skewY(0deg);
-		-moz-transform: skewY(0deg);
-		-o-transform: skewY(0deg);
-		-ms-transform: skewY(0deg);
-		transform: skewY(0deg);
 		}
 
 		a{
@@ -279,6 +323,11 @@
 		-moz-transition:opacity 1s;
 		-o-transition:opacity 1s;
 		-ms-transition:opacity 1s;
+		-webkit-transform: skewY(30deg);
+		-moz-transform: skewY(30deg);
+		-o-transform: skewY(30deg);
+		-ms-transform: skewY(30deg);
+		transform: skewY(30deg);
 		}
 
 		a.pic2{
@@ -372,7 +421,7 @@
 
 /*----------------End Contact-Us-----------------*/
 		
-/*----------------Gallery-----------------*/
+/*----------------Projects-----------------*/
 
 	div.top_menu{
 		width:142px;
@@ -452,22 +501,22 @@
 	}
 
 	div.g1 {
-		position         : absolute;
-		top              : 290px;
-		left             : 150px;
-		width            : 254px;
-		height           : 197px;
-		background-color : transparent;
-		background       :url('images/g1.png') no-repeat;
-		opacity: 0.9;
-		-moz-opacity: 0.9;
-		filter:alpha(opacity=9);	
-		cursor:pointer;
-		-webkit-transform: skewY(-30deg);
-		-moz-transform: skewY(-30deg);
-		-o-transform: skewY(-30deg);
-		-ms-transform: skewY(-30deg);
-		transform: skewY(-30deg);
+	position         : absolute;
+	top              : 290px;
+	left             : 150px;
+	width            : 258px;
+	height           : 351px;
+	background-color : transparent;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);	
+	cursor:pointer;
+	-webkit-transform: skewY(-30deg);
+	-moz-transform: skewY(-30deg);
+	-o-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
+	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.g2 {
@@ -477,16 +526,16 @@
 	width            : 260px;
 	height           : 197px;
 	background-color : transparent;
-	background       :url('images/g2.png') no-repeat;
 	opacity: 0.9;
-		-moz-opacity: 0.9;
-		filter:alpha(opacity=9);	
-		cursor:pointer;
-		-webkit-transform: skewY(-30deg);
-		-moz-transform: skewY(-30deg);
-		-o-transform: skewY(-30deg);
-		-ms-transform: skewY(-30deg);
-		transform: skewY(-30deg);
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);	
+	cursor:pointer;
+	-webkit-transform: skewY(-30deg);
+	-moz-transform: skewY(-30deg);
+	-o-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
+	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.g3 {
@@ -496,19 +545,59 @@
 	width            : 254px;
 	height           : 197px;
 	background-color : transparent;
-	background       :url('images/g3.png') no-repeat;
 	opacity: 0.9;
-		-moz-opacity: 0.9;
-		filter:alpha(opacity=9);	
-		cursor:pointer;
-		-webkit-transform: skewY(-30deg);
-		-moz-transform: skewY(-30deg);
-		-o-transform: skewY(-30deg);
-		-ms-transform: skewY(-30deg);
-		transform: skewY(-30deg);
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=9);	
+	cursor:pointer;
+	-webkit-transform: skewY(-30deg);
+	-moz-transform: skewY(-30deg);
+	-o-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
+	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
+	/********************** Background PICS *******************/
 
+div.bgg1{
+	width            : 258px;
+	height           : 351px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/g1.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bgg2{
+	width            : 258px;
+	height           : 351px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/g2.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bgg3{
+	width            : 258px;
+	height           : 351px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/g3.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
 
 	a.g1{
 	position: absolute;
@@ -554,7 +643,7 @@ div.right-col > div.gallery_pics > div:hover {
 	div.on_g{
 		width:245px;
 		height:197px;
-	
+		margin: 7px 0px 0px 6px;
 		
 		div#ong{
 		width:245px;
@@ -562,8 +651,7 @@ div.right-col > div.gallery_pics > div:hover {
 		opacity: 0;
 		-moz-opacity: 0;
 		filter:alpha(opacity=0);
-		background: url("images/2box.png");
-
+		background: url("images/2box.png") no-repeat;
 		-webkit-transition:opacity 1s;
 		-moz-transition:opacity 1s;
 		-o-transition:opacity 1s;
@@ -595,34 +683,50 @@ div.right-col > div.gallery_pics > div:hover {
 		-o-transition:opacity 1s;
 		-ms-transition:opacity 1s;
 		text-align:center;
+		-webkit-transform: skewY(30deg);
+		-moz-transform: skewY(30deg);
+		-o-transform: skewY(30deg);
+		-ms-transform: skewY(30deg);
+		transform: skewY(30deg);
 		}
 
 		a.g1{
-			left:135px;
-
+			left:145px;
+			top:35px;
+			font-size:22px;
+			text-decoration:underline;
 		}
 		a.g11{
-			top:130px;
-			left:5px;
+			top:135px;
+			left:10px;
+			text-decoration:underline;
 		}
 		a.g2{
-			left:135px;
+			left:145px;
+			top:35px;
+			font-size:22px;
+			text-decoration:underline;
 		}
 		a.g22{
-			top:130px;
-			left:5px;
+			top:135px;
+			left:10px;
+			text-decoration:underline;
 		}		
 
 		a.g3{
-			left:135px;
+			left:145px;
+			top:35px;
+			font-size:22px;
+			text-decoration:underline;
 		}
 		a.g33{
-			top:130px;
-			left:5px;
+			top:135px;
+			left:10px;
+			text-decoration:underline;
 		}
 	
 }
 	
 
-	/*----------------End-Gallery-----------------*/
+	/*----------------End-Projects-----------------*/
 	
