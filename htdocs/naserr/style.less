@@ -131,8 +131,8 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
+	overflow: hidden;
+	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -149,7 +149,6 @@
 		-moz-opacity:1;
 	}
 	
-	
 	div.pic2 {
 	position         : absolute;
 	top              : 246px;
@@ -157,8 +156,6 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -168,6 +165,7 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic2:hover{
@@ -183,8 +181,6 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -194,6 +190,7 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic3:hover{
@@ -210,8 +207,7 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	background       :url('images/pic1.png');
-	background-repeat: no-repeat;
+	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -221,13 +217,68 @@
 	-o-transform: skewY(-30deg);
 	-ms-transform: skewY(-30deg);
 	transform: skewY(-30deg);
+	overflow: hidden;
 	}
 
 	div.pic4:hover{
 		opacity:1;
 		-moz-opacity:1;
 	}
+	
+	/********************** Background PICS *******************/
 
+	div.bg1{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic1.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg2{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic2.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg3{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic3.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
+	div.bg4{
+	width            : 274px;
+	height           : 304px;
+	-webkit-transform: skewY(30deg);
+	-moz-transform: skewY(30deg);
+	-o-transform: skewY(30deg);
+	-ms-transform: skewY(30deg);
+	transform: skewY(30deg);
+	background       :url('images/pic4.png') no-repeat;
+	position         : absolute;
+	top              :-70px;
+	left             : 0px;
+	}
 
 	div.on_pics{
 		width:137px;
@@ -246,18 +297,11 @@
 		-moz-opacity: 1;
 		filter:alpha(opacity=10);
 		background: url("images/on.png");
-
 		-webkit-transition:opacity 1s;
 		-moz-transition:opacity 1s;
 		-o-transition:opacity 1s;
 		-ms-transition:opacity 1s;
 		transition:opacity 1s;
-
-		-webkit-transform: skewY(0deg);
-		-moz-transform: skewY(0deg);
-		-o-transform: skewY(0deg);
-		-ms-transform: skewY(0deg);
-		transform: skewY(0deg);
 		}
 
 		a{
