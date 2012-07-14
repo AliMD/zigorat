@@ -45,11 +45,16 @@ div{
 }
 
 .prd1-hover{
-position: absolute;
-width: 247px;
-height: 139px;
-top: 89px;
-right: 21px;
-outline: green 2px dashed;
--webkit-transform: skew(0deg,-30deg);
+	position: absolute;
+	width: 247px;
+	height: 139px;
+	top: 89px;
+	right: 21px;
+	outline: green 2px dashed;
+	-webkit-transform: skew(0deg,-30deg);
+	cursor:pointer;
+}
+
+.prd1-hover:hover div.fade{
+	opacity:0
 }
