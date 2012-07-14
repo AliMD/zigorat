@@ -1,0 +1,7 @@
+At first open Pic_psd.psd file into photoshop
+1-open image file and then put inside main image.
+2-rotate it(new pic) -30deg.
+3-set vertical skew 30 deg.
+4-wide it until corners not show.
+5-replace it inside image again! 
+6- FINISHED !
