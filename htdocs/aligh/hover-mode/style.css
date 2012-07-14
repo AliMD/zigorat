@@ -1,0 +1,57 @@
+div{
+	outline:1px red solid;
+}
+.product-menu{
+	height:700px;
+	position:relative;
+	outline:1px red solid;
+	width:600px;
+}
+
+.prd1{
+	position:absolute;
+	width:270px;
+	height:310px;
+	right:10px;
+	top:10px;
+	
+}
+
+.relative{
+	position:relative;
+	width:270px;
+	height:310px;
+}
+
+.img1{
+	position:absolute;
+	top:0;
+	right:0;
+	width:270px;
+	height:310px;
+	background-image:url(images/pic1.png);
+}
+
+.fade{
+	position:absolute;
+	top:47px;
+	right:66px;
+	background-image:url(images/fade.png);
+	height:192px;
+	width:137px;
+}
+
+.prd1-hover{
+	position: absolute;
+	width: 247px;
+	height: 139px;
+	top: 89px;
+	right: 21px;
+	outline: green 2px dashed;
+	-webkit-transform: skew(0deg,-30deg);
+	cursor:pointer;
+}
+
+.prd1-hover:hover div.fade{
+	opacity:0
+}
