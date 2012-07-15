@@ -1,11 +1,21 @@
-
-	.container {
-	width            : 900px;
-	min-height       : 720px;
-	background-image : url('images/bg_with_menu.jpg');
-	background-repeat: no-repeat;
-	position         : relative;
-	}
+body{
+	position:relative;
+	background-color:#CCCCCC;
+}
+.container {
+  width: 900px;
+  height: 720px;
+  background-image: url('images/bg_with_menu.jpg');
+  background-repeat: no-repeat;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  margin:auto;
+  -webkit-box-shadow:0 3px 10px #000;
+  -webkit-border-radius:15px;
+}
 	
 	.logo {
 	width            : 315px;
@@ -21,18 +31,11 @@
 	width            : 140px;
 	
 	}
-	
-	img#shadow{
-	display: none;
-	position         : absolute;
-	top              : 2px;
-	left             : -1px;
 
-	}
 	div.right-col {
 	margin-left      : 140px;
 	height           : 720px;
-	padding :1px
+	padding :1px;
 	}
 	
 	div.right-col > div > div:hover {
@@ -54,6 +57,13 @@
 		filter:alpha(opacity=0);
 		}
 	}
+	img#shadow{
+	display: none;
+	position         : absolute;
+	top              : 2px;
+	left             : -1px;
+
+	}
 	
 	
 	/*-----------------Menu--------------------*/
@@ -73,22 +83,25 @@
 	
 	}
 	
-	.nav ul li a{
-	display        : block;
-	padding        : 15px 5px;
-	text-decoration: none;
-	font-family    :'MyriadProCondRegular';
-	font-size      :19px;
-	letter-spacing : -1px;
-	color          : #fff;
-	text-transform:uppercase;
-	text-align     : right;
-	margin-right:10px;
-	}
-	
-	.nav ul li a:hover{
-	color            : #444;
-	}
+.nav ul li a {
+  display: block;
+  padding: 15px 5px;
+  text-decoration: none;
+  font-family: 'MyriadProCondRegular';
+  font-size: 19px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 10px;
+  -webkit-transition:all 400ms ease-in-out;
+}
+.nav ul li a:hover {
+	-webkit-transition:all 400ms ease-in-out;
+	color: #444;
+	margin-right:15px;
+	letter-spacing:.7px;
+}
 	
 	
 	/*----------------End-menu-----------------*/
@@ -104,13 +117,13 @@
 	
 	.links ul {
 	list-style-type  : none;
-	position: absolute;
-	left:-64px;
 	top:0px;
 	}
 	
 	.links ul li {
 	margin           : 0px auto;
+	position: absolute;
+	left:-64px;
 	}
 	
 	.links ul li a {
@@ -123,7 +136,10 @@
 	
 	/*----------------Content-----------------*/
 	
-	
+	div.pics_right{
+
+	}
+
 	div.pic1 {
 	position         : absolute;
 	top              : 65px;
@@ -132,7 +148,6 @@
 	height           : 154px;
 	background-color : transparent;
 	overflow: hidden;
-	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -207,7 +222,6 @@
 	width            : 270px;
 	height           : 154px;
 	background-color : transparent;
-	
 	opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=9);	
@@ -340,7 +354,6 @@
 			left:45px;
 		}
 }
-
 /*----------------Contact-Us-----------------*/
 
 .form-holder {
@@ -480,8 +493,14 @@
 	min-height       : 720px;
 	background-image : url('images/bg_gallery.jpg');
 	background-repeat: no-repeat;
-	position         : relative;
-	margin: 0 auto;
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	margin:auto;
+	-webkit-box-shadow:0 3px 10px #000;
+	-webkit-border-radius:15px;
 	}
 
 	div.right-col > div{
@@ -657,7 +676,6 @@ div.right-col > div.gallery_pics > div:hover {
 		-o-transition:opacity 1s;
 		-ms-transition:opacity 1s;
 		transition:opacity 1s;
-
 		-webkit-transform: skewY(0deg);
 		-moz-transform: skewY(0deg);
 		-o-transform: skewY(0deg);
@@ -729,4 +747,3 @@ div.right-col > div.gallery_pics > div:hover {
 	
 
 	/*----------------End-Projects-----------------*/
-	
