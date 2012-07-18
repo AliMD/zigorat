@@ -442,36 +442,28 @@ div.prd4 {
   top: 420px;
   left: 545px;
 }
-div.rlt div#bg-img1 {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 270px;
-  height: 320px;
+
+div.rlt div.bg-img1,
+div.rlt div.bg-img2,
+div.rlt div.bg-img3,
+div.rlt div.bg-img4{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 270px;
+	height: 320px;
+}
+
+div.rlt div.bg-img1 {
   background-image: url(images/pic1.png);
 }
-div.rlt div#bg-img2 {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 270px;
-  height: 320px;
+div.rlt div.bg-img2 {
   background-image: url(images/pic2.png);
 }
-div.rlt div#bg-img3 {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 270px;
-  height: 320px;
+div.rlt div.bg-img3 {
   background-image: url(images/pic3.png);
 }
-div.rlt div#bg-img4 {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 270px;
-  height: 320px;
+div.rlt div.bg-img4 {
   background-image: url(images/pic4.png);
 }
 div.rlt div.fg-img {
@@ -482,41 +474,33 @@ div.rlt div.fg-img {
   height: 192px;
   width: 137px;
 }
+
+section.prd-hover div.prd1-hover,
+section.prd-hover div.prd2-hover,
+section.prd-hover div.prd3-hover,
+section.prd-hover div.prd4-hover{
+	position: absolute;
+	width: 247px;
+	height: 139px;
+	-webkit-transform: skewY(-30deg);
+	cursor: pointer;
+}
+
 section.prd-hover div.prd1-hover {
-  position: absolute;
-  width: 247px;
-  height: 139px;
   top: 70px;
   right: 130px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
 section.prd-hover div.prd2-hover {
-  position: absolute;
-  width: 247px;
-  height: 139px;
   top: 255px;
   right: 184px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
 section.prd-hover div.prd3-hover {
-  position: absolute;
-  width: 247px;
-  height: 139px;
   top: 430px;
   right: 225px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
 section.prd-hover div.prd4-hover {
-  position: absolute;
-  width: 247px;
-  height: 139px;
   top: 500px;
   right: 90px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
 div.rlt a {
   display: block;
