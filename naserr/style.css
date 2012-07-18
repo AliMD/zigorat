@@ -484,11 +484,7 @@ section.prd-hover div.prd4-hover{
 	position: absolute;
 	width: 247px;
 	height: 139px;
-	transform: skewY(-30deg);
-	-webkit-transform: skewY(-30deg);
-	-moz-transform: skewY(-30deg);
-	-ms-transform: skewY(-30deg);
-	-o-transform: skewY(-30deg);
+	-sand-transform: skewY(-30deg);
 	cursor: pointer;
 }
 
