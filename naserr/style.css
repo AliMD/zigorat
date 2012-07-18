@@ -3,18 +3,22 @@ body {
   background-color: #CCCCCC;
 }
 .container {
-  width: 900px;
-  height: 720px;
-  background-image: url('images/bg_with_menu.jpg');
-  background-repeat: no-repeat;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 3px 10px #000;
-  -webkit-border-radius: 15px;
+	width: 900px;
+	height: 720px;
+	background-image: url('images/bg_with_menu.jpg');
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	-sand-box-shadow: 0 3px 10px #000;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
 }
 .logo {
   width: 315px;
@@ -54,14 +58,10 @@ div.right-col {
   text-transform: uppercase;
   text-align: right;
   margin-right: 10px;
-  -webkit-transition: all 400ms ease-in-out;
+  -sand-transition: all 400ms ease-in-out;
 }
 .nav ul li a:hover {
-	transition: all 400ms ease-in-out;
-	-webkit-transition: all 400ms ease-in-out;
-	-moz-transition: all 400ms ease-in-out;
-	-o-transition: all 400ms ease-in-out;
-	-ms-transition: all 400ms ease-in-out;
+	-sand-transition: all 400ms ease-in-out;
 	color: #444;
 	margin-right: 15px;
 	letter-spacing: .7px;
@@ -69,18 +69,22 @@ div.right-col {
 /*----------------End-menu-----------------*/
 /*-----------------Home--------------------*/
 .container-home {
-  width: 900px;
-  height: 720px;
-  background-image: url('images/bg_home.jpg');
-  background-repeat: no-repeat;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 3px 10px #000;
-  -webkit-border-radius: 15px;
+	width: 900px;
+	height: 720px;
+	background-image: url('images/bg_home.jpg');
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	-sand-box-shadow: 0 3px 10px #000;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
 }
 .pics_right {
   width: 760px;
@@ -182,26 +186,28 @@ div.passage p#more {
   float: left;
 }
 .inp {
-  background-color: #fff;
-  margin-bottom: 15px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
+	background-color: #fff;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
 }
 .btn {
-  background-color: #fff;
-  color: #444;
-  font-family: 'MyriadProCondRegular';
-  font-size: 17px;
-  letter-spacing: -1px;
-  text-transform: capitalize;
-  width: 70px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  margin-top: 5px;
+	background-color: #fff;
+	color: #444;
+	font-family: 'MyriadProCondRegular';
+	font-size: 17px;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+	width: 70px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	margin-top: 5px;
 }
 .info {
   margin-top: 350px;
@@ -269,10 +275,7 @@ div.top_menu ul li a {
   opacity: 0.5;
   -moz-opacity: 0.5;
   filter: alpha(opacity=5);
-  -webkit-transition: font-size 400ms;
-  -moz-transition: font-size 400ms;
-  -o-transition: font-size 400ms;
-  -ms-transition: font-size 400ms;
+  -sand-transition: font-size 400ms;
 }
 div.top_menu ul li a:hover {
   font-size: 28px;
@@ -281,18 +284,22 @@ div.top_menu ul li a:hover {
   filter: alpha(opacity=10);
 }
 div.container-gallery {
-  width: 900px;
-  height: 720px;
-  background-image: url('images/bg_gallery.jpg');
-  background-repeat: no-repeat;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 3px 10px #000;
-  -webkit-border-radius: 15px;
+	width: 900px;
+	height: 720px;
+	background-image: url('images/bg_gallery.jpg');
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	-sand-box-shadow: 0 3px 10px #000;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
 }
 div.g1 {
   position: absolute;
@@ -486,6 +493,8 @@ section.prd-hover div.prd4-hover{
 	height: 139px;
 	-sand-transform: skewY(-30deg);
 	cursor: pointer;
+	outline:1px red solid;
+	z-index:2;
 }
 
 section.prd-hover div.prd1-hover {
