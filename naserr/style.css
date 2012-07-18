@@ -416,31 +416,29 @@ section#prd-hover div#prd3-hover {
 }
 /*----------------End-Projects-----------------*/
 /*----------------Index-----------------*/
+
+div.prd1,
+div.prd2,
+div.prd3,
+div.prd4{
+	width: 270px;
+	height: 310px;
+	position: absolute;
+}
+
 div.prd1 {
-  width: 270px;
-  height: 310px;
-  position: absolute;
   top: -5px;
   left: 500px;
 }
 div.prd2 {
-  width: 270px;
-  height: 310px;
-  position: absolute;
   top: 175px;
   left: 450px;
 }
 div.prd3 {
-  width: 270px;
-  height: 310px;
-  position: absolute;
   top: 350px;
   left: 410px;
 }
 div.prd4 {
-  width: 270px;
-  height: 310px;
-  position: absolute;
   top: 420px;
   left: 545px;
 }
@@ -476,7 +474,7 @@ div.rlt div#bg-img4 {
   height: 320px;
   background-image: url(images/pic4.png);
 }
-div.rlt div#fg-img {
+div.rlt div.fg-img {
   position: absolute;
   top: 26px;
   right: 20px;
