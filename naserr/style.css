@@ -262,7 +262,6 @@ div.top_menu ul li a {
   letter-spacing: -1px;
   color: #fff;
   text-transform: uppercase;
-  text-transform: uppercase;
   opacity: 0.5;
   -moz-opacity: 0.5;
   filter: alpha(opacity=5);
@@ -352,7 +351,6 @@ div.on_g a {
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;
-  text-transform: uppercase;
   position: absolute;
   top: 20px;
   text-align: center;
@@ -482,7 +480,11 @@ section.prd-hover div.prd4-hover{
 	position: absolute;
 	width: 247px;
 	height: 139px;
+	transform: skewY(-30deg);
 	-webkit-transform: skewY(-30deg);
+	-moz-transform: skewY(-30deg);
+	-ms-transform: skewY(-30deg);
+	-o-transform: skewY(-30deg);
 	cursor: pointer;
 }
 
@@ -512,21 +514,18 @@ div.rlt a {
   text-align: center;
   position: absolute;
   top: 116px;
-  left: 140px;
+  font-size: 25px;
 }
 div.rlt a.pic1 {
-  font-size: 25px;
+  left: 140px;
 }
 div.rlt a.pic2 {
   left: 135px;
-  font-size: 25px;
 }
 div.rlt a.pic3 {
   left: 155px;
-  font-size: 25px;
 }
 div.rlt a.pic4 {
   left: 155px;
-  font-size: 25px;
 }
 /*----------------End Index-----------------*/
