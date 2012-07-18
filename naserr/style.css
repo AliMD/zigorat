@@ -57,10 +57,14 @@ div.right-col {
   -webkit-transition: all 400ms ease-in-out;
 }
 .nav ul li a:hover {
-  -webkit-transition: all 400ms ease-in-out;
-  color: #444;
-  margin-right: 15px;
-  letter-spacing: .7px;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	color: #444;
+	margin-right: 15px;
+	letter-spacing: .7px;
 }
 /*----------------End-menu-----------------*/
 /*-----------------Home--------------------*/
