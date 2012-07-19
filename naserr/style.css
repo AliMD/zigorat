@@ -13,7 +13,11 @@ body {
 	bottom: 0;
 	top: 0;
 	margin: auto;
-	-sand-box-shadow: 0 3px 10px #000;
+	-webkit-box-shadow: 0 3px 10px #000;
+	-moz-box-shadow: 0 3px 10px #000;
+	-o-box-shadow: 0 3px 10px #000;
+	-ms-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -87,7 +91,11 @@ div.right-col {
 	bottom: 0;
 	top: 0;
 	margin: auto;
-	-sand-box-shadow: 0 3px 10px #000;
+	-webkit-box-shadow: 0 3px 10px #000;
+	-moz-box-shadow: 0 3px 10px #000;
+	-o-box-shadow: 0 3px 10px #000;
+	-ms-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -306,7 +314,11 @@ div.container-gallery {
 	bottom: 0;
 	top: 0;
 	margin: auto;
-	-sand-box-shadow: 0 3px 10px #000;
+	-webkit-box-shadow: 0 3px 10px #000;
+	-moz-box-shadow: 0 3px 10px #000;
+	-o-box-shadow: 0 3px 10px #000;
+	-ms-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
