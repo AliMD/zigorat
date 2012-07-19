@@ -621,3 +621,196 @@ div.rlt a.pic4 {
 }
 /*----------------End About-Us-----------------*/
 
+/*-----------------Link's-projects-----------------*/
+.container .slide-nav ul {
+  position: absolute;
+  width: 90px;
+  height: 55px;
+  right: 8px;
+  top: 11px;
+  background-color: transparent;
+  z-index: 2;
+}
+.container .slide-nav ul li {
+  float: left;
+  padding-right: 2px;
+}
+.container .slide-nav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 28px;
+  height: 46px;
+}
+.container .slides {
+  width: 900px;
+  height: 720px;
+  overflow: hidden;
+}
+.container .slides .train {
+  position: relative;
+  width: 3600px;
+  height: 720px;
+}
+.container .slides .home-train {
+  width: 3600px;
+  height: 720px;
+}
+.container .train > div {
+  float: left;
+  width: 900px;
+  height: 720px;
+}
+.container .train > div img {
+  display: block;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.container .back {
+  width: 269px;
+  height: 96px;
+  position: absolute;
+  left: -218px;
+  top: 292px;
+  background: url('images/back.png') right top no-repeat;
+}
+.container .next {
+  width: 269px;
+  height: 98px;
+  position: absolute;
+  right: -217px;
+  top: 289px;
+  background: url('images/next.png') left bottom no-repeat;
+}
+.container .descriptions {
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  bottom: 50px;
+  z-index: 5;
+  opacity: 0.6;
+}
+.container .descriptions li {
+  float: left;
+}
+.container .descriptions .line1 {
+  width: 75px;
+  height: 33px;
+  border-bottom: 3px solid #fff;
+}
+.container .descriptions .name-project {
+  width: 185px;
+  height: 43px;
+  font-family: 'MyriadProCondRegular';
+  font-size: 41px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-align: center;
+}
+.container .descriptions .counter {
+  width: 63px;
+  height: 60px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+/*----------------Contact-Us-----------------*/
+.container .form-holder {
+  width: 350px;
+  height: 370px;
+  margin-left: 35px;
+  margin-top: -118px;
+  padding: 10px;
+  text-align: right;
+  outline: 1px dotted red;
+}
+.container form {
+  text-align: right;
+}
+.container form .label {
+  color: #fff;
+  font-family: 'MyriadProCondRegular';
+  font-size: 19px;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  margin-right: 8px;
+  vertical-align: top;
+}
+.container form .inp {
+  background-color: #fff;
+  width: 271px;
+  height: 21px;
+  margin-bottom: 18px;
+  border: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+.container form .inp2 {
+  background-color: #fff;
+  border: 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+.container form .btn {
+  background-color: #fff;
+  color: #444;
+  font-family: 'MyriadProCondRegular';
+  font-size: 17px;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  width: 70px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border: 0px;
+  margin-top: 25px;
+}
+.container .info {
+  margin-top: 350px;
+  margin-left: 582px;
+  height: 220px;
+  padding: 1px;
+  outline: 1px dotted red;
+}
+.container .info .info-pic1 {
+  width: 52px;
+  height: 40px;
+  margin: 20px 5px -5px 0;
+  float: left;
+  background: url('images/slash.png') right top no-repeat;
+}
+.container .info .info-pic2 a {
+  display: block;
+  text-decoration: none;
+  width: 175px;
+  height: 25px;
+  margin-top: 35px;
+  margin-left: 40px;
+  text-align: center;
+  background: url('images/employment_form.png');
+  background-position: 0px 0px ;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'MyriadProCondRegular';
+  font-size: 19px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.container .info .desc {
+  width: 200px;
+  color: #fff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  letter-spacing: -1px;
+  margin: 15px 5px -5px 62px;
+  text-justify: auto;
+}
+/*----------------End Contact-Us-----------------*/
