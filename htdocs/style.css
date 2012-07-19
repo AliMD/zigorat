@@ -192,69 +192,6 @@ div.passage p#more {
   padding: 10px;
   text-align: right;
 }
-.label {
-  color: #fff;
-  font-family: 'MyriadProCondRegular';
-  font-size: 19px;
-  letter-spacing: -1px;
-  text-transform: capitalize;
-  margin-bottom: 15px;
-  float: left;
-}
-.inp {
-	background-color: #fff;
-	margin-bottom: 15px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-}
-.btn {
-	background-color: #fff;
-	color: #444;
-	font-family: 'MyriadProCondRegular';
-	font-size: 17px;
-	letter-spacing: -1px;
-	text-transform: capitalize;
-	width: 70px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-	margin-top: 5px;
-}
-.info {
-  margin-top: 350px;
-  margin-left: 440px;
-  height: 220px;
-  padding: 1px;
-}
-.info-pic1 {
-  width: 52px;
-  height: 40px;
-  margin: 15px 5px -5px 0;
-  float: left;
-  outline: 1px dotted yellow;
-}
-.info-pic2 {
-  width: 180px;
-  height: 25px;
-  outline: 1px dotted yellow;
-  margin-top: 35px;
-  margin-left: 60px;
-  text-align: center;
-}
-.desc {
-  width: 200px;
-  color: #fff;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 15px;
-  letter-spacing: -1px;
-  margin: 15px 5px -5px 62px;
-}
-/*----------------End Contact-Us-----------------*/
 /*----------------Projects-----------------*/
 div.top_menu {
   width: 142px;
@@ -738,6 +675,8 @@ div.rlt a.pic4 {
   text-transform: capitalize;
   margin-right: 8px;
   vertical-align: top;
+  margin-bottom: 15px;
+  float: left;
 }
 .container form .inp {
   background-color: #fff;
