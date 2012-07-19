@@ -18,7 +18,7 @@
 }
 
 /* The last column in a row needs this class. */
-.last { margin-right: 0; }
+.last { margin-right: 0 !important; }
 
 /* Use these classes to set the width of a column. */
 .w1 {width: 30px;}		.w2 {width: 70px;}		.w3 {width: 110px;}		.w4 {width: 150px;}		.w5 {width: 190px;}		.w6 {width: 230px;}
