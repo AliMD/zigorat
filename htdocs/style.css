@@ -193,6 +193,30 @@ div.passage p#more {
   text-align: right;
 }
 /*----------------Projects-----------------*/
+
+div.container-project {
+  width: 900px;
+  height: 720px;
+  background-image: url('images/bg_gallery.jpg');
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  -webkit-box-shadow: 0 3px 10px #000;
+  -moz-box-shadow: 0 3px 10px #000;
+  -o-box-shadow: 0 3px 10px #000;
+  -ms-box-shadow: 0 3px 10px #000;
+  box-shadow: 0 3px 10px #000;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+}
+
 div.top_menu {
   width: 142px;
   height: 284px;
@@ -240,70 +264,45 @@ div.top_menu ul li a:hover {
   -moz-opacity: 1;
   filter: alpha(opacity=10);
 }
-div.container-gallery {
-	width: 900px;
-	height: 720px;
-	background-image: url('images/bg_gallery.jpg');
-	background-repeat: no-repeat;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	margin: auto;
-	-webkit-box-shadow: 0 3px 10px #000;
-	-moz-box-shadow: 0 3px 10px #000;
-	-o-box-shadow: 0 3px 10px #000;
-	-ms-box-shadow: 0 3px 10px #000;
-	box-shadow: 0 3px 10px #000;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	-ms-border-radius: 15px;
-}
-div.g1 {
+
+div.g1,
+div.g2,
+div.g3{
   position: absolute;
+  width: 258px;
+  height: 351px;
+  cursor: pointer;
+  overflow: hidden;
+}
+div.g1{
   top: 210px;
   left: 145px;
-  width: 258px;
-  height: 351px;
-  cursor: pointer;
-  overflow: hidden;
-}
-div.on_g div.bg-img1 {
-  width: 258px;
-  height: 351px;
-  background-image: url(images/g1.png);
 }
 div.g2 {
-  position: absolute;
   top: 210px;
   left: 390px;
-  width: 258px;
-  height: 351px;
-  cursor: pointer;
-  overflow: hidden;
-}
-div.on_g div.bg-img2 {
-  width: 258px;
-  height: 351px;
-  background-image: url(images/g2.png);
 }
 div.g3 {
-  position: absolute;
   top: 210px;
   left: 635px;
-  width: 258px;
-  height: 351px;
-  cursor: pointer;
-  overflow: hidden;
 }
-div.on_g div.bg-img3 {
+div.on_g div.bgg-img1,
+div.on_g div.bgg-img2,
+div.on_g div.bgg-img3{
   width: 258px;
   height: 351px;
+}
+
+div.on_g div.bgg-img1{
+  background-image: url(images/g1.png);
+}
+div.on_g div.bgg-img2 {
+  background-image: url(images/g2.png);
+}
+div.on_g div.bgg-img3 {
   background-image: url(images/g3.png);
 }
+
 div.on_g {
   width: 245px;
   height: 351px;
@@ -316,6 +315,7 @@ div.on_g div#ong {
   top: 0px;
   left: 0px;
 }
+
 div.on_g a {
   display: block;
   font-family: 'MyriadProCondRegular';
@@ -326,63 +326,54 @@ div.on_g a {
   position: absolute;
   top: 20px;
   text-align: center;
+  text-decoration: underline;
 }
 div.on_g a.g1 {
   left: 155px;
   top: 65px;
-  text-decoration: underline;
 }
 div.on_g a.g11 {
   top: 250px;
   left: 20px;
-  text-decoration: underline;
 }
 div.on_g a.g2 {
   left: 155px;
   top: 45px;
-  text-decoration: underline;
 }
 div.on_g a.g22 {
   top: 250px;
   left: 20px;
-  text-decoration: underline;
 }
 div.on_g a.g3 {
   left: 155px;
   top: 45px;
-  text-decoration: underline;
 }
 div.on_g a.g33 {
   top: 250px;
   left: 20px;
-  text-decoration: underline;
 }
-section#prd-hover div#prd1-hover {
+section.pprd-hover div.pprd1-hover,
+section.pprd-hover div.pprd2-hover,
+section.pprd-hover div.pprd3-hover,
+section.pprd-hover div.pprd4-hover{
   position: absolute;
   width: 246px;
-  height: 190px;
+  height: 193px;
+  -sand-transform: skewY(-30deg);
+  cursor: pointer;
+  outline:1px dashed white;
+}
+section.pprd-hover div.pprd1-hover {
   top: 290px;
   right: 506px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
-section#prd-hover div#prd2-hover {
-  position: absolute;
-  width: 245px;
-  height: 193px;
+section.pprd-hover div.pprd2-hover {
   top: 287px;
   right: 260px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
-section#prd-hover div#prd3-hover {
-  position: absolute;
-  width: 246px;
-  height: 193px;
+section.pprd-hover div.pprd3-hover {
   top: 287px;
   right: 15px;
-  -webkit-transform: skew(0deg, -30deg);
-  cursor: pointer;
 }
 /*----------------End-Projects-----------------*/
 /*----------------Index-----------------*/
@@ -454,7 +445,7 @@ section.prd-hover div.prd4-hover{
 	height: 139px;
 	-sand-transform: skewY(-30deg);
 	cursor: pointer;
-	outline:1px red solid;
+  outline:1px dashed white;
 	z-index:2;
 }
 
