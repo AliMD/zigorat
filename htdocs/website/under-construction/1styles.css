@@ -115,8 +115,6 @@ input.w24, textarea.w24 { width: 938px; }
 
 .right{ float:right; }
 
-.rlt{position:relative}
-
 .clear{
 	clear:both;
 	width:0 !important;
