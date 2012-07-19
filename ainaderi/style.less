@@ -5,10 +5,14 @@ body{
 	.container {
 	width            : 900px;
 	min-height       : 720px;
-	background-image : url('images/bg_contact-us.jpg');
-	/*background-image : url('images/About.jpg');*/
+	background-image : url('images/bg_with_menu.jpg');
 	background-repeat: no-repeat;
-	position         : relative;
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	margin:auto;
 	box-shadow:0 3px 10px #000;
 	border-radius:15px;
   	-webkit-border-radius:15px;
@@ -106,255 +110,118 @@ body{
 	}
 	
 	
-	/*----------------Content-----------------*/
 	
-	
-	div.pic1 {
-	position         : absolute;
-	top              : 0px;
-	left             : 520px;
-	width            : 260px;
-	height           : 290px;
-	background-color : transparent;
-	background       :url('images/pic1.png');
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	filter:alpha(opacity=9);
-	
-	}
-	
-	div.pic2 {
-	position         : absolute;
-	top              : 175px;
-	left             : 470px;
-	width            : 260px;
-	height           : 290px;
-	background-color : transparent;
-	background       :url('images/pic2.png');
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	filter:alpha(opacity=9);
-	z-index:1;
-	}
-	
-	div.pic3 {
-	position         : absolute;
-	top              : 345px;
-	left             : 420px;
-	width            : 260px;
-	height           : 290px;
-	background-color : transparent;
-	background       :url('images/pic3.png');
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	filter:alpha(opacity=9);
-	z-index: 2;
-	}
-	
-	div.pic4 {
-	position         : absolute;
-	top              : 415px;
-	left             : 565px;
-	width            : 260px;
-	height           : 290px;
-	background-color : transparent;
-	background       :url('images/pic4.png');
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	filter:alpha(opacity=9);
-	}
-	
-	div.on_pics{
-	width:120px;
-	height:195px;
-	position: absolute;
-	margin: 0px auto;
-	left:0;
-	right:0;
-	bottom:0;
-	top:40px;
-	
-	img#on{
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=10);
-	
-	-webkit-transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-o-transition:opacity 1s;
-	-ms-transition:opacity 1s;
-	
-	}
-	a{
-	display        : block;
-	font-family    :'MyriadProCondRegular';
-	font-size      :25px;
-	letter-spacing : -1px;
-	text-transform : uppercase;
-	color          : #fff;
-	text-transform:uppercase;
-	text-align     : right;
-	}
-	a.pic1{
-	position: absolute;
-	top:90px;
-	left:30px;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=10);
-	-webkit-transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-o-transition:opacity 1s;
-	-ms-transition:opacity 1s;
-	}
-	
-	a.pic2{
-	position: absolute;
-	top:90px;
-	left:30px;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=10);
-	-webkit-transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-o-transition:opacity 1s;
-	-ms-transition:opacity 1s;
-	
-	}
-	
-	a.pic3{
-	position: absolute;
-	top:90px;
-	left:40px;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=10);
-	-webkit-transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-o-transition:opacity 1s;
-	-ms-transition:opacity 1s;
-	
-	}
-	
-	a.pic4{
-	position: absolute;
-	top:90px;
-	left:40px;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=10);
-	-webkit-transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-o-transition:opacity 1s;
-	-ms-transition:opacity 1s;
-	
-	}
-}
 /*----------------Contact-Us-----------------*/
-.form-holder {
-	width      :350px;
-	height     :370px;
-	margin-left:45px;
-	margin-top :230px;
-	padding    :10px;
-	text-align :right;
+	.contact-container{
+		background :url('images/bg_contact-us.jpg');
+		background-repeat :no-repeat;
+		background-position :left top;
+		position :relative;
+		.form-holder {
+			width      :350px;
+			height     :370px;
+			margin-left:45px;
+			margin-top :230px;
+			padding    :10px;
+			text-align :right;
+			}
+
+			form{
+			text-align:right;
+
+
+			.label {
+			color          :#fff;
+			font-family    :'MyriadProCondRegular';
+			font-size      :19px;
+			letter-spacing : -1px;
+			text-transform :capitalize;
+			margin-right   :8px;
+			vertical-align: top;
+			}
+
+			.inp {
+			background-color      :#fff;
+			width                 :271px;
+			height                :21px;
+			margin-bottom         :18px;
+			border                :0px;
+			-webkit-border-radius :4px;
+			-moz-border-radius    :4px;
+			-o-border-radius      :4px;
+			-ms-border-radius     :4px;
+			}
+			.inp2{
+			background-color      :#fff;
+			border                :0px;
+			-webkit-border-radius :4px;
+			-moz-border-radius    :4px;
+			-o-border-radius      :4px;
+			-ms-border-radius     :4px;
+			}
+
+			.btn {
+			background-color     :#fff;
+			color                :#444;
+			font-family          :'MyriadProCondRegular';
+			font-size            :17px;
+			letter-spacing       : -1px;
+			text-transform       :capitalize;
+			width                :70px;
+			-webkit-border-radius:5px;
+			-moz-border-radius   :5px;
+			-o-border-radius     :5px;
+			-ms-border-radius    :5px;
+			border               :0px;
+			margin-top           :25px;
+
+			}
+		}
+
+		.info {
+			margin-top :350px;
+			margin-left:440px;
+			height     :220px;
+			padding    :1px;
+
+
+			.info-pic1 {
+			width     :52px;
+			height    :40px;
+			margin    :20px 5px -5px 0;
+			float     :left;
+			background: url('images/slash.png') right top no-repeat ;
+			}
+
+			.info-pic2 a {
+			display            :block;
+			text-decoration    :none;
+			width              :175px;
+			height             :25px;
+			margin-top         :35px;
+			margin-left        :40px;
+			text-align         :center;
+			background         : url('images/employment_form.png');
+			background-position: 0px 0px ;
+			background-repeat  : no-repeat ;
+			color              :#fff;
+			font-family        :'MyriadProCondRegular';
+			font-size          :19px;
+			letter-spacing     : -1px;
+			text-transform     :uppercase;
+			}
+
+			.desc {
+			width         :200px;
+			color         :#fff;
+			font-family   :"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size     :15px;
+			letter-spacing: -1px;
+			margin        :15px 5px -5px 62px;
+			text-justify  :auto;
+			}
+		}
 	}
-
-	form{
-	text-align:right;
-
-
-	.label {
-	color          :#fff;
-	font-family    :'MyriadProCondRegular';
-	font-size      :19px;
-	letter-spacing : -1px;
-	text-transform :capitalize;
-	margin-right   :8px;
-	vertical-align: top;
-	}
-
-	.inp {
-	background-color      :#fff;
-	width                 :271px;
-	height                :21px;
-	margin-bottom         :18px;
-	border                :0px;
-	-webkit-border-radius :4px;
-	-moz-border-radius    :4px;
-	-o-border-radius      :4px;
-	-ms-border-radius     :4px;
-	}
-	.inp2{
-	background-color      :#fff;
-	border                :0px;
-	-webkit-border-radius :4px;
-	-moz-border-radius    :4px;
-	-o-border-radius      :4px;
-	-ms-border-radius     :4px;
-	}
-
-	.btn {
-	background-color     :#fff;
-	color                :#444;
-	font-family          :'MyriadProCondRegular';
-	font-size            :17px;
-	letter-spacing       : -1px;
-	text-transform       :capitalize;
-	width                :70px;
-	-webkit-border-radius:5px;
-	-moz-border-radius   :5px;
-	-o-border-radius     :5px;
-	-ms-border-radius    :5px;
-	border               :0px;
-	margin-top           :25px;
-
-	}
-}
-
-.info {
-	margin-top :350px;
-	margin-left:440px;
-	height     :220px;
-	padding    :1px;
-
-
-	.info-pic1 {
-	width     :52px;
-	height    :40px;
-	margin    :20px 5px -5px 0;
-	float     :left;
-	background: url('images/slash.png') right top no-repeat ;
-	}
-
-	.info-pic2 a {
-	display            :block;
-	text-decoration    :none;
-	width              :175px;
-	height             :25px;
-	margin-top         :35px;
-	margin-left        :40px;
-	text-align         :center;
-	background         : url('images/employment_form.png');
-	background-position: 0px 0px ;
-	background-repeat  : no-repeat ;
-	color              :#fff;
-	font-family        :'MyriadProCondRegular';
-	font-size          :19px;
-	letter-spacing     : -1px;
-	text-transform     :uppercase;
-	}
-
-	.desc {
-	width         :200px;
-	color         :#fff;
-	font-family   :"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size     :15px;
-	letter-spacing: -1px;
-	margin        :15px 5px -5px 62px;
-	text-justify  :auto;
-	}
-}
 /*----------------End Contact-Us-----------------*/
 /*----------------Gallery-----------------*/
 
@@ -623,7 +490,7 @@ div.right-col > div.gallery_pics > div:hover {
 			width            :90px;
 			height           :55px;
 			right            :8px;
-			top              :11px;
+			top              :38px;
 			background-color :transparent;
 			z-index :2;
 				li{
@@ -644,7 +511,8 @@ div.right-col > div.gallery_pics > div:hover {
 			outline  :1px dotted red;
 			overflow :hidden;
 			.train{
-				position :relative;width :3600px;
+				position :relative;
+				width :3600px;
 				height   :720px;
 			}
 
@@ -720,6 +588,12 @@ div.right-col > div.gallery_pics > div:hover {
 
 /*----------------End-Link's-projects-----------------*/
 /*----------------About-Us-----------------*/
+	.about-container{
+	background :url('images/bg_about.jpg');
+	background-repeat :no-repeat;
+	background-position :left top;
+	position :relative;
+	
 	.about {
 		width      :300px;
 		height     :110px;
@@ -781,7 +655,7 @@ div.right-col > div.gallery_pics > div:hover {
 		background :url('images/about-pic.png') no-repeat top left;
 		background-color :transparent;
 	}
-
+	}
 	
 /*----------------End About-Us-----------------*/
 
