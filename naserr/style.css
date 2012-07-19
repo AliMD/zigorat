@@ -58,10 +58,18 @@ div.right-col {
   text-transform: uppercase;
   text-align: right;
   margin-right: 10px;
-  -sand-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
 }
 .nav ul li a:hover {
-	-sand-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
 	color: #444;
 	margin-right: 15px;
 	letter-spacing: .7px;
@@ -275,7 +283,11 @@ div.top_menu ul li a {
   opacity: 0.5;
   -moz-opacity: 0.5;
   filter: alpha(opacity=5);
-  -sand-transition: font-size 400ms;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
 }
 div.top_menu ul li a:hover {
   font-size: 28px;
