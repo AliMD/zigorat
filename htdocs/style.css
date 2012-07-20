@@ -483,38 +483,55 @@ div.rlt a.pic4 {
 }
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
-.container .about {
+ .container-about {
+  background :url('images/bg_contact-us.jpg');
+  background-repeat :no-repeat;
+  background-position :left top;
+  width :900px;
+  height :720px;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  margin:auto;
+  -webkit-box-shadow:0 3px 10px #000;
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -o-border-radius :15px;
+}
+ .about {
   width: 300px;
   height: 110px;
   margin-left: 40px;
-  margin-top: 139px;
+  margin-top: 335px;
   padding: 10px;
 }
-.container .about .line {
+ .about .line {
   width: 232px;
   height: 14px;
   margin-left: 70px;
   border-bottom: 2px solid #fff;
 }
-.container .about h4 {
+ .about h4 {
   width: 65px;
   font-family: 'MyriadProCondRegular';
   font-size: 19px;
   color: #444;
   text-transform: uppercase;
 }
-.container .about .desc {
+ .about .desc {
   width: 300px;
   height: 80px;
   margin-top: 10px;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;
-  text-align: left;
-  white-space: no-wrap;
-  line-height: 13px;
+  text-align: justify;
+  line-height: 16px;
 }
-.container .top-arrow {
+ .top-arrow {
   position: absolute;
   top: 180px;
   right: 18px;
@@ -522,7 +539,12 @@ div.rlt a.pic4 {
   height: 14px;
   background: url('images/dir_up.png') no-repeat 0px 0px;
 }
-.container .bot-arrow {
+ .top-arrow a {
+  display :block;
+  width: 25px;
+  height: 14px;
+ }
+ .bot-arrow {
   position: absolute;
   top: 590px;
   right: 18px;
@@ -530,9 +552,14 @@ div.rlt a.pic4 {
   height: 14px;
   background: url('images/dir_down.png') no-repeat 0px 0px;
 }
-.container .about-pic {
+.bot-arrow a {
+  display :block;
+  width: 25px;
+  height: 14px;
+ }
+ .about-pic {
   margin-top: 200px;
-  margin-left: 565px;
+  margin-left: 420px;
   width: 270px;
   height: 400px;
   padding: 1px;
@@ -649,7 +676,7 @@ div.rlt a.pic4 {
   right:0;
   bottom:0;
   top:0;
-  margin:0 auto;
+  margin:auto;
   -webkit-box-shadow:0 3px 10px #000;
   border-radius:15px;
   -webkit-border-radius:15px;
