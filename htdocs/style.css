@@ -36,7 +36,7 @@ body {
   height: 720px;
   width: 140px;
 }
-div.right-col {
+.right-col {
   margin-left: 140px;
   height: 720px;
   padding: 1px;
@@ -183,14 +183,6 @@ div.passage p#more {
   display: block;
   text-decoration: none;
   padding: 3px 0px;
-}
-.form-holder {
-  width: 335px;
-  height: 370px;
-  margin-left: 45px;
-  margin-top: 230px;
-  padding: 10px;
-  text-align: right;
 }
 /*----------------Projects-----------------*/
 
@@ -646,52 +638,65 @@ div.rlt a.pic4 {
   text-align: center;
 }
 /*----------------Contact-Us-----------------*/
-.container .form-holder {
-  width: 350px;
-  height: 370px;
-  margin-left: 35px;
-  margin-top: -118px;
-  padding: 10px;
-  text-align: right;
-  outline: 1px dotted red;
+.contact-container {
+  background :url('images/bg_contact-us.jpg');
+  background-repeat :no-repeat;
+  background-position :left top;
+  width :900px;
+  height :720px;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  margin:0 auto;
+  -webkit-box-shadow:0 3px 10px #000;
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -o-border-radius :15px;
 }
-.container form {
-  text-align: right;
+ .form-holder {
+  width      :390px;
+  height     :370px;
+  margin-top :235px;
+  text-align :right;
 }
-.container form .label {
-  color: #fff;
-  font-family: 'MyriadProCondRegular';
-  font-size: 19px;
-  letter-spacing: -1px;
-  text-transform: capitalize;
-  margin-right: 8px;
+ .form-holder form {
+  border :0px;
+}
+.form-holder form .label {
+  color          :#fff;
+  font-family    :'MyriadProCondRegular';
+  font-size      :19px;
+  letter-spacing : -1px;
+  text-transform :capitalize;
+  margin-right   :8px;
   vertical-align: top;
-  margin-bottom: 15px;
-  float: left;
 }
-.container form .inp {
-  background-color: #fff;
-  width: 271px;
-  height: 21px;
-  margin-bottom: 18px;
-  border: 0px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
+ .form-holder form .inp {
+  background-color      :#fff;
+  border                :0px;
+  width                 :267px;
+  height                :21px;
+  margin-bottom         :18px;
+  -webkit-border-radius :4px;
+  -moz-border-radius    :4px;
+  -o-border-radius      :4px;
+  -ms-border-radius     :4px;
 }
-.container form .inp2 {
+ .form-holder form .inp2 {
 	background-color: #fff;
 	border: 0px;
+  width :264px;
+  height: 152px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-o-border-radius: 4px;
 	-ms-border-radius: 4px;
-	width: 270px;
-	height: 152px;
-	overflow-x: hidden;
+	
 }
-.container form .btn {
+ .form-holder form .btn {
   background-color: #fff;
   color: #444;
   font-family: 'MyriadProCondRegular';
@@ -706,21 +711,20 @@ div.rlt a.pic4 {
   border: 0px;
   margin-top: 25px;
 }
-.container .info {
-  margin-top: 350px;
-  margin-left: 582px;
+ .info {
+  margin-top: 345px;
+  margin-left:439px;
   height: 220px;
   padding: 1px;
-  outline: 1px dotted red;
 }
-.container .info .info-pic1 {
+ .info .info-pic1 {
   width: 52px;
   height: 40px;
   margin: 20px 5px -5px 0;
   float: left;
   background: url('images/slash.png') right top no-repeat;
 }
-.container .info .info-pic2 a {
+ .info .info-pic2 a {
   display: block;
   text-decoration: none;
   width: 175px;
@@ -737,7 +741,7 @@ div.rlt a.pic4 {
   letter-spacing: -1px;
   text-transform: uppercase;
 }
-.container .info .desc {
+ .info .desc {
   width: 200px;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
