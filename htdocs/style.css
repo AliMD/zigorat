@@ -486,341 +486,295 @@ div.rlt a.pic4 {
 }
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
- section.container-about {
-  background :url('images/bg_contact-us.jpg');
-  background-repeat :no-repeat;
-  background-position :left top;
-  width :900px;
-  height :720px;
-  position: fixed;
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  margin:auto;
-  -webkit-box-shadow:0 3px 10px #000;
-  border-radius:15px;
-  -webkit-border-radius:15px;
-  -moz-border-radius:15px;
-  -o-border-radius :15px;
-}
- section.container-about section.about {
-  width: 300px;
-  height: 110px;
-  margin-left: 40px;
-  margin-top: 335px;
-  padding: 10px;
-}
- section.about div.line {
-  width: 232px;
-  height: 14px;
-  margin-left: 70px;
-  border-bottom: 2px solid #fff;
-}
- section.about h4 {
-  width: 65px;
-  font-family: 'MyriadProCondRegular';
-  font-size: 19px;
-  color: #444;
-  text-transform: uppercase;
-}
- section.about div.desc {
-  width: 300px;
-  height: 80px;
-  margin-top: 10px;
-  color: #fff;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 13px;
-  text-align: justify;
-  line-height: 16px;
-}
- section.container-about div.top-arrow {
-  position: absolute;
-  top: 180px;
-  right: 18px;
-  width: 25px;
-  height: 14px;
-  background: url('images/dir_up.png') no-repeat 0px 0px;
-}
- div.top-arrow a {
-  display :block;
-  width: 25px;
-  height: 14px;
- }
- section.container-about div.bot-arrow {
-  position: absolute;
-  top: 590px;
-  right: 18px;
-  width: 25px;
-  height: 14px;
-  background: url('images/dir_down.png') no-repeat 0px 0px;
-}
-div.bot-arrow a {
-  display :block;
-  width: 25px;
-  height: 14px;
- }
- section.container-about div.about-pic {
-  margin-top: 200px;
-  margin-left: 420px;
-  width: 270px;
-  height: 400px;
-  padding: 1px;
-  background: url('images/pic1_about.png') no-repeat top left;
-  background-color: transparent;
+  section.about-us {
+  background         :url('images/bg_about.jpg');
+  background-repeat  :no-repeat;
+  background-position:left top;
+  }
+  section.container section.about {
+  width              : 300px;
+  height             : 110px;
+  margin-left        : 40px;
+  margin-top         : 335px;
+  padding            : 10px;
+  }
+  section.about div.line {
+  width              : 232px;
+  height             : 14px;
+  margin-left        : 70px;
+  border-bottom      : 2px solid #fff;
+  }
+  section.about h4 {
+  width              : 65px;
+  font-family        : 'MyriadProCondRegular';
+  font-size          : 19px;
+  color              : #444;
+  text-transform     : uppercase;
+  }
+  section.about div.desc {
+  width              : 300px;
+  height             : 80px;
+  margin-top         : 10px;
+  color              : #fff;
+  font-family        : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size          : 13px;
+  text-align         : justify;
+  line-height        : 16px;
+  }
+  section.container div.top-arrow {
+  position           : absolute;
+  top                : 180px;
+  right              : 18px;
+  width              : 25px;
+  height             : 14px;
+  background         : url('images/dir_up.png') no-repeat 0px 0px;
+  }
+  div.top-arrow a {
+  display            :block;
+  width              : 25px;
+  height             : 14px;
+  }
+  section.container div.bot-arrow {
+  position           : absolute;
+  top                : 590px;
+  right              : 18px;
+  width              : 25px;
+  height             : 14px;
+  background         : url('images/dir_down.png') no-repeat 0px 0px;
+  }
+  div.bot-arrow a {
+  display            :block;
+  width              : 25px;
+  height             : 14px;
+  }
+  section.container div.about-pic {
+  margin-top         : 200px;
+  margin-left        : 420px;
+  width              : 270px;
+  height             : 400px;
+  padding            : 1px;
+  background         : url('images/pic1_about.png') no-repeat top left;
+  background-color   : transparent;
 }
 /*----------------End About-Us-----------------*/
 
 /*-----------------Link's-projects-----------------*/
- section.container-largPage{
-    /*background :url('images/Enlarge-Picture.jpg') left top no-repeat;*/
-    width :900px;
-    height :720px;
-    position: fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    top:0;
-    margin:auto;
-    -webkit-box-shadow:0 3px 10px #000;
-    border-radius:15px;
-    -webkit-border-radius:15px;
-    -moz-border-radius:15px;
-    -o-border-radius :15px;
+  section.container nav.slide-nav ul {
+  position             : absolute;
+  width                : 90px;
+  height               : 55px;
+  right                : 8px;
+  top                  : 11px;
+  background-color     : transparent;
+  z-index              : 2;
   }
- nav.slide-nav ul {
-  position: absolute;
-  width: 90px;
-  height: 55px;
-  right: 8px;
-  top: 11px;
-  background-color: transparent;
-  z-index: 2;
-}
   nav.slide-nav ul li {
-  float: left;
-  padding-right: 2px;
-}
+  float                : left;
+  padding-right        : 2px;
+  }
   nav.slide-nav ul li a {
-  text-decoration: none;
-  display: block;
-  width: 28px;
-  height: 46px;
-}
- section.container-largPage div.slides {
-  width: 900px;
-  height: 720px;
-  position:relative;
-  overflow:hidden;
-}
- div.slides .train {
-  position: absolute;
-  left:0px;
-  top: 0px;
-  width: 3600px;
-  height: 720px;
-}
- div.slides .home-train {
-  width: 3600px;
-  height: 720px;
-}
- section.container-largPage .train > div {
-  background-repeat: no-repeat;
-  background-position: left top;
-  float: left;
-  width: 900px;
-  height: 720px;
-  display: block;
-  border-radius: 15px;
+  text-decoration      : none;
+  display              : block;
+  width                : 28px;
+  height               : 46px;
+  }
+  section.container div.slides {
+  width                : 900px;
+  height               : 720px;
+  position             :relative;
+  overflow             :hidden;
+  }
+  div.slides .train {
+  position             : absolute;
+  left                 :0px;
+  top                  : 0px;
+  width                : 3600px;
+  height               : 720px;
+  }
+  div.slides .train > div {
+  background-repeat    : no-repeat;
+  background-position  : left top;
+  float                : left;
+  width                : 900px;
+  height               : 720px;
+  display              : block;
+  border-radius        : 15px;
   -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-div.slides div.train > div.home1{
-background-image:url(images/gallery/home1.jpg);
-}
-
-div.slides div.train > div.home2{
-background-image:url(images/gallery/home2.jpg);
-}
-
-div.slides div.train > div.home3{
-background-image:url(images/gallery/home3.jpg);
-}
-
-div.slides div.train > div.home4{
-background-image:url(images/gallery/home4.jpg);
-}
-
-div.slides div.train > div.home5{
-background-image:url(images/gallery/home5.jpg);
-}
-
-div.slides div.train > div.home6{
-background-image:url(images/gallery/home6.jpg);
-}
-
-div.slides div.back {
-  width: 269px;
-  height: 96px;
-  position: absolute;
-  left: -218px;
-  top: 292px;
-  background: url('images/back.png') right top no-repeat;
-}
-div.slides div.next {
-  width: 269px;
-  height: 98px;
-  position: absolute;
-  right: -217px;
-  top: 289px;
-  background: url('images/next.png') left bottom no-repeat;
-}
-div.slides nav.descriptions {
-  width: 400px;
-  height: 60px;
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
-  z-index: 5;
-  opacity: 0.6;
-}
-div.slides nav.descriptions li {
-  float: left;
-}
-div.slides nav.descriptions .line1 {
-  width: 75px;
-  height: 33px;
-  border-bottom: 3px solid #fff;
-}
-div.slides nav.descriptions li.name-project {
-  width: 185px;
-  height: 43px;
-  font-family: 'MyriadProCondRegular';
-  font-size: 41px;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: bolder;
-  text-align: center;
-}
-div.slides nav.descriptions li.counter {
-  width: 63px;
-  height: 60px;
-  font-size: 30px;
-  color: #fff;
-  text-align: center;
+  -moz-border-radius   : 15px;
+  -o-border-radius     : 15px;
+  }
+  div.slides div.train > div.home1{
+  background-image     :url(images/gallery/home1.jpg);
+  }
+  
+  div.slides div.train > div.home2{
+  background-image     :url(images/gallery/home2.jpg);
+  }
+  
+  div.slides div.train > div.home3{
+  background-image     :url(images/gallery/home3.jpg);
+  }
+  
+  div.slides div.train > div.home4{
+  background-image     :url(images/gallery/home4.jpg);
+  }
+  
+  div.slides div.train > div.home5{
+  background-image     :url(images/gallery/home5.jpg);
+  }
+  
+  div.slides div.train > div.home6{
+  background-image     :url(images/gallery/home6.jpg);
+  }
+  
+  div.slides div.back {
+  width                : 269px;
+  height               : 96px;
+  position             : absolute;
+  left                 : -218px;
+  top                  : 292px;
+  background           : url('images/back.png') right top no-repeat;
+  }
+  div.slides div.next {
+  width                : 269px;
+  height               : 98px;
+  position             : absolute;
+  right                : -217px;
+  top                  : 289px;
+  background           : url('images/next.png') left bottom no-repeat;
+  }
+  div.slides nav.descriptions {
+  width                : 400px;
+  height               : 60px;
+  position             : absolute;
+  left                 : 0px;
+  bottom               : 20px;
+  z-index              : 5;
+  opacity              : 0.6;
+  }
+  div.slides nav.descriptions li {
+  float                : left;
+  }
+  div.slides nav.descriptions .line1 {
+  width                : 75px;
+  height               : 33px;
+  border-bottom        : 3px solid #fff;
+  }
+  div.slides nav.descriptions li.name-project {
+  width                : 185px;
+  height               : 43px;
+  font-family          : 'MyriadProCondRegular';
+  font-size            : 41px;
+  color                : #fff;
+  text-transform       : capitalize;
+  font-weight          : bolder;
+  text-align           : center;
+  }
+  div.slides nav.descriptions li.counter {
+  width                : 63px;
+  height               : 60px;
+  font-size            : 30px;
+  color                : #fff;
+  text-align           : center;
 }
 /*----------------Contact-Us-----------------*/
- section.contact-container {
-  background :url('images/bg_contact-us.jpg');
-  background-repeat :no-repeat;
-  background-position :left top;
-  width :900px;
-  height :720px;
-  position: fixed;
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  margin:auto;
-  -webkit-box-shadow:0 3px 10px #000;
-  border-radius:15px;
-  -webkit-border-radius:15px;
-  -moz-border-radius:15px;
-  -o-border-radius :15px;
-}
- section.form-holder {
-  width      :390px;
-  height     :370px;
-  margin-top :235px;
-  text-align :right;
-}
- section.form-holder form {
-  border :0px;
-}
-section.form-holder form label.label {
-  color          :#fff;
-  font-family    :'MyriadProCondRegular';
-  font-size      :19px;
-  letter-spacing : -1px;
-  text-transform :capitalize;
-  margin-right   :8px;
-  vertical-align: top;
-}
- section.form-holder form input.inp {
-  background-color      :#fff;
-  border                :0px;
-  width                 :267px;
-  height                :21px;
-  margin-bottom         :18px;
-  -webkit-border-radius :4px;
-  -moz-border-radius    :4px;
-  -o-border-radius      :4px;
-  -ms-border-radius     :4px;
-}
- section.form-holder form textarea.inp2 {
-	background-color: #fff;
-	border: 0px;
-  width :264px;
-  height: 152px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	-ms-border-radius: 4px;
-	
-}
- section.form-holder form input.btn {
-  background-color: #fff;
-  color: #444;
-  font-family: 'MyriadProCondRegular';
-  font-size: 17px;
-  letter-spacing: -1px;
-  text-transform: capitalize;
-  width: 70px;
+  section.contact {
+  background         :url('images/bg_contact-us.jpg');
+  background-repeat  :no-repeat;
+  background-position:left top;
+  }
+  section.form-holder {
+  width              :390px;
+  height             :370px;
+  margin-top         :235px;
+  text-align         :right;
+  }
+  section.form-holder form {
+  border               :0px;
+  }
+  section.form-holder form label.label {
+  color                :#fff;
+  font-family          :'MyriadProCondRegular';
+  font-size            :19px;
+  letter-spacing       : -1px;
+  text-transform       :capitalize;
+  margin-right         :8px;
+  vertical-align       : top;
+  }
+  section.form-holder form input.inp {
+  background-color     :#fff;
+  border               :0px;
+  width                :267px;
+  height               :21px;
+  margin-bottom        :18px;
+  -webkit-border-radius:4px;
+  -moz-border-radius   :4px;
+  -o-border-radius     :4px;
+  -ms-border-radius    :4px;
+  }
+  section.form-holder form textarea.inp2 {
+  background-color     : #fff;
+  border               : 0px;
+  width                :264px;
+  height               : 152px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  -o-border-radius     : 4px;
+  -ms-border-radius    : 4px;
+  
+  }
+  section.form-holder form input.btn {
+  background-color     : #fff;
+  color                : #444;
+  font-family          : 'MyriadProCondRegular';
+  font-size            : 17px;
+  letter-spacing       : -1px;
+  text-transform       : capitalize;
+  width                : 70px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border: 0px;
-  margin-top: 25px;
-}
- section.info {
-  margin-top: 345px;
-  margin-left:439px;
-  height: 220px;
-  padding: 1px;
-}
- section.info div.info-pic1 {
-  width: 52px;
-  height: 40px;
-  margin: 20px 5px -5px 0;
-  float: left;
-  background: url('images/slash.png') right top no-repeat;
-}
- section.info div.info-pic2 a {
-  display: block;
-  text-decoration: none;
-  width: 175px;
-  height: 25px;
-  margin-top: 35px;
-  margin-left: 40px;
-  text-align: center;
-  background: url('images/employment_form.png');
-  background-position: 0px 0px ;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-family: 'MyriadProCondRegular';
-  font-size: 19px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-}
- section.info div.desc {
-  width: 200px;
-  color: #fff;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 15px;
-  letter-spacing: -1px;
-  margin: 15px 5px -5px 62px;
-  text-justify: auto;
+  -moz-border-radius   : 5px;
+  -o-border-radius     : 5px;
+  -ms-border-radius    : 5px;
+  border               : 0px;
+  margin-top           : 25px;
+  }
+  section.info {
+  margin-top           : 345px;
+  margin-left          :439px;
+  height               : 220px;
+  padding              : 1px;
+  }
+  section.info div.info-pic1 {
+  width                : 52px;
+  height               : 40px;
+  margin               : 20px 5px -5px 0;
+  float                : left;
+  background           : url('images/slash.png') right top no-repeat;
+  }
+  section.info div.info-pic2 a {
+  display              : block;
+  text-decoration      : none;
+  width                : 175px;
+  height               : 25px;
+  margin-top           : 35px;
+  margin-left          : 40px;
+  text-align           : center;
+  background           : url('images/employment_form.png');
+  background-position  : 0px 0px ;
+  background-repeat    : no-repeat;
+  color                : #fff;
+  font-family          : 'MyriadProCondRegular';
+  font-size            : 18px;
+  letter-spacing       : -1px;
+  text-transform       : uppercase;
+  }
+  section.info div.desc {
+  width                : 200px;
+  color                : #fff;
+  font-family          : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size            : 15px;
+  letter-spacing       : -1px;
+  margin               : 15px 5px -5px 62px;
+  text-justify         : auto;
 }
 /*----------------End Contact-Us-----------------*/
