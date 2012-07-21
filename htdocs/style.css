@@ -80,7 +80,7 @@ body {
 }
 /*----------------End-menu-----------------*/
 /*-----------------Home--------------------*/
-.container-home {
+.home {
 	width: 900px;
 	height: 720px;
 	background-image: url('images/bg_home.jpg');
@@ -106,10 +106,10 @@ body {
   width: 760px;
   height: 720px;
 }
-.home {
+.newhome {
   position: absolute;
   top: 0;
-  left: 240px;
+  left: 260px;
   margin: 0 auto;
   width: 553px;
   height: 720px;
@@ -186,7 +186,7 @@ div.passage p#more {
 }
 /*----------------Projects-----------------*/
 
-div.container-project {
+.project {
   width: 900px;
   height: 720px;
   background-image: url('images/bg_gallery.jpg');
@@ -255,6 +255,7 @@ div.top_menu ul li a:hover {
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=10);
+  letter-spacing: 0px;
 }
 
 div.g1,
@@ -352,6 +353,7 @@ section.pprd-hover div.pprd4-hover{
   width: 246px;
   height: 193px;
   -sand-transform: skewY(-30deg);
+  -webkit-transform: skewY(-30deg);
   cursor: pointer;
   outline:1px dashed white;
 }
@@ -436,6 +438,7 @@ section.prd-hover div.prd4-hover{
 	width: 247px;
 	height: 139px;
 	-sand-transform: skewY(-30deg);
+  -webkit-transform: skewY(-30deg);
 	cursor: pointer;
   outline:1px dashed white;
 	z-index:2;
