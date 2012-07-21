@@ -35,7 +35,7 @@ The website for the **Zigorat** company
 * [Ali Mihandoost](https://github.com/alimd) Technical Manager / Developer
 * [Ali Aghasizadeh](https://github.com/aligh) Technical Supporter / Developer
 * [Mohammad Rahimpour](https://127.0.0.1) Designer / Idealiser
-* [Aida Naderi](hhttps://github.com/ainaderi) Developer / Programmer
+* [Aida Naderi](https://github.com/ainaderi) Developer / Programmer
 * [Naser Rahmani](https://github.com/naserr) Developer / Programmer
 
 
