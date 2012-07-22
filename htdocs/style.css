@@ -68,8 +68,7 @@ body {
   -o-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
 }
-.nav ul li a:hover ,
-.nav ul li a:active {
+.nav ul li a:hover {
   transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -471,13 +470,13 @@ div.rlt a.pic4 {
   }
   
   section.right-col div.right-inside {
-    outline: 1px dashed red;
     margin-top: 200px;
+    padding: 1px;
   }
 
   div.right-inside div.about {
   width              : 300px;
-  height             : 110px;
+  min-height         : 110px;
   margin-left        : 40px;
   margin-top         : 150px;
   }
@@ -494,6 +493,7 @@ div.rlt a.pic4 {
   font-size          : 19px;
   color              : #444;
   text-transform     : uppercase;
+  white-space: pre-wrap;
   }
   div.about div.desc {
   width              : 300px;
@@ -504,41 +504,66 @@ div.rlt a.pic4 {
   font-size          : 13px;
   text-align         : justify;
   line-height        : 16px;
+
   }
-  section.right-col div.top-arrow {
+  
+  
+
+ div.right-inside div.banner {
+  width               : 274px;
+  height               : 401px;
+  position             :relative;
+  overflow             :hidden;
+  margin-left: 420px;
+}
+
+div.banner div.scroll {
+  position             : absolute;
+  left                 :0px;
+  top                  : 0px;
+  width                : 274px;
+  height               : 2000px;
+}
+
+div.banner div.scroll > div {
+  background-repeat    : no-repeat;
+  background-position  : left top;
+  float                : left;
+  width               : 274px;
+  height               : 401px;
+  display              : block;
+  border-radius        : 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius   : 15px;
+  -o-border-radius     : 15px;
+  }
+  div.banner div.scroll > div.pic1-about{
+  background-image     :url('images/pic1_about.png') ;
+  }
+
+  div.banner div.top-arrow {
   position           : absolute;
   top                : 180px;
   right              : 18px;
   width              : 25px;
   height             : 14px;
-  background         : url('images/dir_up.png') no-repeat 0px 0px;
+  background         : url('images/dir_up.png') no-repeat ;
   }
-  div.top-arrow a {
-  display            :block;
-  width              : 25px;
-  height             : 14px;
-  }
-  section.right-col div.bot-arrow {
+   div.banner div.top-arrow:hover{
+   background         : url('images/hover_up.png') no-repeat ;
+   }
+  div.banner div.bot-arrow {
   position           : absolute;
   top                : 590px;
   right              : 18px;
   width              : 25px;
   height             : 14px;
-  background         : url('images/dir_down.png') no-repeat 0px 0px;
+  background         : url('images/dir_down.png') no-repeat;
   }
-  div.bot-arrow a {
-  display            :block;
-  width              : 25px;
-  height             : 14px;
+  div.banner div.bot-arrow:hover {
+    background         : url('images/hover_down.png') no-repeat ;
   }
-  div.right-inside div.about-pic {
-  margin-top         : 200px;
-  margin-left        : 420px;
-  height             : 400px;
-  padding            : 1px;
-  background         : url('images/pic1_about.png') no-repeat;
-  background-color   : transparent;
-}
+
 /*----------------End About-Us-----------------*/
 
 /*-----------------Link's-projects-----------------*/
@@ -663,13 +688,14 @@ div.rlt a.pic4 {
 /*----------------Contact-Us-----------------*/
   section.contact {
   background         :url('images/bg_contact-us.jpg');
-  overflow           : hidden;
+  
   }
   section.form-holder {
   width              :390px;
   height             :370px;
   margin-top         :235px;
   text-align         :right;
+  overflow           : hidden;
   }
   section.form-holder form {
   border               :0px;
