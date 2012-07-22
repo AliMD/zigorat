@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   body {
   position                    : relative;
   background-color            : #CCCCCC;
@@ -724,7 +723,6 @@ section.pprd-hover div.pprd4-hover{
   -sand-transform: skewY(-30deg);
   -webkit-transform: skewY(-30deg);
   cursor: pointer;
-  outline:1px dashed white;
 }
 section.pprd-hover div.pprd1-hover {
   top: 320px;
@@ -809,7 +807,6 @@ section.prd-hover div.prd4-hover{
 	-sand-transform: skewY(-30deg);
   -webkit-transform: skewY(-30deg);
 	cursor: pointer;
-  outline:1px dashed white;
 	z-index:2;
 }
 
