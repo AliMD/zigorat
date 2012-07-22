@@ -173,7 +173,6 @@
   section.project {
   background                  : url('images/bg_gallery.jpg') no-repeat;
   }
-  
   div.top_menu {
   width                       : 400px;
   height                      : 100px;
@@ -202,13 +201,11 @@
   color                       : #fff;
   text-transform              : uppercase;
   margin                      : 0px 7px 0px 0px;
-  
   }
   div.top_menu div.cols div#bg:hover {
   cursor                      : pointer;
   background                  :url("images/top_project2.png") no-repeat ;
   }
-  
   div.g1,
   div.g2,
   div.g3{
@@ -234,7 +231,6 @@
   width                       : 258px;
   height                      : 351px;
   }
-  
   div.on_g div.bgg-img1{
   background-image            : url(images/g1.png);
   }
@@ -244,7 +240,6 @@
   div.on_g div.bgg-img3 {
   background-image            : url(images/g3.png);
   }
-  
   div.on_g {
   width                       : 245px;
   height                      : 351px;
@@ -257,7 +252,6 @@
   top                         : 0px;
   left                        : 0px;
   }
-  
   div.on_g a {
   display                     : block;
   font-family                 : 'MyriadProCondRegular';
@@ -279,7 +273,6 @@
   left                        : 15px;
   font-size                   : 22px;
   }
-  
   section.pprd-hover div.pprd1-hover,
   section.pprd-hover div.pprd2-hover,
   section.pprd-hover div.pprd3-hover,
@@ -303,6 +296,32 @@
   top                         : 317px;
   right                       : 15px;
   }
+
+  section.right-col div.top-arrow {
+  position           : absolute;
+  top                : 180px;
+  right              : 18px;
+  width              : 25px;
+  height             : 14px;
+  background         : url('images/dir_up.png') no-repeat ;
+  cursor: pointer;
+  }
+  section.right-col div.top-arrow:hover{
+  background         : url('images/hover_up.png') no-repeat ;
+  }
+  section.right-col div.bot-arrow {
+  position           : absolute;
+  top                : 590px;
+  right              : 18px;
+  width              : 25px;
+  height             : 14px;
+  background         : url('images/dir_down.png') no-repeat;
+  cursor: pointer;
+  }
+  section.right-col div.bot-arrow:hover {
+  background         : url('images/hover_down.png') no-repeat ;
+  }
+
   /*----------------End-Projects-----------------*/
   /*----------------Index-----------------*/
   
@@ -802,8 +821,8 @@ section.prd-hover div.prd2-hover,
 section.prd-hover div.prd3-hover,
 section.prd-hover div.prd4-hover{
 	position: absolute;
-	width: 247px;
-	height: 139px;
+	width: 245px;
+	height: 138px;
 	-sand-transform: skewY(-30deg);
   -webkit-transform: skewY(-30deg);
 	cursor: pointer;
@@ -811,20 +830,20 @@ section.prd-hover div.prd4-hover{
 }
 
 section.prd-hover div.prd1-hover {
-  top: 70px;
-  right: 130px;
+  top: 75px;
+  right: 133px;
 }
 section.prd-hover div.prd2-hover {
-  top: 255px;
-  right: 184px;
+  top: 256px;
+  right: 183px;
 }
 section.prd-hover div.prd3-hover {
   top: 430px;
-  right: 225px;
+  right: 222px;
 }
 section.prd-hover div.prd4-hover {
   top: 500px;
-  right: 90px;
+  right: 88px;
 }
 div.rlt a {
   display: block;
@@ -850,23 +869,22 @@ div.rlt a.pic3 {
 div.rlt a.pic4 {
   left: 155px;
 }
->>>>>>> origin/master
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
   section.about-us {
- background         :url('images/bg_about.jpg');
+  background         :url('images/bg_about.jpg') no-repeat;
   }
   
   section.right-col div.right-inside {
-    margin-top: 200px;
-    padding: 1px;
+  padding: 1px;
+  min-height:710px;
   }
 
   div.right-inside div.about {
   width              : 300px;
   min-height         : 110px;
   margin-left        : 40px;
-  margin-top         : 150px;
+  margin-top         : 370px;
   }
 
   div.about div.line {
@@ -885,55 +903,41 @@ div.rlt a.pic4 {
   }
   div.about div.desc {
   width              : 300px;
-  height             : 80px;
+  min-height             : 80px;
   margin-top         : 10px;
   color              : #fff;
   font-family        : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size          : 13px;
   text-align         : justify;
   line-height        : 16px;
-
   }
   
-  
-
- div.right-inside div.banner {
-  width               : 274px;
-  height               : 401px;
-  position             :relative;
-  overflow             :hidden;
+  div.right-inside div.banner {
+  width               : 335px;
+  height               : 480px;
+  margin: 150px 0px 0px 0px;
   margin-left: 420px;
-}
+  }
 
-div.banner div.scroll {
-  position             : absolute;
-  left                 :0px;
-  top                  : 0px;
-  width                : 274px;
-  height               : 2000px;
-}
-
-div.banner div.scroll > div {
-  background-repeat    : no-repeat;
+  div.banner div.scroll {
+  float: left;
+  margin: 70px 0px 0px 0px;
   width               : 274px;
   height               : 401px;
-  display              : block;
+  background:url('images/pic1_about.png') no-repeat ;
   }
-  div.banner div.scroll > div.pic1-about{
-  background-image     :url('images/pic1_about.png') ;
-  }
-
-  section.right-col div.top-arrow {
+  div.banner div.top-arrow {
   position           : absolute;
   top                : 180px;
   right              : 18px;
   width              : 25px;
   height             : 14px;
   background         : url('images/dir_up.png') no-repeat ;
+  cursor: pointer;
   }
-   div.banner div.top-arrow:hover{
-   background         : url('images/hover_up.png') no-repeat ;
-   }
+  div.banner div.top-arrow:hover{
+  background         : url('images/hover_up.png') no-repeat ;
+  }
   div.banner div.bot-arrow {
   position           : absolute;
   top                : 590px;
@@ -941,6 +945,7 @@ div.banner div.scroll > div {
   width              : 25px;
   height             : 14px;
   background         : url('images/dir_down.png') no-repeat;
+  cursor: pointer;
   }
   div.banner div.bot-arrow:hover {
     background         : url('images/hover_down.png') no-repeat ;
