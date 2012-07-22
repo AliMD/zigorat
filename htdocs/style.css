@@ -951,7 +951,7 @@ div.banner div.scroll > div {
   display              : block;
   }
   div.banner div.scroll > div.pic1-about{
-  background-image     :url('images/pic1_about.png') ;
+  background     :url('images/pic1_about.png') no-repeat ;
   }
 
   div.right-side div.top-arrow {
