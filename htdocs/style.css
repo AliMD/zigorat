@@ -138,9 +138,12 @@ div#desc div.passage div.content p#more {
   text-align: right;
   padding: 10px 0px 0px 0px;
 }
-.nav ul li a.nhome:active{
-color:black;
+nav ul li.active a{
+  color: #444;
+  margin-right: 15px;
+  letter-spacing: .7px;
 }
+
 /*-----------------End Home--------------------*/
 .links {
   position: absolute;
