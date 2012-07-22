@@ -1,322 +1,322 @@
 body {
-position                    : relative;
-background-color            : #CCCCCC;
+  position: relative;
+  background-color: #CCCCCC;
 }
 .container {
-width                       : 900px;
-height                      : 720px;
-background-image            : url('images/bg_with_menu.jpg');
-background-repeat           : no-repeat;
-position                    : fixed;
-left                        : 0;
-right                       : 0;
-bottom                      : 0;
-top                         : 0;
-margin                      : auto;
--webkit-box-shadow          : 0 3px 10px #000;
--moz-box-shadow             : 0 3px 10px #000;
--o-box-shadow               : 0 3px 10px #000;
--ms-box-shadow              : 0 3px 10px #000;
-box-shadow                  : 0 3px 10px #000;
-border-radius               : 15px;
--webkit-border-radius       : 15px;
--moz-border-radius          : 15px;
--o-border-radius            : 15px;
--ms-border-radius           : 15px;
+	width: 900px;
+	height: 720px;
+	background-image: url('images/bg_with_menu.jpg');
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	-webkit-box-shadow: 0 3px 10px #000;
+	-moz-box-shadow: 0 3px 10px #000;
+	-o-box-shadow: 0 3px 10px #000;
+	-ms-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
 }
 .logo {
-width                       : 315px;
-height                      : 141px;
-position                    : absolute;
-left                        : 60px;
-top                         : 70px;
-background                  : url('images/logo.png') top right no-repeat;
+  width: 315px;
+  height: 141px;
+  position: absolute;
+  left: 60px;
+  top: 70px;
+  background: url('images/logo.png') top right no-repeat;
 }
 .left-col {
-height                      : 720px;
-width                       : 140px;
+  height: 720px;
+  width: 140px;
 }
 .right-col {
-margin-left                 : 140px;
-height                      : 720px;
-padding                     : 1px;
+  margin-left: 140px;
+  height: 720px;
+  padding: 1px;
 }
 nav ul li.active a{
-color                       : #333;
-margin-right                : 15px;
-letter-spacing              : .7px;
+  color: #333;
+  margin-right: 15px;
+  letter-spacing: .7px;
 }
 
 /*-----------------Menu--------------------*/
 .nav {
-width                       : 140px;
-min-height                  : 300px;
-margin-top                  : 220px;
+  width: 140px;
+  min-height: 300px;
+  margin-top: 220px;
 }
 .nav ul {
-list-style-type             : none;
-margin-top                  : 10px;
+  list-style-type: none;
+  margin-top: 10px;
 }
 .nav ul li a {
-display                     : block;
-padding                     : 15px 5px;
-text-decoration             : none;
-font-family                 : 'MyriadProCondRegular';
-font-size                   : 19px;
-letter-spacing              : -1px;
-color                       : #fff;
-text-transform              : uppercase;
-text-align                  : right;
-margin-right                : 10px;
-transition                  : all 400ms ease-in-out;
--webkit-transition          : all 400ms ease-in-out;
--moz-transition             : all 400ms ease-in-out;
--o-transition               : all 400ms ease-in-out;
--ms-transition              : all 400ms ease-in-out;
+  display: block;
+  padding: 15px 5px;
+  text-decoration: none;
+  font-family: 'MyriadProCondRegular';
+  font-size: 19px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 10px;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
 }
-.nav ul li a                :hover ,
-.nav ul li a                :active {
-transition                  : all 400ms ease-in-out;
--webkit-transition          : all 400ms ease-in-out;
--moz-transition             : all 400ms ease-in-out;
--o-transition               : all 400ms ease-in-out;
--ms-transition              : all 400ms ease-in-out;
-color                       : #444;
-margin-right                : 15px;
-letter-spacing              : .7px;
+.nav ul li a:hover ,
+.nav ul li a:active {
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+	color: #444;
+	margin-right: 15px;
+	letter-spacing: .7px;
 }
 /*----------------End-menu-----------------*/
 /*-----------------Home--------------------*/
 section.home {
-background                  :url('images/bg_home.jpg') no-repeat;
+	background:url('images/bg_home.jpg') no-repeat;
 }
 div.right-col div.pics_right {
-width                       : 760px;
-height                      : 720px;
+  width: 760px;
+  height: 720px;
 }
 div.pics_right section.newhome {
-margin                      : 0 auto;
-width                       : 553px;
-height                      : 510px;
-padding                     : 210px 0px 0px 0px;
+  margin: 0 auto;
+  width: 553px;
+  height: 510px;
+  padding: 210px 0px 0px 0px;
 }
 section.newhome div.content{
-width                       : 553px;
-height                      : 505px;
+  width: 553px;
+  height: 505px;
 }
 div.content div.bigpic {
-width                       : 553px;
-height                      : 305px;
-background                  : url("images/pic_home.png") no-repeat;
+  width: 553px;
+  height: 305px;
+  background: url("images/pic_home.png") no-repeat;
 }
 
 div.content div#desc {
-width                       : 553px;
-height                      : 260px;
-margin                      : -60px 0px 0px 0px;
+  width: 553px;
+  height: 260px;
+  margin: -60px 0px 0px 0px;
 }
 div#desc div.small_pic {
-width                       : 142px;
-height                      : 230px;
-background                  : url("images/pic_small_home.png") no-repeat;
-margin                      : 0px 0px 0px 414px;
+  width: 142px;
+  height: 230px;
+  background: url("images/pic_small_home.png") no-repeat;
+  margin: 0px 0px 0px 414px;
 }
 div#desc div.passage {
-width                       : 100px;
-height                      : 150px;
-font-family                 : 'MyriadProCondRegular';
-padding                     : 110px 0px 0px 300px;
+  width: 100px;
+  height: 150px;
+  font-family: 'MyriadProCondRegular';
+  padding: 110px 0px 0px 300px;
 }
 div.passage div.content{
-width                       : 100px;
-height                      : 150px;
+  width: 100px;
+  height: 150px;
 }
 div.passage div.content p#title {
-color                       : white;
-font-size                   : 17px;
-font-weight                 : bold;
-text-align                  : right;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: right;
 }
 div#desc div.passage div.content p#more {
-color                       : gray;
-font-size                   : 16px;
-letter-spacing              : -1px;
-text-align                  : right;
-padding                     : 10px 0px 0px 0px;
+  color: gray;
+  font-size: 16px;
+  letter-spacing: -1px;
+  text-align: right;
+  padding: 10px 0px 0px 0px;
 }
 
 /*-----------------End Home--------------------*/
 .links {
-position                    : absolute;
-left                        : 141px;
-top                         : 520px;
-overflow                    : hidden;
-width                       : 80px;
-min-height                  : 190px;
+  position: absolute;
+  left: 141px;
+  top: 520px;
+  overflow: hidden;
+  width: 80px;
+  min-height: 190px;
 }
 .links ul {
-list-style-type             : none;
-top                         : 0px;
+  list-style-type: none;
+  top: 0px;
 }
 .links ul li {
-margin                      : 0px auto;
-position                    : absolute;
-left                        : -64px;
+  margin: 0px auto;
+  position: absolute;
+  left: -64px;
 }
 .links ul li a {
-display                     : block;
-text-decoration             : none;
-padding                     : 3px 0px;
+  display: block;
+  text-decoration: none;
+  padding: 3px 0px;
 }
 /*----------------Projects-----------------*/
 
 section.project {
-background                  : url('images/bg_gallery.jpg') no-repeat;
+  background: url('images/bg_gallery.jpg') no-repeat;
 }
 
 div.top_menu {
-width                       : 400px;
-height                      : 100px;
-margin                      : 100px 0px 0px 307px;
-text-align                  : center;
+  width: 400px;
+  height: 100px;
+  margin: 100px 0px 0px 307px;
+  text-align: center;
 }
 div.top_menu div.cols {
-width                       : 400px;
-height                      : 100px;
-margin                      : 0 auto;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
 }
 div.top_menu div.cols div#bg {
-width                       : 90px;
-height                      : 95px;
-float                       : left;
-background                  :url("images/top_project1.png") no-repeat ;
-padding                     : 0px 7px 0px 0px;
+  width: 90px;
+  height: 95px;
+  float: left;
+  background:url("images/top_project1.png") no-repeat ;
+  padding: 0px 7px 0px 0px;
 }
 div.top_menu div.cols div#bg div#in {
-margin                      : 40px 0px 40px 0px;
+  margin: 40px 0px 40px 0px;
 }
 div.top_menu div.cols div#bg div#in a {
-text-decoration             : none;
-font-family                 : 'MyriadProCondRegular';
-font-size                   : 14px;
-color                       : #fff;
-text-transform              : uppercase;
-margin                      : 0px 7px 0px 0px;
+  text-decoration: none;
+  font-family: 'MyriadProCondRegular';
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0px 7px 0px 0px;
 
 }
 div.top_menu div.cols div#bg:hover {
-cursor                      : pointer;
-background                  :url("images/top_project2.png") no-repeat ;
+  cursor: pointer;
+  background:url("images/top_project2.png") no-repeat ;
 }
 
 div.g1,
 div.g2,
 div.g3{
-position                    : absolute;
-width                       : 258px;
-height                      : 351px;
-cursor                      : pointer;
-overflow                    : hidden;
-top                         :240px;
+  position: absolute;
+  width: 258px;
+  height: 351px;
+  cursor: pointer;
+  overflow: hidden;
+  top:240px;
 }
 div.g1{
-left                        : 145px;
+  left: 145px;
 }
 div.g2 {
-left                        : 390px;
+  left: 390px;
 }
 div.g3 {
-left                        : 635px;
+  left: 635px;
 }
 div.on_g div.bgg-img1,
 div.on_g div.bgg-img2,
 div.on_g div.bgg-img3{
-width                       : 258px;
-height                      : 351px;
+  width: 258px;
+  height: 351px;
 }
 
 div.on_g div.bgg-img1{
-background-image            : url(images/g1.png);
+  background-image: url(images/g1.png);
 }
 div.on_g div.bgg-img2 {
-background-image            : url(images/g2.png);
+  background-image: url(images/g2.png);
 }
 div.on_g div.bgg-img3 {
-background-image            : url(images/g3.png);
+  background-image: url(images/g3.png);
 }
 
 div.on_g {
-width                       : 245px;
-height                      : 351px;
+  width: 245px;
+  height: 351px;
 }
 div.on_g div#ong {
-width                       : 258px;
-height                      : 351px;
-background                  : url("images/2box.png") no-repeat;
-position                    : absolute;
-top                         : 0px;
-left                        : 0px;
+  width: 258px;
+  height: 351px;
+  background: url("images/2box.png") no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 div.on_g a {
-display                     : block;
-font-family                 : 'MyriadProCondRegular';
-font-size                   : 18px;
-letter-spacing              : -1px;
-text-transform              : uppercase;
-color                       : #fff;
-position                    : absolute;
-top                         : 20px;
-text-align                  : center;
-text-decoration             : underline;
+  display: block;
+  font-family: 'MyriadProCondRegular';
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
 div.on_g a.g1 {
-left                        : 155px;
-top                         : 65px;
+  left: 155px;
+  top: 65px;
 }
 div.on_g a.g11 {
-top                         : 250px;
-left                        : 20px;
+  top: 250px;
+  left: 20px;
 }
 div.on_g a.g2 {
-left                        : 155px;
-top                         : 45px;
+  left: 155px;
+  top: 45px;
 }
 div.on_g a.g22 {
-top                         : 250px;
-left                        : 20px;
+  top: 250px;
+  left: 20px;
 }
 div.on_g a.g3 {
-left                        : 155px;
-top                         : 45px;
+  left: 155px;
+  top: 45px;
 }
 div.on_g a.g33 {
-top                         : 250px;
-left                        : 20px;
+  top: 250px;
+  left: 20px;
 }
 section.pprd-hover div.pprd1-hover,
 section.pprd-hover div.pprd2-hover,
 section.pprd-hover div.pprd3-hover,
 section.pprd-hover div.pprd4-hover{
-position                    : absolute;
-width                       : 246px;
-height                      : 193px;
--sand-transform             : skewY(-30deg);
--webkit-transform           : skewY(-30deg);
-cursor                      : pointer;
-outline                     :1px dashed white;
+  position: absolute;
+  width: 246px;
+  height: 193px;
+  -sand-transform: skewY(-30deg);
+  -webkit-transform: skewY(-30deg);
+  cursor: pointer;
+  outline:1px dashed white;
 }
 section.pprd-hover div.pprd1-hover {
-top                         : 320px;
-right                       : 506px;
+  top: 320px;
+  right: 506px;
 }
 section.pprd-hover div.pprd2-hover {
-top                         : 317px;
-right                       : 260px;
+  top: 317px;
+  right: 260px;
 }
 section.pprd-hover div.pprd3-hover {
-top                         : 317px;
-right                       : 15px;
+  top: 317px;
+  right: 15px;
 }
 /*----------------End-Projects-----------------*/
 /*----------------Index-----------------*/
@@ -325,113 +325,113 @@ div.prd1,
 div.prd2,
 div.prd3,
 div.prd4{
-width                       : 270px;
-height                      : 310px;
-position                    : absolute;
+	width: 270px;
+	height: 310px;
+	position: absolute;
 }
 
 section.product-menu div.prd1 {
-top                         : -5px;
-left                        : 500px;
+  top: -5px;
+  left: 500px;
 }
 section.product-menu div.prd2 {
-top                         : 175px;
-left                        : 450px;
+  top: 175px;
+  left: 450px;
 }
 section.product-menu div.prd3 {
-top                         : 350px;
-left                        : 410px;
+  top: 350px;
+  left: 410px;
 }
 section.product-menu div.prd4 {
-top                         : 420px;
-left                        : 545px;
+  top: 420px;
+  left: 545px;
 }
 
 div.rlt div.bg-img1,
 div.rlt div.bg-img2,
 div.rlt div.bg-img3,
 div.rlt div.bg-img4{
-position                    : absolute;
-top                         : 0px;
-left                        : 10px;
-width                       : 270px;
-height                      : 320px;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 270px;
+	height: 320px;
 }
 
 div.rlt div.bg-img1 {
-background-image            : url(images/pic1.png);
+  background-image: url(images/pic1.png);
 }
 div.rlt div.bg-img2 {
-background-image            : url(images/pic2.png);
+  background-image: url(images/pic2.png);
 }
 div.rlt div.bg-img3 {
-background-image            : url(images/pic3.png);
+  background-image: url(images/pic3.png);
 }
 div.rlt div.bg-img4 {
-background-image            : url(images/pic4.png);
+  background-image: url(images/pic4.png);
 }
 div.rlt div.fg-img {
-position                    : absolute;
-top                         : 26px;
-right                       : 20px;
-background-image            : url(images/fade.png);
-height                      : 192px;
-width                       : 137px;
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  background-image: url(images/fade.png);
+  height: 192px;
+  width: 137px;
 }
 
 section.prd-hover div.prd1-hover,
 section.prd-hover div.prd2-hover,
 section.prd-hover div.prd3-hover,
 section.prd-hover div.prd4-hover{
-position                    : absolute;
-width                       : 247px;
-height                      : 139px;
--sand-transform             : skewY(-30deg);
--webkit-transform           : skewY(-30deg);
-cursor                      : pointer;
-outline                     :1px dashed white;
-z-index                     :2;
+	position: absolute;
+	width: 247px;
+	height: 139px;
+	-sand-transform: skewY(-30deg);
+  -webkit-transform: skewY(-30deg);
+	cursor: pointer;
+  outline:1px dashed white;
+	z-index:2;
 }
 
 section.prd-hover div.prd1-hover {
-top                         : 70px;
-right                       : 130px;
+  top: 70px;
+  right: 130px;
 }
 section.prd-hover div.prd2-hover {
-top                         : 255px;
-right                       : 184px;
+  top: 255px;
+  right: 184px;
 }
 section.prd-hover div.prd3-hover {
-top                         : 430px;
-right                       : 225px;
+  top: 430px;
+  right: 225px;
 }
 section.prd-hover div.prd4-hover {
-top                         : 500px;
-right                       : 90px;
+  top: 500px;
+  right: 90px;
 }
 div.rlt a {
-display                     : block;
-font-family                 : 'MyriadProCondRegular';
-letter-spacing              : -1px;
-text-transform              : uppercase;
-color                       : #fff;
-text-transform              : uppercase;
-text-align                  : center;
-position                    : absolute;
-top                         : 116px;
-font-size                   : 25px;
+  display: block;
+  font-family: 'MyriadProCondRegular';
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 116px;
+  font-size: 25px;
 }
 div.rlt a.pic1 {
-left                        : 140px;
+  left: 140px;
 }
 div.rlt a.pic2 {
-left                        : 135px;
+  left: 135px;
 }
 div.rlt a.pic3 {
-left                        : 155px;
+  left: 155px;
 }
 div.rlt a.pic4 {
-left                        : 155px;
+  left: 155px;
 }
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
