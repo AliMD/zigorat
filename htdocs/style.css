@@ -97,13 +97,13 @@ section.newhome div.content{
   width: 553px;
   height: 505px;
 }
-section.newhome div.content div.bigpic {
+div.content div.bigpic {
   width: 553px;
   height: 305px;
   background: url("images/pic_home.png") no-repeat;
 }
 
-section.newhome div.content div#desc {
+div.content div#desc {
   width: 553px;
   height: 260px;
   margin: -60px 0px 0px 0px;
@@ -120,11 +120,11 @@ div#desc div.passage {
   font-family: 'MyriadProCondRegular';
   padding: 110px 0px 0px 300px;
 }
-div#desc div.passage div.content{
+div.passage div.content{
   width: 100px;
   height: 150px;
 }
-div#desc div.passage div.content p#title {
+div.passage div.content p#title {
   color: white;
   font-size: 17px;
   font-weight: bold;
