@@ -496,15 +496,9 @@ div.banner div.scroll {
 
 div.banner div.scroll > div {
   background-repeat    : no-repeat;
-  background-position  : left top;
-  float                : left;
   width               : 274px;
   height               : 401px;
   display              : block;
-  border-radius        : 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius   : 15px;
-  -o-border-radius     : 15px;
   }
   div.banner div.scroll > div.pic1-about{
   background-image     :url('images/pic1_about.png') ;
