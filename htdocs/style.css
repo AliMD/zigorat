@@ -751,6 +751,7 @@ div.rlt a.pic4 {
   width                : 45px;
   height               : 40px;
   float                : left;
+  background     : url('images/slash.png') no-repeat;
   }
   section.info div.info-pic2 a {
   display              : block;
