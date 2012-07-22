@@ -850,7 +850,7 @@ div.rlt a.pic3 {
 div.rlt a.pic4 {
   left: 155px;
 }
->>>>>>> origin/master
+
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
   section.about-us {
@@ -858,17 +858,29 @@ div.rlt a.pic4 {
   }
   
   section.right-col div.right-inside {
-    margin-top: 200px;
+    margin-top: 150px;
+    min-height         : 470px;
     padding: 1px;
   }
 
-  div.right-inside div.about {
-  width              : 300px;
-  min-height         : 110px;
-  margin-left        : 40px;
-  margin-top         : 150px;
-  }
+div.right-inside div.left-side {
+  float: left;
+  width: 355px;
+  min-height         : 190px;
+  margin-top         : 195px;
+  padding: 1px;
+}
 
+  div.right-inside div.right-side {
+  margin-left: 360px;
+  min-height         : 465px;
+  padding: 1px;
+}
+
+  div.left-side div.about {
+ 
+  margin-left        : 50px;
+  }
   div.about div.line {
   width              : 232px;
   height             : 14px;
@@ -897,12 +909,13 @@ div.rlt a.pic4 {
   
   
 
- div.right-inside div.banner {
+ div.right-side div.banner {
   width               : 274px;
-  height               : 401px;
-  position             :relative;
-  overflow             :hidden;
-  margin-left: 420px;
+  height              : 401px;
+  position            :relative;
+  overflow            :hidden;
+  margin-left         : 60px;
+  margin-top          :50px;     
 }
 
 div.banner div.scroll {
@@ -923,7 +936,7 @@ div.banner div.scroll > div {
   background-image     :url('images/pic1_about.png') ;
   }
 
-  section.right-col div.top-arrow {
+  div.right-side div.top-arrow {
   position           : absolute;
   top                : 180px;
   right              : 18px;
@@ -931,10 +944,10 @@ div.banner div.scroll > div {
   height             : 14px;
   background         : url('images/dir_up.png') no-repeat ;
   }
-   div.banner div.top-arrow:hover{
+  div.right-side div.top-arrow:hover{
    background         : url('images/hover_up.png') no-repeat ;
    }
-  div.banner div.bot-arrow {
+  div.right-side div.bot-arrow {
   position           : absolute;
   top                : 590px;
   right              : 18px;
@@ -942,7 +955,7 @@ div.banner div.scroll > div {
   height             : 14px;
   background         : url('images/dir_down.png') no-repeat;
   }
-  div.banner div.bot-arrow:hover {
+  div.right-side div.bot-arrow:hover {
     background         : url('images/hover_down.png') no-repeat ;
   }
 
