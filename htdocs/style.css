@@ -488,29 +488,35 @@ div.rlt a.pic4 {
 /*----------------End Index-----------------*/
 /*----------------About US-----------------*/
   section.about-us {
-  background         :url('images/bg_about.jpg');
+ background         :url('images/bg_about.jpg');
   }
-  section.container section.about {
+  
+  section.right-col div.right-inside {
+    outline: 1px dashed red;
+    margin-top: 200px;
+  }
+
+  div.right-inside div.about {
   width              : 300px;
   height             : 110px;
   margin-left        : 40px;
-  margin-top         : 335px;
-  padding            : 10px;
+  margin-top         : 150px;
   }
-  section.about div.line {
+
+  div.about div.line {
   width              : 232px;
   height             : 14px;
   margin-left        : 70px;
   border-bottom      : 2px solid #fff;
   }
-  section.about h4 {
+  div.about h4 {
   width              : 65px;
   font-family        : 'MyriadProCondRegular';
   font-size          : 19px;
   color              : #444;
   text-transform     : uppercase;
   }
-  section.about div.desc {
+  div.about div.desc {
   width              : 300px;
   height             : 80px;
   margin-top         : 10px;
@@ -520,7 +526,7 @@ div.rlt a.pic4 {
   text-align         : justify;
   line-height        : 16px;
   }
-  section.container div.top-arrow {
+  section.right-col div.top-arrow {
   position           : absolute;
   top                : 180px;
   right              : 18px;
@@ -533,7 +539,7 @@ div.rlt a.pic4 {
   width              : 25px;
   height             : 14px;
   }
-  section.container div.bot-arrow {
+  section.right-col div.bot-arrow {
   position           : absolute;
   top                : 590px;
   right              : 18px;
@@ -546,13 +552,12 @@ div.rlt a.pic4 {
   width              : 25px;
   height             : 14px;
   }
-  section.container div.about-pic {
+  div.right-inside div.about-pic {
   margin-top         : 200px;
   margin-left        : 420px;
-  width              : 270px;
   height             : 400px;
   padding            : 1px;
-  background         : url('images/pic1_about.png') no-repeat top left;
+  background         : url('images/pic1_about.png') no-repeat;
   background-color   : transparent;
 }
 /*----------------End About-Us-----------------*/
@@ -755,7 +760,7 @@ div.rlt a.pic4 {
   margin-top           : 20px;
   margin-left          : 40px;
   text-align           : center;
-  background           : url('images/employment_form.png') 0px 0px no-repeat;
+  background           : url('images/employment_form.png') no-repeat;
   color                : #fff;
   font-family          : 'MyriadProCondRegular';
   font-size            : 18px;
