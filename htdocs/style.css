@@ -81,86 +81,65 @@ body {
 }
 /*----------------End-menu-----------------*/
 /*-----------------Home--------------------*/
-.home {
-	width: 900px;
-	height: 720px;
-	background-image: url('images/bg_home.jpg');
-	background-repeat: no-repeat;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	margin: auto;
-	-webkit-box-shadow: 0 3px 10px #000;
-	-moz-box-shadow: 0 3px 10px #000;
-	-o-box-shadow: 0 3px 10px #000;
-	-ms-box-shadow: 0 3px 10px #000;
-	box-shadow: 0 3px 10px #000;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	-ms-border-radius: 15px;
+section.home {
+	background:url('images/bg_home.jpg') no-repeat;
 }
-.pics_right {
+div.right-col div.pics_right {
   width: 760px;
   height: 720px;
 }
-.newhome {
-  position: absolute;
-  top: 0;
-  left: 260px;
+div.pics_right section.newhome {
   margin: 0 auto;
   width: 553px;
-  height: 720px;
+  height: 510px;
+  padding: 210px 0px 0px 0px;
 }
-div.bigpic {
-  position: absolute;
-  top: 200px;
-  left: 0px;
+section.newhome div.content{
+  width: 553px;
+  height: 505px;
+}
+div.content div.bigpic {
   width: 553px;
   height: 305px;
   background: url("images/pic_home.png") no-repeat;
 }
-div#desc {
-  position: absolute;
-  top: 440px;
-  left: 0px;
+
+div.content div#desc {
   width: 553px;
-  height: 230px;
+  height: 260px;
+  margin: -60px 0px 0px 0px;
 }
-div.small_pic {
+div#desc div.small_pic {
   width: 142px;
   height: 230px;
-  float: right;
   background: url("images/pic_small_home.png") no-repeat;
+  margin: 0px 0px 0px 414px;
 }
-div.passage {
-  width: 200px;
+div#desc div.passage {
+  width: 100px;
   height: 150px;
-  position: absolute;
-  top: 70px;
-  left: 205px;
   font-family: 'MyriadProCondRegular';
+  padding: 110px 0px 0px 300px;
 }
-div.passage p#title {
+div.passage div.content{
+  width: 100px;
+  height: 150px;
+}
+div.passage div.content p#title {
   color: white;
   font-size: 17px;
-  letter-spacing: -1px;
   font-weight: bold;
-  position: absolute;
-  top: 50px;
-  left: 110px;
+  text-align: right;
 }
-div.passage p#more {
+div#desc div.passage div.content p#more {
   color: gray;
   font-size: 16px;
   letter-spacing: -1px;
-  position: absolute;
-  top: 80px;
-  left: 110px;
   text-align: right;
+  padding: 10px 0px 0px 0px;
+}
+.nav ul li a.nhome:active{
+color:black;
 }
 /*-----------------End Home--------------------*/
 .links {
