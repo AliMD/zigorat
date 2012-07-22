@@ -41,6 +41,12 @@ body {
   height: 720px;
   padding: 1px;
 }
+nav ul li.active a{
+  color: #333;
+  margin-right: 15px;
+  letter-spacing: .7px;
+}
+
 /*-----------------Menu--------------------*/
 .nav {
   width: 140px;
@@ -138,11 +144,6 @@ div#desc div.passage div.content p#more {
   text-align: right;
   padding: 10px 0px 0px 0px;
 }
-nav ul li.active a{
-  color: #444;
-  margin-right: 15px;
-  letter-spacing: .7px;
-}
 
 /*-----------------End Home--------------------*/
 .links {
@@ -169,76 +170,43 @@ nav ul li.active a{
 }
 /*----------------Projects-----------------*/
 
-.project {
-  width: 900px;
-  height: 720px;
-  background-image: url('images/bg_gallery.jpg');
-  background-repeat: no-repeat;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 3px 10px #000;
-  -moz-box-shadow: 0 3px 10px #000;
-  -o-box-shadow: 0 3px 10px #000;
-  -ms-box-shadow: 0 3px 10px #000;
-  box-shadow: 0 3px 10px #000;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
+section.project {
+  background: url('images/bg_gallery.jpg') no-repeat;
 }
 
 div.top_menu {
-  width: 142px;
-  height: 284px;
-  background: url(images/top_menu.png) no-repeat;
-  margin: 0 auto;
-  position: absolute;
-  top: -90px;
-  left: 400px;
-  right: 0px;
-  bottom: 0px;
+  width: 400px;
+  height: 100px;
+  margin: 100px 0px 0px 307px;
   text-align: center;
-  z-index: 22;
 }
-div.top_menu ul {
-  width: 100px;
-  height: 120px;
-  position: absolute;
+div.top_menu div.cols {
+  width: 400px;
+  height: 100px;
   margin: 0 auto;
-  top: 110px;
-  left: 20px;
-  z-index: 23;
 }
-div.top_menu ul li {
-  padding: 7px 0px 0px 0px;
+div.top_menu div.cols div#bg {
+  width: 90px;
+  height: 95px;
+  float: left;
+  background:url("images/top_project1.png") no-repeat ;
+  padding: 0px 7px 0px 0px;
 }
-div.top_menu ul li a {
+div.top_menu div.cols div#bg div#in {
+  margin: 40px 0px 40px 0px;
+}
+div.top_menu div.cols div#bg div#in a {
   text-decoration: none;
   font-family: 'MyriadProCondRegular';
-  font-size: 20px;
-  letter-spacing: -1px;
+  font-size: 14px;
   color: #fff;
   text-transform: uppercase;
-  opacity: 0.5;
-  -moz-opacity: 0.5;
-  filter: alpha(opacity=5);
-  transition: all 400ms ease-in-out;
-  -webkit-transition: all 400ms ease-in-out;
-  -moz-transition: all 400ms ease-in-out;
-  -o-transition: all 400ms ease-in-out;
-  -ms-transition: all 400ms ease-in-out;
+  margin: 0px 7px 0px 0px;
+
 }
-div.top_menu ul li a:hover {
-  font-size: 28px;
-  opacity: 1;
-  -moz-opacity: 1;
-  filter: alpha(opacity=10);
-  letter-spacing: 0px;
+div.top_menu div.cols div#bg:hover {
+  cursor: pointer;
+  background:url("images/top_project2.png") no-repeat ;
 }
 
 div.g1,
@@ -249,17 +217,15 @@ div.g3{
   height: 351px;
   cursor: pointer;
   overflow: hidden;
+  top:240px;
 }
 div.g1{
-  top: 210px;
   left: 145px;
 }
 div.g2 {
-  top: 210px;
   left: 390px;
 }
 div.g3 {
-  top: 210px;
   left: 635px;
 }
 div.on_g div.bgg-img1,
@@ -341,15 +307,15 @@ section.pprd-hover div.pprd4-hover{
   outline:1px dashed white;
 }
 section.pprd-hover div.pprd1-hover {
-  top: 290px;
+  top: 320px;
   right: 506px;
 }
 section.pprd-hover div.pprd2-hover {
-  top: 287px;
+  top: 317px;
   right: 260px;
 }
 section.pprd-hover div.pprd3-hover {
-  top: 287px;
+  top: 317px;
   right: 15px;
 }
 /*----------------End-Projects-----------------*/
