@@ -68,7 +68,8 @@ body {
   -o-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
 }
-.nav ul li a:hover {
+.nav ul li a:hover ,
+.nav ul li a:active {
   transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -467,8 +468,6 @@ div.rlt a.pic4 {
 /*----------------About US-----------------*/
   section.about-us {
   background         :url('images/bg_about.jpg');
-  background-repeat  :no-repeat;
-  background-position:left top;
   }
   section.container section.about {
   width              : 300px;
@@ -659,8 +658,7 @@ div.rlt a.pic4 {
 /*----------------Contact-Us-----------------*/
   section.contact {
   background         :url('images/bg_contact-us.jpg');
-  background-repeat  :no-repeat;
-  background-position:left top;
+  overflow           : hidden;
   }
   section.form-holder {
   width              :390px;
@@ -718,29 +716,25 @@ div.rlt a.pic4 {
   margin-top           : 25px;
   }
   section.info {
-  margin-top           : 345px;
-  margin-left          :439px;
+  margin-top           : 368px;
+  margin-left          :447px;
   height               : 220px;
   padding              : 1px;
   }
   section.info div.info-pic1 {
-  width                : 52px;
+  width                : 45px;
   height               : 40px;
-  margin               : 20px 5px -5px 0;
   float                : left;
-  background           : url('images/slash.png') right top no-repeat;
   }
   section.info div.info-pic2 a {
   display              : block;
   text-decoration      : none;
   width                : 175px;
   height               : 25px;
-  margin-top           : 35px;
+  margin-top           : 20px;
   margin-left          : 40px;
   text-align           : center;
-  background           : url('images/employment_form.png');
-  background-position  : 0px 0px ;
-  background-repeat    : no-repeat;
+  background           : url('images/employment_form.png') 0px 0px no-repeat;
   color                : #fff;
   font-family          : 'MyriadProCondRegular';
   font-size            : 18px;
@@ -748,12 +742,12 @@ div.rlt a.pic4 {
   text-transform       : uppercase;
   }
   section.info div.desc {
-  width                : 200px;
+  margin-left          : 50px;
+  height               : 40px; 
   color                : #fff;
   font-family          : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size            : 15px;
   letter-spacing       : -1px;
-  margin               : 15px 5px -5px 62px;
   text-justify         : auto;
 }
 /*----------------End Contact-Us-----------------*/

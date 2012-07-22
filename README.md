@@ -1,4 +1,4 @@
-##Zigorat wesite
+##Zigorat website
 The website for the **Zigorat** company
 
 
