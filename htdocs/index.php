@@ -30,18 +30,7 @@
 <section class="container">
 	<section class="logo"></section><!--End logo-->
 	<section class="left-col left">
-		<nav class="nav left ">
-			<ul>
-				<li class="active"><a href ="index.html" >home</a></li>
-				<li><a href ="home.html" >New home</a></li>
-				<li><a href ="about-us.html" >about us</a></li>
-				<li><a href ="#" >our customers</a></li>
-				<li><a href ="projects.html" >projects</a></li>
-				<li><a href ="contact-us.html" >contact us</a></li>
-				<li><a href ="#" >links</a></li>
-			</ul>
-			<div class="clear"></div>
-		</nav><!--End nav-->
+		<?php include "inc/menus.php"; ?>
 	</section><!--End left-col-->
 	<section class="links">
 		<ul>
