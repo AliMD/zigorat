@@ -13,6 +13,18 @@
  */
 
 
+/* Config */
+
+ob_start();
+
+if(md5($_GET['p'])!='0397979ec002e5c7cfc70111701999e9') death('Access denied');
+
+$github_zip = 'https://nodeload.github.com/1dws/zigorat/zipball/master';
+$locat_zip = './last_update_temp.zip';
+$extract_dir = './last_update_temp';
+$htdoc_dir = "htdocs";
+$public_dir = '.';
+$keep_files = 'cgi-bin,.htaccess,backup,downloads';
 
 
 /**
@@ -216,17 +228,8 @@ function get_first_dir($dir){
 	death("Directory not fount in $dir");
 }
 
-// ----------- Updating site ----------
-ob_start();
 
-if(md5($_GET['p'])!='0397979ec002e5c7cfc70111701999e9') death('Access denied');
-
-$github_zip = 'https://nodeload.github.com/1dws/chromeframe.ir/zipball/master';
-$locat_zip = './last_update_temp.zip';
-$extract_dir = './last_update_temp';
-$htdoc_dir = "htdocs";
-$public_dir = '.';
-$keep_files = 'cgi-bin,.htaccess,backup,downloads';
+// Updating site.
 
 ?>
 
