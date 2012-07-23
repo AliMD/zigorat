@@ -1,32 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>..::Zigorat::..</title>
-	<link type="text/css" rel="stylesheet" href="reset.css" />
-	<link type="text/css" rel="stylesheet" href="1styles.css" />
-	<link type="text/css" rel="stylesheet" href="font/font.css" />
-	<link type="text/css" rel="stylesheet" href="style.css" />
-	
-	<script type="text/javascript" src="scripts/jquery.js"></script>
-	<script type="text/javascript" src="scripts/script.js" ></script>
-	<script type="text/javascript" src="scripts/cssQuery-p.js"></script>
-	<script type="text/javascript" src="scripts/EventHelpers.js"></script>
-	<script type="text/javascript" src="scripts/sylvester.js"></script>
-	<script type="text/javascript" src="scripts/cssSandpaper.js"></script>
-	
-	<!--[if IE]>
-        <script type="text/javascript" src="scripts/html5shiv-printshiv.js"></script>
-    <![endif]--> 
-	
-	<script type="text/javascript">
-		document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>');
-	</script>
-	<script type="text/javascript" src="scripts/script.js"></script>
-</head>
-
-<body>
-
+<?php include 'inc/header.php'; ?>
 <section class="container">
 	<section class="logo"></section><!--End logo-->
 	<section class="left-col left">
@@ -91,5 +63,4 @@
 			</section>
 	</section><!--End right-col-->
 </section><!--End container-->
-</body>
-</html>
+<?php include 'inc/footer.php'; ?>
