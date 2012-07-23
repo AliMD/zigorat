@@ -1,18 +1,16 @@
 $(function() {
-	
-	var len = $('.icon').length;
-	function rnd(a,b){
-		return Math.floor(Math.random()*(b-a+1))+a;
-	}
-	
-	fadeAll($('.icon'));
-function fadeAll(elems) {
-	var i=-1;
-	function next() {
-		i = i+1;
-		if (i <= elems.length)
-			$(elems[i]).animate({'left':'0'},rnd(120,800),(next));
-	}
-	next();
-}
+	var config={
+		due:350,
+		delay:100,
+		addDelay:200
+	};
+
+	$('.icon').each(function(){
+		var that = this;
+		config.delay+=config.addDelay;
+		console.log(config.delay);
+		setTimeout(function(){
+			$(that).animate({'left':'0px'},config.due);
+		},config.delay);
+	});
 });
