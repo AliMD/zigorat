@@ -1,0 +1,60 @@
+# This directive specifies a default value for the media type charset parameter (the name of a character encoding) to be added to a response if and only if the response's content-type is either text/plain or text/html.
+AddDefaultCharset utf-8
+
+# There will be times when the server is asked to provide a document whose type cannot be determined by its MIME types mappings.
+DefaultType text/html
+
+# change order of index file. in index.php not found goto sitedown
+DirectoryIndex index.php /err/sitedown.html
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Multiviews creates problems with aliased URLs
+Options -Multiviews
+
+# Make handle any errors.
+
+ErrorDocument 400 /err/?e=400
+ErrorDocument 401 /err/?e=401
+ErrorDocument 402 /err/?e=402
+ErrorDocument 403 /err/?e=403
+ErrorDocument 404 /err/?e=404
+ErrorDocument 405 /err/?e=405
+ErrorDocument 406 /err/?e=406
+ErrorDocument 408 /err/?e=408
+ErrorDocument 500 /err/?e=500
+ErrorDocument 501 /err/?e=501
+ErrorDocument 502 /err/?e=502
+ErrorDocument 503 /err/?e=503
+ErrorDocument 504 /err/?e=504
+ErrorDocument 505 /err/?e=505
+ErrorDocument 506 /err/?e=506
+ErrorDocument 507 /err/?e=507
+ErrorDocument 508 /err/?e=508
+ErrorDocument 509 /err/?e=509
+ErrorDocument 510 /err/?e=510
+
+# Various rewrite rules.
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9_-]+)\.(css|less)$ css/$1.$2 [L,NC]
+RewriteRule ^([a-z0-9_-]+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
+
+# Set files cache on client
+ExpiresActive On
+ExpiresDefault "modification plus 1 days"
+#ExpiresDefault "access plus 1 month"
+ExpiresByType image/jpg "access plus 6 month"
+ExpiresByType image/jpeg "access plus 6 month"
+ExpiresByType image/gif "access plus 6 month"
+ExpiresByType image/png "access plus 6 month"
+ExpiresByType image/x-icon "access plus 6 month"
+ExpiresByType image/ico "access plus 6 month"
+#ExpiresByType text/css "access plus 1 month"
+#ExpiresByType text/x-javascript "access plus 1 month"
