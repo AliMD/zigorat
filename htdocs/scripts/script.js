@@ -11,7 +11,7 @@ function fadeAll(elems) {
 	function next() {
 		i = i+1;
 		if (i <= elems.length)
-		console.log($(elems[i]).animate({'left':'0'},rnd(120,800),(next)));
+			$(elems[i]).animate({'left':'0'},rnd(120,800),(next));
 	}
 	next();
 }
