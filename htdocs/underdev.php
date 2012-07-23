@@ -24,7 +24,7 @@
 		</section>
 	</section>
 	<footer>
-		<h1>Under Construction</h1>
+		<h1><a href='./?debug=1'>U</a>nder Construction</h1>
 	</footer>
 </body>
 </html>
