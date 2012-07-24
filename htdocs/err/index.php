@@ -1,4 +1,6 @@
 <?php 
+	error_reporting(E_ALL ^ E_NOTICE);
+
 	$err = isset($_GET['e'])?$_GET['e']:404;
 	$url=$_SERVER['REQUEST_URI'];
 	switch ($err){
