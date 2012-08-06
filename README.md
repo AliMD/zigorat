@@ -1,8 +1,8 @@
-##Zigorat website
+## Zigorat website
 The website for the **Zigorat** company
 
 
-###Contributing
+### Contributing
 
 * Check our projec's website and report any bugs or ideas in [issues](https://github.com/1dws/zigorat/issues)
 
@@ -14,7 +14,7 @@ The website for the **Zigorat** company
 * Fork this for your self and do some develope and pull request to us ;)
 
 
-###Buliding Technologies
+### Buliding Technologies
 * [HTML5](http://ali.md/wiki/html5)
 * [CSS3](http://ali.md/css3ref)
 * [1Styles](http://ali.md/1styles)
@@ -29,7 +29,7 @@ The website for the **Zigorat** company
 * [MySQL](http://ali.md/wiki/mysql)
 
 
-###The Team
+### The Team
 * [Ali Mihandoost](https://github.com/alimd) Project Manager / Developer
 * [Mohammad Rahimpour](https://127.0.0.1) Graphic Designer
 * [Ali Aghasizadeh](https://github.com/aligh) Developer / Programmer
@@ -41,6 +41,6 @@ Please note that Yazdarmin.com is a curated site and that we reserve the right t
 The [zigorat.co](http://zigorat.co) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
 
 
-###A 1devs website
+### A 1devs website
 Produced by 1Devs Web Department
 
