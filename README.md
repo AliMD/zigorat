@@ -30,14 +30,10 @@ The website for the **Zigorat** company
 
 
 ###The Team
-* [Mohammad Sedaghat](http://127.0.0.1/) Team Manager / Director
-* [Ali Abdollahi](https://github.com/aliab) Project Manager / Director
-* [Ali Mihandoost](https://github.com/alimd) Technical Manager / Developer
-* [Ali Aghasizadeh](https://github.com/aligh) Technical Supporter / Developer
-* [Mohammad Rahimpour](https://127.0.0.1) Designer / Idealiser
+* [Ali Mihandoost](https://github.com/alimd) Project Manager / Developer
+* [Mohammad Rahimpour](https://127.0.0.1) Graphic Designer
+* [Ali Aghasizadeh](https://github.com/aligh) Developer / Programmer
 * [Aida Naderi](https://github.com/ainaderi) Developer / Programmer
-* [Naser Rahmani](https://github.com/naserr) Developer / Programmer
-
 
 ### All rights reserved ###
 Please note that Yazdarmin.com is a curated site and that we reserve the right to refuse any listing for any reason.
