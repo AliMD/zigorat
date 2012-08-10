@@ -5,7 +5,7 @@
 
 <nav class="nav left ">
 	<ul>
-		<?
+		<?php
 			$menus=explode(';', $menus);
 			foreach ($menus as $menu_id => $menu) {
 				list($menu_txt,$menu_url)=explode(',', $menu);
