@@ -5,7 +5,7 @@ AddDefaultCharset utf-8
 DefaultType text/html
 
 # change order of index file. in index.php not found goto sitedown
-DirectoryIndex index.php underdev.html
+DirectoryIndex index.php underdev.php
 
 # Don't show directory listings for URLs which map to a directory.
 Options -Indexes
