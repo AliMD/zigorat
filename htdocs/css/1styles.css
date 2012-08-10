@@ -125,3 +125,7 @@ input.w24, textarea.w24 { width: 938px; }
 	min-width:0 !important;
 	overflow:hidden;
 }
+
+.overFlowHidden{
+	overflow:hidden !important;
+}
