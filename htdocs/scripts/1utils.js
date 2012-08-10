@@ -5,15 +5,6 @@
 */
 
 (function(undefined){
-	// use a single debug config for all scripts ;)
-	window.deBug = true;
-
-	!!window.extend || (window.extend = function(target) {
-	    [].slice.call(arguments, 1).forEach.call(arguments,function(source) {
-	      for (key in source) source[key] === undefined || (target[key] = source[key]);
-	    }); return target;
-	});
-
 	// add dec for rounds
 	'round floor ceil'.split(' ').forEach(function(m){
 		Math['org'+m]=Math[m];
