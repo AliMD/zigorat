@@ -12,9 +12,9 @@
 					<div class=" line" ></div>
 					<div class="desc left">
 						<ul>
-							<li><a href='#'> Some Link Here </a></li>
-							<li><a href='#'> Some Link Here </a></li>
-							<li><a href='#'> Some Link Here </a></li>
+							<li><a href='#'> Some Link Here </a>This is just a sample</li>
+							<li><a href='#'> Some Link Here </a>This is just a sample</li>
+							<li><a href='#'> Some Link Here </a>This is just a sample</li>
 						</ul>
 					</div>
 				</div>
@@ -25,12 +25,6 @@
 						<div class="pic1-link"></div>
 					</div>
 				</div>
-			</div>
-			<div class="top-arrow">
-				<a href="#"></a>
-			</div>
-			<div class="bot-arrow">
-				<a href="#"></a>
 			</div>
 		</div>
 	</section>
