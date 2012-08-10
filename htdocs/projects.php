@@ -4,7 +4,6 @@
 	<section class="left-col left">
 		<?php include "inc/menus.php"; ?>
 	</section>
-	<?php include "inc/icons.php"; ?>
 	<section class="right-col">
 		<section class="pics_right">
 			<section class="product-menu">
