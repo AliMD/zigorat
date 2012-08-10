@@ -33,25 +33,6 @@
 	});
 })($)
 
-
 $(function(){
 	$('.backimg > div').fadeLoop();
-
-	var bg_f = $("div.first_bg");
-	var bg_nav = $("div.bg_nav");
-	var a1 = $("a.one");
-	var a6 = $("a.six");
-
-	a6.mouseover(function(){
-		bg_nav.css({
-			'bottom':'40px',
-		});
-	});
-
-	a1.mouseover(function(){
-		bg_nav.css({
-			'bottom':'0px',
-		});
-	});
-
 });
