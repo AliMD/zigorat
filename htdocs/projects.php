@@ -1,91 +1,55 @@
 <?php include 'inc/header.php'; ?>
-<section class="container project">
-	<div class="logo"></div>
+<section class="container">
+	<section class="logo"></section>
 	<section class="left-col left">
 		<?php include "inc/menus.php"; ?>
 	</section>
+	<?php include "inc/icons.php"; ?>
 	<section class="right-col">
-		<div class="top_menu">
-			<div class="cols">
-				<div id="bg">
-					<div id="in">
-						<a class="office" href="#">OFFICE</a>
+		<section class="pics_right">
+			<section class="product-menu">
+				<div class="prd1">
+					<div class="rlt">
+						<div class="bg-img1"></div>
+						<div class="fg-img"></div>
+						<a class="pic1">shopping</a>
 					</div>
 				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">HOME</a>
+				<section class="prd-hover">
+					<div class="prd1-hover"></div>
+				</section>
+				<div class="prd2">
+					<div class="rlt">
+						<div class="bg-img2"></div>
+						<div class="fg-img"></div>
+						<a class="pic2">exhibition</a>
 					</div>
 				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">exhibition</a>
+				<section class="prd-hover">
+					<div class="prd2-hover"></div>
+				</section>
+				<div class="prd3">
+					<div class="rlt">
+						<div class="bg-img3"></div>
+						<div class="fg-img"></div>
+						<a class="pic3">home</a>
 					</div>
 				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">shopping</a>
+				<section class="prd-hover">
+					<div class="prd3-hover"></div>
+				</section>
+				<div class="prd4">
+					<div class="rlt">
+						<div class="bg-img4"></div>
+						<div class="fg-img"></div>
+						<a class="pic4">office</a>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="project_pics">
-			<div class="g1">
-				<div class="on_g ">
-					<div class="bgg-img1"></div>
-					<div id="ong"></div>
-					<a id="g1">Project name</a>
-					<a id="g11">
-						01
-						<br />
-						image
-					</a>
-				</div>
-			</div>
-			<section class="pprd-hover">
-				<div class="pprd1-hover"></div>
+				<section class="prd-hover">
+					<div class="prd4-hover"></div>
+				</section>
 			</section>
-
-			<div class="g2">
-				<div class="on_g ">
-					<div class="bgg-img2"></div>
-					<div id="ong"></div>
-					<a id="g1">Project name</a>
-					<a id="g11">
-						01
-						<br />
-						image
-					</a>
-				</div>
-			</div>
-			<section class="pprd-hover">
-				<div class="pprd2-hover"></div>
-			</section>
-
-			<div class="g3">
-				<div class="on_g ">
-					<div class="bgg-img3"></div>
-					<div id="ong"></div>
-					<a id="g1">Project name</a>
-					<a id="g11">
-						01
-						<br />
-						image
-					</a>
-				</div>
-			</div>
-			<section class="pprd-hover">
-				<div class="pprd3-hover"></div>
-			</section>
-
-		</div>
-		<div class="top-arrow">
-			<a href="#"></a>
-		</div>
-		<div class="bot-arrow">
-			<a href="#"></a>
-		</div>
+		</section>
 	</section>
 </section>
 <?php include 'inc/footer.php'; ?>
