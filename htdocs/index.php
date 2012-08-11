@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 
-$sitedown = true;
+$sitedown = false;
 
 session_start();
 
