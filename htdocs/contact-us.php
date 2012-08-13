@@ -56,7 +56,7 @@
 	</section>
 	<section class="right-col">
 		<section class="form-holder left">
-			<form action="" method="post" enctype="text/plain" >
+			<form action="" method="post">
 				<label class="label">your name : </label>
 				<input type="text" name="name" />
 				<br/>
@@ -78,10 +78,10 @@
 				if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pNumber']) && isset($_POST['subject']) && isset($_POST['comment']) ){
 					$name = $_POST['name'];
 					$email = $_POST['email'];
-					$pNumber = $_POST['email'];
+					$pNumber = $_POST['pNumber'];
 					$subject = $_POST['subject'];
 					$comment = $_POST['comment'];
-					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n" .$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
+					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n".'Phone Number: '.$pNumber. "\n".$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
 						echo '<script type="text/javascript">alert("ok")</script>';
 					}else{
 						echo '<script type="text/javascript">alert("nok")</script>';
