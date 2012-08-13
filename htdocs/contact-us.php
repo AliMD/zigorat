@@ -82,9 +82,9 @@
 					$subject = $_POST['subject'];
 					$comment = $_POST['comment'];
 					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n".'Phone Number: '.$pNumber. "\n".$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
-						echo '<script type="text/javascript">alert("ok")</script>';
+						echo '<p class"sendok">Your massage has been sent. Please be patient for the answer. thank you!</p>';
 					}else{
-						echo '<script type="text/javascript">alert("nok")</script>';
+						echo '<p class"sendnok">Your massage has not been sent. Please fill the form again. thank you!</p>';
 					}
 				}
 			?>
