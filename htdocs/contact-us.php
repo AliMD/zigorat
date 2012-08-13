@@ -9,19 +9,19 @@
 		<section class="form-holder left">
 			<form action="" method="post" enctype="text/plain" >
 				<label class="label">your name : </label>
-				<input type="text" class="inp" name="name" />
+				<input type="text" name="name" />
 				<br/>
 				<label class="label">email : </label>
-				<input type="text" class="inp" name="email" />
+				<input type="text" name="email" />
 				<br/>
 				<label class="label">tel : </label>
-				<input type="text" class="inp" name="tel" />
+				<input type="text" name="tel" />
 				<br/>
 				<label class="label">subject : </label>
-				<input type="text" class="inp" name="subject"  />
+				<input type="text" name="subject"  />
 				<br/>
 				<label class="label ">comment : </label>
-				<textarea class="inp2" name="comment"></textarea>
+				<textarea name="comment"></textarea>
 				<input type="submit" class="btn" name="submit" value="submit"/>
 			</form>
 		</section>
