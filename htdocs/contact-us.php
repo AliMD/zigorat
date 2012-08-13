@@ -64,15 +64,31 @@
 				<input type="text" name="email" />
 				<br/>
 				<label class="label">tel : </label>
-				<input type="text" name="tel" />
+				<input type="text" name="pNumber" />
 				<br/>
 				<label class="label">subject : </label>
 				<input type="text" name="subject"  />
 				<br/>
 				<label class="label ">comment : </label>
 				<textarea name="comment"></textarea>
-				<input type="submit" class="btn" name="submit" value="submit"/>
+				<input type="submit" class="ok" name="submit" value="submit"/>
 			</form>
+            
+            <?php
+				if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pNumber']) && isset($_POST['subject']) && isset($_POST['comment']) ){
+					$name = $_POST['name'];
+					$email = $_POST['email'];
+					$pNumber = $_POST['email'];
+					$subject = $_POST['subject'];
+					$comment = $_POST['comment'];
+					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n" .$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
+						echo '<script type="text/javascript">alert("ok")</script>';
+					}else{
+						echo '<script type="text/javascript">alert("nok")</script>';
+					}
+				}
+			?>
+
 		</section>
 		<section class="info">
 			<div class="info-pic1"></div>

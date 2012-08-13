@@ -770,7 +770,7 @@ section.form-holder form input[type=text].nok {
 section.form-holder form textarea.nok {
 	border: 1px solid #900;
 }
-section.form-holder form input.btn {
+section.form-holder form input[type=submit] {
 	background-color :#fff;
 	color :#444;
 	font-family :'myriadprocondregular';
@@ -785,6 +785,9 @@ section.form-holder form input.btn {
 	border :0px;
 	margin-top :10px;
 	margin-right: 5px;
+}
+section.form-holder form input[type=submit]:active {
+	border:1px solid #333;
 }
 section.info {
 	margin-top :368px;
