@@ -1,6 +1,4 @@
 <?php include 'inc/header.php'; ?>
-<script type="text/javascript">
-</script>
 <body>
 <section class="container contact">
 	<section class="logo"></section>
