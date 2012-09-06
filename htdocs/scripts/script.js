@@ -8,7 +8,49 @@ configs = {
 	}
 }
 
+pageAni = {
+	home : {
+		load : {
+			ani1 : {
+				delay : 1000,
+				target : 'body',
+				class : 'ani1',
+				keyframe : 'key1',
+				due : 1000,
+				ease : 'ease-out'
+			},
+			ani2 : {
+				delay : 2000,
+				target : 'body',
+				keyframe : 'key2',
+				due : 1500
+			},
+			ani3 : {
+				delay : 3000,
+				target : 'body',
+				class : 'ani3',
+				keyframe : 'key3',
+				due : 2300,
+				ease : 'ease-in-out'
+			}
+		}
+	}
+}
+
+$.tween = function(tweenJson){
+	$.each(tweenJson,function(i,tweeen){
+		tweeen.id = setTimeout(function(){
+			var target = $(tweeen.target);
+			tweeen.class && target.addClass(tweeen.class);
+			(tweeen.due && tweeen.keyframe) && target.animate(tweeen.keyframe,tweeen.due,tweeen.ease)
+		},tweeen.delay);
+	});
+}
+
 pagejs = function(page){
+
+	pageAni[page] && $.tween(pageAni[page]['load'])
+
 	if(page=='home'){
 		// pages logo icons
 		var delay=1;
@@ -21,10 +63,6 @@ pagejs = function(page){
 		});
 	}
 
-
-};
-
-pagejs = function(page){
 	if(page=='contact-us'){
 		window.onload = function(){
 			
