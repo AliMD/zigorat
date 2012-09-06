@@ -7,23 +7,39 @@
 	</section>
 	<section class="right-col">
 		<section class="form-holder left">
-			<form action="" method="post" enctype="text/plain" >
+			<form action="" method="post">
 				<label class="label">your name : </label>
-				<input type="text" class="inp" name="name" />
+				<input type="text" name="name" />
 				<br/>
 				<label class="label">email : </label>
-				<input type="text" class="inp" name="email" />
+				<input type="text" name="email" />
 				<br/>
 				<label class="label">tel : </label>
-				<input type="text" class="inp" name="tel" />
+				<input type="text" name="pNumber" />
 				<br/>
 				<label class="label">subject : </label>
-				<input type="text" class="inp" name="subject"  />
+				<input type="text" name="subject"  />
 				<br/>
 				<label class="label ">comment : </label>
-				<textarea class="inp2" name="comment"></textarea>
-				<input type="submit" class="btn" name="submit" value="submit"/>
+				<textarea name="comment"></textarea>
+				<input type="submit" class="ok" name="submit" value="submit"/>
 			</form>
+            
+            <?php
+				if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pNumber']) && isset($_POST['subject']) && isset($_POST['comment']) ){
+					$name = $_POST['name'];
+					$email = $_POST['email'];
+					$pNumber = $_POST['pNumber'];
+					$subject = $_POST['subject'];
+					$comment = $_POST['comment'];
+					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n".'Phone Number: '.$pNumber. "\n".$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
+						echo '<p class"sendok">Your massage has been sent. Please be patient for the answer. thank you!</p>';
+					}else{
+						echo '<p class"sendnok">Your massage has not been sent. Please fill the form again. thank you!</p>';
+					}
+				}
+			?>
+
 		</section>
 		<section class="info">
 			<div class="info-pic1"></div>

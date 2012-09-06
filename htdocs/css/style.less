@@ -727,7 +727,7 @@ section.form-holder form label.label {
 	margin-right :8px;
 	vertical-align :top;
 }
-section.form-holder form input.inp {
+section.form-holder form input[type=text] {
 	background-color :transparent;
 	background-image: url('images/contact_inp_back.png');
 	background-repeat: no-repeat;
@@ -736,8 +736,13 @@ section.form-holder form input.inp {
 	width :257px;
 	height :22px;
 	padding: 1px 6px;
+	transition :all 400ms ease-in-out;
+	-webkit-transition :background-color 400ms ease-in-out;
+	-moz-transition :background-color 400ms ease-in-out;
+	-o-transition :background-color 400ms ease-in-out;
+	-ms-transition :background-color 400ms ease-in-out;
 }
-section.form-holder form textarea.inp2 {
+section.form-holder form textarea {
 	background-color :#fff;
 	padding: 5px 7px;
 	border :0px;
@@ -753,8 +758,19 @@ section.form-holder form textarea.inp2 {
 	-o-box-shadow: inset 2px 2px 1px #888;
 	-moz-box-shadow: inset 2px 2px 1px #888;
 	-ms-box-shadow: inset 2px 2px 1px #888;
+	transition :all 400ms ease-in-out;
+	-webkit-transition :border 400ms ease-in-out;
+	-moz-transition :border 400ms ease-in-out;
+	-o-transition :border 400ms ease-in-out;
+	-ms-transition :border 400ms ease-in-out;
 }
-section.form-holder form input.btn {
+section.form-holder form input[type=text].nok {
+	background-color: #900;
+}
+section.form-holder form textarea.nok {
+	border: 1px solid #900;
+}
+section.form-holder form input[type=submit] {
 	background-color :#fff;
 	color :#444;
 	font-family :'myriadprocondregular';
@@ -769,6 +785,9 @@ section.form-holder form input.btn {
 	border :0px;
 	margin-top :10px;
 	margin-right: 5px;
+}
+section.form-holder form input[type=submit]:active {
+	border:1px solid #333;
 }
 section.info {
 	margin-top :368px;
