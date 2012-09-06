@@ -13,3 +13,7 @@ $RECYCLE.BIN/
 #SublimeText
 *.sublime-project
 *.sublime-workspace
+
+#Manager Files
+Designs/
+*.xmind
