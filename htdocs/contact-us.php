@@ -21,25 +21,9 @@
 				<input type="text" name="subject"  />
 				<br/>
 				<label class="label ">comment : </label>
-				<textarea name="comment"></textarea>
+				<textarea name="txt"></textarea>
 				<input type="submit" class="ok" name="submit" value="submit"/>
 			</form>
-            
-            <?php
-				if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pNumber']) && isset($_POST['subject']) && isset($_POST['comment']) ){
-					$name = $_POST['name'];
-					$email = $_POST['email'];
-					$pNumber = $_POST['pNumber'];
-					$subject = $_POST['subject'];
-					$comment = $_POST['comment'];
-					if( @mail('aghasizadeh70@gmail.com',$subject,'Name: '.$name. "\n".'Phone Number: '.$pNumber. "\n".$comment,"From:info@aghasizadeh.com\nReply-To:".$email) ){
-						echo '<p class"sendok">Your massage has been sent. Please be patient for the answer. thank you!</p>';
-					}else{
-						echo '<p class"sendnok">Your massage has not been sent. Please fill the form again. thank you!</p>';
-					}
-				}
-			?>
-
 		</section>
 		<section class="info">
 			<div class="info-pic1"></div>
