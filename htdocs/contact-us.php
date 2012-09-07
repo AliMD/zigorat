@@ -7,23 +7,24 @@
 	</section>
 	<section class="right-col">
 		<section class="form-holder left">
-			<form action="" method="post">
+			<form action="sendmail.php" method="post" target='ifrm'>
 				<label class="label">your name : </label>
-				<input type="text" name="name" />
+				<input type="text" id="name" name="name" />
 				<br/>
 				<label class="label">email : </label>
-				<input type="text" name="email" />
+				<input type="text" id="email" name="email" />
 				<br/>
 				<label class="label">tel : </label>
-				<input type="text" name="pNumber" />
+				<input type="text" id="pNumber" name="pNumber" />
 				<br/>
 				<label class="label">subject : </label>
-				<input type="text" name="subject"  />
+				<input type="text" id="subject" name="subject"  />
 				<br/>
 				<label class="label ">comment : </label>
-				<textarea name="txt"></textarea>
+				<textarea name="txt" id="txt"></textarea>
 				<input type="submit" class="ok" name="submit" value="submit"/>
 			</form>
+			<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 		</section>
 		<section class="info">
 			<div class="info-pic1"></div>
