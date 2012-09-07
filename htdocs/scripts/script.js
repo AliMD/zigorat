@@ -64,49 +64,67 @@ pagejs = function(page){
 	}
 
 	if(page=='contact-us'){
-		window.onload = function(){
-			
-			var myform = document.forms.item(0);
-			
-			myform.onsubmit = function(){
-				
-				var ret = true;
-				
-				for(var i=0;i<myform.elements.length;i++){
-					if(myform.elements.item(i).className!='ok'){
-						ret = false;
-						break;
-					}
-				}
-				return ret;
-			}
-			
-			for (var i=0;i<myform.elements.length;i++){
-				
-				var inp = myform.elements.item(i);
-				
-				if (inp.type!='text' && inp.type!='textarea'){
-					continue;
-				}
-				
-				inp.onfocus = function(){
-					if (this.value == this.defaultValue){
-						this.value = '';
-					}
+		function validateText(str,len){
+			return str.length >= len;
+		}
+
+		function validateEmail(str){
+			var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
+		
+			return emailPattern.test(str);
+		}
+
+		$(function(){
+			$('.form-holder').submit(function(){
+				var target, err = false;
+		
+				target = $('#name');
+				if( validateText(target.val(),3) ){
+					target.removeClass('err').addClass('ok');
+				}else{
+					target.removeClass('ok').addClass('err');
+					err = true;
 				}
 		
-				inp.onblur = function(){
-					if (this.value!=''){
-						this.className='ok';
-					}else{
-						this.className='nok'
-					}
-					if (this.value == ''){
-						this.value = this.defaultValue;
-					}
-					
+				target = $('#subject');
+				if( validateText(target.val(),5) ){
+					target.removeClass('err').addClass('ok');
+				}else{
+					target.removeClass('ok').addClass('err');
+					err = true;
 				}
-			}
-		}
+		
+				target = $('#email');
+				if( validateEmail(target.val()) ){
+					target.removeClass('err').addClass('ok');
+				}else{
+					target.removeClass('ok').addClass('err');
+					err = true;
+				}
+		
+				target = $('#txt');
+				if( validateText(target.val(),10) ){
+					target.removeClass('err').addClass('ok');
+				}else{
+					target.removeClass('ok').addClass('err');
+					err = true;
+				}
+		
+				if(!err){
+					$('#ifrm').animate({
+						height:'75px'
+					},500);
+				}
+		
+				return !err;
+		
+			});
+		
+			$('#reset').click(function(){
+				$('#ifrm').animate({
+					height:'0px'
+				},200);
+			});
+		});
 	}
 };
