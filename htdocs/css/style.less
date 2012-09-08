@@ -764,6 +764,14 @@ section.form-holder form textarea {
 	-o-transition :border 400ms ease-in-out;
 	-ms-transition :border 400ms ease-in-out;
 }
+
+section.form-holder form div.check{
+	float: right;
+	background-image: url('images/ok.png');
+	background-size: 100% 100%;
+	width:15px;
+	height: 15px;
+}
 section.form-holder form input[type=text].nok {
 	background-color: #900;
 }
@@ -852,4 +860,24 @@ div.overFlowShowDiv{
 
 div.pic1-link{
 	background:url('images/pic1_link.png');
+}
+
+/* Animations
+-------------------------------------------------- */
+
+@-webkit-keyframes key1 {
+	
+	0% { 
+		margin-left:661px;
+	}
+	66%{
+		margin-left:10px;
+	}
+	90%{
+		
+	}
+	100%{
+		opacity:0;
+	}
+
 }
