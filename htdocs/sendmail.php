@@ -14,6 +14,7 @@
 
 		.err {
 			color:#BD5B3D;
+			text-align:center;
 		}
 	</style>
 </head>
