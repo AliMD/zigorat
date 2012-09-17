@@ -19,18 +19,14 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="banner">
-                        <div class="scroll">
-                            <div class="pic1-about"></div>
-                        </div>
-                    </div>
+					<div class="about-pic"></div>
                 </div>
                 
                <!-- ---------- What we do ------------ -->
                 
                 <div class="left-side">
                     <div class="about left">
-                        <h4 class="left">what we do?</h4>
+                        <h4 class="left">about us</h4>
                         <div class=" line" ></div>
                         <div class="desc left">
                             Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
@@ -38,18 +34,14 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="banner">
-                        <div class="scroll">
-                            <div class="pic1-about"></div>
-                        </div>
-                    </div>
+					<div class="job-pic"></div>
                 </div>
                 
                 <!-- ---------- who we are ------------ -->
                 
                 <div class="left-side">
                     <div class="about left">
-                        <h4 class="left">who we are?</h4>
+                        <h4 class="left">about us</h4>
                         <div class=" line" ></div>
                         <div class="desc left">
                             Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
@@ -57,18 +49,14 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="banner">
-                        <div class="scroll">
-                            <div class="pic1-about"></div>
-                        </div>
-                    </div>
+					<div class="who-pic"></div>
                 </div>
                 
                  <!-- ---------- our clinet ------------ -->
                 
                 <div class="left-side">
                     <div class="about left">
-                        <h4 class="left">Our Client?</h4>
+                        <h4 class="left">about us</h4>
                         <div class=" line" ></div>
                         <div class="desc left">
                             Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
@@ -76,12 +64,9 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="banner">
-                        <div class="scroll">
-                            <div class="pic1-about"></div>
-                        </div>
-                    </div>
+					<div class="clinet-pic"></div>
                 </div>
+
             </div>
             </div>
 			<div class="top-arrow">
