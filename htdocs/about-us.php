@@ -68,13 +68,10 @@
                 </div>
 
             </div>
+			<div class="top-arrow"></div>
+			<div class="bot-arrow"></div>
+
             </div>
-			<div class="top-arrow">
-				<a href="#"></a>
-			</div>
-			<div class="bot-arrow">
-				<a href="#"></a>
-			</div>
 		</div>
 	</section>
 </section>

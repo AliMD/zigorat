@@ -127,4 +127,8 @@ pagejs = function(page){
 			});
 		});
 	}
+	
+	if(page=='about-us'){
+		//slideshow code
+	}
 };
