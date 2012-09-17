@@ -854,9 +854,32 @@ div.overFlowShowDiv{
 	margin-top:60px;
 	width:740px;
 	height:420px;
-	overflow-y:scroll;
+	overflow:hidden;
+}
+
+div.right-side div.banner {
+	width :274px;
+	height :401px;
+	position :relative;
+	overflow :hidden;
+	margin-left :60px;
+	margin-top :50px;
+}
+div.banner div.scroll {
+	position :absolute;
+	left :0px;
+	top :0px;
+	width :274px;
+	height :2000px;
+}
+div.banner div.scroll > div {
+	background-repeat :no-repeat;
+	width :274px;
+	height :401px;
+	display :block;
 }
 
 div.pic1-link{
 	background:url('images/pic1_link.png');
 }
+
