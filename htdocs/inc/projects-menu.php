@@ -3,22 +3,22 @@
 			<div class="cols">
 				<div id="bg">
 					<div id="in">
-						<a class="office" href="#">office</a>
+						<a href="office-project.php">office</a>
 					</div>
 				</div>
 				<div id="bg">
 					<div id="in">
-						<a href="#">home</a>
+						<a href="home-project.php">home</a>
 					</div>
 				</div>
 				<div id="bg">
 					<div id="in">
-						<a href="#">exhibition</a>
+						<a href="exhibition-project.php">exhibition</a>
 					</div>
 				</div>
 				<div id="bg">
 					<div id="in">
-						<a href="#">shopping</a>
+						<a href="shopping-project.php">shopping</a>
 					</div>
 				</div>
 			</div>
