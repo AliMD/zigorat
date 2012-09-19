@@ -21,4 +21,6 @@
 		});
 	</script>
 </head>
+<div class="background"></div>
+<div class="lines"></div>
 <body>
