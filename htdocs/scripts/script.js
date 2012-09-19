@@ -128,7 +128,7 @@ pagejs = function(page){
 		});
 	}
 	
-	if(page=='about-us'){
-		//slideshow code
+	if(page!=='home'){
+		$('div.lines').css('opacity','0.2');
 	}
 };
