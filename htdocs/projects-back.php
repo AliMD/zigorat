@@ -4,32 +4,7 @@
 	<section class="left-col left">
 		<?php include "inc/menus.php"; ?>
 	</section>
-	<section class="right-col">
-		<div class="top_menu">
-			<div class="cols">
-				<div id="bg">
-					<div id="in">
-						<a class="office" href="#">OFFICE</a>
-					</div>
-				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">HOME</a>
-					</div>
-				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">exhibition</a>
-					</div>
-				</div>
-				<div id="bg">
-					<div id="in">
-						<a href="#">shopping</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
+<?php include "inc/projects-menu.php"; ?>
 		<div class="project_pics">
 			<div class="g1">
 				<div class="on_g ">
