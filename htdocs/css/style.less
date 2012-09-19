@@ -805,23 +805,18 @@ section.form-holder form textarea {
 	-o-transition :border 400ms ease-in-out;
 	-ms-transition :border 400ms ease-in-out;
 }
-
-section.form-holder form div.ok{
+section.form-holder form > div{
 	float: right;
-	background-image: url('images/ok.png');
 	background-size: 100% 100%;
 	width:15px;
 	height: 15px;
-	/*visibility: hidden;*/
+}
+section.form-holder form div.ok{
+	background-image: url('images/ok.png');
 }
 
 section.form-holder form div.nok{
-	float: right;
 	background-image: url('images/notok.png');
-	background-size: 100% 100%;
-	width:15px;
-	height: 15px;
-	/*visibility: hidden;*/
 }
 
 section.form-holder form input[type=text].nok {
