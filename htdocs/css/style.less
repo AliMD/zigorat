@@ -584,10 +584,19 @@ div.right-side div.bot-arrow:hover {
 }
 
 
-/* Project links
+/* FullScreen
 -------------------------------------------------- */
 
-section.container nav.slide-nav ul {
+section.fullscreen-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+}
+
+section.fullscreen-container nav.slide-nav ul {
 	position :absolute;
 	width :90px;
 	height :55px;
@@ -606,30 +615,33 @@ nav.slide-nav ul li a {
 	width :28px;
 	height :46px;
 }
-section.container div.slides {
-	width :900px;
-	height :720px;
-	position :relative;
+section.fullscreen-container div.slides {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 	overflow :hidden;
 }
 div.slides .train {
-	position :absolute;
-	left :0px;
-	top :0px;
-	width :3600px;
-	height :720px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 div.slides .train > div {
-	background-repeat :no-repeat;
-	background-position :left top;
-	float :left;
-	width :900px;
-	height :720px;
-	display :block;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 div.slides div.train > div.home1 {
 	background-image :url('images/gallery/home1.jpg');
@@ -656,6 +668,7 @@ div.slides div.back {
 	left :-218px;
 	top :292px;
 	background :url('images/back.png') right top no-repeat;
+	z-index: 3;
 }
 div.slides div.next {
 	width :269px;
@@ -664,6 +677,7 @@ div.slides div.next {
 	right :-217px;
 	top :289px;
 	background :url('images/next.png') left bottom no-repeat;
+	z-index: 3;
 }
 div.slides nav.descriptions {
 	width :400px;
@@ -882,4 +896,3 @@ div.banner div.scroll > div {
 div.pic1-link{
 	background:url('images/pic1_link.png');
 }
-
