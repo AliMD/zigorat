@@ -17,15 +17,53 @@ body {
 	background-color :#cccccc;
 }
 
-.container {
+div.lines{
+	background-image: url('images/lines.png');
 	width :900px;
 	height :720px;
-	background :url('images/bg_about.jpg') no-repeat;
 	position :fixed;
 	left :0;
 	right :0;
 	bottom :0;
 	top :0;
+	margin :auto;
+	z-index: -4;
+	border-radius :15px;
+	-webkit-border-radius :15px;
+	-moz-border-radius :15px;
+	-o-border-radius :15px;
+	-ms-border-radius :15px;
+	opacity:0.9;
+}
+
+div.background{
+	background-image: url('images/background.jpg');
+	width :900px;
+	height :720px;
+	position :fixed;
+	left :0;
+	right :0;
+	bottom :0;
+	top :0;
+	margin :auto;
+	z-index: -5;
+	border-radius :15px;
+	-webkit-border-radius :15px;
+	-moz-border-radius :15px;
+	-o-border-radius :15px;
+	-ms-border-radius :15px;
+
+}
+
+.container {
+	width :900px;
+	height :720px;
+	position :fixed;
+	left :0;
+	right :0;
+	bottom :0;
+	top :0;
+	z-index: -2;
 	margin :auto;
 	-webkit-box-shadow :0 3px 10px #000;
 	-moz-box-shadow :0 3px 10px #000;
@@ -107,9 +145,7 @@ nav ul li.active a {
 /* Home
 -------------------------------------------------- */
 
-section.home {
-	background :url('images/bg_home.jpg') no-repeat;
-}
+
 div.right-col div.pics_right {
 	width :760px;
 	height :720px;
@@ -215,9 +251,7 @@ div.about div.desc a:hover {
 /* Project
 -------------------------------------------------- */
 
-section.project {
-	background :url('images/bg_gallery.jpg') no-repeat;
-}
+
 div.top_menu {
 	width :400px;
 	height :100px;
@@ -486,9 +520,6 @@ div.rlt a.pic4 {
 /* About Us
 -------------------------------------------------- */
 
-section.about-us {
-	background :url('images/bg_about.jpg') no-repeat;
-}
 section.right-col div.right-inside {
 	margin-top :150px;
 	min-height :470px;
@@ -720,9 +751,6 @@ div.slides nav.descriptions li.counter {
 /* Contact us
 -------------------------------------------------- */
 
-section.contact {
-	background :url('images/bg_contact-us.jpg') no-repeat;
-}
 section.form-holder {
 	width :390px;
 	height :370px;
