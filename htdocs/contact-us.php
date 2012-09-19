@@ -9,19 +9,19 @@
 		<section class="form-holder left">
 			<form action="sendmail.php" method="post" target='ifrm'>
 				<label class="label">your name : </label>
-				<input type="text" id="name" name="name" /><div class="ok"></div>
+				<input type="text" id="name" name="name" /><div class="name"></div>
 				<br/>
 				<label class="label">email : </label>
-				<input type="text" id="email" name="email" /><div class="nok"></div>
+				<input type="text" id="email" name="email" /><div class="email"></div>
 				<br/>
 				<label class="label">tel : </label>
-				<input type="text" id="pNumber" name="pNumber" /><div class="ok"></div>
+				<input type="text" id="pNumber" name="pNumber" /><div class="pNumber"></div>
 				<br/>
 				<label class="label">subject : </label>
-				<input type="text" id="subject" name="subject"  /><div class="nok"></div>
+				<input type="text" id="subject" name="subject"  /><div class="subject"></div>
 				<br/>
 				<label class="label ">comment : </label>
-				<textarea name="txt" id="txt"></textarea><div class="ok"></div>
+				<textarea name="txt" id="txt"></textarea><div class="txt"></div>
 				<input type="submit" class="ok" name="submit" value="submit"/>
 			</form>
 			<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>

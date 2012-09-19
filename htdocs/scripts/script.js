@@ -81,32 +81,40 @@ pagejs = function(page){
 				target = $('#name');
 				if( validateText(target.val(),3) ){
 					target.removeClass('err').addClass('ok');
+					$('div.name').removeClass('nok').addClass('ok');
 				}else{
 					target.removeClass('ok').addClass('err');
+					$('div.name').removeClass('ok').addClass('nok');
 					err = true;
 				}
 		
 				target = $('#subject');
 				if( validateText(target.val(),5) ){
 					target.removeClass('err').addClass('ok');
+					$('div.subject').removeClass('nok').addClass('ok');
 				}else{
 					target.removeClass('ok').addClass('err');
+					$('div.subject').removeClass('ok').addClass('nok');
 					err = true;
 				}
 		
 				target = $('#email');
 				if( validateEmail(target.val()) ){
 					target.removeClass('err').addClass('ok');
+					$('div.email').removeClass('nok').addClass('ok');
 				}else{
 					target.removeClass('ok').addClass('err');
+					$('div.email').removeClass('ok').addClass('nok');
 					err = true;
 				}
 		
 				target = $('#txt');
 				if( validateText(target.val(),10) ){
 					target.removeClass('err').addClass('ok');
+					$('div.txt').removeClass('nok').addClass('ok');
 				}else{
 					target.removeClass('ok').addClass('err');
+					$('div.txt').removeClass('ok').addClass('nok');
 					err = true;
 				}
 		
