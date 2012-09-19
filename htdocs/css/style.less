@@ -52,7 +52,6 @@ div.background{
 	-moz-border-radius :15px;
 	-o-border-radius :15px;
 	-ms-border-radius :15px;
-
 }
 
 .container {
@@ -807,14 +806,24 @@ section.form-holder form textarea {
 	-ms-transition :border 400ms ease-in-out;
 }
 
-section.form-holder form div.check{
+section.form-holder form div.ok{
 	float: right;
 	background-image: url('images/ok.png');
 	background-size: 100% 100%;
 	width:15px;
 	height: 15px;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
+
+section.form-holder form div.nok{
+	float: right;
+	background-image: url('images/notok.png');
+	background-size: 100% 100%;
+	width:15px;
+	height: 15px;
+	/*visibility: hidden;*/
+}
+
 section.form-holder form input[type=text].nok {
 	background-color: #900;
 }
