@@ -93,6 +93,18 @@ pagejs = function(page){
 		})
 	}
 
+	else if(page == 'projects-shopping') {
+		imageMapLink('#prdShopping', './projects-shopping');
+		imageMapLink('#prdExhibition', './projects-exhibition')
+		imageMapLink('#prdHome', './projects-home')
+		imageMapLink('#prdOffice', './projects-office')
+		tmp = [];
+		$('#transparentImg').click(function (event) {
+			tmp=tmp.concat([event.offsetX,event.offsetY])
+			console.log(tmp);
+		})
+	}
+
 	else if(page=='contact-us'){
 		function validateText(str,len){
 			return str.length >= len;
