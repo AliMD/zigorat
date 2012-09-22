@@ -4,8 +4,10 @@
 	<div id="prdHome">Product Home</div>
 	<map name="mapPrdMenu" id="mapPrdMenu">
 		<area id='prdHomeMap' shape="poly" coords="364, 10, 124, 148, 124, 280, 368, 138" href="#" alt="" title="" />
+		<area id='prdHomeMap' shape="poly" coords="315, 187, 72, 325, 73, 460, 316, 320" href="#" alt="" title="" />
+		<area id='prdHomeMap' shape="poly" coords="276, 363, 32, 505, 34, 639, 276, 497" href="#" alt="" title="" />
+		<area id='prdHomeMap' shape="poly" coords="412, 433, 172, 573, 170, 709, 414, 565" href="#" alt="" title="" />
 	</map>
-
 	<section class="logo"></section>
 	<section class="left-col left">
 		<?php include "inc/menus.php"; ?>
