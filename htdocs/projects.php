@@ -1,6 +1,6 @@
 <?php include 'inc/header.php'; ?>
 <section class="container">
-	<img id="transparentImg" src="images/img-map.gif" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" /><!--b64 wont work here!!! (R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==)-->
+	<img id="transparentImg" src="data:images/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" /><!--b64 wont work here!!! ()-->
 	<map name="mapPrdMenu" id="mapPrdMenu">
 		<area id='prdShoppingMap' shape="poly" coords="364, 10, 124, 148, 124, 280, 368, 138" href="#" alt="" title="" />
 		<area id='prdExhibitionMap' shape="poly" coords="315, 187, 72, 325, 73, 460, 316, 320" href="#" alt="" title="" />
