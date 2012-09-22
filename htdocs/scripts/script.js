@@ -51,6 +51,8 @@ pagejs = function(page){
 
 	pageAni[page] && $.tween(pageAni[page]['load'])
 
+	$(page).addClass('active');
+
 	if(page=='home'){
 		// pages logo icons
 		var delay=1;

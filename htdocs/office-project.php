@@ -10,7 +10,7 @@
 				<div class="on_g ">
 					<div class="bgg-img1"></div>
 					<div id="ong"></div>
-					<a id="g1">Project name</a>
+					<a id="g1">shopping project</a>
 					<a id="g11">
 						01
 						<br />
