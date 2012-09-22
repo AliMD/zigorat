@@ -47,9 +47,19 @@ $.tween = function(tweenJson){
 	});
 }
 
+imageMapLink = function(target, href){
+	$(target+'Map').mouseover(function(){
+		$(target).addClass('hover');
+	}).mouseout(function(){
+		$(target).removeClass('hover');
+	}).click(function(){
+		window.location.href=href;
+	})
+}
+
 pagejs = function(page){
 
-	pageAni[page] && $.tween(pageAni[page]['load'])
+	//pageAni[page] && $.tween(pageAni[page]['load'])
 
 	$(page).addClass('active');
 
@@ -65,7 +75,16 @@ pagejs = function(page){
 		});
 	}
 
-	if(page=='contact-us'){
+	else if(page == 'projects') {
+		//imageMapLink('#prdHome', './projects-home');
+		tmp = [];
+		$('#transparentImg').click(function (event) {
+			tmp=tmp.concat([event.offsetX,event.offsetY])
+			console.log(tmp);
+		})
+	}
+
+	else if(page=='contact-us'){
 		function validateText(str,len){
 			return str.length >= len;
 		}
@@ -139,6 +158,6 @@ pagejs = function(page){
 	}
 	
 	if(page!=='home'){
-		$('div.lines').css('opacity','0.2');
+		$('div.lines').css('opacity','0.2'); // move to css
 	}
 };

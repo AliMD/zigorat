@@ -1,10 +1,10 @@
 <?php include 'inc/header.php'; ?>
 <section class="container">
-	<img id="imagemap" src="images/img-map.gif" alt="transparent" width="385" height="718"  title="" /><!--b64 wont work here!!!-->
-			<map name="Map">
-			<div id="prdHome">Product Home</div>
-			<area id='prdHomeMap' shape="poly" coords="509,300,502,165,262,301,258,440" href="#" alt=""  title="" />
-		</map>
+	<img id="transparentImg" src="images/img-map.gif" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" /><!--b64 wont work here!!! (R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==)-->
+	<div id="prdHome">Product Home</div>
+	<map name="mapPrdMenu" id="mapPrdMenu">
+		<area id='prdHomeMap' shape="poly" coords="364, 10, 124, 148, 124, 280, 368, 138" href="#" alt="" title="" />
+	</map>
 
 	<section class="logo"></section>
 	<section class="left-col left">
