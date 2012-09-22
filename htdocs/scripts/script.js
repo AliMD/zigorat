@@ -82,7 +82,10 @@ pagejs = function(page){
 	}
 
 	else if(page == 'projects') {
-		//imageMapLink('#prdHome', './projects-home');
+		imageMapLink('#prdShopping', './projects-shopping');
+		imageMapLink('#prdExhibition', './projects-exhibition')
+		imageMapLink('#prdHome', './projects-home')
+		imageMapLink('#prdOffice', './projects-office')
 		tmp = [];
 		$('#transparentImg').click(function (event) {
 			tmp=tmp.concat([event.offsetX,event.offsetY])
