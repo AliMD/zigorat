@@ -8,22 +8,22 @@
 			<area id='prdOfficeMap' shape="poly" coords="89, 102, 4, 151, 4, 193, 91, 142" href="#" alt="" title="" />
 		</map>
 			<div class="cols">
-				<div id="bg">
+				<div id="prdOffice">
 					<div id="in">
 						<a href="office-project.php">office</a>
 					</div>
 				</div>
-				<div id="bg">
+				<div id="prdHome">
 					<div id="in">
 						<a href="home-project.php">home</a>
 					</div>
 				</div>
-				<div id="bg">
+				<div id="prdExhibition">
 					<div id="in">
 						<a href="exhibition-project.php">exhibition</a>
 					</div>
 				</div>
-				<div id="bg">
+				<div id="prdShopping">
 					<div id="in">
 						<a href="shopping-project.php">shopping</a>
 					</div>

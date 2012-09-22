@@ -269,17 +269,17 @@ div.top_menu div.cols {
 	height :100px;
 	margin :0 auto;
 }
-div.top_menu div.cols div#bg {
+div.top_menu div.cols > div {
 	width :90px;
 	height :95px;
 	float :left;
 	background :url("images/top_project1.png") no-repeat;
 	padding :0px 7px 0px 0px;
 }
-div.top_menu div.cols div#bg div#in {
+div.top_menu div.cols > div div#in {
 	margin :40px 0px 40px 0px;
 }
-div.top_menu div.cols div#bg div#in a {
+div.top_menu div.cols > div div#in a {
 	text-decoration :none;
 	font-family :'myriadprocondregular';
 	font-size :14px;
@@ -287,10 +287,10 @@ div.top_menu div.cols div#bg div#in a {
 	text-transform :uppercase;
 	margin :0px 7px 0px 0px;
 }
-div.top_menu div.cols div#bg:hover {
+/*div.top_menu div.cols div#bg:hover {
 	cursor :pointer;
 	background :url("images/top_project2.png") no-repeat;
-}
+}*/
 div.g1,
 div.g2,
 div.g3 {
@@ -939,7 +939,7 @@ div.pic1-link{
 	background:url('images/pic1_link.png');
 }
 
-#prdShopping{
+body.projects #prdShopping{
 	opacity: 1;
 	transition: opacity 800ms ease-in-out;
 	-webkit-transition: opacity 800ms ease-in-out;
@@ -947,7 +947,7 @@ div.pic1-link{
 	-o-transition: opacity 800ms ease-in-out;
 	-ms-transition: opacity 800ms ease-in-out;
 }
-#prdShopping.hover-mode.hover{
+body.projects #prdShopping.hover-mode.hover{
 	opacity: 0;
 	transition: opacity 1000ms ease-in-out;
 	-webkit-transition: opacity 1000ms ease-in-out;
@@ -956,7 +956,7 @@ div.pic1-link{
 	-ms-transition: opacity 1000ms ease-in-out;
 }
 
-#prdHome{
+body.projects #prdHome{
 	opacity: 1;
 	transition: opacity 800ms ease-in-out;
 	-webkit-transition: opacity 800ms ease-in-out;
@@ -964,7 +964,7 @@ div.pic1-link{
 	-o-transition: opacity 800ms ease-in-out;
 	-ms-transition: opacity 800ms ease-in-out;
 }
-#prdHome.hover-mode.hover{
+body.projects #prdHome.hover-mode.hover{
 	opacity: 0;
 	transition: opacity 1000ms ease-in-out;
 	-webkit-transition: opacity 1000ms ease-in-out;
@@ -973,7 +973,7 @@ div.pic1-link{
 	-ms-transition: opacity 1000ms ease-in-out;
 }
 
-#prdOffice{
+body.projects #prdOffice{
 	opacity: 1;
 	transition: opacity 800ms ease-in-out;
 	-webkit-transition: opacity 800ms ease-in-out;
@@ -981,7 +981,7 @@ div.pic1-link{
 	-o-transition: opacity 800ms ease-in-out;
 	-ms-transition: opacity 800ms ease-in-out;
 }
-#prdOffice.hover-mode.hover{
+body.projects #prdOffice.hover-mode.hover{
 	opacity: 0;
 	transition: opacity 1000ms ease-in-out;
 	-webkit-transition: opacity 1000ms ease-in-out;
@@ -990,7 +990,7 @@ div.pic1-link{
 	-ms-transition: opacity 1000ms ease-in-out;
 }
 
-#prdExhibition{
+body.projects #prdExhibition{
 	opacity: 1;
 	transition: opacity 800ms ease-in-out;
 	-webkit-transition: opacity 800ms ease-in-out;
@@ -998,7 +998,7 @@ div.pic1-link{
 	-o-transition: opacity 800ms ease-in-out;
 	-ms-transition: opacity 800ms ease-in-out;
 }
-#prdExhibition.hover-mode.hover{
+body.projects #prdExhibition.hover-mode.hover{
 	opacity: 0;
 	transition: opacity 1000ms ease-in-out;
 	-webkit-transition: opacity 1000ms ease-in-out;
@@ -1012,4 +1012,20 @@ div.top_menu #transparentImg{
 	z-index: 0;
 	right: 0;
 	top: 0;
+}
+
+#prdOffice.hover{
+	background :url("images/top_project2.png") no-repeat;
+}
+
+#prdHome.hover{
+	background :url("images/top_project2.png") no-repeat;
+}
+
+#prdShopping.hover{
+	background :url("images/top_project2.png") no-repeat;
+}
+
+#prdExhibition.hover{
+	background :url("images/top_project2.png") no-repeat;
 }
