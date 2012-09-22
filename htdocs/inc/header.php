@@ -23,4 +23,4 @@
 </head>
 <div class="background"></div>
 <div class="lines"></div>
-<body>
+<body class="<?php echo $page; ?>">
