@@ -459,7 +459,7 @@ div.rlt div.bg-img3 {
 div.rlt div.bg-img4 {
 	background-image: url('images/pic4.png');
 }
-div.rlt div.fg-img {
+div.hover-mode div.fg-img {
 	position: absolute;
 	top: 26px;
 	right: 20px;
@@ -497,7 +497,7 @@ section.prd-hover div.prd4-hover {
 	top: 500px;
 	right: 90px;
 }
-div.rlt a {
+div.hover-mode a {
 	display: block;
 	font-family: 'MyriadProCondRegular';
 	letter-spacing: -1px;
@@ -509,16 +509,16 @@ div.rlt a {
 	top: 116px;
 	font-size: 25px;
 }
-div.rlt a.pic1 {
+div.hover-mode a.pic1 {
 	left: 140px;
 }
-div.rlt a.pic2 {
+div.hover-mode a.pic2 {
 	left: 135px;
 }
-div.rlt a.pic3 {
+div.hover-mode a.pic3 {
 	left: 155px;
 }
-div.rlt a.pic4 {
+div.hover-mode a.pic4 {
 	left: 155px;
 }
 
@@ -939,10 +939,70 @@ div.pic1-link{
 	background:url('images/pic1_link.png');
 }
 
-#prdHome{
-	color: blue;
+#prdShopping{
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+	-webkit-transition: opacity 800ms ease-in-out;
+	-moz-transition: opacity 800ms ease-in-out;
+	-o-transition: opacity 800ms ease-in-out;
+	-ms-transition: opacity 800ms ease-in-out;
+}
+#prdShopping.hover-mode.hover{
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	-webkit-transition: opacity 1000ms ease-in-out;
+	-moz-transition: opacity 1000ms ease-in-out;
+	-o-transition: opacity 1000ms ease-in-out;
+	-ms-transition: opacity 1000ms ease-in-out;
 }
 
-#prdHome.hover{
-	color: red;
+#prdHome{
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+	-webkit-transition: opacity 800ms ease-in-out;
+	-moz-transition: opacity 800ms ease-in-out;
+	-o-transition: opacity 800ms ease-in-out;
+	-ms-transition: opacity 800ms ease-in-out;
+}
+#prdHome.hover-mode.hover{
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	-webkit-transition: opacity 1000ms ease-in-out;
+	-moz-transition: opacity 1000ms ease-in-out;
+	-o-transition: opacity 1000ms ease-in-out;
+	-ms-transition: opacity 1000ms ease-in-out;
+}
+
+#prdOffice{
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+	-webkit-transition: opacity 800ms ease-in-out;
+	-moz-transition: opacity 800ms ease-in-out;
+	-o-transition: opacity 800ms ease-in-out;
+	-ms-transition: opacity 800ms ease-in-out;
+}
+#prdOffice.hover-mode.hover{
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	-webkit-transition: opacity 1000ms ease-in-out;
+	-moz-transition: opacity 1000ms ease-in-out;
+	-o-transition: opacity 1000ms ease-in-out;
+	-ms-transition: opacity 1000ms ease-in-out;
+}
+
+#prdExhibition{
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+	-webkit-transition: opacity 800ms ease-in-out;
+	-moz-transition: opacity 800ms ease-in-out;
+	-o-transition: opacity 800ms ease-in-out;
+	-ms-transition: opacity 800ms ease-in-out;
+}
+#prdExhibition.hover-mode.hover{
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	-webkit-transition: opacity 1000ms ease-in-out;
+	-moz-transition: opacity 1000ms ease-in-out;
+	-o-transition: opacity 1000ms ease-in-out;
+	-ms-transition: opacity 1000ms ease-in-out;
 }
