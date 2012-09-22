@@ -9,28 +9,26 @@ configs = {
 }
 
 pageAni = {
-	home : {
+	test : {
 		load : {
 			ani1 : {
 				delay : 1000,
-				target : 'body',
-				class : 'ani1',
-				keyframe : 'key1',
+				target : '.box1',
+				keyframe : 'key3',
 				due : 1000,
 				ease : 'ease-out'
 			},
 			ani2 : {
 				delay : 2000,
-				target : 'body',
-				keyframe : 'key2',
-				due : 1500
+				target : '.box2',
+				keyframe : 'key3',
+				due : 1000
 			},
 			ani3 : {
 				delay : 3000,
-				target : 'body',
-				class : 'ani3',
+				target : '.box3',
 				keyframe : 'key3',
-				due : 2300,
+				due : 2000,
 				ease : 'ease-in-out'
 			}
 		}
@@ -39,10 +37,18 @@ pageAni = {
 
 $.tween = function(tweenJson){
 	$.each(tweenJson,function(i,tweeen){
-		tweeen.id = setTimeout(function(){
+		var prfx = '-webkit-', cssAni = {};
+		if(tweeen.due && tweeen.keyframe){
+			cssAni[prfx+"animation-name"] = tweeen.keyframe;
+			cssAni[prfx+"animation-duration"] = tweeen.due+'ms';
+			cssAni[prfx+"animation-timing-function"] = tweeen.ease || 'linear';
+			cssAni[prfx+"animation-play-state"] = "paused";
+			$(tweeen.target).css(cssAni);
+		}
+		tweeen.id = setTimeout(function() {
 			var target = $(tweeen.target);
 			tweeen.class && target.addClass(tweeen.class);
-			(tweeen.due && tweeen.keyframe) && target.animate(tweeen.keyframe,tweeen.due,tweeen.ease)
+			cssAni = {}; cssAni[prfx+"animation-play-state"] = "running"; target.css(cssAni);
 		},tweeen.delay);
 	});
 }
@@ -59,7 +65,7 @@ imageMapLink = function(target, href){
 
 pagejs = function(page){
 
-	//pageAni[page] && $.tween(pageAni[page]['load'])
+	pageAni[page] && $.tween(pageAni[page]['load'])
 
 	$(page).addClass('active');
 
