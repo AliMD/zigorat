@@ -1,4 +1,4 @@
-<section class="links">
+<section class="icon-links">
 	<ul>
 		<li class="icon" style="top:0">
 			<a href="#" >

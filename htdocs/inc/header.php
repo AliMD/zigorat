@@ -21,4 +21,6 @@
 		});
 	</script>
 </head>
-<body>
+<div class="background"></div>
+<div class="lines"></div>
+<body class="<?php echo $page; ?>">
