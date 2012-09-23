@@ -102,10 +102,6 @@ pagejs = function(page){
 		imageMapLink('#Gallery01', './Gallery01')
 		imageMapLink('#Gallery02', './Gallery02')
 		tmp = [];
-		$('#transparentImg0').click(function (event) {
-			tmp=tmp.concat([event.offsetX,event.offsetY])
-			console.log(tmp);
-		})
 	}
 
 	else if(page == 'projects-office') {
