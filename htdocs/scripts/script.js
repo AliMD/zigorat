@@ -79,6 +79,13 @@ pagejs = function(page){
 				$(that).animate({'left':'0px'},configs.icons.due);
 			},delay);
 		});
+
+		imageMapLink('#lastProject', './last-project')
+		tmp = [];
+		$('#transparentImgLast').click(function (event) {
+			tmp=tmp.concat([event.offsetX,event.offsetY])
+			console.log(tmp);
+		})
 	}
 
 	else if(page == 'projects') {

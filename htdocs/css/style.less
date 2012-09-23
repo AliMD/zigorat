@@ -165,6 +165,11 @@ div.pics_right section.newhome {
 section.newhome div.content {
 	width :553px;
 	height :505px;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
 }
 div.content div.bigpic {
 	width :553px;
@@ -985,4 +990,20 @@ div.project_pics #transparentGalleryImg{
 	-moz-transition: opacity 600ms ease-in-out;
 	-o-transition: opacity 600ms ease-in-out;
 	-ms-transition: opacity 600ms ease-in-out;
+}
+
+#transparentImgLast{
+	position: absolute;
+	z-index: 10;
+	right: 80px;
+	top: 200px;
+}
+
+div.content.hover{
+	opacity: .85;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
 }
