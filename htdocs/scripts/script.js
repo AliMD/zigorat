@@ -9,26 +9,26 @@ configs = {
 }
 
 pageAni = {
-	test : {
+	home : {
 		load : {
 			ani1 : {
-				delay : 1000,
-				target : '.box1',
-				keyframe : 'key3',
-				due : 1000,
-				ease : 'ease-out'
+				delay : 100,
+				target : '.bigpic',
+				keyframe : 'key1',
+				due : 800,
+				ease : 'ease-in'
 			},
 			ani2 : {
-				delay : 2000,
-				target : '.box2',
-				keyframe : 'key3',
-				due : 1000
+				delay : 800,
+				target : '.small_pic',
+				keyframe : 'key1',
+				due : 800
 			},
 			ani3 : {
-				delay : 3000,
-				target : '.box3',
-				keyframe : 'key3',
-				due : 2000,
+				delay : 1200,
+				target : 'div.passage div.content',
+				keyframe : 'key2',
+				due : 1500,
 				ease : 'ease-in-out'
 			}
 		}

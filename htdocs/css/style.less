@@ -192,10 +192,12 @@ div#desc div.passage {
 	height :150px;
 	font-family :'myriadprocondregular';
 	padding :110px 0px 0px 300px;
+	overflow: hidden;
 }
 div.passage div.content {
 	width :100px;
 	height :150px;
+	margin-left: -2px;
 }
 div.passage div.content p#title {
 	color :white;
@@ -1006,4 +1008,26 @@ div.content.hover{
 	-moz-transition: opacity 300ms;
 	-o-transition: opacity 300ms;
 	-ms-transition: opacity 300ms;
+}
+
+@-webkit-keyframes key1 {
+	
+	0% { 
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes key2 {
+	
+	0% { 
+		margin-left: 95px;
+	}
+	100%{
+		margin-left: -2px;
+	}
+
 }
