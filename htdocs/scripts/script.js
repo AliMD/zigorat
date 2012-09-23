@@ -101,7 +101,6 @@ pagejs = function(page){
 		imageMapLink('#Gallery0', './Gallery0');
 		imageMapLink('#Gallery01', './Gallery01')
 		imageMapLink('#Gallery02', './Gallery02')
-		tmp = [];
 	}
 
 	else if(page == 'projects-office') {
@@ -109,6 +108,9 @@ pagejs = function(page){
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
 		imageMapLink('#prdOffice', './projects-office')
+		imageMapLink('#Gallery0', './Gallery0');
+		imageMapLink('#Gallery01', './Gallery01')
+		imageMapLink('#Gallery02', './Gallery02')
 	}
 
 	else if(page == 'projects-home') {
@@ -116,6 +118,9 @@ pagejs = function(page){
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
 		imageMapLink('#prdOffice', './projects-office')
+		imageMapLink('#Gallery0', './Gallery0');
+		imageMapLink('#Gallery01', './Gallery01')
+		imageMapLink('#Gallery02', './Gallery02')
 	}
 
 	else if(page == 'projects-exhibition') {
@@ -123,6 +128,9 @@ pagejs = function(page){
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
 		imageMapLink('#prdOffice', './projects-office')
+		imageMapLink('#Gallery0', './Gallery0');
+		imageMapLink('#Gallery01', './Gallery01')
+		imageMapLink('#Gallery02', './Gallery02')
 	}
 
 	else if(page=='contact-us'){
