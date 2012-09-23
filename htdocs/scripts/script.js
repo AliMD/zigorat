@@ -98,6 +98,14 @@ pagejs = function(page){
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
 		imageMapLink('#prdOffice', './projects-office')
+		imageMapLink('#Gallery0', './Gallery0');
+		imageMapLink('#Gallery01', './Gallery01')
+		imageMapLink('#Gallery02', './Gallery02')
+		tmp = [];
+		$('#transparentImg0').click(function (event) {
+			tmp=tmp.concat([event.offsetX,event.offsetY])
+			console.log(tmp);
+		})
 	}
 
 	else if(page == 'projects-office') {
