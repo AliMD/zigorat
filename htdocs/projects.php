@@ -16,8 +16,8 @@
 			<section class="product-menu">
 				<div class="prd1">
 					<div class="rlt">
-						<div class="bg-img1"></div>
 						<div id="prdShopping" class="hover-mode">
+							<div class="bg-img1 backimg"></div>
 							<div class="fg-img"></div>
 							<a class="pic1">shopping</a>
 						</div>
@@ -25,8 +25,8 @@
 				</div>
 				<div class="prd2">
 					<div class="rlt">
-						<div class="bg-img2"></div>
 						<div id="prdExhibition" class="hover-mode">
+							<div class="bg-img2 backimg"></div>
 							<div class="fg-img"></div>
 							<a class="pic2">exhibition</a>
 						</div>
@@ -34,8 +34,8 @@
 				</div>
 			<div class="prd3">
 					<div class="rlt">
-						<div class="bg-img3"></div>
 						<div id="prdHome" class="hover-mode">
+							<div class="bg-img3 backimg"></div>
 							<div class="fg-img"></div>
 							<a class="pic3">home</a>
 						</div>
@@ -43,8 +43,8 @@
 				</div>
 				<div class="prd4">
 					<div class="rlt">
-						<div class="bg-img4"></div>
 						<div id="prdOffice" class="hover-mode">
+							<div class="bg-img4 backimg"></div>
 							<div class="fg-img"></div>
 							<a class="pic4">office</a>
 						</div>

@@ -951,22 +951,40 @@ div.pic1-link{
 	background:url('images/pic1_link.png');
 }
 
-body.projects #prdHome.hover-mode.hover,#prdShopping.hover-mode.hover,#prdOffice.hover-mode.hover,#prdExhibition.hover-mode.hover{
-	opacity: 0;
-	transition: opacity 1000ms ease-in-out;
-	-webkit-transition: opacity 1000ms ease-in-out;
-	-moz-transition: opacity 1000ms ease-in-out;
-	-o-transition: opacity 1000ms ease-in-out;
-	-ms-transition: opacity 1000ms ease-in-out;
+body.projects .hover-mode *{
+	transition: opacity 800ms ease-out;
+	-webkit-transition: opacity 800ms ease-out;
+	-moz-transition: opacity 800ms ease-out;
+	-o-transition: opacity 800ms ease-out;
+	-ms-transition: opacity 800ms ease-out;
 }
 
-body.projects #prdOffice,#prdExhibition,#prdHome,#prdShopping{
-	opacity: 1;
-	transition: opacity 800ms ease-in-out;
-	-webkit-transition: opacity 800ms ease-in-out;
-	-moz-transition: opacity 800ms ease-in-out;
-	-o-transition: opacity 800ms ease-in-out;
-	-ms-transition: opacity 800ms ease-in-out;
+body.projects .hover-mode.hover *{
+	transition: opacity 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	-o-transition: opacity 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out;
+}
+
+body.projects .hover-mode .backimg {
+	opacity: 0.6;
+}
+body.projects .hover-mode.hover .backimg {
+	opacity: 0.97;
+}
+
+body.projects .hover-mode .fg-img {
+	opacity: 0.9;
+}
+body.projects .hover-mode.hover .fg-img {
+	opacity: 0.03;
+}
+body.projects .hover-mode a {
+	opacity: 0.95;
+}
+body.projects .hover-mode.hover a {
+	opacity: 0;
 }
 
 div.top_menu #transparentImg{
