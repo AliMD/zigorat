@@ -44,6 +44,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)\.(css|less)$ css/$1.$2 [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
 
 # Set files cache on client

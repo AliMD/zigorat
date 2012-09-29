@@ -1,6 +1,6 @@
 <?php include 'inc/header.php'; ?>
 <body>
-<section class="container">
+<section class="fullscreen-container">
 	<nav class="slide-nav">
 		<ul>
 			<li>

@@ -18,9 +18,20 @@
 		</div>
 		<div class="noise"></div>
 		<section class="backimg">
-			<script type="text/javascript">
-				for(var i=1;i<7;i++) document.write('<div style="background-image :url(images/gallery/home'+i+'.jpg);"></div>');
-			</script>
+			<?php
+				$images_path = './under-construction/images/gallery';
+
+				$images = scandir($images_path);
+				$slidesLen = 0;
+				foreach($images as $img){
+					$img_arr = explode('.', $img);
+					$img_type = strtolower( end($img_arr) );
+					if ($img_type=='jpg') {
+						echo "<div style=\"background-image:url('$images_path/$img');\"></div>";
+						$slidesLen++;
+					}
+				}
+			?>
 		</section>
 	</section>
 	<footer>

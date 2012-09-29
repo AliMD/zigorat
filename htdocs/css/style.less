@@ -17,15 +17,59 @@ body {
 	background-color :#cccccc;
 }
 
-.container {
+div.lines{
+	background-image: url('images/lines.png');
 	width :900px;
 	height :720px;
-	background :url('images/bg_about.jpg') no-repeat;
 	position :fixed;
 	left :0;
 	right :0;
 	bottom :0;
 	top :0;
+	margin :auto;
+	z-index: -4;
+	border-radius :15px;
+	-webkit-border-radius :15px;
+	-moz-border-radius :15px;
+	-o-border-radius :15px;
+	-ms-border-radius :15px;
+	opacity:0.9;
+}
+
+div.background{
+	background-image: url('images/background.jpg');
+	width :900px;
+	height :720px;
+	position :fixed;
+	left :0;
+	right :0;
+	bottom :0;
+	top :0;
+	margin :auto;
+	z-index: -5;
+	border-radius :15px;
+	-webkit-border-radius :15px;
+	-moz-border-radius :15px;
+	-o-border-radius :15px;
+	-ms-border-radius :15px;
+}
+
+body.projects #transparentImg {
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	top: 0;
+}
+
+.container {
+	width :900px;
+	height :720px;
+	position :fixed;
+	left :0;
+	right :0;
+	bottom :0;
+	top :0;
+	z-index: -2;
 	margin :auto;
 	-webkit-box-shadow :0 3px 10px #000;
 	-moz-box-shadow :0 3px 10px #000;
@@ -107,9 +151,7 @@ nav ul li.active a {
 /* Home
 -------------------------------------------------- */
 
-section.home {
-	background :url('images/bg_home.jpg') no-repeat;
-}
+
 div.right-col div.pics_right {
 	width :760px;
 	height :720px;
@@ -123,6 +165,11 @@ div.pics_right section.newhome {
 section.newhome div.content {
 	width :553px;
 	height :505px;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
 }
 div.content div.bigpic {
 	width :553px;
@@ -145,10 +192,12 @@ div#desc div.passage {
 	height :150px;
 	font-family :'myriadprocondregular';
 	padding :110px 0px 0px 300px;
+	overflow: hidden;
 }
 div.passage div.content {
 	width :100px;
 	height :150px;
+	margin-left: -2px;
 }
 div.passage div.content p#title {
 	color :white;
@@ -168,7 +217,7 @@ div#desc div.passage div.content p#more {
 /* icons links
 -------------------------------------------------- */
 
-.links {
+.icon-links {
 	position :absolute;
 	left :141px;
 	top :520px;
@@ -176,16 +225,16 @@ div#desc div.passage div.content p#more {
 	width :80px;
 	min-height :190px;
 }
-.links ul {
+.icon-links ul {
 	list-style-type :none;
 	top :0px;
 }
-.links ul li {
+.icon-links ul li {
 	margin :0px auto;
 	position :absolute;
 	left :-64px;
 }
-.links ul li a {
+.icon-links ul li a {
 	display :block;
 	text-decoration :none;
 	padding :3px 0px;
@@ -215,9 +264,7 @@ div.about div.desc a:hover {
 /* Project
 -------------------------------------------------- */
 
-section.project {
-	background :url('images/bg_gallery.jpg') no-repeat;
-}
+
 div.top_menu {
 	width :400px;
 	height :100px;
@@ -229,17 +276,17 @@ div.top_menu div.cols {
 	height :100px;
 	margin :0 auto;
 }
-div.top_menu div.cols div#bg {
+div.top_menu div.cols > div {
 	width :90px;
 	height :95px;
 	float :left;
 	background :url("images/top_project1.png") no-repeat;
 	padding :0px 7px 0px 0px;
 }
-div.top_menu div.cols div#bg div#in {
+div.top_menu div.cols > div div#in {
 	margin :40px 0px 40px 0px;
 }
-div.top_menu div.cols div#bg div#in a {
+div.top_menu div.cols > div div#in a {
 	text-decoration :none;
 	font-family :'myriadprocondregular';
 	font-size :14px;
@@ -247,10 +294,10 @@ div.top_menu div.cols div#bg div#in a {
 	text-transform :uppercase;
 	margin :0px 7px 0px 0px;
 }
-div.top_menu div.cols div#bg:hover {
+/*div.top_menu div.cols div#bg:hover {
 	cursor :pointer;
 	background :url("images/top_project2.png") no-repeat;
-}
+}*/
 div.g1,
 div.g2,
 div.g3 {
@@ -289,13 +336,18 @@ div.on_g {
 	width :245px;
 	height :351px;
 }
-div.on_g div#ong {
+div.on_g div#Gallery0,div#Gallery01,div#Gallery02 {
 	width :258px;
 	height :351px;
 	background :url("images/2box.png") no-repeat;
 	position :absolute;
 	top :0px;
 	left :0px;
+	transition: opacity 600ms ease-in-out;
+	-webkit-transition: opacity 600ms ease-in-out;
+	-moz-transition: opacity 600ms ease-in-out;
+	-o-transition: opacity 600ms ease-in-out;
+	-ms-transition: opacity 600ms ease-in-out;
 }
 div.on_g a {
 	display :block;
@@ -419,7 +471,7 @@ div.rlt div.bg-img3 {
 div.rlt div.bg-img4 {
 	background-image: url('images/pic4.png');
 }
-div.rlt div.fg-img {
+div.hover-mode div.fg-img {
 	position: absolute;
 	top: 26px;
 	right: 20px;
@@ -457,7 +509,7 @@ section.prd-hover div.prd4-hover {
 	top: 500px;
 	right: 90px;
 }
-div.rlt a {
+div.hover-mode a {
 	display: block;
 	font-family: 'MyriadProCondRegular';
 	letter-spacing: -1px;
@@ -469,16 +521,16 @@ div.rlt a {
 	top: 116px;
 	font-size: 25px;
 }
-div.rlt a.pic1 {
+div.hover-mode a.pic1 {
 	left: 140px;
 }
-div.rlt a.pic2 {
+div.hover-mode a.pic2 {
 	left: 135px;
 }
-div.rlt a.pic3 {
+div.hover-mode a.pic3 {
 	left: 155px;
 }
-div.rlt a.pic4 {
+div.hover-mode a.pic4 {
 	left: 155px;
 }
 
@@ -486,9 +538,6 @@ div.rlt a.pic4 {
 /* About Us
 -------------------------------------------------- */
 
-section.about-us {
-	background :url('images/bg_about.jpg') no-repeat;
-}
 section.right-col div.right-inside {
 	margin-top :150px;
 	min-height :470px;
@@ -533,30 +582,28 @@ div.about div.desc {
 	text-align :justify;
 	line-height :16px;
 }
-div.right-side div.banner {
-	width :274px;
-	height :401px;
-	position :relative;
-	overflow :hidden;
-	margin-left :60px;
-	margin-top :50px;
-}
-div.banner div.scroll {
-	position :absolute;
-	left :0px;
-	top :0px;
-	width :274px;
-	height :2000px;
-}
-div.banner div.scroll > div {
+
+div.aboutPageContainer div.right-side > div {
 	background-repeat :no-repeat;
 	width :274px;
 	height :401px;
 	display :block;
+	margin-top: 52px;
 }
-div.banner div.scroll > div.pic1-about {
+
+div.right-side div.about-pic{
 	background :url('images/pic1_about.png') no-repeat;
 }
+div.right-side div.job-pic{
+	background :url('images/pic1_about.png') no-repeat;
+}
+div.right-side div.who-pic{
+	background :url('images/pic1_about.png') no-repeat;
+}
+div.right-side div.clinet-pic{
+	background :url('images/pic1_about.png') no-repeat;
+}
+
 div.right-side div.top-arrow {
 	position :absolute;
 	top :180px;
@@ -586,10 +633,19 @@ div.right-side div.bot-arrow:hover {
 }
 
 
-/* Project links
+/* FullScreen
 -------------------------------------------------- */
 
-section.container nav.slide-nav ul {
+section.fullscreen-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+}
+
+section.fullscreen-container nav.slide-nav ul {
 	position :absolute;
 	width :90px;
 	height :55px;
@@ -608,48 +664,51 @@ nav.slide-nav ul li a {
 	width :28px;
 	height :46px;
 }
-section.container div.slides {
-	width :900px;
-	height :720px;
-	position :relative;
+section.fullscreen-container div.slides {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 	overflow :hidden;
 }
 div.slides .train {
-	position :absolute;
-	left :0px;
-	top :0px;
-	width :3600px;
-	height :720px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 div.slides .train > div {
-	background-repeat :no-repeat;
-	background-position :left top;
-	float :left;
-	width :900px;
-	height :720px;
-	display :block;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 div.slides div.train > div.home1 {
-	background-image :url('images/gallery/home1.jpg');
+	background-image :url('images/fullscren-images/shopping/1.jpg');
 }
 div.slides div.train > div.home2 {
-	background-image :url('images/gallery/home2.jpg');
+	background-image :url('images/fullscren-images/shopping/2.jpg');
 }
 div.slides div.train > div.home3 {
-	background-image :url('images/gallery/home3.jpg');
+	background-image :url('images/fullscren-images/shopping/3.jpg');
 }
 div.slides div.train > div.home4 {
-	background-image :url('images/gallery/home4.jpg');
+	background-image :url('images/fullscren-images/shopping/4.jpg');
 }
 div.slides div.train > div.home5 {
-	background-image :url('images/gallery/home5.jpg');
+	background-image :url('images/fullscren-images/shopping/5.jpg');
 }
 div.slides div.train > div.home6 {
-	background-image :url('images/gallery/home6.jpg');
+	background-image :url('images/fullscren-images/shopping/6.jpg');
 }
 div.slides div.back {
 	width :269px;
@@ -658,6 +717,8 @@ div.slides div.back {
 	left :-218px;
 	top :292px;
 	background :url('images/back.png') right top no-repeat;
+	z-index: 3;
+	cursor: pointer;
 }
 div.slides div.next {
 	width :269px;
@@ -666,6 +727,8 @@ div.slides div.next {
 	right :-217px;
 	top :289px;
 	background :url('images/next.png') left bottom no-repeat;
+	z-index: 3;
+	cursor: pointer;
 }
 div.slides nav.descriptions {
 	width :400px;
@@ -706,9 +769,6 @@ div.slides nav.descriptions li.counter {
 /* Contact us
 -------------------------------------------------- */
 
-section.contact {
-	background :url('images/bg_contact-us.jpg') no-repeat;
-}
 section.form-holder {
 	width :390px;
 	height :370px;
@@ -764,6 +824,20 @@ section.form-holder form textarea {
 	-o-transition :border 400ms ease-in-out;
 	-ms-transition :border 400ms ease-in-out;
 }
+section.form-holder form > div{
+	float: right;
+	background-size: 100% 100%;
+	width:15px;
+	height: 15px;
+}
+section.form-holder form div.ok{
+	background-image: url('images/ok.png');
+}
+
+section.form-holder form div.nok{
+	background-image: url('images/notok.png');
+}
+
 section.form-holder form input[type=text].nok {
 	background-color: #900;
 }
@@ -784,11 +858,19 @@ section.form-holder form input[type=submit] {
 	-ms-border-radius :5px;
 	border :0px;
 	margin-top :10px;
-	margin-right: 5px;
+	margin-right: 18px;
+	cursor :pointer;
 }
 section.form-holder form input[type=submit]:active {
 	border:1px solid #333;
 }
+
+#ifrm{
+	width: 315px;
+	height: 0;
+	border: 0 none;
+}
+
 section.info {
 	margin-top :368px;
 	margin-left :447px;
@@ -840,9 +922,130 @@ div.overFlowShowDiv{
 	margin-top:60px;
 	width:740px;
 	height:420px;
-	overflow-y:scroll;
+	overflow-y: scroll;
+}
+
+div.right-side div.banner {
+	width :274px;
+	height :401px;
+	position :relative;
+	overflow :hidden;
+	margin-left :60px;
+	margin-top :50px;
+}
+div.banner div.scroll {
+	position :absolute;
+	left :0px;
+	top :0px;
+	width :274px;
+	height :2000px;
+}
+div.banner div.scroll > div {
+	background-repeat :no-repeat;
+	width :274px;
+	height :401px;
+	display :block;
 }
 
 div.pic1-link{
 	background:url('images/pic1_link.png');
+}
+
+body.projects .hover-mode *{
+	transition: opacity 800ms ease-out;
+	-webkit-transition: opacity 800ms ease-out;
+	-moz-transition: opacity 800ms ease-out;
+	-o-transition: opacity 800ms ease-out;
+	-ms-transition: opacity 800ms ease-out;
+}
+
+body.projects .hover-mode.hover *{
+	transition: opacity 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	-o-transition: opacity 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out;
+}
+
+body.projects .hover-mode .backimg {
+	opacity: 0.6;
+}
+body.projects .hover-mode.hover .backimg {
+	opacity: 0.97;
+}
+
+body.projects .hover-mode .fg-img {
+	opacity: 0.9;
+}
+body.projects .hover-mode.hover .fg-img {
+	opacity: 0.03;
+}
+body.projects .hover-mode a {
+	opacity: 0.95;
+}
+body.projects .hover-mode.hover a {
+	opacity: 0;
+}
+
+div.top_menu #transparentImg{
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	top: 0;
+}
+#prdOffice.hover,#prdExhibition.hover,#prdShopping.hover,#prdHome.hover{
+	background :url("images/top_project2.png") no-repeat;
+}
+
+div.project_pics #transparentGalleryImg{
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	top: 200px;
+}
+#Gallery0.hover,#Gallery01.hover,#Gallery02.hover{
+	opacity: 0;
+	transition: opacity 600ms ease-in-out;
+	-webkit-transition: opacity 600ms ease-in-out;
+	-moz-transition: opacity 600ms ease-in-out;
+	-o-transition: opacity 600ms ease-in-out;
+	-ms-transition: opacity 600ms ease-in-out;
+}
+
+#transparentImgLast{
+	position: absolute;
+	z-index: 10;
+	right: 80px;
+	top: 200px;
+}
+
+div.content.hover{
+	opacity: .85;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
+}
+
+@-webkit-keyframes key1 {
+	
+	0% { 
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes key2 {
+	
+	0% { 
+		margin-left: 95px;
+	}
+	100%{
+		margin-left: -2px;
+	}
+
 }
