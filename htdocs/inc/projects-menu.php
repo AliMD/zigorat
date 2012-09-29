@@ -1,6 +1,6 @@
 	<section class="right-col">
 		<div class="top_menu">
-		<img id="transparentImg" src="data:images/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="455" height="200"  title="" /><!--b64 wont work here!!! ()-->
+		<img id="transparentImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="455" height="200"  title="" /><!--b64 wont work here!!! ()-->
 		<map name="mapPrdMenu" id="mapPrdMenu">
 			<area id='prdShoppingMap' shape="poly" coords="380, 102, 293, 151, 295, 192, 379, 142" href="#" alt="" title="" />
 			<area id='prdExhibitionMap' shape="poly" coords="284, 102, 199, 151, 199, 190, 284, 141" href="#" alt="" title="" />
