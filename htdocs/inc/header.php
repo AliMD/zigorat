@@ -22,3 +22,4 @@
 	</script>
 </head>
 <body class="<?php echo $page; ?>">
+<?php include 'inc/loading.php'; ?>
