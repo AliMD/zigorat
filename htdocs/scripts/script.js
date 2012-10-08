@@ -69,7 +69,20 @@ pagejs = function(page){
 
 	$(page).addClass('active');
 
+pload = function (bodyClass){
+	$('body').removeClass(bodyClass);
+	$('nav.nav ul li a').click(function(){
+		$('body').addClass('unload');
+		var newurl = $(this).attr('href');
+		setTimeout(function(){
+			window.location.href = newurl;
+		},700);
+		return false; // prevent to load page.
+	});
+}
+
 	if(page=='home'){
+		pload('home');
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){

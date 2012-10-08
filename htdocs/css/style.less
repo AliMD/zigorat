@@ -1053,3 +1053,22 @@ div.content.hover{
 	}
 
 }
+
+body *{
+	-webkit-transition : all 1s;
+}
+
+body{
+	-webkit-perspective: 1100;
+}
+
+body.home .container{
+	-webkit-transform: rotateY(176deg);
+	-webkit-backface-visibility: hidden;
+}
+
+body.unload .container{
+	opacity:0;
+	-webkit-transform: translateY(2000px) scale(0.8);
+	-webkit-transition: all 700ms ease-in;
+}
