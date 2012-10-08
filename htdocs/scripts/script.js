@@ -88,8 +88,6 @@ pload = function (bodyClass){
 
 	if(page=='home'){
 	pload('home');
-
-			
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){
@@ -109,6 +107,7 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects') {
+		pload('projects');
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -160,7 +159,18 @@ pload = function (bodyClass){
 		imageMapLink('#Gallery02', './Gallery02')
 	}
 
+	else if(page=='links'){
+		pload('links');
+	}
+	else if(page=='about-us'){
+		pload('about-us');
+	}
+	else if(page=='our-customers'){
+		pload('our-customers');
+	}
+
 	else if(page=='contact-us'){
+		pload('contact-us');
 		function validateText(str,len){
 			return str.length >= len;
 		}
