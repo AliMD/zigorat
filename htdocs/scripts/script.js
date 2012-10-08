@@ -68,6 +68,10 @@ pagejs = function(page){
 	pageAni[page] && $.tween(pageAni[page]['load'])
 
 	$(page).addClass('active');
+	
+$(function(){
+	$('.section.loadingContainer').removeClass();
+});
 
 pload = function (bodyClass){
 	$('body').removeClass(bodyClass);
@@ -82,6 +86,7 @@ pload = function (bodyClass){
 }
 
 	if(page=='home'){
+		$('section.loadingContainer').addClass('loadedContainer');
 		pload('home');
 		// pages logo icons
 		var delay=1;
