@@ -69,9 +69,9 @@ pagejs = function(page){
 
 	$(page).addClass('active');
 	
-$(function(){
-	$('section.loadingContainer').addClass('loadedContainer');
-});
+window.onload=function(){
+	$('section.loadingContainer').css('display','none');
+}
 
 pload = function (bodyClass){
 	$('body').removeClass(bodyClass);
@@ -83,13 +83,13 @@ pload = function (bodyClass){
 		},700);
 		return false; // prevent to load page.
 	});
+	
 }
 
 	if(page=='home'){
-$(function(){
-	$('section.loadingContainer').addClass('loadedContainer');
-	});
-			pload('home');
+	pload('home');
+
+			
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){
