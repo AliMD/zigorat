@@ -69,9 +69,6 @@ pagejs = function(page){
 
 	$(page).addClass('active');
 	
-window.onload=function(){
-	$('section.loadingContainer').css('display','none');
-}
 
 pload = function (bodyClass){
 	$('body').removeClass(bodyClass);
@@ -87,7 +84,10 @@ pload = function (bodyClass){
 }
 
 	if(page=='home'){
-	pload('home');
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('home');
+		}
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){
@@ -107,7 +107,10 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects') {
-		pload('projects');
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('projects');
+		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -160,18 +163,30 @@ pload = function (bodyClass){
 	}
 
 	else if(page=='links'){
-		pload('links');
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('links');
+		}
 	}
 	else if(page=='about-us'){
-		pload('about-us');
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('about-us');
+		}
 	}
 	else if(page=='our-customers'){
-		pload('our-customers');
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('our-customers');
+		}
 	}
 
 	else if(page=='contact-us'){
-		pload('contact-us');
-		function validateText(str,len){
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('contact-us');
+		}
+			function validateText(str,len){
 			return str.length >= len;
 		}
 
