@@ -123,6 +123,10 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-shopping') {
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('projects-shopping');
+		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -133,6 +137,10 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-office') {
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('projects-office');
+		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -143,6 +151,10 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-home') {
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('projects-home');
+		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -153,6 +165,10 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-exhibition') {
+		window.onload=function(){
+			$('section.loadingContainer').css('display','none');
+			pload('projects-exhibition');
+		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
