@@ -34,5 +34,6 @@
 			</section>
 		</div>
 	</div>
+	<?php include 'inc/background.php' ?>
 </section>
 <?php include 'inc/footer.php'; ?>
