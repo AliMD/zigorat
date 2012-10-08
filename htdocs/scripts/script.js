@@ -70,7 +70,7 @@ pagejs = function(page){
 	$(page).addClass('active');
 	
 $(function(){
-	$('.section.loadingContainer').removeClass();
+	$('section.loadingContainer').addClass('loadedContainer');
 });
 
 pload = function (bodyClass){
@@ -86,8 +86,10 @@ pload = function (bodyClass){
 }
 
 	if(page=='home'){
-		$('section.loadingContainer').addClass('loadedContainer');
-		pload('home');
+$(function(){
+	$('section.loadingContainer').addClass('loadedContainer');
+	});
+			pload('home');
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){
