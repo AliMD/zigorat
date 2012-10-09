@@ -8,9 +8,9 @@
 	<div class="right-col">
 		<div class="pics_right">
 			<section class="newhome">
-				<img id="transparentImgLast" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#lastMapPrd" alt="transparent" width="585" height="490"  title="" /><!--b64 wont work here!!! ()-->
+				<img id="transparentImgLast" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#lastMapPrd" alt="transparent" width="585" height="490"  title="" />
 				<map name="lastMapPrd" id="lastMapPrd">
-					<area id='lastProjectMap' shape="poly" coords="556, 11, 562, 401, 422, 483, 420, 309, 8, 313, 6, 71, 110, 15" href="#" alt="" title="" />
+					<area id='lastProjectMap' shape="poly" coords="560, 261, 420, 339, 320, 365, 318, 479, 420, 483, 562, 401, 560, 261" href="#" alt="" title="" />
 				</map>
 				<div class="content" id="lastProject">
 					<div class="bigpic"></div>
@@ -34,5 +34,6 @@
 			</section>
 		</div>
 	</div>
+	<?php include 'inc/background.php' ?>
 </section>
 <?php include 'inc/footer.php'; ?>

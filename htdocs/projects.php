@@ -1,5 +1,5 @@
 <?php include 'inc/header.php'; ?>
-<section class="container">
+<section class="container projects">
 	<img id="transparentImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" />
 	<map name="mapPrdMenu" id="mapPrdMenu">
 		<area id='prdShoppingMap' shape="poly" coords="364, 10, 124, 148, 124, 280, 368, 138" href="#" alt="" title="" />
@@ -53,5 +53,6 @@
 			</section>
 		</section>
 	</section>
+	<?php include 'inc/background.php' ?>
 </section>
 <?php include 'inc/footer.php'; ?>
