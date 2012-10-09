@@ -1057,18 +1057,12 @@ body{
 	-webkit-perspective: 1100;
 }
 
-body.home .container,
-body.about-us .container,
-body.our-customers .container,
-body.projects .container,
-body.contact-us .container,
-body.links .container{
+body.preload .container{
 	-webkit-transform: rotateY(90deg);
 	-webkit-backface-visibility: hidden;
 }
 
 body.unload .container{
-	opacity:0;
 	-webkit-transform: rotateY(-90deg);
 	-webkit-backface-visibility: hidden;
 }
@@ -1080,7 +1074,7 @@ section.loadedContainer{
 	display:none;
 }
 
-section.loadingContainer{
+/*section.loadingContainer{
 	width :900px;
 	height :720px;
 	position :absolute;
@@ -1213,4 +1207,4 @@ background-color:#000000}
 100%{
 opacity:0.3}
 
-}
+}*/
