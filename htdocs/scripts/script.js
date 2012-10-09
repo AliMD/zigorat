@@ -84,10 +84,6 @@ pload = function (bodyClass){
 }
 
 	if(page=='home'){
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('home');
-		}
 		// pages logo icons
 		var delay=1;
 		$('.icon').each(function(){
@@ -107,10 +103,6 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects') {
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('projects');
-		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -123,10 +115,6 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-shopping') {
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('projects-shopping');
-		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -137,10 +125,6 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-office') {
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('projects-office');
-		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -151,10 +135,6 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-home') {
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('projects-home');
-		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -165,10 +145,6 @@ pload = function (bodyClass){
 	}
 
 	else if(page == 'projects-exhibition') {
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('projects-exhibition');
-		}
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -178,30 +154,7 @@ pload = function (bodyClass){
 		imageMapLink('#Gallery02', './Gallery02')
 	}
 
-	else if(page=='links'){
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('links');
-		}
-	}
-	else if(page=='about-us'){
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('about-us');
-		}
-	}
-	else if(page=='our-customers'){
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('our-customers');
-		}
-	}
-
 	else if(page=='contact-us'){
-		window.onload=function(){
-			$('section.loadingContainer').css('display','none');
-			pload('contact-us');
-		}
 			function validateText(str,len){
 			return str.length >= len;
 		}
