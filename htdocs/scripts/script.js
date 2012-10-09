@@ -70,8 +70,7 @@ pagejs = function(page){
 	$(page).addClass('active');
 	
 
-pload = function (bodyClass){
-	$('body').removeClass(bodyClass);
+	$('body').removeClass('preload');
 	$('nav.nav ul li a').click(function(){
 		$('body').addClass('unload');
 		var newurl = $(this).attr('href');
@@ -80,8 +79,6 @@ pload = function (bodyClass){
 		},700);
 		return false; // prevent to load page.
 	});
-	
-}
 
 	if(page=='home'){
 		// pages logo icons
