@@ -13,7 +13,6 @@
 -------------------------------------------------- */
 
 body {
-	position :relative;
 	background-color :#cccccc;
 }
 
@@ -1049,39 +1048,31 @@ div.content.hover{
 
 }
 
-body > section{
-	-webkit-transition : -webkit-transform 700ms ease-in;
-}
+/* 3d page loading effect */
 
 body{
-	-webkit-perspective: 1100;
+	-webkit-perspective: 900px;
 }
 
-body.preload .container{
-	-webkit-transform: rotateY(90deg);
+body section.loadingContainer,
+body section.container {
+	-webkit-transition : all 700ms ease-in-out;
+	
+}
+
+body section.container *{
 	-webkit-backface-visibility: hidden;
 }
 
-body.unload .container{
-	-webkit-transform: rotateY(-90deg);
-	-webkit-backface-visibility: hidden;
-}
-
-/* Loading
--------------------------------------------------- */
-
-section.loadedContainer{
-	display:none;
-}
-
-/*section.loadingContainer{
+body section.loadingContainer{
 	width :900px;
 	height :720px;
 	position :absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
 	margin :auto;
 	-webkit-box-shadow :0 3px 10px #000;
 	-moz-box-shadow :0 3px 10px #000;
@@ -1094,8 +1085,25 @@ section.loadedContainer{
 	-o-border-radius :15px;
 	-ms-border-radius :15px;
 	background-image: url('images/background.jpg');
-	z-index:2;
+	background-size:100% 100%;
+	-webkit-transform: rotateY(180deg) scaleX(-1);
+	-webkit-backface-visibility: hidden;
 }
+
+body section.container {
+	-webkit-transform: rotateY(0deg);
+}
+
+body.preload section.loadingContainer {
+	-webkit-transform: rotateY(0deg) scaleX(-1);
+}
+
+body.preload section.container {
+	-webkit-transform: rotateY(-180deg);
+}
+
+/* Loading
+-------------------------------------------------- */
 
 #circleG{
 	position: absolute;
@@ -1108,7 +1116,7 @@ section.loadedContainer{
 	height: 0;
 }
 
-.circleG{
+#circleG > div{
 background-color:#FFFFFF;
 float:left;
 height:32px;
@@ -1207,4 +1215,4 @@ background-color:#000000}
 100%{
 opacity:0.3}
 
-}*/
+}

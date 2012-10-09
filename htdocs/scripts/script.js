@@ -63,22 +63,29 @@ imageMapLink = function(target, href){
 	})
 }
 
-pagejs = function(page){
-
-	pageAni[page] && $.tween(pageAni[page]['load'])
-
-	$(page).addClass('active');
-	
-
-	$('body').removeClass('preload');
-	$('nav.nav ul li a').click(function(){
-		$('body').addClass('unload');
-		var newurl = $(this).attr('href');
+window.onload = function(){
+	setTimeout(function(){
+		$('body').removeClass('preload');
+		pageAni[page] && $.tween(pageAni[page]['load']);
 		setTimeout(function(){
-			window.location.href = newurl;
-		},700);
+			$('section.loadingContainer').css({display:'none'});
+		},400);
+	},500)
+	$('nav.nav a').click(function(){
+		$('body').addClass('unload');
+		var url = $(this).attr('href');
+		setTimeout(function(){
+			window.location.href = url;
+		},800);
 		return false; // prevent to load page.
 	});
+}
+
+var page;
+pagejs = function(pg){
+	page = pg;
+
+	$(page).addClass('active');
 
 	if(page=='home'){
 		// pages logo icons
@@ -111,37 +118,7 @@ pagejs = function(page){
 		})
 	}
 
-	else if(page == 'projects-shopping') {
-		imageMapLink('#prdShopping', './projects-shopping');
-		imageMapLink('#prdExhibition', './projects-exhibition')
-		imageMapLink('#prdHome', './projects-home')
-		imageMapLink('#prdOffice', './projects-office')
-		imageMapLink('#Gallery0', './Gallery0');
-		imageMapLink('#Gallery01', './Gallery01')
-		imageMapLink('#Gallery02', './Gallery02')
-	}
-
-	else if(page == 'projects-office') {
-		imageMapLink('#prdShopping', './projects-shopping');
-		imageMapLink('#prdExhibition', './projects-exhibition')
-		imageMapLink('#prdHome', './projects-home')
-		imageMapLink('#prdOffice', './projects-office')
-		imageMapLink('#Gallery0', './Gallery0');
-		imageMapLink('#Gallery01', './Gallery01')
-		imageMapLink('#Gallery02', './Gallery02')
-	}
-
-	else if(page == 'projects-home') {
-		imageMapLink('#prdShopping', './projects-shopping');
-		imageMapLink('#prdExhibition', './projects-exhibition')
-		imageMapLink('#prdHome', './projects-home')
-		imageMapLink('#prdOffice', './projects-office')
-		imageMapLink('#Gallery0', './Gallery0');
-		imageMapLink('#Gallery01', './Gallery01')
-		imageMapLink('#Gallery02', './Gallery02')
-	}
-
-	else if(page == 'projects-exhibition') {
+	else if(page.indexOf('projects-')===0) {
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
