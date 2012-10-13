@@ -53,5 +53,6 @@
 			<div class="clear"></div>
 		</section>
 	</section>
+	<?php include 'inc/background.php' ?>
 </section>
 <?php include 'inc/footer.php'; ?>

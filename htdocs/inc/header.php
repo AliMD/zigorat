@@ -21,6 +21,5 @@
 		});
 	</script>
 </head>
-<div class="background"></div>
-<div class="lines"></div>
-<body class="<?php echo $page; ?>">
+<body class="preload <?php echo $page; ?>">
+<?php include 'inc/loading.php'; ?>
