@@ -50,16 +50,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
 
 # Set files cache on client
-<IfModule mod_expires.c>
-	ExpiresActive On
-	ExpiresDefault "modification plus 1 days"
-	#ExpiresDefault "access plus 1 month"
-	ExpiresByType image/jpg "access plus 6 month"
-	ExpiresByType image/jpeg "access plus 6 month"
-	ExpiresByType image/gif "access plus 6 month"
-	ExpiresByType image/png "access plus 6 month"
-	ExpiresByType image/x-icon "access plus 6 month"
-	ExpiresByType image/ico "access plus 6 month"
-	#ExpiresByType text/css "access plus 1 month"
-	#ExpiresByType text/x-javascript "access plus 1 month"
-</IfModule>
