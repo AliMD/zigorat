@@ -69,14 +69,20 @@ window.onload = function(){
 		pageAni[page] && $.tween(pageAni[page]['load']);
 		setTimeout(function(){
 			$('section.loadingContainer').css({display:'none'});
-		},400);
-	},500)
+		},1000);
+	},1000);
 	$('nav.nav a').click(function(){
-		$('body').addClass('unload');
+		$('section.loadingContainer').css({display:'block',visibility:'hidden'});
+		setTimeout(function(){
+			$('body').addClass('preload');
+		},10);
 		var url = $(this).attr('href');
 		setTimeout(function(){
+			$('section.loadingContainer').css({visibility:'visible'});
+		},1000);
+		setTimeout(function(){
 			window.location.href = url;
-		},800);
+		},1600);
 		return false; // prevent to load page.
 	});
 }
