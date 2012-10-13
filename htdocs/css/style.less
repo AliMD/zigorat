@@ -1051,12 +1051,12 @@ div.content.hover{
 /* 3d page loading effect */
 
 body{
-	-webkit-perspective: 900px;
+	-webkit-perspective: 1000px;
 }
 
 body section.loadingContainer,
 body section.container {
-	-webkit-transition : all 700ms ease-in-out;
+	-webkit-transition : all 1500ms ease-in;
 	
 }
 
@@ -1103,7 +1103,7 @@ body.preload section.container {
 }
 
 body.unload section.container {
-	opacity: 0;
+	
 }
 
 /* Loading
@@ -1118,10 +1118,12 @@ body.unload section.container {
 	margin: auto;
 	width: 150px;
 	height: 0;
+	-webkit-transform: scale(-0.7,0.7);
+
 }
 
 #circleG > div{
-background-color:#FFFFFF;
+background-color:#000;
 float:left;
 height:32px;
 margin-left:17px;
@@ -1175,7 +1177,7 @@ opacity:0.3}
 
 50%{
 opacity:1;
-background-color:#000000}
+background-color:#fff}
 
 100%{
 opacity:0.3}
@@ -1188,7 +1190,7 @@ opacity:0.3}
 
 50%{
 opacity:1;
-background-color:#000000}
+background-color:#fff}
 
 100%{
 opacity:0.3}
@@ -1201,7 +1203,7 @@ opacity:0.3}
 
 50%{
 opacity:1;
-background-color:#000000}
+background-color:#fff}
 
 100%{
 opacity:0.3}
@@ -1214,7 +1216,7 @@ opacity:0.3}
 
 50%{
 opacity:1;
-background-color:#000000}
+background-color:#fff}
 
 100%{
 opacity:0.3}
