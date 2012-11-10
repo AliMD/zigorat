@@ -22,8 +22,8 @@
 </head>
 <body class="<?php echo $page; ?>">
 <section class="fullscreen-container">
-	<nav>
-		<ul>
+	<section class="btns">
+		<ul class="info">
 			<li>
 				<a href="#">
 					<img src="images/i.png" alt="information" />
@@ -40,7 +40,9 @@
 				</a>
 			</li>
 		</ul>
-	</nav>
+		<div class="next"></div>
+		<div class="back"></div>
+	</section>
 	<section class="fullimg">
 		<?php
 			$images_path = 'images/fullscren-images/shopping';
