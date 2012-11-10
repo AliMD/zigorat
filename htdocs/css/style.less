@@ -27,11 +27,6 @@ div.lines{
 	top :0;
 	margin :auto;
 	z-index: -4;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
-	-ms-border-radius :15px;
 	opacity:0.9;
 }
 
@@ -46,11 +41,7 @@ div.background{
 	top :0;
 	margin :auto;
 	z-index: -5;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
-	-ms-border-radius :15px;
+
 }
 
 .projects #transparentImg {
@@ -70,11 +61,6 @@ div.background{
 	-o-box-shadow :0 3px 10px #000;
 	-ms-box-shadow :0 3px 10px #000;
 	box-shadow :0 3px 10px #000;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
-	-ms-border-radius :15px;
 }
 .logo {
 	width :315px;
@@ -632,7 +618,11 @@ div.right-side div.bot-arrow:hover {
 /* FullScreen
 -------------------------------------------------- */
 
-section.fullscreen-container{
+body.fullscreen{
+	-webkit-perspective: 0 !important;
+}
+
+section.fullscreen-container {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -641,7 +631,7 @@ section.fullscreen-container{
 	z-index: -2;
 }
 
-section.fullscreen-container nav.slide-nav ul {
+section.fullscreen-container section.btns ul.info {
 	position :absolute;
 	width :90px;
 	height :55px;
@@ -650,63 +640,19 @@ section.fullscreen-container nav.slide-nav ul {
 	background-color :transparent;
 	z-index :2;
 }
-nav.slide-nav ul li {
+
+section.btns ul.info li {
 	float :left;
 	padding-right :2px;
 }
-nav.slide-nav ul li a {
+section.btns nav ul.info li a {
 	text-decoration :none;
 	display :block;
 	width :28px;
 	height :46px;
 }
-section.fullscreen-container div.slides {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	overflow :hidden;
-}
-div.slides .train {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-}
-div.slides .train > div {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-div.slides div.train > div.home1 {
-	background-image :url('images/fullscren-images/shopping/1.jpg');
-}
-div.slides div.train > div.home2 {
-	background-image :url('images/fullscren-images/shopping/2.jpg');
-}
-div.slides div.train > div.home3 {
-	background-image :url('images/fullscren-images/shopping/3.jpg');
-}
-div.slides div.train > div.home4 {
-	background-image :url('images/fullscren-images/shopping/4.jpg');
-}
-div.slides div.train > div.home5 {
-	background-image :url('images/fullscren-images/shopping/5.jpg');
-}
-div.slides div.train > div.home6 {
-	background-image :url('images/fullscren-images/shopping/6.jpg');
-}
-div.slides div.back {
+
+section.btns div.back{
 	width :269px;
 	height :96px;
 	position :absolute;
@@ -716,7 +662,8 @@ div.slides div.back {
 	z-index: 3;
 	cursor: pointer;
 }
-div.slides div.next {
+
+section.btns div.next{
 	width :269px;
 	height :98px;
 	position :absolute;
@@ -726,6 +673,22 @@ div.slides div.next {
 	z-index: 3;
 	cursor: pointer;
 }
+
+section.fullscreen-container section.fullimg > div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-size: cover;
+}
+
+/*
+
 div.slides nav.descriptions {
 	width :400px;
 	height :60px;
@@ -759,7 +722,7 @@ div.slides nav.descriptions li.counter {
 	font-size :30px;
 	color :#fff;
 	text-align :center;
-}
+}*/
 
 
 /* Contact us
@@ -1056,7 +1019,7 @@ body{
 
 body section.loadingContainer,
 body section.container {
-	-webkit-transition : all 1500ms ease-in;
+	-webkit-transition : -webkit-transform 1500ms ease-in;
 	
 }
 
@@ -1079,11 +1042,6 @@ body section.loadingContainer{
 	-o-box-shadow :0 3px 10px #000;
 	-ms-box-shadow :0 3px 10px #000;
 	box-shadow :0 3px 10px #000;
-	border-radius :15px;
-	-webkit-border-radius :15px;
-	-moz-border-radius :15px;
-	-o-border-radius :15px;
-	-ms-border-radius :15px;
 	background-image: url('images/background.jpg');
 	background-size:100% 100%;
 	-webkit-transform: rotateY(180deg) scaleX(-1);
