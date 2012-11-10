@@ -59,6 +59,12 @@
 			}
 		?>
 	</section>
+	<section class="descriptions">
+		<div class="left-line"></div>
+		<div class="prj-name">project name</div>
+		<div class="right-line"></div>
+		<div class="counter">01/06</div>
+	</section>
 </section>
 </body>
 </html>
