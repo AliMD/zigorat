@@ -618,6 +618,10 @@ div.right-side div.bot-arrow:hover {
 /* FullScreen
 -------------------------------------------------- */
 
+body.fullscreen{
+	-webkit-perspective: 0 !important;
+}
+
 section.fullscreen-container {
 	position: fixed;
 	top: 0;
@@ -647,52 +651,20 @@ section.fullscreen-container nav ul li a {
 	width :28px;
 	height :46px;
 }
-/*section.fullscreen-container div.slides {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	overflow :hidden;
-}
-div.slides .train {
+section.fullscreen-container section.fullimg > div {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	z-index: 1;
-}
-div.slides .train > div {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	background-size: cover;
 }
-div.slides div.train > div.home1 {
-	background-image :url('images/fullscren-images/shopping/1.jpg');
-}
-div.slides div.train > div.home2 {
-	background-image :url('images/fullscren-images/shopping/2.jpg');
-}
-div.slides div.train > div.home3 {
-	background-image :url('images/fullscren-images/shopping/3.jpg');
-}
-div.slides div.train > div.home4 {
-	background-image :url('images/fullscren-images/shopping/4.jpg');
-}
-div.slides div.train > div.home5 {
-	background-image :url('images/fullscren-images/shopping/5.jpg');
-}
-div.slides div.train > div.home6 {
-	background-image :url('images/fullscren-images/shopping/6.jpg');
-}
+
+/*
 div.slides div.back {
 	width :269px;
 	height :96px;
