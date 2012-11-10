@@ -1,42 +1,28 @@
-<?php include 'inc/header.php'; ?>
-<body>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Zigorat | <?php echo $title ?></title>
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" type="image/png" href="images/icon.png" /> 
+	<link rel="stylesheet/less" type="text/css" href="style.less" />
+	<script type="text/javascript" src="scripts/html5shiv.js"></script>
+	<script type="text/javascript" src="scripts/less.js"></script>
+	<script type="text/javascript">document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>');</script>
+	<script type="text/javascript" src="scripts/script.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			try{
+				pagejs("<?php echo $page; ?>");
+			}catch(e){
+				console.log(e);
+			}
+		});
+	</script>
+</head>
+<body class="preload <?php echo $page; ?>">
 <section class="fullscreen-container">
-	<nav class="slide-nav">
-		<ul>
-			<li>
-				<a href="#" >
-					<img src="images/i.png" alt="information"></a>
-			</li>
-			<li>
-				<a href="#" >
-					<img src="images/pc.png" alt="pc"></a>
-			</li>
-			<li>
-				<a href="#" >
-					<img src="images/close.png" alt="close"></a>
-			</li>
-		</ul>
-	</nav>
-	<div class="slides">
-		<div class="train">
-			<div class="home1"></div>
-			<div class="home2"></div>
-			<div class="home3"></div>
-			<div class="home4"></div>
-			<div class="home5"></div>
-			<div class="home6"></div>
-		</div>
-		<div class="back"></div>
-		<div class="next"></div>
-		<nav class="descriptions ">
-			<ul>
-				<li class="line1 "></li>
-				<li class="name-project " >project name</li>
-				<li class="line1 "></li>
-				<li class="counter ">01/06</li>
-			</ul>
-		</nav>
 
-	</div>
 </section>
-<?php include 'inc/footer.php'; ?>
+</body>
+</html>
