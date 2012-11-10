@@ -20,8 +20,27 @@
 		});
 	</script>
 </head>
-<body class="preload <?php echo $page; ?>">
+<body class="<?php echo $page; ?>">
 <section class="fullscreen-container">
+	<nav>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/i.png" alt="information" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/pc.png" alt="pc" />
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/close.png" alt="close" />
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 </section>
 </body>

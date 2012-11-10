@@ -618,7 +618,7 @@ div.right-side div.bot-arrow:hover {
 /* FullScreen
 -------------------------------------------------- */
 
-/*section.fullscreen-container{
+section.fullscreen-container {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -627,7 +627,7 @@ div.right-side div.bot-arrow:hover {
 	z-index: -2;
 }
 
-section.fullscreen-container nav.slide-nav ul {
+section.fullscreen-container nav {
 	position :absolute;
 	width :90px;
 	height :55px;
@@ -636,17 +636,18 @@ section.fullscreen-container nav.slide-nav ul {
 	background-color :transparent;
 	z-index :2;
 }
-nav.slide-nav ul li {
+
+section.fullscreen-container nav ul li {
 	float :left;
 	padding-right :2px;
 }
-nav.slide-nav ul li a {
+section.fullscreen-container nav ul li a {
 	text-decoration :none;
 	display :block;
 	width :28px;
 	height :46px;
 }
-section.fullscreen-container div.slides {
+/*section.fullscreen-container div.slides {
 	position: fixed;
 	top: 0;
 	left: 0;
