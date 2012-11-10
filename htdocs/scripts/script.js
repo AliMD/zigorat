@@ -199,6 +199,16 @@ pagejs = function(pg){
 		(window.Zepto || window.jQuery);
 	}
 
+	else if(page=='about-us'){
+		$('.top-arrow').click(function(){
+			$('.aboutPageContainer').animate({'top':'-540px'},500);
+		});
+
+		$('.bot-arrow').click(function(){
+			$('.aboutPageContainer').animate({'top':'-50px'},500);
+		});
+	}
+
 	else if(page=='contact-us'){
 			function validateText(str,len){
 			return str.length >= len;
