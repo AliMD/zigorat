@@ -48,16 +48,20 @@
 			$images_path = 'images/fullscren-images/shopping';
 
 			$images = scandir($images_path);
-			$slidesLen = 0;
 			foreach($images as $img){
 				$img_arr = explode('.', $img);
 				$img_type = strtolower( end($img_arr) );
 				if ($img_type=='jpg') {
 					echo "<div style=\"background-image:url('$images_path/$img');\"></div>";
-					$slidesLen++;
 				}
 			}
 		?>
+	</section>
+	<section class="descriptions">
+		<div class="left-line"></div>
+		<div class="prj-name">project name</div>
+		<div class="right-line"></div>
+		<div class="counter">01/06</div>
 	</section>
 </section>
 </body>
