@@ -110,6 +110,13 @@ pagejs = function(pg){
 			tmp=tmp.concat([event.offsetX,event.offsetY])
 			console.log(tmp);
 		})
+
+		$('.fullimg > div').fadeLoop({
+				delay : 300,
+				freez : 4000,
+				duration : 2000,
+				fadeFirstImage : false
+		});
 	}
 
 	else if(page == 'projects') {
@@ -132,6 +139,26 @@ pagejs = function(pg){
 		imageMapLink('#Gallery0', './Gallery0');
 		imageMapLink('#Gallery01', './Gallery01')
 		imageMapLink('#Gallery02', './Gallery02')
+	}
+
+	else if(page=='fullscreen'){
+
+			$('.fullimg > div').fadeLoop({
+				delay : 300,
+				freez : 4000,
+				duration : 2000,
+				fadeFirstImage : false
+			});
+	}
+
+	else if(page=='about-us'){
+		$('.top-arrow').click(function(){
+			$('.aboutPageContainer').animate({'top':'-540px'},500);
+		});
+
+		$('.bot-arrow').click(function(){
+			$('.aboutPageContainer').animate({'top':'-50px'},500);
+		});
 	}
 
 	else if(page=='contact-us'){

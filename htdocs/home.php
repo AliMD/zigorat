@@ -13,7 +13,30 @@
 					<area id='lastProjectMap' shape="poly" coords="560, 261, 420, 339, 320, 365, 318, 479, 420, 483, 562, 401, 560, 261" href="#" alt="" title="" />
 				</map>
 				<div class="content" id="lastProject">
-					<div class="bigpic"></div>
+					<div class="home-slider">
+
+						<?php
+
+							$dir = "./images/home-slider";
+							$allowed_type = array('jpg','jpeg','png','gif');
+
+							$d = dir($dir);
+							while( $f = $d->read() ){
+								$file_type = end(explode('.',$f));
+								if( !in_array(strtolower($file_type),$allowed_type) ) continue;
+
+								$file_name = substr($f,0,-strlen($file_type)-1);
+
+								$r = rand(100,999);
+								echo
+									"
+										<div style=\"background-image:url('$dir/$file_name.$file_type');\"></div>
+									";				
+							}
+
+						?>
+
+					</div>
 					<div id="desc">
 						<div class="passage left">
 							<div class="content">
