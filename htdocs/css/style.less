@@ -150,11 +150,20 @@ section.newhome div.content {
 	-o-transition		: opacity 300ms;
 	-ms-transition		: opacity 300ms;
 }
-div.content div.bigpic {
+div.content div.home-slider {
 	width	:553px;
 	height	:305px;
-	background :url("images/pic_home.png") no-repeat;
+	position: relative;
 }
+
+div.content div.home-slider > div {
+	width	:553px;
+	height	:305px;
+	position: absolute;
+	top		: 0;
+	left	: 0;
+}
+
 div.content div#desc {
 	width	:553px;
 	height	:260px;
