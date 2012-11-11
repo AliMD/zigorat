@@ -19,7 +19,7 @@
 						<div id="prdShopping" class="hover-mode">
 							<div class="bg-img1 backimg"></div>
 							<div class="fg-img"></div>
-							<a class="pic1">shopping</a>
+							<div class='title'>shopping</div>
 						</div>
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 						<div id="prdExhibition" class="hover-mode">
 							<div class="bg-img2 backimg"></div>
 							<div class="fg-img"></div>
-							<a class="pic2">exhibition</a>
+							<div class='title'>exhibition</div>
 						</div>
 					</div>
 				</div>
@@ -37,7 +37,7 @@
 						<div id="prdHome" class="hover-mode">
 							<div class="bg-img3 backimg"></div>
 							<div class="fg-img"></div>
-							<a class="pic3">home</a>
+							<div class='title'>home</div>
 						</div>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 						<div id="prdOffice" class="hover-mode">
 							<div class="bg-img4 backimg"></div>
 							<div class="fg-img"></div>
-							<a class="pic4">office</a>
+							<div class='title'>office</div>
 						</div>
 					</div>
 				</div>

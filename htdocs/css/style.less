@@ -461,14 +461,6 @@ div.rlt div.bg-img3 {
 div.rlt div.bg-img4 {
 	background-image: url('images/pic4.png');
 }
-div.hover-mode div.fg-img {
-	position: absolute;
-	top		: 26px;
-	right	: 20px;
-	height	: 192px;
-	width	: 137px;
-	background-image: url('images/fade.png');
-}
 
 section.prd-hover div.prd1-hover,
 section.prd-hover div.prd2-hover,
@@ -499,30 +491,67 @@ section.prd-hover div.prd4-hover {
 	top: 500px;
 	right: 90px;
 }
-div.hover-mode a {
-	display: block;
-	font-family: 'MyriadProCondRegular';
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
+
+
+
+.projects .hover-mode > *{
+	transition			: all 800ms ease-out;
+	-webkit-transition	: all 800ms ease-out;
+	-moz-transition		: all 800ms ease-out;
+	-o-transition		: all 800ms ease-out;
+	-ms-transition		: all 800ms ease-out;
+}
+
+.projects .hover-mode.hover > *{
+	transition			: all 300ms ease-out;
+	-webkit-transition	: all 300ms ease-out;
+	-moz-transition		: all 300ms ease-out;
+	-o-transition		: all 300ms ease-out;
+	-ms-transition		: all 300ms ease-out;
+}
+
+.projects .hover-mode .backimg {
+	opacity : 0.6;
+}
+.projects .hover-mode.hover .backimg {
+	opacity : 1;
+}
+
+.projects .hover-mode div.fg-img {
 	position: absolute;
-	top: 116px;
-	font-size: 25px;
+	top		: 26px;
+	right	: 20px;
+	height	: 192px;
+	width	: 137px;
+	background-image: url('images/fade.png');
+	opacity : 0.9;
 }
-div.hover-mode a.pic1 {
-	left: 140px;
+
+.projects .hover-mode.hover .fg-img {
+	top: -65px;
+	right: -138px;
+	opacity	: 0;
 }
-div.hover-mode a.pic2 {
-	left: 135px;
+
+.projects .hover-mode .title {
+	font-family		: 'MyriadProCondRegular';
+	font-size		: 25px;
+	letter-spacing	: -1px;
+	text-transform	: uppercase;
+	color			: #fff;
+	text-align		: center;
+	position	: absolute;
+	top			: 114px;
+	right		: 20px;
+	width		: 137px;
 }
-div.hover-mode a.pic3 {
-	left: 155px;
+
+.projects .hover-mode.hover .title {
+	top: 30px;
+	right: -138px;
+	opacity	: 0;
 }
-div.hover-mode a.pic4 {
-	left: 155px;
-}
+
 
 
 /* About Us
@@ -924,52 +953,6 @@ div.banner div.scroll > div {
 
 div.pic1-link{
 	background : url('images/pic1_link.png');
-}
-
-.projects .hover-mode *{
-	transition			: all 800ms ease-out;
-	-webkit-transition	: all 800ms ease-out;
-	-moz-transition		: all 800ms ease-out;
-	-o-transition		: all 800ms ease-out;
-	-ms-transition		: all 800ms ease-out;
-}
-
-.projects .hover-mode.hover *{
-	transition			: all 300ms ease-out;
-	-webkit-transition	: all 300ms ease-out;
-	-moz-transition		: all 300ms ease-out;
-	-o-transition		: all 300ms ease-out;
-	-ms-transition		: all 300ms ease-out;
-}
-
-.projects .hover-mode .backimg {
-	opacity : 0.6;
-}
-.projects .hover-mode.hover .backimg {
-	opacity : 0.97;
-}
-
-.projects .hover-mode .fg-img {
-	opacity : 0.9;
-}
-.projects .hover-mode.hover .fg-img {
-	top: -70px;
-	right: -148px;
-	opacity	: 0.3;
-}
-.projects .hover-mode.hover a {
-	right: -230px;
-	top: 80px;
-	opacity	: 0.3;
-	-webkit-transition	: all 100ms ease-out;
-}
-body.projects .hover-mode a {
-	opacity: 0.95;
-	right: 135px;
-	top: 120px;
-}
-.projects .hover-mode.hover a {
-	opacity: 0;
 }
 
 div.top_menu #transparentImg{
