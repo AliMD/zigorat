@@ -7,22 +7,46 @@
 <?php include "inc/projects-menu.php"; ?>
 		<div class="project_pics">
 			<div class="left-panel">
+			
 			<?php
-				for (i=0;i>3;i++){
+				for ($i=0;$i<3;$i++){
 			?>
-					<section class='prd'>
+					<section class='prd' style="background-image:url('images/g1.png')">
 						<h1></h1>
 						<h2></h2>
 					</section>
 			<?php
 				}
-			 ?>
+			?>
+
 			</div>
 			<div class="center-panel">
-				
+			
+			<?php
+				for ($i=0;$i<3;$i++){
+			?>
+					<section class='prd' style="background-image:url('images/g2.png')">
+						<h1></h1>
+						<h2></h2>
+					</section>
+			<?php
+				}
+			?>	
+
 			</div>
 			<div class="right-panel">
-				
+			
+			<?php
+				for ($i=0;$i<3;$i++){
+			?>
+					<section class='prd' style="background-image:url('images/g3.png')">
+						<h1></h1>
+						<h2></h2>
+					</section>
+			<?php
+				}
+			?>
+
 			</div>
 
 		</div>
