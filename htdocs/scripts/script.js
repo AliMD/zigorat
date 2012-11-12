@@ -191,7 +191,6 @@ pagejs = function(pg){
 			return emailPattern.test(str);
 		}
 
-		$(function(){
 			$('.form-holder').submit(function(){
 				var target, err = false;
 		
@@ -244,13 +243,6 @@ pagejs = function(pg){
 				return !err;
 		
 			});
-		
-			$('#reset').click(function(){
-				$('#ifrm').animate({
-					height:'0px'
-				},200);
-			});
-		});
 	}
 	
 	if(page!=='home'){

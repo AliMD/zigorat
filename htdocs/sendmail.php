@@ -3,18 +3,20 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Sending mail ...</title>
+	<link rel="stylesheet/less" type="text/css" href="style.less" />
 	<style type="text/css">
 		body {
 			background-color: transparent;
+			font-family		:'myriadprocondregular';
+
 		}
 
 		.ok {
-			color:#23B3AB;
+			color:#fff;
 		}
 
 		.err {
-			color:#BD5B3D;
-			text-align:center;
+			color:#A11;
 		}
 	</style>
 </head>
@@ -25,17 +27,17 @@
 		$admin = 'me@aligh.ir';
 
 		$name    = $_POST['name'];
-		$email   = $_POST['mail'];
+		$email   = $_POST['email'];
 		$pNumber = $_POST['pNumber'];
 		$subject = $_POST['subject'];
 		$text    = $_POST['txt'];
-
-		if( strlen($name)>=3 && strlen($email)>=7 && strlen($subject)>=5 && strlen($text)>=10 ){
+			
+		if( strlen($name)>=3 && strlen($email)>=7 && strlen($subject)>=5 && strlen($text)>=8 ){
 			if( @mail (
 					$admin,
 					$subject,
-					'Name: '.$name. "\n".'Phone Number: '.$pNumber. "\n".$text,
-					"From:$admin\nReply-To:".$email)
+					"Name: $name\nPhone Number: $pNumber\n$text",
+					"From: $email")
 			){
 				echo '<h2 class="ok">Mail sent</h2>';
 			}else{
