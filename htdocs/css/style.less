@@ -1051,16 +1051,93 @@ body.unload section.container {
 	
 }
 
+/* PRD Pages
+-------------------------------------------------- */
+
+section.project{
+	overflow: hidden;
+}
+
+div.project_pics{
+	width	: 736px;
+	padding	: 10px;
+}
+
+div.left-panel,
+div.center-panel{
+	float		: left;
+	width		: 240px;
+	margin-right: 8px;
+}
+
+div.right-panel{
+	width		: 240px;
+	margin-left	: auto;
+}
+
+section.prd{
+	position: relative;
+	width	: 240px;
+	height	: 330px;
+	margin	: 55px 0 250px;
+	background-size		: 100% 100%;
+	background-position	: center center;
+	background-repeat	: no-repeat;
+}
+
+section.prd h1{
+	width		: 118px;
+	height		: 150px;
+	position	: absolute;
+	top			: 0;
+	right		: 0;
+	line-height	: 150px;
+	text-align	: center;
+	color		: #fff;
+	font-size	: 18px;
+	text-transform		: uppercase;
+	text-decoration		: underline;
+	letter-spacing		: -1px;
+	font-family			: 'myriadprocondregular';
+	background-image	: url('images/prd-top.png');
+	background-repeat	: no-repeat;
+	background-position	: top right;
+}
+
+section.prd h2{
+	position: absolute;
+	left	: 0;
+	bottom	: 0;
+	width	: 60px;
+	height	: 117px;
+	background-image	: url('images/prd-bot.png');
+	background-repeat	: no-repeat;
+	background-position	: bottom left;
+}
+
+section.prd h2 span{
+	color		: #fff;
+	display		: block;
+	font-size	: 21px;
+	text-align	: center;
+	margin-top	: 35px;
+	font-family	: 'myriadprocondregular';
+	letter-spacing	: -1px;
+	text-transform	: uppercase;
+	text-decoration	: underline;
+}
+
+
 /* Loading
 -------------------------------------------------- */
 #loading{
-	background-image: url('images/loading.gif');
-	width: 277px;
-	height: 709px;
+	width	: 277px;
+	height	: 709px;
 	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
+	left	: 0;
+	top		: 0;
+	bottom	: 0;
+	right	: 0;
+	margin	: auto;
+	background-image : url('images/loading.gif');
 }
