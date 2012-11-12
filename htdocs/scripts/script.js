@@ -168,7 +168,7 @@ pagejs = function(pg){
 			}else{
 				aboutSlider.top = aboutSlider.first;
 			}
-			$('.aboutPageContainer').animate({'top':aboutSlider.top},700);
+			$('.aboutPageContainer').animate({'top':aboutSlider.top},700,'ease-out');
 		});	
 		$('.top-arrow').click(function(){
 			if (aboutSlider.top < aboutSlider.first){
@@ -176,7 +176,7 @@ pagejs = function(pg){
 			}else{
 				aboutSlider.top = -1*(aboutSlider.len-1)*aboutSlider.step + aboutSlider.first ;
 			}
-			$('.aboutPageContainer').animate({'top':aboutSlider.top},700);
+			$('.aboutPageContainer').animate({'top':aboutSlider.top},700,'ease-out');
 		});
 	}
 
