@@ -28,8 +28,10 @@
 				for ($i=0;$i<3;$i++){
 			?>
 					<section class='prd' style="background-image:url('images/g2.png')">
-						<h1></h1>
-						<h2></h2>
+						<h1>project name</h1>
+						<h2>
+							<span>01<br />images</span>
+						</h2>
 					</section>
 			<?php
 				}
@@ -42,8 +44,10 @@
 				for ($i=0;$i<3;$i++){
 			?>
 					<section class='prd' style="background-image:url('images/g3.png')">
-						<h1></h1>
-						<h2></h2>
+						<h1>project name</h1>
+						<h2>
+							<span>01<br />images</span>
+						</h2>
 					</section>
 			<?php
 				}
