@@ -11,7 +11,7 @@
 					<h4 class="left">our customers</h4>
 					<div class="line"></div>
 					<div class="desc left">
-						We genuinely like our clients not because they are paying their bills, because we do not display our clients personality, which in turn will encourage us to make things more memorable.<br />
+						We genuinely like our clients not because they are paying their bills, because we do not display our clients personality, which in turn will encourage us to make things more memorable.<br /><br />
 						Customers who have the honor of working with some of them:<br />
 						Coca-Cola (Khoshgovar)<br />
 						Chuckles & Crunchips<br />
