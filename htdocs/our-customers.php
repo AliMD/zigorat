@@ -1,5 +1,5 @@
 <?php include 'inc/header.php'; ?>
-<section class="container about-us">
+<section class="container">
 	<section class="logo"></section>
 	<section class="left-col left">
 		<?php include "inc/menus.php"; ?>
@@ -7,8 +7,8 @@
 	<section class="right-col">
 		<div class="right-inside">
 			<div class="left-side">
-				<div class="about left">
-					<h4 class="left">Customers</h4>
+				<div class="customer left">
+					<h4 class="left">our customers</h4>
 					<div class="line"></div>
 					<div class="desc left"></div>
 				</div>
