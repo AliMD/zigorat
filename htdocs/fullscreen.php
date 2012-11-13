@@ -24,11 +24,11 @@
 <section class="fullscreen-container">
 	<section class="btns">
 		<ul class="info">
-			<li>
+			<!--<li>
 				<a href="#">
 					<img src="images/i.png" alt="information" />
 				</a>
-			</li>
+			</li>-->
 			<li>
 				<a href="#">
 					<img src="images/pc.png" alt="pc" />
