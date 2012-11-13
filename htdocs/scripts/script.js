@@ -150,7 +150,11 @@ pagejs = function(pg){
 				duration : 2000,
 				fadeFirstImage : false
 		});
-*/
+		*/
+		$('div.close').click(function(){
+			$('.top-desc').toggleClass('active');
+			return false;
+		});
 	}
 
 	else if(page=='about-us'){
