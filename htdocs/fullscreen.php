@@ -45,7 +45,7 @@
 	</section>
 	<section class="fullimg">
 		<?php
-			$images_path = 'images/fullscren-images/shopping';
+			$images_path = 'images/fullscren-images/exhibition';
 
 			$images = scandir($images_path);
 			foreach($images as $img){
