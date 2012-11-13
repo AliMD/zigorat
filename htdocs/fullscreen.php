@@ -57,6 +57,13 @@
 			}
 		?>
 	</section>
+	<section class="top-desc active">
+		<div class="desc-content">
+			<p></p>
+		</div>
+		<div class="desc-bot"></div>
+		<div class="close"></div>
+	</section>
 	<section class="descriptions">
 		<div class="left-line"></div>
 		<div class="prj-name">project name</div>
