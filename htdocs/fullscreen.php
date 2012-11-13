@@ -59,7 +59,7 @@
 	</section>
 	<section class="top-desc active">
 		<div class="desc-content">
-			<p></p>
+			<p>Zigorat Group <br /> officially started its activities in 2006 having young specialists in the design and implementation of the architecture, interior design and construction of exhibition stands has started. The company has been involved in various projects and by working with the top brands in the world able to leave his brilliant career.</p>
 		</div>
 		<div class="desc-bot"></div>
 		<div class="close"></div>
