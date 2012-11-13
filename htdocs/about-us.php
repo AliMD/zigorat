@@ -15,7 +15,8 @@
                             <h4 class="left">about us</h4>
                             <div class=" line" ></div>
                             <div class="desc left">
-                                Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
+                                Zigorat Group officially started its activities in 2006 having young specialists in the design and implementation of the architecture, interior design and construction of exhibition stands has started.
+The company has been involved in various projects and by working with the top brands in the world able to leave his brilliant career.
                             </div>
                         </div>
                     </div>
@@ -31,7 +32,7 @@
                             <h4 class="left">What we do</h4>
                             <div class=" line" ></div>
                             <div class="desc left">
-                                Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
+                                We design with people in mind. We plan, create, develop and deliver impressive work for a diverse range  of clients. This didn't happen overnight either - together, we have been amassing our collective experience for over 15 years. Our considerable   skillset means that we are adept at more than just aesthetically pleasing projects: concept, content and design are all equally crucial.
                             </div>
                         </div>
                     </div>
@@ -46,7 +47,7 @@
                             <h4 class="left">who we are</h4>
                             <div class=" line" ></div>
                             <div class="desc left">
-                                Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
+                                Zigorat interior design group of experts and engineers with expertise in architecture and industrial design, on the science of project management and the use of science in industrial engineering monitoring and control of projects in order to achieve maximum performance in minimum possible time and cost, effective step towards a successful save money, time and compliance employers' demands and tastes of the funds intended for the project to take.
                             </div>
                         </div>
                     </div>
@@ -55,19 +56,17 @@
                     </div>
                 </div>
                 
-                 <!-- ---------- our client ------------ -->
-                <div class="ourClient">
+                 <!-- ---------- How We Work ------------ -->
+                <div class="do">
                     <div class="left-side">
                         <div class="about left">
-                            <h4 class="left">our clinet</h4>
+                            <h4 class="left">how we work</h4>
                             <div class=" line" ></div>
-                            <div class="desc left">
-                                Toch is a creative agency based in Endinburgh, Scot-land.Our collective skills cover everything from brand identity, graphic design and copywriting to illustration and digital design, but at the heart of each project lies clear and effective communication.
-                            </div>
+
                         </div>
                     </div>
                     <div class="right-side">
-    					<div class="clinet-pic"></div>
+    					<div class="do-pic"></div>
                     </div>
                 </div>
             </div>

@@ -561,25 +561,25 @@ section.about-us{
 	overflow: hidden;
 }
 
-section.right-col div.right-inside {
+section.about-us section.right-col div.right-inside {
 	margin-top :150px;
 	min-height :470px;
 	padding :1px;
 }
-div.right-inside div.left-side {
+section.about-us div.right-inside div.left-side {
 	float :left;
 	width :355px;
 	min-height :190px;
-	margin-top :220px;
+	margin-top :192px;
 	padding :1px;
 }
-div.right-inside div.right-side {
-	margin-left :360px;
+section.about-us div.right-inside div.right-side {
+	margin-left :380px;
 	min-height :465px;
 	padding :1px;
 	margin-top: 30px;
 }
-div.left-side div.about {
+section.about-us div.left-side div.about {
 	margin-left :50px;
 }
 div.about div.line {
@@ -598,7 +598,7 @@ div.about h4 {
 }
 div.about div.desc {
 	width :300px;
-	height :80px;
+	min-height :80px;
 	margin-top :10px;
 	color :#fff;
 	font-family :"lucida sans unicode", "lucida grande", sans-serif;
@@ -608,24 +608,53 @@ div.about div.desc {
 }
 
 div.aboutPageContainer div.right-side > div {
-	background-repeat :no-repeat;
-	width :274px;
-	height :401px;
-	display :block;
-	margin-top: 47px;
+	background-repeat: no-repeat;
+	width: 274px;
+	height: 370px;
+	display: block;
+	margin-top: 60px;
+}
+
+div.do div.left-side {
+	float: none;
+	min-height: 0;
+	margin-top: 150px;
+}
+
+div.do div.line {
+	margin-left: 105px;
+}
+
+div.do div.right-side {
+	margin-left: 50px;
+	min-height: 137px;
+}
+
+div.whoWeAre div.left-side{
+	margin-top: 196px !important;
+}
+
+div.whoWeAre div.desc{
+	font-size: 11px !important;
+	text-align: justify !important;
+	line-height: 13px !important;
 }
 
 div.right-side div.about-pic{
-	background :url('images/pic1_about.png') no-repeat;
+	background :url('images/about.png') no-repeat;
 }
 div.right-side div.job-pic{
-	background :url('images/pic1_about.png') no-repeat;
+	background :url('images/what-we-do.png') no-repeat;
 }
 div.right-side div.who-pic{
-	background :url('images/pic1_about.png') no-repeat;
+	background :url('images/who-we-are.png') no-repeat;
+	margin-top: 135px !important;	
+	height: 214px !important;
 }
-div.right-side div.clinet-pic{
-	background :url('images/pic1_about.png') no-repeat;
+div.right-side div.do-pic{
+	background :url('images/how-we-do.png') no-repeat;
+	width: 600px !important;
+	height: 137px !important;
 }
 
 div.right-side div.top-arrow {
@@ -654,6 +683,69 @@ div.right-side div.bot-arrow {
 }
 div.right-side div.bot-arrow:hover {
 	background :url('images/hover_down.png') no-repeat;
+}
+
+
+/* Our Customer
+-------------------------------------------------- */
+
+body.our-customers section.container{
+	overflow: hidden;
+}
+
+div.left-side div.customer {
+	margin-left :50px;
+}
+
+div.customer div.line {
+	width :212px;
+	height :14px;
+	margin-left :115px;
+	border-bottom :2px solid #fff;
+}
+
+div.customers-pic{
+	background-image: url('images/our-custumers.png');
+	background-repeat: no-repeat;
+	width: 301px;
+	height: 456px;
+}
+
+body.our-customers div.right-inside div.right-side{
+	margin-left: 420px;
+	min-height: 465px;
+	padding: 1px;
+	margin-top: 36px;
+}
+
+body.our-customers section.right-col div.right-inside {
+	margin-top :150px;
+	min-height :470px;
+	padding :1px;
+}
+body.our-customers div.right-inside div.left-side {
+	float :left;
+	width :355px;
+	margin-top :105px;
+	padding :1px;
+}
+
+div.customer h4 {
+	width :65px;
+	font-family :'myriadprocondregular';
+	font-size :19px;
+	color :#444;
+	text-transform :uppercase;
+	white-space :nowrap;
+}
+div.customer div.desc {
+	width: 300px;
+	margin-top: 10px;
+	color: #fff;
+	font-family: "lucida sans unicode", "lucida grande", sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 18px;
 }
 
 
