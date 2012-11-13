@@ -870,6 +870,9 @@ section.top-desc {
 	right: 0;
 	margin: 0 auto;
 	width: 350px;
+	top: -250px;
+	z-index: 10;
+	-webkit-transition	: all 800ms ease-in-out;
 }
 
 section.top-desc div.desc-content {
@@ -900,6 +903,26 @@ section.top-desc div.close {
 	position: absolute;
 	bottom: 100px;
 	left: 72px;
+	transition			: all 800ms ease-in-out;
+	-webkit-transition	: -webkit-transform 800ms ease-in-out;
+	-moz-transition		: -moz-transform 800ms ease-in-out;
+	-ms-transition		: all 800ms ease-in-out;
+	-o-transition		: all 800ms ease-in-out;
+	cursor: pointer;
+}
+
+section.active div.close{
+	transform			: rotate(180deg);
+	-webkit-transform	: rotate(180deg);
+	-moz-transform		: rotate(180deg);
+	-ms-transform		: rotate(180deg);
+	-o-transform		: rotate(180deg);
+	transition			: all 800ms ease-in-out;
+	-webkit-transition	: -webkit-transform 800ms ease-in-out;
+	-moz-transition		: -moz-transform 800ms ease-in-out;
+	-ms-transition		: all 800ms ease-in-out;
+	-o-transition		: all 800ms ease-in-out;
+	cursor: pointer;
 }
 
 /* Contact us
