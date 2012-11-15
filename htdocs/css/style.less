@@ -616,9 +616,9 @@ div.aboutPageContainer div.right-side > div {
 }
 
 div.do div.left-side {
-	float: none;
-	min-height: 0;
-	margin-top: 150px;
+	float: none !important;
+	min-height: 0 !important;
+	margin-top: 150px !important;
 }
 
 div.do div.line {
@@ -626,8 +626,8 @@ div.do div.line {
 }
 
 div.do div.right-side {
-	margin-left: 50px;
-	min-height: 137px;
+	margin-left: 50px !important;
+	min-height: 137px !important;
 }
 
 div.whoWeAre div.left-side{
@@ -979,16 +979,17 @@ section.form-holder form textarea {
 }
 section.form-holder form > div{
 	float: right;
-	background-size: 100% 100%;
-	width:15px;
-	height: 15px;
+	width:13px;
+	height: 14px;
+	background-image: url('images/check.png');
+	background-position: 0 30px;
 }
 section.form-holder form div.ok{
-	background-image: url('images/ok.png');
+	background-position: 0 0;
 }
 
 section.form-holder form div.nok{
-	background-image: url('images/notok.png');
+	background-position: 0 14px;
 }
 
 section.form-holder form input[type=text].nok {
