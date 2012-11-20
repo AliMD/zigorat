@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <section class="container projects">
 	<img id="transparentImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" />
 	<map name="mapPrdMenu" id="mapPrdMenu">
@@ -9,7 +9,7 @@
 	</map>
 	<section class="logo"></section>
 	<section class="left-col left">
-		<?php include "inc/menus.php"; ?>
+		<?php inc('menus'); ?>
 	</section>
 	<section class="right-col">
 		<section class="pics_right">
@@ -53,6 +53,6 @@
 			</section>
 		</section>
 	</section>
-	<?php include 'inc/background.php' ?>
+	<?php inc('background'); ?>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php inc('footer'); ?>

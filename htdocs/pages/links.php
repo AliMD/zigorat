@@ -28,6 +28,6 @@
 			</div>
 		</div>
 	</section>
-	<?php inc('background') ?>
+	<?php inc('background'); ?>
 </section>
 <?php inc('footer'); ?>

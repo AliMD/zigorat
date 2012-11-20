@@ -57,6 +57,6 @@
 			</section>
 		</div>
 	</div>
-	<?php inc('background') ?>
+	<?php inc('background'); ?>
 </section>
 <?php inc('footer'); ?>

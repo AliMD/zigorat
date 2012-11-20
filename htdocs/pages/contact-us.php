@@ -53,6 +53,6 @@
 			<div class="clear"></div>
 		</section>
 	</section>
-	<?php inc('background') ?>
+	<?php inc('background'); ?>
 </section>
-<?php inc('header'); ?>
+<?php inc('footer'); ?>
