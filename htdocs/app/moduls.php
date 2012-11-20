@@ -2,7 +2,12 @@
 
 session_start();
 
-require_once('db.php');
+function inc($filename,$folder='inc'){
+	global $template;
+	@include "$folder/$filename.php";
+}
+
+inc('db','app');
 
 function get_page(){
 	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
@@ -20,7 +25,4 @@ function finalise (){
 	db_close();
 }
 
-function inc($filename,$folder='inc'){
-	global $template;
-	@include "$folder/$filename.php";
-}
+
