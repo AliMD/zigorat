@@ -138,7 +138,7 @@ pagejs = function(pg){
 		*/
 	}
 
-	else if(page.indexOf('projects-')===0) {
+	else if(page.indexOf('projects_')===0) {
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
