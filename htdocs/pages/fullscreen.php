@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <section class="fullscreen-container">
 	<section class="btns">
 		<ul class="info">
@@ -49,4 +49,4 @@
 		<div class="counter">01/06</div>
 	</section>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php inc('footer'); ?>

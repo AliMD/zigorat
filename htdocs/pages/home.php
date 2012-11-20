@@ -1,10 +1,10 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <section class="container home">
 	<section class="logo"></section>
 	<section class="left-col left">
-		<?php include 'inc/menus.php'; ?>
+		<?php inc('menus'); ?>
 	</section>
-	<?php include 'inc/icons.php'; ?>
+	<?php inc('icons'); ?>
 	<div class="right-col">
 		<div class="pics_right">
 			<section class="newhome">
@@ -57,6 +57,6 @@
 			</section>
 		</div>
 	</div>
-	<?php include 'inc/background.php' ?>
+	<?php inc('background') ?>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php inc('footer'); ?>

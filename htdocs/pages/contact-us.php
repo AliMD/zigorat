@@ -1,9 +1,9 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <body>
 <section class="container contact">
 	<section class="logo"></section>
 	<section class="left-col left">
-		<?php include "inc/menus.php"; ?>
+		<?php inc('menus'); ?>
 	</section>
 	<section class="right-col">
 		<section class="form-holder left">
@@ -53,6 +53,6 @@
 			<div class="clear"></div>
 		</section>
 	</section>
-	<?php include 'inc/background.php' ?>
+	<?php inc('background') ?>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php inc('header'); ?>
