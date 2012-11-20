@@ -1,3 +1,5 @@
+(function($,undefined){
+
 configs = {
 	ease:{
 		normal:''
@@ -8,50 +10,53 @@ configs = {
 	}
 }
 
-pageAni = {
-	home : {
-		load : {
-			ani1 : {
-				delay : 100,
-				target : '.bigpic',
-				keyframe : 'key1',
-				due : 800,
-				ease : 'ease-in'
-			},
-			ani2 : {
-				delay : 800,
-				target : '.small_pic',
-				keyframe : 'key1',
-				due : 800
-			},
-			ani3 : {
-				delay : 1200,
-				target : 'div.passage div.content',
-				keyframe : 'key2',
-				due : 1500,
-				ease : 'ease-in-out'
-			}
+var	ease = !!window.Zepto ? 'ease-out' : 'swing';
+$.extend($.fn,{
+	fadeLoop :function(options){
+
+		options=$.extend({
+			duration : 2500,
+			freez : 1500,
+			delay : 10,
+			startIndex : 0,
+			fadeFirstImage : true,
+			zIndex : -3,
+			zIndexAct : -2
+		},options);
+
+		options.startIndex--;
+
+		var nextPic,
+			pics    =this,
+			indx    =options.startIndex,
+			plen    =this.length,
+			fadeIn  ={opacity:1},
+			fadeOut ={opacity:0};
+
+		var nextPic = function(){
+			pics.eq(indx).animate(fadeOut,options.duration,ease,function(){
+				 $(this).css({'z-index':options.zIndex});
+
+			});
+			indx=indx<plen-1?indx+1:0;
+			setTimeout(function(){
+				pics.eq(indx).css({'z-index':options.zIndexAct}).animate(fadeIn,options.duration,ease,function(){
+					setTimeout(nextPic,options.freez);
+				});
+			},options.delay+10);
+		};
+
+		pics.css(fadeOut).css({'z-index':options.zIndex});
+
+		if(!options.fadeFirstImage){
+			pics.eq(0).css(fadeIn).css({'z-index':options.zIndexAct});
+			indx++;
+			setTimeout(nextPic,options.freez);
+		}else{
+			nextPic();
 		}
 	}
-}
-
-$.tween = function(tweenJson){
-	$.each(tweenJson,function(i,tweeen){
-		var prfx = '-webkit-', cssAni = {};
-		if(tweeen.due && tweeen.keyframe){
-			cssAni[prfx+"animation-name"] = tweeen.keyframe;
-			cssAni[prfx+"animation-duration"] = tweeen.due+'ms';
-			cssAni[prfx+"animation-timing-function"] = tweeen.ease || 'linear';
-			cssAni[prfx+"animation-play-state"] = "paused";
-			$(tweeen.target).css(cssAni);
-		}
-		tweeen.id = setTimeout(function() {
-			var target = $(tweeen.target);
-			tweeen.class && target.addClass(tweeen.class);
-			cssAni = {}; cssAni[prfx+"animation-play-state"] = "running"; target.css(cssAni);
-		},tweeen.delay);
-	});
-}
+});
 
 imageMapLink = function(target, href){
 	$(target+'Map').mouseover(function(){
@@ -64,13 +69,16 @@ imageMapLink = function(target, href){
 }
 
 window.onload = function(){
+
 	setTimeout(function(){
 		$('body').removeClass('preload');
-		pageAni[page] && $.tween(pageAni[page]['load']);
+
 		setTimeout(function(){
 			$('section.loadingContainer').css({display:'none'});
 		},1000);
+
 	},1000);
+
 	$('nav.nav a').click(function(){
 		$('section.loadingContainer').css({display:'block',visibility:'hidden'});
 		setTimeout(function(){
@@ -85,6 +93,7 @@ window.onload = function(){
 		},1600);
 		return false; // prevent to load page.
 	});
+
 }
 
 var page;
@@ -105,11 +114,6 @@ pagejs = function(pg){
 		});
 
 		imageMapLink('#lastProject', './last-project')
-		tmp = [];
-		$('#transparentImgLast').click(function (event) {
-			tmp=tmp.concat([event.offsetX,event.offsetY])
-			console.log(tmp);
-		})
 
 		/*$('.fullimg > div').fadeLoop({
 				delay : 300,
@@ -122,14 +126,16 @@ pagejs = function(pg){
 
 	else if(page == 'projects') {
 		imageMapLink('#prdShopping', './projects-shopping');
-		imageMapLink('#prdExhibition', './projects-exhibition')
-		imageMapLink('#prdHome', './projects-home')
-		imageMapLink('#prdOffice', './projects-office')
+		imageMapLink('#prdExhibition', './projects-exhibition');
+		imageMapLink('#prdHome', './projects-home');
+		imageMapLink('#prdOffice', './projects-office');
+		/*
 		tmp = [];
 		$('#transparentImg').click(function (event) {
 			tmp=tmp.concat([event.offsetX,event.offsetY])
 			console.log(tmp);
 		})
+		*/
 	}
 
 	else if(page.indexOf('projects-')===0) {
@@ -149,8 +155,8 @@ pagejs = function(pg){
 				freez : 4000,
 				duration : 2000,
 				fadeFirstImage : false
-		});
-		*/
+		});*/
+
 		$('div.close').click(function(){
 			$('.top-desc').toggleClass('active');
 			return false;
@@ -185,7 +191,7 @@ pagejs = function(pg){
 	}
 
 	else if(page=='contact-us'){
-			function validateText(str,len){
+		function validateText(str,len){
 			return str.length >= len;
 		}
 
@@ -248,8 +254,10 @@ pagejs = function(pg){
 		
 			});
 	}
-	
+
 	if(page!=='home'){
 		$('div.lines').css('opacity','0.2'); // move to css
 	}
 };
+
+})(window.Zepto || window.jQuery);
