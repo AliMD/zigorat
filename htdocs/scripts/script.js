@@ -115,13 +115,13 @@ pagejs = function(pg){
 
 		imageMapLink('#lastProject', './last-project')
 
-		/*$('.fullimg > div').fadeLoop({
+		$('.home-slider > div').fadeLoop({
 				delay : 300,
 				freez : 4000,
 				duration : 2000,
 				fadeFirstImage : false
 		});
-*/
+
 	}
 
 	else if(page == 'projects') {
@@ -150,12 +150,12 @@ pagejs = function(pg){
 
 	else if(page=='fullscreen'){
 
-		/*$('.fullimg > div').fadeLoop({
+		$('.fullimg > div').fadeLoop({
 				delay : 300,
 				freez : 4000,
 				duration : 2000,
 				fadeFirstImage : false
-		});*/
+		});
 
 		$('div.close').click(function(){
 			$('.top-desc').toggleClass('active');
