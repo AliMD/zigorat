@@ -1,14 +1,14 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <section class="container project">
 	<div class="logo"></div>
 	<section class="left-col left">
-		<?php include "inc/menus.php"; ?>
+		<?php inc('menus'); ?>
 	</section>
-<?php include "inc/projects-menu.php"; ?>
+<?php inc('projects-menu'); ?>
 		<div class="project_pics">
 			
 			<?php
-				include 'inc/imagemap-gallery.php';
+				inc('imagemap-gallery');
 			?>
 
 			<div class="g1">
@@ -58,6 +58,6 @@
 			<a href="#"></a>
 		</div>
 	</section>
-	<?php include 'inc/background.php' ?>
+	<?php inc('background'); ?>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php inc('footer'); ?>

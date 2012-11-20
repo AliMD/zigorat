@@ -1,8 +1,8 @@
-<?php include 'inc/header.php'; ?>
+<?php inc('header'); ?>
 <section class="container">
 	<section class="logo"></section>
 	<section class="left-col left">
-		<?php include "inc/menus.php"; ?>
+		<?php inc('menus'); ?>
 	</section>
 	<section class="right-col">
 		<div class="right-inside">
@@ -33,6 +33,6 @@
 			</div>
 		</div>
 	</section>
-	<?php include 'inc/background.php' ?>
+	<?php include inc('background'); ?>
 </section>
-<?php include 'inc/footer.php'; ?>
+<?php include inc('footer'); ?>
