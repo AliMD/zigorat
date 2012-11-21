@@ -4,6 +4,7 @@
 	<section class="left-col left">
 		<?php inc('menus'); ?>
 	</section>
+	<section class="right-col">
 		<?php inc('projects-menu'); ?>
 		<div class="project_pics">
 			<div class="left-panel"><?php echo $template['projects'][0] ?></div>

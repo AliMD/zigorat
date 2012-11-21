@@ -1,4 +1,3 @@
-	<section class="right-col">
 		<div class="top_menu">
 		<img id="transparentImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="455" height="200"  title="" /><!--b64 wont work here!!! ()-->
 		<map name="mapPrdMenu" id="mapPrdMenu">
