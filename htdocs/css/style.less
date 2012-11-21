@@ -1286,7 +1286,7 @@ section.prd h2 span{
 
 /* Loading
 -------------------------------------------------- */
-#loading{
+/*#loading{
 	width	: 277px;
 	height	: 709px;
 	position: absolute;
@@ -1296,8 +1296,135 @@ section.prd h2 span{
 	right	: 0;
 	margin	: auto;
 	background-image : url('images/loading-img.gif');
+}*/
+
+#circleG{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 150px;
+	height: 0;
+	-webkit-transform: scale(-0.7,0.7);
+
 }
 
+#circleG > div{
+	background-color:#000;
+	float:left;
+	height:32px;
+	margin-left:17px;
+	width:32px;
+	-webkit-animation-name:bounce_circleG;
+	-webkit-border-radius:21px;
+	-webkit-animation-duration:1.9500000000000002s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:linear;
+	-moz-animation-name:bounce_circleG;
+	-moz-border-radius:21px;
+	-moz-animation-duration:1.9500000000000002s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:linear;
+	opacity:0.3;
+	-o-animation-name:bounce_circleG;
+	border-radius:21px;
+	-o-animation-duration:1.9500000000000002s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:linear;
+	-ms-animation-name:bounce_circleG;
+	-ms-animation-duration:1.9500000000000002s;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-direction:linear;
+	opacity:0.3
+}
+
+#circleG_1{
+	-webkit-animation-delay:0.39s;
+	-moz-animation-delay:0.39s;
+	-o-animation-delay:0.39s;
+	-ms-animation-delay:0.39s;
+}
+
+#circleG_2{
+	-webkit-animation-delay:0.91s;
+	-moz-animation-delay:0.91s;
+	-o-animation-delay:0.91s;
+	-ms-animation-delay:0.91s;
+}
+
+#circleG_3{
+	-webkit-animation-delay:1.17s;
+	-moz-animation-delay:1.17s;
+	-o-animation-delay:1.17s;
+	-ms-animation-delay:1.17s;
+}
+
+@-webkit-keyframes bounce_circleG{
+
+	0%{
+		opacity:0.3
+	}
+
+	50%{
+		opacity			:1;
+		background-color:#fff
+	}
+
+	100%{
+		opacity:0.3
+	}
+
+}
+
+@-moz-keyframes bounce_circleG{
+	
+	0%{
+		opacity:0.3
+	}
+
+	50%{
+		opacity			:1;
+		background-color:#fff
+	}
+
+	100%{
+		opacity:0.3
+	}
+}
+
+@-o-keyframes bounce_circleG{
+	
+	0%{
+		opacity:0.3
+	}
+
+	50%{
+		opacity			:1;
+		background-color:#fff
+	}
+
+	100%{
+		opacity:0.3
+	}
+}
+
+@-ms-keyframes bounce_circleG{
+	
+	0%{
+		opacity:0.3
+	}
+
+	50%{
+		opacity:1;
+		background-color:#fff
+	}
+
+	100%{
+		opacity:0.3
+	}
+}
 /*
     ColorBox Core Style:
     The following CSS is consistent between example themes and should not be altered.
@@ -1336,5 +1463,4 @@ section.prd h2 span{
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
-
 /* THE END ! */
