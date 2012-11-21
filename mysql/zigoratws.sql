@@ -243,4 +243,4 @@ CREATE TABLE IF NOT EXISTS `sadmin_users` (
 --
 
 INSERT INTO `sadmin_users` (`id`, `fname`, `lname`, `username`, `email`, `password`, `role_id`, `dateadded`, `lastlogin`) VALUES
-(1, '', '', 'Ali.MD', 'i@ali.md', 'c88f7d11e43c354d5a0042cb169708ba', 1, 1353160202, 1353160250);
+(1, '', '', 'Ali.MD', 'i@ali.md', 'b22218c46b3f141664f4d37c853b95fa', 1, 1353160202, 1353160250);
