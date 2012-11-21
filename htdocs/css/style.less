@@ -1282,7 +1282,17 @@ section.prd h2 span{
 	text-transform	: uppercase;
 	text-decoration	: underline;
 }
-
+section.prd .links{
+	display: none;
+}
+section.prd .links.act{
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
 
 /* Loading
 -------------------------------------------------- */
@@ -1463,4 +1473,3 @@ section.prd h2 span{
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
-/* THE END ! */
