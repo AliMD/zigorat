@@ -139,6 +139,7 @@ pagejs = function(pg){
 	}
 
 	else if(page.indexOf('projects_')===0) {
+		/*
 		imageMapLink('#prdShopping', './projects-shopping');
 		imageMapLink('#prdExhibition', './projects-exhibition')
 		imageMapLink('#prdHome', './projects-home')
@@ -146,6 +147,13 @@ pagejs = function(pg){
 		imageMapLink('#Gallery0', './Gallery0');
 		imageMapLink('#Gallery01', './Gallery01')
 		imageMapLink('#Gallery02', './Gallery02')
+		*/
+		for(var i=0;i<100;i++){
+			var prdpics = $('.prdpic'+i);
+			if(!prdpics.length) break;
+			prdpics.colorbox({rel:'prdpic'+i, slideshow:true});
+			console.log(prdpics.length);
+		}
 	}
 
 	else if(page=='fullscreen'){
