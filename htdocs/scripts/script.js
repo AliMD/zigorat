@@ -93,6 +93,7 @@ window.onload = function(){
 		},1600);
 		return false; // prevent to load page.
 	});
+	$('.darkbox').colorbox({rel:'darkbox',opacity:0.7});
 
 }
 
