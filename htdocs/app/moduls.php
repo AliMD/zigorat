@@ -26,8 +26,6 @@ function finalise (){
 }
 
 function gen_project($project,$linkclass){
-	$html = '';
-
 	$project['img'] = array();
 	$project['imglinks']='';
 	$project['imglen']=0;
@@ -41,7 +39,7 @@ function gen_project($project,$linkclass){
 		}
 	}
 
-	$html .= "
+	return "
 				<section class='prd' style=\"background-image:url('images/projects/$project[thumb]');\">
 					<h1>$project[name_en]</h1>
 					<h2>
@@ -50,7 +48,6 @@ function gen_project($project,$linkclass){
 					$project[imglinks]
 				</section>
 			";
-	return $html;
 }
 
 function gen_projects_list($projects_arr){
@@ -58,7 +55,7 @@ function gen_projects_list($projects_arr){
 	$len = sizeof($projects_arr);
 	for($i=0; $i<$len; $i+=3) {
 		for($j=0;$j<3;$j++){
-			$projects_arr[$i] and $html[$j] .= gen_project($projects_arr[$i+$j],"prdpic".($i+$j));
+			$projects_arr[$i+$j] and $html[$j] .= gen_project($projects_arr[$i+$j],"prdpic".($i+$j));
 		}
 	}
 	return $html;

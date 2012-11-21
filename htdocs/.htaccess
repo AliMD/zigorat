@@ -41,11 +41,15 @@ ErrorDocument 510 /err/?e=510
 # Various rewrite rules.
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)\.(css|less)$ css/$1.$2 [L,NC]
 
-RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^projects_cat(\d)_.*$ index.php?page=projects_list&cat=$1 [L,NC,QSA,T=text/html]
+
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
 
