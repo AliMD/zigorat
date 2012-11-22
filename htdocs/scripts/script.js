@@ -65,8 +65,10 @@ imageMapLink = function(target, href){
 		$(target).removeClass('hover');
 	}).click(function(){
 		window.location.href=href;
-	})
+	});
 }
+
+pageLoadedAnimations = [];
 
 window.onload = function(){
 
@@ -77,7 +79,11 @@ window.onload = function(){
 			$('section.loadingContainer').css({display:'none'});
 		},1000);
 
-	},1000);
+		setTimeout(function(){
+			for(fn in pageLoadedAnimations) fn();
+		},2000);
+
+	},500);
 
 	$('nav.nav a').click(function(){
 		$('section.loadingContainer').css({display:'block',visibility:'hidden'});
@@ -97,23 +103,25 @@ window.onload = function(){
 }
 
 var page;
-pagejs = function(pg){
-	page = pg;
+pagejs	= function(pg){
+	page	= pg;
 
 	$(page).addClass('active');
 
-	if(page=='home'){
+	if(page	=='home'){
 		// pages logo icons
-		var delay=1;
-		$('.icon').each(function(){
-			var that = this;
-			delay += configs.icons.delay;
-			setTimeout(function(){
-				$(that).animate({'left':'0px'},configs.icons.due);
-			},delay);
-		});
+		pageLoadedAnimations.push(function(){
+			var delay	=1;
+			$('.icon').each(function(){
+				var that = this;
+				delay += configs.icons.delay;
+				setTimeout(function(){
+					$(that).animate({'left':'0px'},configs.icons.due);
+				},delay);
+			});
+		})
 
-		imageMapLink('#lastProject', './last-project')
+		imageMapLink('#lastProject', './last-project');
 
 		$('.home-slider > div').fadeLoop({
 				delay : 300,
@@ -186,7 +194,7 @@ pagejs = function(pg){
 			len:4,
 			step : 500
 		};aboutSlider.top = aboutSlider.first;
-		
+
 		$('.aboutPageContainer').css({'top':aboutSlider.top});
 
 		$('.bot-arrow').click(function(){
@@ -196,7 +204,8 @@ pagejs = function(pg){
 				aboutSlider.top = aboutSlider.first;
 			}
 			$('.aboutPageContainer').animate({'top':aboutSlider.top},700,'ease-out');
-		});	
+		});
+
 		$('.top-arrow').click(function(){
 			if (aboutSlider.top < aboutSlider.first){
 				aboutSlider.top += aboutSlider.step;
@@ -214,62 +223,62 @@ pagejs = function(pg){
 
 		function validateEmail(str){
 			var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
-		
+
 			return emailPattern.test(str);
 		}
 
-			$('.form-holder').submit(function(){
-				var target, err = false;
-		
-				target = $('#name');
-				if( validateText(target.val(),3) ){
-					target.removeClass('err').addClass('ok');
-					$('div.name').removeClass('nok').addClass('ok');
-				}else{
-					target.removeClass('ok').addClass('err');
-					$('div.name').removeClass('ok').addClass('nok');
-					err = true;
-				}
-		
-				target = $('#subject');
-				if( validateText(target.val(),5) ){
-					target.removeClass('err').addClass('ok');
-					$('div.subject').removeClass('nok').addClass('ok');
-				}else{
-					target.removeClass('ok').addClass('err');
-					$('div.subject').removeClass('ok').addClass('nok');
-					err = true;
-				}
-		
-				target = $('#email');
-				if( validateEmail(target.val()) ){
-					target.removeClass('err').addClass('ok');
-					$('div.email').removeClass('nok').addClass('ok');
-				}else{
-					target.removeClass('ok').addClass('err');
-					$('div.email').removeClass('ok').addClass('nok');
-					err = true;
-				}
-		
-				target = $('#txt');
-				if( validateText(target.val(),10) ){
-					target.removeClass('err').addClass('ok');
-					$('div.txt').removeClass('nok').addClass('ok');
-				}else{
-					target.removeClass('ok').addClass('err');
-					$('div.txt').removeClass('ok').addClass('nok');
-					err = true;
-				}
-		
-				if(!err){
-					$('#ifrm').animate({
-						height:'75px'
-					},500);
-				}
-		
-				return !err;
-		
-			});
+		$('.form-holder').submit(function(){
+			var target, err = false;
+
+			target = $('#name');
+			if( validateText(target.val(),3) ){
+				target.removeClass('err').addClass('ok');
+				$('div.name').removeClass('nok').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				$('div.name').removeClass('ok').addClass('nok');
+				err = true;
+			}
+
+			target = $('#subject');
+			if( validateText(target.val(),5) ){
+				target.removeClass('err').addClass('ok');
+				$('div.subject').removeClass('nok').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				$('div.subject').removeClass('ok').addClass('nok');
+				err = true;
+			}
+
+			target = $('#email');
+			if( validateEmail(target.val()) ){
+				target.removeClass('err').addClass('ok');
+				$('div.email').removeClass('nok').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				$('div.email').removeClass('ok').addClass('nok');
+				err = true;
+			}
+
+			target = $('#txt');
+			if( validateText(target.val(),10) ){
+				target.removeClass('err').addClass('ok');
+				$('div.txt').removeClass('nok').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				$('div.txt').removeClass('ok').addClass('nok');
+				err = true;
+			}
+
+			if(!err){
+				$('#ifrm').animate({
+					height:'75px'
+				},500);
+			}
+
+			return !err;
+
+		});
 	}
 
 	if(page!=='home'){
