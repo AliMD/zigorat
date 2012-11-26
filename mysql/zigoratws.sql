@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 21, 2012 at 12:23 PM
+-- Generation Time: Nov 26, 2012 at 12:40 PM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `portfolio` (
   `img10` varchar(32) NOT NULL DEFAULT '',
   `sort` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `portfolio`
@@ -57,12 +57,14 @@ INSERT INTO `portfolio` (`id`, `name_en`, `name_fa`, `category`, `description_en
 (4, 'No Name 1', 'اسم نداره', 3, 'industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a gal', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'aboozar.png', 'aboozar1.jpg', 'aboozar2.jpg', '', '', '', '', '', '', '', '', 0),
 (5, 'No Name 2', 'اسم نداره', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'babak.png', 'babak1.jpg', 'babak2.jpg', 'babak3.jpg', 'babak4.jpg', '', '', '', '', '', '', 0),
 (6, 'No Name 1', 'اسم نداره', 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'caspian.png', 'caspian1.jpg', 'caspian3.jpg', 'caspian4.jpg', '', '', '', '', '', '', '', 0),
-(7, 'No Name 2', 'اسم نداره', 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'cheetoz.png', 'cheetoz1.jpg', 'cheetoz2.jpg', 'cheetoz3.jpg', 'cocachuckles2.jpg', 'cocachuckles3.jpg', '', '', '', '', '', 0),
+(7, 'No Name 2', 'اسم نداره', 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'cheetoz.png', 'cheetoz1.jpg', 'cheetoz2.jpg', 'cheetoz3.jpg', 'cocachuckles', 'cocachuckles', '', '', '', '', '', 0),
 (8, 'No Name 1', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'adolfo.png', 'adolofo1.jpg', 'adolofo2.jpg', 'adolofo3.jpg', '', '', '', '', '', '', '', 0),
-(9, 'No Name 2', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'boggi.png', 'boggi1.jpg', 'boggi2.jpg', 'boggi3.jpg', 'boggi4.jpg', 'boggi5.jpg', 'boggi6.jpg', '', '', '', '', 0),
+(9, 'No Name 2', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'boggi.png', 'boggi1.jpg', 'boggi2.jpg', 'boggi3.jpg', 'boggi4.jpg', 'boggi5.jpg', 'boggi6.jpg', 'boggi7.jpg', '', '', '', 0),
 (10, 'No Name 3', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'diesel.png', 'Diesel1.jpg', 'Diesel2.jpg', 'Diesel3.jpg', '', '', '', '', '', '', '', 0),
 (11, 'No Name 4', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'geox.png', 'geox1.jpg', 'geox2.jpg', 'geox3.jpg', '', '', '', '', '', '', '', 0),
-(12, 'No Name 5', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'spring.png', 'Springfield1.jpg', 'Springfield2.jpg', 'Springfield3.jpg', 'Springfield4.jpg', 'Springfield5.jpg', 'Springfield6.jpg', 'Springfield7.jpg', '', '', '', 0);
+(12, 'No Name 5', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', '', 'spring.png', 'Springfield1.jpg', 'Springfield2.jpg', 'Springfield3.jpg', 'Springfield4.jpg', 'Springfield5.jpg', 'Springfield6.jpg', 'Springfield7.jpg', '', '', '', 0),
+(13, 'No Name 6', 'اسم نداره', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', '', 'ur adipisicing elit, sed do', '', 'flamingo.png', 'flamingo1.jpg', 'flamingo2.jpg', '', '', '', '', '', '', '', '', 0),
+(14, 'No Name 7', 'اسم نداره', 2, 'ur adipisicing elit, sed do ur adipisicing elit, sed do ur adipisicing elit, sed do ur adipisicing elit, sed do ur adipisicing elit, sed do ur adipisicing elit, sed do ur adipisicing elit, sed do', '', 'ur adipisicing elit, sed do', '', 'gole-nasrin.png', 'gol1.jpg', 'gol2.jpg', '', '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -105,17 +107,17 @@ INSERT INTO `sadmin_fields` (`id`, `name`, `displayname`, `table_id`, `input_typ
 (6, 'description_fa', 'Persian Description', 1, 'ta', '', '', '', '', '', '', '', '', '', 0, '', '', ''),
 (7, 'excerpt_en', 'English Excerpt', 1, 'ti', '', '', '', '', '', '', '', '', '', 0, 'y', '', ''),
 (8, 'excerpt_fa', 'Persian Excerpt', 1, 'ti', '', '', '', '', '', '', '', '', '', 0, 'y', '', ''),
-(9, 'thumb', 'Thumbnail', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg|png', '', 0, '', '', ''),
-(10, 'img1', 'Image 1', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(11, 'img2', 'Image 2', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(12, 'img3', 'Image 3', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(13, 'img4', 'Image 4', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(14, 'img5', 'Image 5', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(15, 'img6', 'Image 6', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(16, 'img7', 'Image 7', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(17, 'img8', 'Image 8', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(18, 'img9', 'Image 9', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
-(19, 'img10', 'Image 10', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/htdocs/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(9, 'thumb', 'Thumbnail', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg|png', '', 0, '', '', ''),
+(10, 'img1', 'Image 1', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(11, 'img2', 'Image 2', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(12, 'img3', 'Image 3', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(13, 'img4', 'Image 4', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(14, 'img5', 'Image 5', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(15, 'img6', 'Image 6', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(16, 'img7', 'Image 7', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(17, 'img8', 'Image 8', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(18, 'img9', 'Image 9', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(19, 'img10', 'Image 10', 1, 'uf', '', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/zigorat/images/projects/', 'jpg|jpeg', '', 0, '', '', ''),
 (20, 'sort', 'Order', 1, 'ti', '', '', '', '', '', '', '', '', '', 0, 'y', '', '');
 
 -- --------------------------------------------------------
@@ -253,4 +255,4 @@ CREATE TABLE IF NOT EXISTS `sadmin_users` (
 --
 
 INSERT INTO `sadmin_users` (`id`, `fname`, `lname`, `username`, `email`, `password`, `role_id`, `dateadded`, `lastlogin`) VALUES
-(1, '', '', 'Ali.MD', 'i@ali.md', 'b22218c46b3f141664f4d37c853b95fa', 1, 1353160202, 1353482763);
+(1, '', '', 'Ali.MD', 'i@ali.md', 'b22218c46b3f141664f4d37c853b95fa', 1, 1353160202, 1353927584);

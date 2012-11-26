@@ -137,6 +137,7 @@ pagejs	= function(pg){
 		imageMapLink('#prdExhibition', './projects_cat0_exhibition');
 		imageMapLink('#prdHome', './projects_cat3_home');
 		imageMapLink('#prdOffice', './projects_cat1_office');
+
 		/*
 		tmp = [];
 		$('#transparentImg').click(function (event) {
@@ -146,7 +147,7 @@ pagejs	= function(pg){
 		*/
 	}
 
-	else if(page.indexOf('projects_')===0) {
+	else if(page == 'projects_list') {
 		
 		imageMapLink('#prdShopping', './projects_cat2_shopping');
 		imageMapLink('#prdExhibition', './projects_cat0_exhibition');
@@ -166,6 +167,7 @@ pagejs	= function(pg){
 					slideshowStop:'Stop ',
 					opacity:0.7,
 					scrolling:false,
+					returnFocus:false,
 					maxHeight:window.innerHeight-50,
 					maxWidth:window.innerWidth-50
 				});
