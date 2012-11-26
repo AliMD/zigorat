@@ -181,9 +181,9 @@ pagejs	= function(pg){
 				'.project_pics .center-panel .prd',
 				'.project_pics .right-panel .prd'
 			],
-			hideAniDue : 800,
-			showAniDue : 800,
-			delayShow : 1 // time beetwin hide and show; normal value : hideAniDue
+			hideAniDue : 600,
+			showAniDue : 600,
+			delayShow : 200 // time beetwin hide and show; normal value : hideAniDue
 		};
 		prdsSlider.totalSlide = $(prdsSlider.slideTargets[0]).length;
 
@@ -211,8 +211,9 @@ pagejs	= function(pg){
 		prdsSlider.hide = function(target){
 			// hide ani target
 			target.animate({
-				opacity : 0
-			},prdsSlider.hideAniDue,'',function(){
+				opacity : 0.3,
+				scale : 0
+			},prdsSlider.hideAniDue,'ease-out',function(){
 				target.css({
 					display : 'none'
 				});
@@ -224,8 +225,9 @@ pagejs	= function(pg){
 			target.css({
 				display : 'block'
 			}).animate({
-				opacity : 1
-			},prdsSlider.showAniDue);
+				opacity : 1,
+				scale : 1
+			},prdsSlider.showAniDue,'ease-out');
 		}
 
 		$('.bot-arrow').click(function(){
