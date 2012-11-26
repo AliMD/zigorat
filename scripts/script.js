@@ -173,6 +173,31 @@ pagejs	= function(pg){
 				});
 			}
 		})(window.jQuery);
+
+		prdsSlider={
+			first : -70,
+			len:4,
+			step : 500
+		};prdsSlider.top = prdsSlider.first;
+		
+		$('.bot-arrow').click(function(){
+			if (prdsSlider.top > -1*(prdsSlider.len-1)*prdsSlider.step){
+				prdsSlider.top -= prdsSlider.step;
+			}else{
+				prdsSlider.top = prdsSlider.first;
+			}
+			$('.project_pics').animate({'top':prdsSlider.top},700,'ease-out');
+		});
+
+		$('.top-arrow').click(function(){
+			if (prdsSlider.top < prdsSlider.first){
+				prdsSlider.top += prdsSlider.step;
+			}else{
+				prdsSlider.top = -1*(prdsSlider.len-1)*prdsSlider.step + prdsSlider.first ;
+			}
+			$('.project_pics').animate({'top':prdsSlider.top},700,'ease-out');
+		});
+
 	}
 
 	else if(page=='fullscreen'){
