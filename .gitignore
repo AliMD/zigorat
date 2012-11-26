@@ -19,4 +19,4 @@ Designs/
 *.xmind
 
 #admin panel and uplaod folder
-htdocs/admin
+admin/
