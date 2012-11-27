@@ -80,7 +80,9 @@ window.onload = function(){
 		},1000);
 
 		setTimeout(function(){
-			for(fn in pageLoadedAnimations) fn();
+			for (var i = pageLoadedAnimations.length - 1; i >= 0; i--) {
+				pageLoadedAnimations[i].call();
+			};
 		},2000);
 
 	},500);
@@ -119,7 +121,7 @@ pagejs	= function(pg){
 					$(that).animate({'left':'0px'},configs.icons.due);
 				},delay);
 			});
-		})
+		});
 
 		imageMapLink('#lastProject', './last-project');
 
@@ -181,9 +183,10 @@ pagejs	= function(pg){
 				'.project_pics .center-panel .prd',
 				'.project_pics .right-panel .prd'
 			],
-			hideAniDue : 600,
-			showAniDue : 600,
-			delayShow : 200 // time beetwin hide and show; normal value : hideAniDue
+			hideAniDue : 500,
+			showAniDue : 500,
+			randDly : 100,
+			delayShow : 550 // time beetwin hide and show; normal value : hideAniDue
 		};
 		prdsSlider.totalSlide = $(prdsSlider.slideTargets[0]).length;
 
@@ -196,40 +199,40 @@ pagejs	= function(pg){
 			//hide all `prdsSlider.currentSlide` pahe
 			if(prdsSlider.currentSlide >= 0){
 				for (var i = prdsSlider.slideTargets.length - 1; i >= 0; i--) {
-					prdsSlider.hide( $(prdsSlider.slideTargets[i]).eq(prdsSlider.currentSlide) );
+					prdsSlider.hide( $(prdsSlider.slideTargets[i]).eq(prdsSlider.currentSlide),prdsSlider.hideAniDue+prdsSlider.randDly*i );
 				};
 			}
 
 			// show all `n` page (after delay)
 			setTimeout(function(){
 				for (var i = prdsSlider.slideTargets.length - 1; i >= 0; i--) {
-					prdsSlider.show( $(prdsSlider.slideTargets[i]).eq(n) );
+					prdsSlider.show( $(prdsSlider.slideTargets[i]).eq(n),prdsSlider.showAniDue+prdsSlider.randDly*i );
 				};
 			},prdsSlider.delayShow);
 
 			prdsSlider.currentSlide = n;
 		}
 
-		prdsSlider.hide = function(target){
+		prdsSlider.hide = function(target,due){
 			// hide ani target
 			target.animate({
 				opacity : 0.3,
 				scale : 0
-			},prdsSlider.hideAniDue,'ease-out',function(){
+			},due,'ease-out',function(){
 				target.css({
 					display : 'none'
 				});
 			});
 		}
 
-		prdsSlider.show = function(target){
+		prdsSlider.show = function(target,due){
 			// show ani target
 			target.css({
 				display : 'block'
 			}).animate({
 				opacity : 1,
 				scale : 1
-			},prdsSlider.showAniDue,'ease-out');
+			},due,'ease-out');
 		}
 
 		if(prdsSlider.totalSlide > 1){
