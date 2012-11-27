@@ -1,10 +1,9 @@
 <?php inc('header'); ?>
 <body>
 <section class="container contact">
-	<section class="logo"></section>
-	<section class="left-col left">
-		<?php inc('menus'); ?>
-	</section>
+	<?php inc('left-side'); ?>
+	<?php inc('menus'); ?>
+</section>
 	<section class="right-col">
 		<section class="form-holder left">
 			<form action="sendmail" method="post" target='ifrm'>

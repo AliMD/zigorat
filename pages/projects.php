@@ -7,10 +7,8 @@
 		<area id='prdHomeMap' shape="poly" coords="276, 363, 32, 505, 34, 639, 276, 497" href="#" alt="" title="" />
 		<area id='prdOfficeMap' shape="poly" coords="412, 433, 172, 573, 170, 709, 414, 565" href="#" alt="" title="" />
 	</map>
-	<section class="logo"></section>
-	<section class="left-col left">
-		<?php inc('menus'); ?>
-	</section>
+	<?php inc('left-side'); ?>
+	<?php inc('menus'); ?>
 	<section class="right-col">
 		<section class="pics_right">
 			<section class="product-menu">

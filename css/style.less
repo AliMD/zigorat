@@ -61,14 +61,18 @@ div.background{
 	-ms-box-shadow		:0 3px 10px #000;
 	box-shadow			:0 3px 10px #000;
 }
-.logo {
+
+a.logo {
+	display	: block;
 	width	:315px;
 	height	:141px;
 	position:absolute;
 	left	:60px;
 	top		:70px;
+	z-index	: 10;
 	background :url('images/logo.png') top right no-repeat;
 }
+
 .left-col {
 	height	:720px;
 	width	:140px;
@@ -562,9 +566,10 @@ section.about-us{
 }
 
 section.about-us section.right-col div.right-inside {
-	margin-top :150px;
-	min-height :470px;
-	padding :1px;
+	overflow  : hidden;
+	margin-top:150px;
+	min-height:470px;
+	padding   :1px;
 }
 section.about-us div.right-inside div.left-side {
 	float :left;
