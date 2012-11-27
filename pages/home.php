@@ -1,9 +1,8 @@
 <?php inc('header'); ?>
 <section class="container home">
-	<section class="logo"></section>
-	<section class="left-col left">
-		<?php inc('menus'); ?>
-	</section>
+	<?php inc('left-side'); ?>
+	<?php inc('menus'); ?>
+</section>
 	<?php inc('icons'); ?>
 	<div class="right-col">
 		<div class="pics_right">

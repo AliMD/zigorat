@@ -24,7 +24,7 @@
 	<?php
 		error_reporting(E_ALL ^ E_NOTICE);
 
-		$admin = 'me@aligh.ir';
+		$admin = 'info@zigorat.co';
 
 		$name    = $_POST['name'];
 		$email   = $_POST['email'];
@@ -41,10 +41,10 @@
 			){
 				echo '<h2 class="ok">Mail sent</h2>';
 			}else{
-				echo '<h2 class="err">Error in sending mail.</h2>';
+				echo '<h2 class="err">Error in sending mail. Please try again.</h2>';
 			}
 		}else{
-			echo '<h2 class="err">Access Restricted !</h2>';
+			echo '<h2 class="err">Access Restricted ! Please try again.</h2>';
 		}
 	?>
 </body>
