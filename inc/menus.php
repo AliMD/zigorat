@@ -8,8 +8,8 @@
 		<?php
 			$menus=explode(';', $menus);
 			foreach ($menus as $menu_id => $menu) {
-				list($menu_txt,$menu_url)=explode(',', $menu);
-				$menu_class = false ? 'active':'';
+				list($menu_txt,$menu_url) = explode(',', $menu);
+				$menu_class = $menu_url == "./$template[menu_url]" ? 'active':'';
 				echo "<li><a class='$menu_class' id='menu_$menu_id' href='$menu_url'>$menu_txt</a></li>";
 			}
 		?>
