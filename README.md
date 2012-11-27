@@ -27,9 +27,13 @@ This is the source for the main Zigorat company website, found at [zigorat.co](h
 ## Change Log
 
 #### HEAD (now)
+  * Fix some bugs
+  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.9...master)
+
+#### v0.9 (11/21/2012)
   * Products category.
   * Preview.
-  * [View full changes](https://github.com/AliMD/zigorat/compare/v1.0rc1...master)
+  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.7...v0.8)
 
 #### v0.8 (11/21/2012)
   * Ready to publish.
