@@ -1220,6 +1220,11 @@ div.project_pics{
 	padding	: 10px;
 }
 
+div.project_pics > div {
+	position: relative;
+	height: 500px;
+}
+
 div.left-panel,
 div.center-panel{
 	float		: left;
@@ -1233,10 +1238,20 @@ div.right-panel{
 }
 
 section.prd{
-	position: relative;
-	width	: 240px;
-	height	: 330px;
-	margin	: 55px 0 250px;
+	position	: absolute;
+	left		: 0;
+	top			: 35px;
+	width		: 240px;
+	height		: 330px;
+	display		: none;
+	opacity		: 0;
+
+	transform			: scale(0);
+	-o-transform		: scale(0);
+	-ms-transform		: scale(0);
+	-moz-transform		: scale(0);
+	-webkit-transform	: scale(0);
+
 	background-size		: 100% 100%;
 	background-position	: center center;
 	background-repeat	: no-repeat;
