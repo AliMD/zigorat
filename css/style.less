@@ -393,7 +393,7 @@ section.right-col div.top-arrow {
 	height		:14px;
 	background	:url('images/dir_up.png') no-repeat;
 	cursor		:pointer;
-	z-index		: 1;
+	z-index		: 20;
 }
 section.right-col div.top-arrow:hover {
 	background :url('images/hover_up.png') no-repeat;
@@ -406,6 +406,7 @@ section.right-col div.bot-arrow {
 	height		:14px;
 	background	:url('images/dir_down.png') no-repeat;
 	cursor		:pointer;
+	z-index: 20;
 }
 section.right-col div.bot-arrow:hover {
 	background :url('images/hover_down.png') no-repeat;
@@ -568,7 +569,7 @@ section.about-us{
 section.about-us section.right-col div.right-inside {
 	overflow  : hidden;
 	margin-top:150px;
-	min-height:470px;
+	height:560px;
 	padding   :1px;
 }
 section.about-us div.right-inside div.left-side {
@@ -694,7 +695,7 @@ div.right-side div.bot-arrow:hover {
 /* Our Customer
 -------------------------------------------------- */
 
-body.our-customers section.container{
+body.our-customers div.right-inside{
 	overflow: hidden;
 }
 
@@ -702,7 +703,13 @@ div.left-side div.customer {
 	margin-left :50px;
 }
 
-div.customer div.line {
+div.right-inside div.customer_title {
+	position: absolute;
+	top: 105px;
+	left: 50px;
+}
+
+div.customer_title div.line {
 	width :212px;
 	height :14px;
 	margin-left :115px;
@@ -710,24 +717,49 @@ div.customer div.line {
 }
 
 div.customers-pic{
-	background-image: url('images/our-custumers.png');
 	background-repeat: no-repeat;
 	width: 301px;
 	height: 456px;
-}
-
-body.our-customers div.right-inside div.right-side{
-	margin-left: 420px;
-	min-height: 465px;
-	padding: 1px;
+	margin-left: 360px;
 	margin-top: 36px;
 }
 
 body.our-customers section.right-col div.right-inside {
 	margin-top :150px;
-	min-height :470px;
+	height :560px;
 	padding :1px;
+	position: relative;
 }
+
+div.right-inside div.customer_scroll {
+	position: relative;
+	top: 1px;
+}
+
+div.customer_scroll div.customer_container {
+	height: 600px;
+}
+
+div.customer_container div.left_panel {
+	width: 300px;
+	color: #fff;
+	font-family: "lucida sans unicode", "lucida grande", sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 18px;
+	white-space: pre;
+	margin-top: 280px;
+	margin-left: 50px;
+}
+
+div.customer_container div.right_panel {
+	background-repeat: no-repeat;
+	width: 301px;
+	height: 456px;
+	margin-left: 410px;
+	margin-top: 58px;
+}
+
 body.our-customers div.right-inside div.left-side {
 	float :left;
 	width :355px;
@@ -735,7 +767,17 @@ body.our-customers div.right-inside div.left-side {
 	padding :1px;
 }
 
-div.customer h4 {
+body.our-customers section.right-col div.top-arrow {
+	top: 44px;
+	right: 9px;
+}
+
+body.our-customers section.right-col div.bot-arrow {
+	top: 490px;
+	right: 9px;
+}
+
+div.right-inside h4 {
 	width :65px;
 	font-family :'myriadprocondregular';
 	font-size :19px;
@@ -743,7 +785,7 @@ div.customer h4 {
 	text-transform :uppercase;
 	white-space :nowrap;
 }
-div.customer div.desc {
+div.right-inside div.desc {
 	width: 300px;
 	margin-top: 10px;
 	color: #fff;
@@ -751,8 +793,23 @@ div.customer div.desc {
 	font-size: 13px;
 	text-align: justify;
 	line-height: 18px;
+	
 }
 
+div.scroll_customer {
+
+}
+
+div.scroll_customer div.scroll_txt {
+	width: 300px;
+	margin-top: 10px;
+	color: #fff;
+	font-family: "lucida sans unicode", "lucida grande", sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 18px;
+	float: left;
+}
 
 /* FullScreen
 -------------------------------------------------- */
