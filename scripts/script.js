@@ -300,29 +300,37 @@ pagejs	= function(pg){
 	else if(page=='our-customers'){
 		var customersSlider={
 			first : 0,
-			len:3,
-			step : 602
+			len:$('.customer_container').length,
+			step : 600
 		};customersSlider.top = customersSlider.first;
 
 		$('.customer_scroll').css({'top':customersSlider.top});
 
-		$('.bot-arrow').click(function(){
-			if (customersSlider.top > -1*(customersSlider.len-1)*customersSlider.step){
-				customersSlider.top -= customersSlider.step;
-			}else{
-				customersSlider.top = customersSlider.first;
-			}
-			$('.customer_scroll').animate({'top':customersSlider.top},700,'ease-out');
-		});
+		if(customersSlider.len<2){
+			$('.bot-arrow, .top-arrow').css({
+				display:'none'
+			});
 
-		$('.top-arrow').click(function(){
-			if (customersSlider.top < customersSlider.first){
-				customersSlider.top += customersSlider.step;
-			}else{
-				customersSlider.top = -1*(customersSlider.len-1)*customersSlider.step + customersSlider.first ;
-			}
-			$('.customer_scroll').animate({'top':customersSlider.top},700,'ease-out');
-		});
+		}else{
+
+			$('.bot-arrow').click(function(){
+				if (customersSlider.top > -1*(customersSlider.len-1)*customersSlider.step){
+					customersSlider.top -= customersSlider.step;
+				}else{
+					customersSlider.top = customersSlider.first;
+				}
+				$('.customer_scroll').animate({'top':customersSlider.top},700,'ease-out');
+			});
+
+			$('.top-arrow').click(function(){
+				if (customersSlider.top < customersSlider.first){
+					customersSlider.top += customersSlider.step;
+				}else{
+					customersSlider.top = -1*(customersSlider.len-1)*customersSlider.step + customersSlider.first ;
+				}
+				$('.customer_scroll').animate({'top':customersSlider.top},700,'ease-out');
+			});
+		}
 	}
 
 	else if(page=='contact-us'){

@@ -16,7 +16,7 @@
 			<div class="top-arrow"></div>
 			<div class="bot-arrow"></div>
 			<div class="customer_scroll">
-				<?php for($i=0;$i<3;$i++){ ?>
+				<?php for($i=0;$i<10;$i++){ ?>
 				<div class="customer_container cover">
 					<div class="left_panel left">Coca-Cola (Khoshgovar)
 Chuckles &amp; Crunchips
