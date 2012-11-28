@@ -80,5 +80,4 @@ function gen_projects_list($projects_arr){
 
 function gen_customers_list($customers_arr){
 	//TODO : @AliGH Html codes from $customers_arr
-	console_log($customers_arr);
 }
