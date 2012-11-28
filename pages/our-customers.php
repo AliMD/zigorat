@@ -4,31 +4,59 @@
 	<?php inc('menus'); ?>
 </section>
 	<section class="right-col">
-		<div class="right-inside">
-			<div class="left-side">
-				<div class="customer left">
-					<h4 class="left">our customers</h4>
-					<div class="line"></div>
-					<div class="desc left">
-						We genuinely like our clients not because they are paying their bills, because we do not display our clients personality, which in turn will encourage us to make things more memorable.<br /><br />
-						Customers who have the honor of working with some of them:<br />
-						Coca-Cola (Khoshgovar)<br />
-						Chuckles &amp; Crunchips<br />
-						Caspian mode commercial complex<br />
-						Qatar airways<br />
-						Pepsi<br />
-						Padide<br />
-						Iran Khodro<br />
-						Maskan sazan<br />
-						Cheetoz<br />
-						Pars opal<br />
-						Parsis<br />
-						Yves rocher<br />
+		<div class="right-inside overFlowHidden">
+			<div class="customer_scroll">
+				<div class="customer_container">
+					<div class="left_panel left">
+Coca-Cola (Khoshgovar)
+Chuckles &amp; Crunchips
+Caspian mode commercial complex
+Qatar airways
+Pepsi
+Padide
+Iran Khodro
+Maskan sazan
+Cheetoz
+Pars opal
+Parsis
+Yves rocher
 					</div>
+					<div class="right_panel" style="background-image: url('images/our-custumers.png');"></div>
 				</div>
-			</div>
-			<div class="right-side">
-				<div class="customers-pic"></div>
+				<div class="customer_container">
+					<div class="left_panel left">
+Coca-Cola (Khoshgovar)
+Chuckles &amp; Crunchips
+Caspian mode commercial complex
+Qatar airways
+Pepsi
+Padide
+Iran Khodro
+Maskan sazan
+Cheetoz
+Pars opal
+Parsis
+Yves rocher
+					</div>
+					<div class="right_panel" style="background-image: url('images/our-custumers.png');"></div>
+				</div>
+				<div class="customer_container">
+					<div class="left_panel left">
+Coca-Cola (Khoshgovar)
+Chuckles &amp; Crunchips
+Caspian mode commercial complex
+Qatar airways
+Pepsi
+Padide
+Iran Khodro
+Maskan sazan
+Cheetoz
+Pars opal
+Parsis
+Yves rocher
+					</div>
+					<div class="right_panel" style="background-image: url('images/our-custumers.png');"></div>
+				</div>
 			</div>
 		</div>
 	</section>
