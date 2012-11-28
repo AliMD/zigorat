@@ -16,24 +16,7 @@
 			<div class="top-arrow"></div>
 			<div class="bot-arrow"></div>
 			<div class="customer_scroll">
-				<?php for($i=0;$i<10;$i++){ ?>
-				<div class="customer_container cover">
-					<div class="left_panel left">Coca-Cola (Khoshgovar)
-Chuckles &amp; Crunchips
-Caspian mode commercial complex
-Qatar airways
-Pepsi
-Padide
-Iran Khodro
-Maskan sazan
-Cheetoz
-Pars opal
-Parsis
-Yves rocher
-					</div>
-					<div class="right_panel" style="background-image: url('images/our-custumers.png');"></div>
-				</div>
-				<?php } ?>
+				<?php echo $template['customers']; ?>
 			</div>
 		</div>
 	</section>

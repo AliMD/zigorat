@@ -28,6 +28,7 @@ This is the source for the main Zigorat company website, found at [zigorat.co](h
 
 #### HEAD (now)
   * Fix some bugs
+  * Dynamic our-oustomers page
   * [View full changes](https://github.com/AliMD/zigorat/compare/v0.9...master)
 
 #### v0.9 (11/21/2012)

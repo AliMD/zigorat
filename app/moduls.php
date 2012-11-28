@@ -79,5 +79,12 @@ function gen_projects_list($projects_arr){
 }
 
 function gen_customers_list($customers_arr){
-	//TODO : @AliGH Html codes from $customers_arr
+	$html = '';
+	foreach ($customers_arr as $customerpage) {
+		$html .= "<div class='customer_container cover'>
+					<div class='left_panel left'>$customerpage[text_en]</div>
+					<div class='right_panel' style=\"background-image: url('images/customers/$customerpage[image]');\"></div>
+				</div>";
+	}
+	return $html;
 }

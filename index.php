@@ -14,7 +14,7 @@ if($template['page'] == 'projects_list'){
 }
 else if($template['page'] == 'our-customers'){
 	$template['customers_arr'] = db_getrows('customers','*',true,'page',15);
-	$template['projects'] = gen_customers_list($template['customers_arr']);
+	$template['customers'] = gen_customers_list($template['customers_arr']);
 }
 
 inc("view",'app');
