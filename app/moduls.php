@@ -8,6 +8,23 @@ function get_page(){
 	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
 }
 
+function console_log($msg){
+	global $console_log_arr;
+	$console_log_arr[] = $msg;
+}
+
+function console_log_show(){
+	global $console_log_arr;
+	if(!$console_log_arr) return;
+	echo '<script type="text/javascript">try{';
+	foreach ($console_log_arr as $log){
+		$log=json_encode($log);
+		echo "console.log('PHP:',$log);";
+	}
+	echo '}catch(e){}</script>';
+	unset($console_log_arr);
+}
+
 function showunder(){
 	isset($_GET['debug']) and $_SESSION['debug']=$_GET['debug'];
 	if(!$_SESSION['debug']){
@@ -60,3 +77,5 @@ function gen_projects_list($projects_arr){
 	}
 	return $html;
 }
+
+
