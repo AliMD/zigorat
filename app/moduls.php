@@ -8,6 +8,23 @@ function get_page(){
 	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
 }
 
+function console_log($msg){
+	global $console_log_arr;
+	$console_log_arr[] = $msg;
+}
+
+function console_log_show(){
+	global $console_log_arr;
+	if(!$console_log_arr) return;
+	echo '<script type="text/javascript">try{';
+	foreach ($console_log_arr as $log){
+		$log=json_encode($log);
+		echo "console.log('PHP:',$log);";
+	}
+	echo '}catch(e){}</script>';
+	unset($console_log_arr);
+}
+
 function showunder(){
 	isset($_GET['debug']) and $_SESSION['debug']=$_GET['debug'];
 	if(!$_SESSION['debug']){
@@ -57,6 +74,17 @@ function gen_projects_list($projects_arr){
 		for($j=0;$j<3;$j++){
 			$projects_arr[$i+$j] and $html[$j] .= gen_project($projects_arr[$i+$j],"prdpic".($i+$j));
 		}
+	}
+	return $html;
+}
+
+function gen_customers_list($customers_arr){
+	$html = '';
+	foreach ($customers_arr as $customerpage) {
+		$html .= "<div class='customer_container cover'>
+					<div class='left_panel left'>$customerpage[text_en]</div>
+					<div class='right_panel' style=\"background-image: url('images/customers/$customerpage[image]');\"></div>
+				</div>";
 	}
 	return $html;
 }

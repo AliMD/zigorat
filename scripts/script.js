@@ -251,7 +251,7 @@ pagejs	= function(pg){
 
 		prdsSlider.go2slide(0);
 
-		console.log(prdsSlider);
+		//console.log(prdsSlider);
 	}
 
 	else if(page=='fullscreen'){
