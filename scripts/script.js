@@ -132,6 +132,13 @@ pagejs	= function(pg){
 				fadeFirstImage : false
 		});
 
+		$('.last_projectsImg > div').fadeLoop({
+			delay : 300,
+			freez : 4000,
+			duration : 2000,
+			fadeFirstImage : false
+		});
+
 	}
 
 	else if(page == 'projects') {
