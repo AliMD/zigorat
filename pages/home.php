@@ -16,16 +16,7 @@
 						<?php echo $template['home_slider']; ?>
 					</div>
 					<section class="last_projects">
-						<div class="last_projectsImg">
-							<?php for ($i=0; $i < 3; $i++) { ?>
-								<div style="background-image: url('./images/pic_small_home.png')"></div>
-							 <?php } ?>
-						</div>
-						<div class="last_projectsDecs">
-							<h4>Last Projects</h4>
-							<p>Parsis Building Co. 
-more description
-is in this link<p></div>
+						<?php echo $template['last_project_html']; ?>
 					</section>
 				</div>
 			</section>

@@ -96,3 +96,18 @@ function gen_home_list($home_arr){
 	}
 	return $html;
 }
+
+function gen_last_project($project){
+	$html = "<div class='last_projectsImg'>";
+	for($i=1;$i<=10;$i++){
+		if(strlen($project["img$i"])>3){
+			$img = $project["img$i"];
+			$html .= "<div style=\"background-image: url('./images/last_project/$img');\"></div>";
+		}
+	}
+	$html .= "</div><div class='last_projectsDecs'>
+				<h4>{$project[target_project][name_en]}</h4>
+				<p>$project[description_en]</p>
+			</div>";
+	return $html;
+}
