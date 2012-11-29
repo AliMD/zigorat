@@ -36,22 +36,7 @@
 						?>
 
 					</div>
-					<div id="desc">
-						<div class="passage left">
-							<div class="content">
-								<p id="title">Last Project</p>
-								<p id="more">
-									Parsis Building Co.
-									<br />
-									more description
-									<br />
-									is in this link
-								</p>
-							</div>
-						</div>
-						<div class="small_pic last"></div>
-						<div class="clear"></div>
-					</div>
+
 				</div>
 			</section>
 		</div>
