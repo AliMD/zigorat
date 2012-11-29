@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2012 at 12:32 PM
+-- Generation Time: Nov 29, 2012 at 10:39 AM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -42,6 +42,29 @@ CREATE TABLE IF NOT EXISTS `customers` (
 INSERT INTO `customers` (`id`, `page`, `text_en`, `text_fa`, `image`) VALUES
 (18, 1, 'Coca-Cola (Khoshgovar)\r\nChuckles & Crunchips\r\nCaspian mode commercial complex\r\nQatar airways\r\nPepsi\r\nPadide\r\nIran Khodro\r\nMaskan sazan\r\nCheetoz\r\nPars opal\r\nParsis\r\nYves rocher', 'no text', 'our-custumers.png'),
 (19, 2, 'Maskan sazan\r\nCheetoz\r\nPars opal\r\nParsis\r\nYves rocher\r\nCoca-Cola (Khoshgovar)\r\nChuckles & Crunchips\r\nCaspian mode commercial complex\r\nQatar airways\r\nPepsi\r\nPadide\r\nIran Khodro', 'no text', 'our-custumers.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `home_slider`
+--
+
+DROP TABLE IF EXISTS `home_slider`;
+CREATE TABLE IF NOT EXISTS `home_slider` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(64) NOT NULL DEFAULT '',
+  `image` varchar(32) NOT NULL DEFAULT '',
+  `sort` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `home_slider`
+--
+
+INSERT INTO `home_slider` (`id`, `title`, `image`, `sort`) VALUES
+(1, 'image NO1', 'pic_home.png', 0),
+(2, 'image NO2', 'pic_shop.png', 1);
 
 -- --------------------------------------------------------
 
