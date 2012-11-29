@@ -88,3 +88,11 @@ function gen_customers_list($customers_arr){
 	}
 	return $html;
 }
+
+function gen_home_list($home_arr){
+	$html = '';
+	foreach ($home_arr as $homepage) {
+		$html .= "<div style=\"background-image:url('images/home_slider/$homepage[image]');\"></div>";
+	}
+	return $html;
+}

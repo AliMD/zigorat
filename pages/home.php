@@ -13,28 +13,7 @@
 				</map>
 				<div class="content" id="lastProject">
 					<div class="home-slider">
-
-						<?php
-
-							$dir = "./images/home-slider";
-							$allowed_type = array('jpg','jpeg','png','gif');
-
-							$d = dir($dir);
-							while( $f = $d->read() ){
-								$file_type = end(explode('.',$f));
-								if( !in_array(strtolower($file_type),$allowed_type) ) continue;
-
-								$file_name = substr($f,0,-strlen($file_type)-1);
-
-								$r = rand(100,999);
-								echo
-									"
-										<div style=\"background-image:url('$dir/$file_name.$file_type');\"></div>
-									";				
-							}
-
-						?>
-
+						<?php echo $template['home_slider']; ?>
 					</div>
 					<section class="last_projects">
 						<div class="last_projectsImg">
