@@ -1,5 +1,7 @@
 (function($,undefined){
 
+ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
+
 configs = {
 	ease:{
 		normal:''
@@ -88,6 +90,7 @@ window.onload = function(){
 	},500);
 
 	$('nav.nav a').click(function(){
+		if(ie<=9) return true;
 		$('section.loadingContainer').css({display:'block',visibility:'hidden'});
 		setTimeout(function(){
 			$('body').addClass('preload');
@@ -105,6 +108,7 @@ window.onload = function(){
 }
 
 var page;
+
 pagejs	= function(pg){
 	page	= pg;
 
