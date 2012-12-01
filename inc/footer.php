@@ -1,3 +1,4 @@
+<script type="text/javascript" src="scripts/analytic.js"></script>
 <?php console_log_show(); ?>
 <script type="text/javascript" src="scripts/jquery.js" ></script>
 <script type="text/javascript" src="scripts/zepto.js" ></script>
