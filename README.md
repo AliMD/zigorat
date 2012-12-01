@@ -27,14 +27,21 @@ This is the source for the main Zigorat company website, found at [zigorat.co](h
 ## Change Log
 
 #### HEAD (now)
-  * Fix some bugs
-  * Dynamic our-oustomers page
-  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.9...master)
+  * Fix some bugs.
+  * Cross browser compatibility.
+  * [View full changes](https://github.com/AliMD/zigorat/compare/v1.0rc1...master)
+
+#### v1.0rc1 (12/1/2012)
+  * Fix some bugs.
+  * Dynamic our-oustomers page.
+  * Dynamic Home and last project.
+  * Add iE2wall Technology.
+  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.9...v1.0rc1)
 
 #### v0.9 (11/27/2012)
   * Products category.
   * Preview.
-  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.7...v0.8)
+  * [View full changes](https://github.com/AliMD/zigorat/compare/v0.8...v0.9)
 
 #### v0.8 (11/21/2012)
   * Ready to publish.
