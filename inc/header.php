@@ -7,11 +7,11 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 	<title>Zigorat | <?php echo $template['title']; ?></title>
-	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" type="image/png" href="images/icon.png" />
-	<link rel="stylesheet/less" type="text/css" href="style.less" />
+	<link rel="stylesheet" type="text/css" href="1styles.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript" src="scripts/html5shiv.js"></script>
-	<script type="text/javascript" src="scripts/less.js"></script>
 </head>
 <body class="preload <?php echo $template['page']; ?>">
 <!--[if lt IE 9]>
