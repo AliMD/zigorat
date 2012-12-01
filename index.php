@@ -3,7 +3,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 require_once('app/moduls.php');
 
-showunder();
+showunder(); // Show under
 
 $template['page'] = $template['menu_url'] = get_page();
 
