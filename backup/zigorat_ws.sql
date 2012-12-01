@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 29, 2012 at 10:39 AM
+-- Generation Time: Nov 29, 2012 at 01:48 PM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -52,7 +52,8 @@ INSERT INTO `customers` (`id`, `page`, `text_en`, `text_fa`, `image`) VALUES
 DROP TABLE IF EXISTS `home_slider`;
 CREATE TABLE IF NOT EXISTS `home_slider` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(64) NOT NULL DEFAULT '',
+  `title_fa` varchar(64) NOT NULL DEFAULT '',
+  `title_en` varchar(64) NOT NULL DEFAULT '',
   `image` varchar(32) NOT NULL DEFAULT '',
   `sort` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
@@ -62,9 +63,42 @@ CREATE TABLE IF NOT EXISTS `home_slider` (
 -- Dumping data for table `home_slider`
 --
 
-INSERT INTO `home_slider` (`id`, `title`, `image`, `sort`) VALUES
-(1, 'image NO1', 'pic_home.png', 0),
-(2, 'image NO2', 'pic_shop.png', 1);
+INSERT INTO `home_slider` (`id`, `title_fa`, `title_en`, `image`, `sort`) VALUES
+(1, 'عکس شماره ۱', 'Image No 1', 'pic_home.png', 0),
+(2, 'عکس شماره ۲', 'Image No 2', 'pic_shop.png', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `last_project`
+--
+
+DROP TABLE IF EXISTS `last_project`;
+CREATE TABLE IF NOT EXISTS `last_project` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `project_id` int(10) unsigned NOT NULL,
+  `description_en` varchar(256) NOT NULL DEFAULT '',
+  `description_fa` varchar(256) NOT NULL DEFAULT '',
+  `img1` varchar(32) NOT NULL DEFAULT '',
+  `img2` varchar(32) NOT NULL DEFAULT '',
+  `img3` varchar(32) NOT NULL DEFAULT '',
+  `img4` varchar(32) NOT NULL DEFAULT '',
+  `img5` varchar(32) NOT NULL DEFAULT '',
+  `img6` varchar(32) NOT NULL DEFAULT '',
+  `img7` varchar(32) NOT NULL DEFAULT '',
+  `img8` varchar(32) NOT NULL DEFAULT '',
+  `img9` varchar(32) NOT NULL DEFAULT '',
+  `img10` varchar(32) NOT NULL DEFAULT '',
+  `sort` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `last_project`
+--
+
+INSERT INTO `last_project` (`id`, `project_id`, `description_en`, `description_fa`, `img1`, `img2`, `img3`, `img4`, `img5`, `img6`, `img7`, `img8`, `img9`, `img10`, `sort`) VALUES
+(4, 17, 'Parsis Building Co. \r\nmore descr', '', 'pic_small_home.png', 'pic_small_home_1.png', '', '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
 

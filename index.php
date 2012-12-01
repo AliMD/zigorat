@@ -19,9 +19,17 @@ else if($template['page'] == 'our-customers'){
 }
 
 else if($template['page'] == 'home'){
-	$template['home_arr'] = db_getrows('home_slider','*',true,'sort',15);
-	$template['home_slider'] = gen_home_list($template['home_arr']);
-}
+	// Home page slider
+	$template['home_slider_arr'] = db_getrows('home_slider','*',true,'sort',15);
+	$template['home_slider'] = gen_home_list($template['home_slider_arr']);
+
+	// Last project
+	$last_project = db_getrows('last_project');
+	$template['last_project']=$last_project[0];
+	$project_id = $template['last_project']['project_id'];
+	$target_project = db_getrows('portfolio','*',"id='$project_id'");
+	$template['last_project']['target_project']=$target_project[0];
+}	$template['last_project_html'] = gen_last_project($template['last_project']);
 
 inc("view",'app');
 
