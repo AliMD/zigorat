@@ -5,4 +5,4 @@ php:
 
 script: 
   - phpunit -v index.php
-  - phpunit -v pages/*.php
+  - php index.php
