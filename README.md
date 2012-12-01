@@ -26,6 +26,8 @@ This is the source for the main Zigorat company website, found at [zigorat.co](h
 
 ## Change Log
 
+[![Build Status](https://secure.travis-ci.org/AliMD/zigorat.png?branch=master)](https://travis-ci.org/AliMD/zigorat)
+
 #### HEAD (now)
   * Fix some bugs.
   * Cross browser compatibility.
