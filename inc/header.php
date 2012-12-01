@@ -15,6 +15,6 @@
 </head>
 <body class="preload <?php echo $template['page']; ?>">
 <!--[if lt IE 9]>
-		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or install <a href="http://www.google.com/chromeframe/?redirect=true">This Plugin</a> to improve your experience.</p>
+		<p class="chromeframe" style="text-align:center;color:black; font-size:17px; background-color:#FFF7A5;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> or install <a href="http://www.google.com/chromeframe/?redirect=true"><strong>This Plugin</strong></a> to improve your experience.</p>
 <![endif]-->
 <?php include 'inc/loading.php'; ?>
