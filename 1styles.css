@@ -20,7 +20,7 @@ audio,canvas,video{display:inline-block}
 audio:not([controls]){display:none;height:0}
 [hidden]{display:none}
 a:focus{outline:thin dotted}
-a,a:active,a:hover{outline:0}
+a:active,a:hover{outline:0}
 h1{font-size:2em}
 abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}

@@ -1,13 +1,15 @@
-
-/* Imports
+/* Fonts
 -------------------------------------------------- */
-
-@import "reset.css";
-
-@import "1styles.css";
-
-@import "fonts.css";
-
+@font-face {
+    font-family: 'MyriadProCondRegular';
+    src: url('fonts/myriadpro-cond-webfont.eot');
+    src: url('fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/myriadpro-cond-webfont.woff') format('woff'),
+         url('fonts/myriadpro-cond-webfont.ttf') format('truetype'),
+         url('fonts/myriadpro-cond-webfont.svg#MyriadProCondRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Global Section
 -------------------------------------------------- */
@@ -106,7 +108,7 @@ nav ul li.active a {
 	display			:block;
 	padding			:15px 5px;
 	text-decoration	:none;
-	font-family		:'myriadprocondregular';
+	font-family		:'MyriadProCondRegular';
 	font-size		:19px;
 	letter-spacing	:-1px;
 	color			:#fff;
@@ -201,7 +203,7 @@ section.last_projects div.last_projectsImg > div {
 section.last_projects div.last_projectsDecs {
 	margin-right: 158px;
 	margin-top: 100px;
-	font-family: 'myriadprocondregular';
+	font-family: 'MyriadProCondRegular';
 }
 section.last_projects div.last_projectsDecs h4 {
 	color: white;
@@ -293,7 +295,7 @@ div.top_menu div.cols > div div#in {
 }
 div#in a {
 	text-decoration	:none;
-	font-family		:'myriadprocondregular';
+	font-family		:'MyriadProCondRegular';
 	font-size		:14px;
 	color			:#fff;
 	text-transform	:uppercase;
@@ -378,7 +380,7 @@ div#Gallery0,div#Gallery01,div#Gallery02 {
 }
 div.on_g a {
 	display			:block;
-	font-family		:'myriadprocondregular';
+	font-family		:'MyriadProCondRegular';
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
 	color			:#fff;
@@ -487,7 +489,6 @@ section.prd-hover div.prd4-hover{
 	position: absolute;
 	width: 247px;
 	height: 139px;
-	-sand-transform: skewY(-30deg);
 	-webkit-transform: skewY(-30deg);
 	cursor: pointer;
 	z-index:2;
@@ -609,7 +610,7 @@ div.about div.line {
 }
 div.about h4 {
 	width :65px;
-	font-family :'myriadprocondregular';
+	font-family :'MyriadProCondRegular';
 	font-size :19px;
 	color :#444;
 	text-transform :uppercase;
@@ -792,7 +793,7 @@ body.our-customers section.right-col div.bot-arrow {
 
 div.right-inside h4 {
 	width :65px;
-	font-family :'myriadprocondregular';
+	font-family :'MyriadProCondRegular';
 	font-size :19px;
 	color :#444;
 	text-transform :uppercase;
@@ -924,7 +925,7 @@ section.descriptions div.right-line {
 section.descriptions div.prj-name {
 	width :185px;
 	height :43px;
-	font-family :'myriadprocondregular';
+	font-family :'MyriadProCondRegular';
 	font-size :41px;
 	color :#fff;
 	text-transform :capitalize;
@@ -1012,7 +1013,7 @@ section.form-holder form {
 }
 section.form-holder form label.label {
 	color :#fff;
-	font-family :'myriadprocondregular';
+	font-family :'MyriadProCondRegular';
 	font-size :19px;
 	letter-spacing :-1px;
 	text-transform :capitalize;
@@ -1080,7 +1081,7 @@ section.form-holder form textarea.nok {
 section.form-holder form input[type=submit] {
 	background-color:#fff;
 	color			:#444;
-	font-family		:'myriadprocondregular';
+	font-family		:'MyriadProCondRegular';
 	font-size		:17px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
@@ -1127,7 +1128,7 @@ section.info div.info-pic2 a {
 	text-align		:center;
 	background		:url('images/employment_form.png') no-repeat;
 	color			:#fff;
-	font-family		:'myriadprocondregular';
+	font-family		:'MyriadProCondRegular';
 	font-size		:18px;
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
@@ -1232,11 +1233,15 @@ body{
 body section.loadingContainer,
 body section.container {
 	-webkit-transition : -webkit-transform 1500ms ease-in;
-	
+	background-color: gray;
 }
 
 body section.container *{
 	-webkit-backface-visibility : hidden;
+}
+
+.lt-ie9 .loadingContainer {
+	display: none !important;
 }
 
 body section.loadingContainer{
@@ -1338,7 +1343,7 @@ section.prd h1{
 	text-transform		: uppercase;
 	text-decoration		: underline;
 	letter-spacing		: -1px;
-	font-family			: 'myriadprocondregular';
+	font-family			: 'MyriadProCondRegular';
 	background-image	: url('images/prd-top.png');
 	background-repeat	: no-repeat;
 	background-position	: top right;
@@ -1361,7 +1366,7 @@ section.prd h2 span{
 	font-size	: 21px;
 	text-align	: center;
 	margin-top	: 35px;
-	font-family	: 'myriadprocondregular';
+	font-family	: 'MyriadProCondRegular';
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
 	text-decoration	: underline;
@@ -1377,6 +1382,47 @@ section.prd .links.act{
 	bottom: 0;
 	top: 0;
 }
+
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:hidden !important;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width: none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxContent{margin-top:20px;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{border:5px solid #000; background:#fff;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}
+
 
 /* Loading
 -------------------------------------------------- */
@@ -1503,7 +1549,7 @@ section.prd .links.act{
 		opacity:0.3
 	}
 }
-
+/*
 @-ms-keyframes bounce_circleG{
 	
 	0%{
@@ -1519,41 +1565,4 @@ section.prd .links.act{
 		opacity:0.3
 	}
 }
-/*
-    ColorBox Core Style:
-    The following CSS is consistent between example themes and should not be altered.
 */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
-#cboxOverlay{position:fixed; width:100%; height:100%;}
-#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
-#cboxContent{position:relative;}
-#cboxLoadedContent{overflow:hidden !important;}
-#cboxTitle{margin:0;}
-#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
-.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width: none;}
-.cboxIframe{width:100%; height:100%; display:block; border:0;}
-#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
-
-/* 
-    User Style:
-    Change the following styles to modify the appearance of ColorBox.  They are
-    ordered & tabbed in a way that represents the nesting of the generated HTML.
-*/
-#cboxOverlay{background:#000;}
-#colorbox{}
-    #cboxContent{margin-top:20px;}
-        .cboxIframe{background:#fff;}
-        #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{border:5px solid #000; background:#fff;}
-        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
-        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
-        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
-        #cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
-        #cboxPrevious:hover{background-position:bottom left;}
-        #cboxNext{position:absolute; top:50%; right:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
-        #cboxNext:hover{background-position:bottom right;}
-        #cboxLoadingOverlay{background:#000;}
-        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
-        #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:bottom center;}
