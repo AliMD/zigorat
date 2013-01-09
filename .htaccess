@@ -35,7 +35,6 @@ ErrorDocument 505 /err/?e=505
 ErrorDocument 506 /err/?e=506
 ErrorDocument 507 /err/?e=507
 ErrorDocument 508 /err/?e=508
-ErrorDocument 509 /err/?e=509
 ErrorDocument 510 /err/?e=510
 
 # Various rewrite rules.
