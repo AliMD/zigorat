@@ -11,11 +11,11 @@
 				<?php echo $template['customers']; ?>
 			</div>
 			<div class="customer_title">
-				<h4 class="left">our customers</h4>
+				<h4 class="right">مشتریان ما</h4>
 				<div class="line"></div>
 				<div class="desc left">
-					We genuinely like our clients not because they are paying their bills, because we do not display our clients personality, which in turn will encourage us to make things more memorable.<br /><br />
-					Customers who have the honor of working with some of them:
+					گروه زیگورات فعالیت خود را در سال 1385 به صورت رسمی با در اختیار داشتن نیروهای متخصص و جوان در زمینه طراحی و اجرای تخصصی معماری، دکوراسیون داخلی و ساخت و ساز غرفه های نمایشگاهی آغاز نمود.
+اين شرکت تا کنون در پروژه هاي مختلفي حضور داشته و از طریق همکاری با مجموعه برندهای برتر دنیا توانسته کارنامه درخشاني از خود به جای گذارد.
 				</div>
 			</div>
 		</div>
