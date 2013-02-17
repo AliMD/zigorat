@@ -11,7 +11,6 @@
 	<link rel="apple-touch-icon-precomposed" type="image/png" href="images/icon.png" />
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
 	<script type="text/javascript" src="scripts/html5shiv.js"></script>
 </head>
 <body class="preload <?php echo $template['page']; ?>">
