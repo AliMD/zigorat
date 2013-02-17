@@ -1062,10 +1062,9 @@ section.form-holder form {
 section.form-holder form label.label {
 	color			:#fff;
 	font-family		:yekan;
-	font-size		:18px;
+	font-size		:16px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
-	margin-right	:8px;
 	vertical-align	:top;
 }
 section.form-holder form input[type=text] {
@@ -1127,7 +1126,6 @@ section.form-holder form input[type=submit] {
 	color			:#444;
 	font-family		:yekan;
 	font-size		:17px;
-	letter-spacing	:-1px;
 	text-transform	:capitalize;
 	width			:70px;
 	border			:0px;
