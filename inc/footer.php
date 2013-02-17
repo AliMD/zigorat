@@ -1,6 +1,6 @@
-<?php console_log_show(); ?>
+<?php //console_log_show(); ?>
 <?php include inc('analytic'); ?>
-<script type="text/javascript" src="scripts/jquery.js" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/zepto.js" ></script>
 <script type="text/javascript" src="scripts/colorbox.js" ></script>
 <script type="text/javascript" src="scripts/script.js" ></script>
