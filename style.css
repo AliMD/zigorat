@@ -1,16 +1,3 @@
-/* Fonts
--------------------------------------------------- */
-@font-face {
-    font-family: 'MyriadProCondRegular';
-    src: url('fonts/myriadpro-cond-webfont.eot');
-    src: url('fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/myriadpro-cond-webfont.woff') format('woff'),
-         url('fonts/myriadpro-cond-webfont.ttf') format('truetype'),
-         url('fonts/myriadpro-cond-webfont.svg#MyriadProCondRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Global Section
 -------------------------------------------------- */
 
@@ -109,8 +96,8 @@ nav ul li.active a {
 	display			: block;
 	padding			: 15px 5px;
 	text-decoration	: none;
-	font-family		: 'MyriadProCondRegular';
-	font-size		: 19px;
+	font-family		: 'Open Sans Condensed', sans-serif;
+	font-size		: 18px;
 	letter-spacing	: -1px;
 	color			: #fff;
 	text-transform	: uppercase;
@@ -206,7 +193,7 @@ section.last_projects div.last_projectsImg > div {
 section.last_projects div.last_projectsDecs {
 	margin-right: 158px;
 	margin-top: 100px;
-	font-family: 'MyriadProCondRegular';
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 section.last_projects div.last_projectsDecs h4 {
 	color: white;
@@ -299,7 +286,7 @@ div.top_menu div.cols > div div#in {
 }
 div#in a {
 	text-decoration	:none;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:14px;
 	color			:#fff;
 	text-transform	:uppercase;
@@ -387,7 +374,7 @@ div#Gallery0,div#Gallery01,div#Gallery02 {
 
 div.on_g a {
 	display			:block;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
 	color			:#fff;
@@ -579,7 +566,7 @@ section.prd-hover div.prd4-hover {
 
 
 .projects .hover-mode .title {
-	font-family		: 'MyriadProCondRegular';
+	font-family		: 'Open Sans Condensed', sans-serif;
 	font-size		: 25px;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
@@ -639,7 +626,7 @@ div.about div.line {
 }
 div.about h4 {
 	width			:65px;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
@@ -822,7 +809,7 @@ body.our-customers section.right-col div.bot-arrow {
 
 div.right-inside h4 {
 	width			:65px;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
@@ -961,7 +948,7 @@ section.descriptions div.right-line {
 section.descriptions div.prj-name {
 	width			:185px;
 	height			:43px;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:41px;
 	color			:#fff;
 	text-transform	:capitalize;
@@ -1056,8 +1043,8 @@ section.form-holder form {
 }
 section.form-holder form label.label {
 	color			:#fff;
-	font-family		:'MyriadProCondRegular';
-	font-size		:19px;
+	font-family		:'Open Sans Condensed', sans-serif;
+	font-size		:18px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
 	margin-right	:8px;
@@ -1120,7 +1107,7 @@ section.form-holder form textarea.nok {
 section.form-holder form input[type=submit] {
 	background-color:#fff;
 	color			:#444;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:17px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
@@ -1167,7 +1154,7 @@ section.info div.info-pic2 a {
 	text-align		:center;
 	background		:url('images/employment_form.png') no-repeat;
 	color			:#fff;
-	font-family		:'MyriadProCondRegular';
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:18px;
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
@@ -1418,7 +1405,7 @@ section.prd h1{
 	text-transform		: uppercase;
 	text-decoration		: underline;
 	letter-spacing		: -1px;
-	font-family			: 'MyriadProCondRegular';
+	font-family			: 'Open Sans Condensed', sans-serif;
 	background-image	: url('images/prd-top.png');
 	background-repeat	: no-repeat;
 	background-position	: top right;
@@ -1441,7 +1428,7 @@ section.prd h2 span{
 	font-size	: 21px;
 	text-align	: center;
 	margin-top	: 35px;
-	font-family	: 'MyriadProCondRegular';
+	font-family	: 'Open Sans Condensed', sans-serif;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
 	text-decoration	: underline;
