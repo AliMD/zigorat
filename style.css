@@ -618,14 +618,16 @@ section.about-us div.right-inside div.right-side {
 section.about-us div.left-side div.about {
 	margin-left :50px;
 }
+section.about-us div.left-side div.about.custome {
+	margin-left :240px !important;
+}
 div.about div.line {
 	width			:212px;
 	height			:14px;
-	margin-left		:88px;
+	margin-right		:88px;
 	border-bottom	:2px solid #fff;
 }
 div.about h4 {
-	width			:65px;
 	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;
@@ -658,7 +660,9 @@ div.do div.left-side {
 }
 
 div.do div.line {
-	margin-left: 105px;
+	width: 430px;
+	margin-right: 170px;
+	margin-left: 10px;
 }
 
 div.do div.right-side {
@@ -808,7 +812,7 @@ body.our-customers section.right-col div.bot-arrow {
 }
 
 div.right-inside h4 {
-	width			:65px;
+	float: right;
 	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;

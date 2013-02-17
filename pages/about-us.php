@@ -14,11 +14,11 @@
 					<div class="aboutUs">
 						<div class="left-side">
 							<div class="about left">
-								<h4 class="left">about us</h4>
+								<h4 class="left">درباره ما</h4>
 								<div class=" line" ></div>
 								<div class="desc left">
-									Zigorat Group officially started its activities in 2006 having young specialists in the design and implementation of the architecture, interior design and construction of exhibition stands has started.
-	The company has been involved in various projects and by working with the top brands in the world able to leave his brilliant career.
+									گروه زیگورات فعالیت خود را در سال 1385 به صورت رسمی با در اختیار داشتن نیروهای متخصص و جوان در زمینه طراحی و اجرای تخصصی معماری، دکوراسیون داخلی و ساخت و ساز غرفه های نمایشگاهی آغاز نمود.
+اين شرکت تا کنون در پروژه هاي مختلفي حضور داشته و از طریق همکاری با مجموعه برندهای برتر دنیا توانسته کارنامه درخشاني از خود به جای گذارد.
 								</div>
 							</div>
 						</div>
@@ -31,10 +31,11 @@
 					<div class="whatWeDo">
 						<div class="left-side">
 							<div class="about left">
-								<h4 class="left">What we do</h4>
+								<h4 class="left">نحوه کار</h4>
 								<div class=" line" ></div>
 								<div class="desc left">
-									We design with people in mind. We plan, create, develop and deliver impressive work for a diverse range  of clients. This didn't happen overnight either - together, we have been amassing our collective experience for over 15 years. Our considerable   skillset means that we are adept at more than just aesthetically pleasing projects: concept, content and design are all equally crucial.
+									گروه زیگورات فعالیت خود را در سال 1385 به صورت رسمی با در اختیار داشتن نیروهای متخصص و جوان در زمینه طراحی و اجرای تخصصی معماری، دکوراسیون داخلی و ساخت و ساز غرفه های نمایشگاهی آغاز نمود.
+اين شرکت تا کنون در پروژه هاي مختلفي حضور داشته و از طریق همکاری با مجموعه برندهای برتر دنیا توانسته کارنامه درخشاني از خود به جای گذارد.
 								</div>
 							</div>
 						</div>
@@ -47,10 +48,11 @@
 					<div class="whoWeAre">
 						<div class="left-side">
 							<div class="about left">
-								<h4 class="left">who we are</h4>
+								<h4 class="left">ما که هستیم</h4>
 								<div class=" line" ></div>
 								<div class="desc left">
-									Zigorat interior design group of experts and engineers with expertise in architecture and industrial design, on the science of project management and the use of science in industrial engineering monitoring and control of projects in order to achieve maximum performance in minimum possible time and cost, effective step towards a successful save money, time and compliance employers' demands and tastes of the funds intended for the project to take.
+									گروه زیگورات فعالیت خود را در سال 1385 به صورت رسمی با در اختیار داشتن نیروهای متخصص و جوان در زمینه طراحی و اجرای تخصصی معماری، دکوراسیون داخلی و ساخت و ساز غرفه های نمایشگاهی آغاز نمود.
+اين شرکت تا کنون در پروژه هاي مختلفي حضور داشته و از طریق همکاری با مجموعه برندهای برتر دنیا توانسته کارنامه درخشاني از خود به جای گذارد.
 								</div>
 							</div>
 						</div>
@@ -63,7 +65,7 @@
 					<div class="do">
 						<div class="left-side">
 							<div class="about left">
-								<h4 class="left">how we work</h4>
+								<h4 class="left">فرایند تکمیل پروژه ها</h4>
 								<div class=" line" ></div>
 
 							</div>
