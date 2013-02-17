@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>		<html lang="en-US" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>			<html lang="en-US" class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>			<html lang="en-US" class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html lang="en-US" class="no-ie"> <!--<![endif]-->
+<!--[if lt IE 7]>		<html lang="fa-IR" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>			<html lang="fa-IR" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>			<html lang="fa-IR" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html lang="fa-IR" class="no-ie"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
