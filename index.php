@@ -18,7 +18,7 @@ else if($template['page'] == 'our-customers'){
 	$template['customers'] = gen_customers_list($template['customers_arr']);
 }
 
-else if($template['page'] == 'home'){
+else if($template['page'] == 'home_fa'){
 	// Home page slider
 	$template['home_slider_arr'] = db_getrows('home_slider','*',true,'sort',15);
 	$template['home_slider'] = gen_home_list($template['home_slider_arr']);

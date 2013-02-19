@@ -114,7 +114,7 @@ pagejs	= function(pg){
 
 	$(page).addClass('active');
 
-	if(page	=='home'){
+	if(page	=='home_fa'){
 		// pages logo icons
 		pageLoadedAnimations.push(function(){
 			var delay	=1;
@@ -409,7 +409,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	if(page!=='home'){
+	if(page!=='home_fa'){
 		$('div.lines').css('opacity','0.2'); // move to css
 	}
 };

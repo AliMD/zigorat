@@ -5,7 +5,7 @@ session_start();
 require_once('app/db.php');
 
 function get_page(){
-	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
+	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home_fa';
 }
 
 function console_log($msg){
