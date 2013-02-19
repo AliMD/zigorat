@@ -280,7 +280,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	else if(page=='about-us'){
+	else if(page=='about-us_fa'){
 		var aboutSlider={
 			first : -70,
 			len:4,
