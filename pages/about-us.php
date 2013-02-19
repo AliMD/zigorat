@@ -57,7 +57,22 @@
 							</div>
 						</div>
 						<div class="right-side">
-							<div class="who-pic"></div>
+							<div class="who-pics">
+								<div class="amjad">
+									<p>
+										احسان امجدی<br />
+										مدیر عامل<br />
+										فارغ التحصیل رشته طراحی صنعتی از دانشگاه صنعتی شریف تهران<br />
+									</p>
+								</div>
+								<div class="hosseini">
+									<p>
+										سید حسن حسینی<br />
+										مدیر فنی<br />
+										فارغ التحصیل رشته طراحی صنعتی از دانشگاه صنعتی شریف تهران<br />
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 

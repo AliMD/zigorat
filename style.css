@@ -700,10 +700,30 @@ div.right-side div.about-pic{
 div.right-side div.job-pic{
 	background :url('images/what-we-do.png') no-repeat;
 }
-div.right-side div.who-pic{
+div.right-side div.who-pics{
 	margin-top	: 135px !important;	
 	height		: 214px !important;
-	background :url('images/who-we-are.png') no-repeat;
+}
+div.right-side div.who-pics > div {	
+	float: left;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: inherit;
+}
+div.who-pics > div > p {
+	padding-top: 210px;
+	padding-right: 5px;
+	text-align: right;
+	color: #DDD;
+	line-height: 1.1;
+	font-size: 15px;
+}
+div.who-pics div.amjad {
+	background-image: url('images/amjad.png');
+}
+div.who-pics div.hosseini {
+	background-image: url('images/hosseini.png');
 }
 div.right-side div.do-pic{
 	width	: 600px !important;
