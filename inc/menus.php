@@ -1,6 +1,6 @@
 <?php
 	// "menu 1 title,menu 1 url;menu 2 title,menu 2 url;..."
-	$menus = "خانه,./;درباره ما,./about-us_fa;مشتریان,./our-customers_fa;پروژه ها,./projects;ارتباط با ما,./contact-us;";
+	$menus = "خانه,./;درباره ما,./about-us_fa;مشتریان,./our-customers_fa;پروژه ها,./projects_fa;ارتباط با ما,./contact-us;";
 ?>
 
 <nav class="nav left ">
