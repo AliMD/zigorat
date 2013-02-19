@@ -8,9 +8,9 @@ require_once('app/moduls.php');
 $template['page'] = $template['menu_url'] = get_page();
 
 if($template['page'] == 'projects_list_fa'){
-	$template['menu_url'] = 'projects_fa';
+	$template['menu_url'] = 'projects';
 	$template['projects_arr'] = db_getrows('portfolio','*',"category=$_GET[cat]",'sort',30);
-	$template['projects_fa'] = gen_projects_list($template['projects_arr']);
+	$template['projects'] = gen_projects_list($template['projects_arr']);
 }
 
 else if($template['page'] == 'our-customers_fa'){
