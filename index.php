@@ -13,7 +13,7 @@ if($template['page'] == 'projects_list'){
 	$template['projects'] = gen_projects_list($template['projects_arr']);
 }
 
-else if($template['page'] == 'our-customers'){
+else if($template['page'] == 'our-customers_fa'){
 	$template['customers_arr'] = db_getrows('customers','*',true,'page',15);
 	$template['customers'] = gen_customers_list($template['customers_arr']);
 }

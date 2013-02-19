@@ -308,7 +308,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	else if(page=='our-customers'){
+	else if(page=='our-customers_fa'){
 		var customersSlider={
 			first : 0,
 			len:$('.customer_container').length,

@@ -763,7 +763,7 @@ div.right-side div.bot-arrow:hover {
 /* Our Customer
 -------------------------------------------------- */
 
-body.our-customers div.right-inside{
+body.our-customers_fa div.right-inside{
 	overflow :hidden;
 }
 
@@ -792,7 +792,7 @@ div.customers-pic{
 	background-repeat: no-repeat;
 }
 
-body.our-customers section.right-col div.right-inside {
+body.our-customers_fa section.right-col div.right-inside {
 	margin-top	:150px;
 	height		:560px;
 	padding		:1px;
@@ -828,19 +828,19 @@ div.customer_container div.right_panel {
 	margin-top			: 58px;
 }
 
-body.our-customers div.right-inside div.left-side {
+body.our-customers_fa div.right-inside div.left-side {
 	float		:left;
 	width		:355px;
 	margin-top	:105px;
 	padding		:1px;
 }
 
-body.our-customers section.right-col div.top-arrow {
+body.our-customers_fa section.right-col div.top-arrow {
 	top		: 44px;
 	right	: 9px;
 }
 
-body.our-customers section.right-col div.bot-arrow {
+body.our-customers_fa section.right-col div.bot-arrow {
 	top		: 490px;
 	right	: 9px;
 }
