@@ -160,7 +160,7 @@ pagejs	= function(pg){
 		*/
 	}
 
-	else if(page == 'projects_list') {
+	else if(page == 'projects_list_fa') {
 		
 		imageMapLink('#prdShopping', './projects_cat2_shopping');
 		imageMapLink('#prdExhibition', './projects_cat0_exhibition');
