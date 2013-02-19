@@ -344,7 +344,7 @@ pagejs	= function(pg){
 		}
 	}
 
-	else if(page=='contact-us'){
+	else if(page=='contact-us_fa'){
 		function validateText(str,len){
 			return str.length >= len;
 		}
