@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript" src="scripts/html5shiv.js"></script>
 </head>
-<body class="preload <?php echo $template['page']; ?>">
+<body class="preload rtl <?php echo $template['page']; ?>">
 <!--[if lt IE 9]>
 	<p class="chromeframe" style="text-align:center;color:black; font-size:17px; background-color:#FFF7A5;"><br/>You are using an <strong>outdated</strong> browser. Please <a href="http://getbrowser.ir/" target="_blank"><strong>upgrade your browser</strong></a> or <a href="http://www.chromeframe.ir/" target="_blank"><strong>install this plugin</strong></a> to improve your experience.<br/><br/></p><br/>
 <![endif]-->
