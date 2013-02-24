@@ -926,9 +926,10 @@ div.right-inside div.desc {
 	margin-top	: 10px;
 	color		: #fff;
 	font-family	: yekan;
-	font-size	: 14px;
+	font-size	: 15px;
 	text-align	: justify;
 	line-height	: 18px;
+	direction: rtl;
 }
 
 div.scroll_customer {
