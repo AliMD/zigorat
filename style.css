@@ -10,9 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-body:lang(fa),body:lang(fa-IR),body[lang|=fa] {
-	font-family:yekan;
-}
 
 /* Global Section
 -------------------------------------------------- */
@@ -112,7 +109,7 @@ nav ul li.active a {
 	display			: block;
 	padding			: 15px 5px;
 	text-decoration	: none;
-	font-family		: yekan;
+	font-family		: 'Open Sans Condensed', sans-serif;
 	font-size		: 18px;
 	letter-spacing	: -1px;
 	color			: #fff;
@@ -124,6 +121,10 @@ nav ul li.active a {
 	-o-transition		: all 400ms ease-in-out;
 	-ms-transition		: all 400ms ease-in-out;
 	transition			: all 400ms ease-in-out;
+}
+
+.rtl .nav ul li a{
+	font-family		: yekan;
 }
 
 
@@ -249,7 +250,8 @@ div.content div.home-slider > div {
 	background-size: 100% 100%;
 }
 
-body.home_fa section.last_projects {
+body.home section.last_projects,
+body.home_fa section.last_projects{
 	position: absolute;
 	right: 100px;
 	bottom: 36px;
@@ -277,8 +279,13 @@ section.last_projects div.last_projectsImg > div {
 section.last_projects div.last_projectsDecs {
 	margin-right: 158px;
 	margin-top: 100px;
-	font-family: yekan;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
+
+.rtl section.last_projects div.last_projectsDecs {
+		font-family: yekan;
+}
+
 section.last_projects div.last_projectsDecs h4 {
 	color: white;
 	font-size: 17px;
@@ -370,11 +377,14 @@ div.top_menu div.cols > div div#in {
 }
 div#in a {
 	text-decoration	:none;
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:14px;
 	color			:#fff;
 	text-transform	:uppercase;
 	margin			:0px 7px 0px 0px;
+}
+.rtl div#in a {
+	font-family : yekan;
 }
 /*div.top_menu div.cols div#bg:hover {
 	cursor :pointer;
@@ -458,7 +468,7 @@ div#Gallery0,div#Gallery01,div#Gallery02 {
 
 div.on_g a {
 	display			:block;
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
 	color			:#fff;
@@ -466,6 +476,9 @@ div.on_g a {
 	top				:20px;
 	text-align		:center;
 	text-decoration	:underline;
+}
+.rtl div.on_g a {
+	font-family:yekan
 }
 div.on_g a#g1 {
 	left		:155px;
@@ -650,7 +663,7 @@ section.prd-hover div.prd4-hover {
 
 
 .projects .hover-mode .title {
-	font-family		: yekan;
+	font-family		: 'Open Sans Condensed', sans-serif;
 	font-size		: 25px;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
@@ -661,7 +674,9 @@ section.prd-hover div.prd4-hover {
 	right		: 20px;
 	width		: 137px;
 }
-
+.rtl .projects .hover-mode .title {
+	font-family		: yekan;
+}
 .projects .hover-mode.hover .title {
 	top			: 30px;
 	right		: -138px;
@@ -702,33 +717,41 @@ section.about-us div.right-inside div.right-side {
 section.about-us div.left-side div.about {
 	margin-left :50px;
 }
-section.about-us div.left-side div.about.custome {
-	margin-left :240px !important;
-}
 div.about div.line {
 	width			:212px;
 	height			:14px;
-	margin-right		:88px;
+	margin-left		:88px;
 	border-bottom	:2px solid #fff;
 }
+
+.rtl div.about div.line {
+	margin-right:88px;
+	margin-left	:0;
+}
+
 div.about h4 {
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
 	white-space		:nowrap;
+}
+.rtl div.about h4 {
+	font-family		:yekan;
 }
 div.about div.desc {
 	width		:300px;
 	min-height	:80px;
 	margin-top	:10px;
 	color		:#fff;
-	font-family	:yekan;
+	font-family	:"lucida sans unicode", "lucida grande", sans-serif;
 	font-size	:13px;
 	text-align	:justify;
 	line-height	:16px;
 }
-
+.rtl div.about div.desc {
+	font-family:yekan;
+}
 div.aboutPageContainer div.right-side > div {
 	width		: 274px;
 	height		: 370px;
@@ -744,6 +767,9 @@ div.do div.left-side {
 }
 
 div.do div.line {
+	margin-left: 105px;
+}
+.rtl div.do div.line {
 	width: 430px;
 	margin-right: 170px;
 	margin-left: 10px;
@@ -758,7 +784,12 @@ div.whoWeAre div.left-side{
 	margin-top: 196px !important;
 }
 
-div.whoWeAre div.line {
+div.whoWeAre div.desc{
+	font-size	: 11px !important;
+	text-align	: justify !important;
+	line-height	: 13px !important;
+}
+.rtl div.whoWeAre div.line {
 	width: 202px !important;
 }
 
@@ -768,18 +799,23 @@ div.right-side div.about-pic{
 div.right-side div.job-pic{
 	background :url('images/what-we-do.png') no-repeat;
 }
-div.right-side div.who-pics{
+div.right-side div.who-pic{
+	margin-top	: 135px !important;	
+	height		: 214px !important;
+	background :url('images/who-we-are.png') no-repeat;
+}
+.rtl div.right-side div.who-pics{
 	margin-top	: 135px !important;	
 	height		: 214px !important;
 }
-div.right-side div.who-pics > div {	
+.rtl div.right-side div.who-pics > div {	
 	float: left;
 	background-position: center top;
 	background-repeat: no-repeat;
 	width: 130px;
 	height: inherit;
 }
-div.who-pics > div > p {
+.rtl div.who-pics > div > p {
 	padding-top: 210px;
 	padding-right: 5px;
 	text-align: right;
@@ -787,10 +823,10 @@ div.who-pics > div > p {
 	line-height: 1.1;
 	font-size: 15px;
 }
-div.who-pics div.amjad {
+.rtl div.who-pics div.amjad {
 	background-image: url('images/amjad.png');
 }
-div.who-pics div.hosseini {
+.rtl div.who-pics div.hosseini {
 	background-image: url('images/hosseini.png');
 }
 div.right-side div.do-pic{
@@ -831,6 +867,7 @@ div.right-side div.bot-arrow:hover {
 /* Our Customer
 -------------------------------------------------- */
 
+body.our-customers div.right-inside,
 body.our-customers_fa div.right-inside{
 	overflow :hidden;
 }
@@ -846,10 +883,16 @@ div.right-inside div.customer_title {
 }
 
 div.customer_title div.line {
-	width			:180px;
+	width			:212px;
 	height			:14px;
-	margin-right		:115px;
+	margin-left		:115px;
 	border-bottom	:2px solid #fff;
+}
+
+.rtl div.customer_title div.line {
+	margin-right:115px;
+	margin-left	:0;
+	width		:180px;
 }
 
 div.customers-pic{
@@ -860,6 +903,7 @@ div.customers-pic{
 	background-repeat: no-repeat;
 }
 
+body.our-customers section.right-col div.right-inside,
 body.our-customers_fa section.right-col div.right-inside {
 	margin-top	:150px;
 	height		:560px;
@@ -879,7 +923,7 @@ div.customer_scroll div.customer_container {
 div.customer_container div.left_panel {
 	width		: 300px;
 	color		: #fff;
-	font-family	: yekan;
+	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
 	font-size	: 13px;
 	text-align	: justify;
 	line-height	: 18px;
@@ -887,7 +931,9 @@ div.customer_container div.left_panel {
 	margin-top	: 280px;
 	margin-left	: 50px;
 }
-
+.rtl div.customer_container div.left_panel {
+	font-family	: yekan;
+}
 div.customer_container div.right_panel {
 	background-repeat	: no-repeat;
 	width				: 301px;
@@ -896,55 +942,66 @@ div.customer_container div.right_panel {
 	margin-top			: 58px;
 }
 
-body.our-customers_fa div.right-inside div.left-side {
+body.our-customers div.right-inside div.left-side,
+body.our-customers_fa div.right-inside div.left-side{
 	float		:left;
 	width		:355px;
 	margin-top	:105px;
 	padding		:1px;
 }
 
-body.our-customers_fa section.right-col div.top-arrow {
+body.our-customers section.right-col div.top-arrow,
+body.our-customers_fa section.right-col div.top-arrow{
 	top		: 44px;
 	right	: 9px;
 }
 
+body.our-customers section.right-col div.bot-arrow,
 body.our-customers_fa section.right-col div.bot-arrow {
 	top		: 490px;
 	right	: 9px;
 }
 
 div.right-inside h4 {
-	float: right;
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
 	white-space		:nowrap;
 }
+.rtl div.right-inside h4 {
+	font-family		:yekan;
+	float: right;
+}
 div.right-inside div.desc {
 	width		: 300px;
 	margin-top	: 10px;
 	color		: #fff;
-	font-family	: yekan;
-	font-size	: 15px;
+	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
+	font-size	: 13px;
 	text-align	: justify;
 	line-height	: 18px;
-	direction: rtl;
 }
 
-div.scroll_customer {
-
+.rtl div.right-inside div.desc {
+	direction: rtl;
+	font-family	: yekan;
+	font-size	: 15px;
 }
 
 div.scroll_customer div.scroll_txt {
 	width		: 300px;
 	margin-top	: 10px;
 	color		: #fff;
-	font-family	: yekan;
+	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
 	font-size	: 13px;
 	text-align	: justify;
 	line-height	: 18px;
 	float		: left;
+}
+
+.rtl div.scroll_customer div.scroll_txt {
+	font-family	: yekan;
 }
 
 /* FullScreen
@@ -1055,12 +1112,15 @@ section.descriptions div.right-line {
 section.descriptions div.prj-name {
 	width			:185px;
 	height			:43px;
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:41px;
 	color			:#fff;
 	text-transform	:capitalize;
 	font-weight		:bolder;
 	text-align		:center;
+}
+.rtl section.descriptions div.prj-name {
+	font-family		:yekan;
 }
 section.descriptions div.counter {
 	width		:63px;
@@ -1099,10 +1159,13 @@ section.top-desc div.desc-content {
 section.top-desc div.desc-content p {
 	padding		: 40px 70px 10px;
 	text-align	: justify;
-	font-family	: yekan;
+	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
 	font-size	: 12px;
 	line-height	: 1.1;
 	color		: #fff;
+}
+.rtl section.top-desc div.desc-content p {
+	font-family	: yekan;
 }
 
 section.top-desc div.desc-bot {
@@ -1150,11 +1213,17 @@ section.form-holder form {
 }
 section.form-holder form label.label {
 	color			:#fff;
-	font-family		:yekan;
-	font-size		:16px;
+	font-family		:'Open Sans Condensed', sans-serif;
+	font-size		:18px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
+	margin-right	:8px;
 	vertical-align	:top;
+}
+.rtl section.form-holder form label.label{
+	font-family		:yekan;
+	font-size		:16px;
+	margin-right	:0;
 }
 section.form-holder form input[type=text] {
 	margin-bottom	: 9px;
@@ -1213,8 +1282,9 @@ section.form-holder form textarea.nok {
 section.form-holder form input[type=submit] {
 	background-color:#fff;
 	color			:#444;
-	font-family		:yekan;
+	font-family		:'Open Sans Condensed', sans-serif;
 	font-size		:17px;
+	letter-spacing	:-1px;
 	text-transform	:capitalize;
 	width			:70px;
 	border			:0px;
@@ -1225,6 +1295,10 @@ section.form-holder form input[type=submit] {
 	-moz-border-radius		:5px;
 	-o-border-radius		:5px;
 	-ms-border-radius		:5px;
+}
+.rtl section.form-holder form input[type=submit] {
+	font-family		:yekan;
+	letter-spacing	:0;
 }
 section.form-holder form input[type=submit]:active {
 	border :1px solid #333;
@@ -1255,27 +1329,41 @@ section.info div.info-pic3 a  {
 	text-decoration	:none;
 	width			:175px;
 	height			:25px;
-	line-height: 17px;
 	margin-top		:20px;
 	margin-left		:40px;
 	text-align		:center;
 	background		:url('images/employment_form.png') no-repeat;
 	color			:#fff;
-	font-family		:yekan;
-	font-size		:14px;
+	font-family		:'Open Sans Condensed', sans-serif;
+	font-size		:18px;
+	letter-spacing	:-1px;
 	text-transform	:uppercase;
 	padding-top		:2px;
 }
+
+.rtl section.info div.info-pic2 a,
+.rtl section.info div.info-pic3 a  {
+	line-height: 17px;
+	font-family		:yekan;
+	font-size		:14px;
+}
+
 section.info div.info-pic3 a {
 	margin-top: 10px;
 }
+
 section.info div.desc {
 	margin-left		:50px;
 	height			:40px;
 	color			:#fff;
+	font-family		:"lucida sans unicode", "lucida grande", sans-serif;
+	font-size		:15px;
+	letter-spacing	:-1px;
+	text-align	:justify;
+}
+.rtl section.info div.desc {
 	font-family		:yekan;
 	font-size		:16px;
-	text-justify	:auto;
 }
 section.info div.desc a {
 	color			:#fff;
@@ -1513,12 +1601,14 @@ section.prd h1{
 	text-transform		: uppercase;
 	text-decoration		: underline;
 	letter-spacing		: -1px;
-	font-family			: yekan;
+	font-family			: 'Open Sans Condensed', sans-serif;
 	background-image	: url('images/prd-top.png');
 	background-repeat	: no-repeat;
 	background-position	: top right;
 }
-
+.rtl section.prd h1{
+	font-family			: yekan;
+}
 section.prd h2{
 	position: absolute;
 	left	: 0;
@@ -1536,10 +1626,13 @@ section.prd h2 span{
 	font-size	: 21px;
 	text-align	: center;
 	margin-top	: 35px;
-	font-family	: yekan;
+	font-family	: 'Open Sans Condensed', sans-serif;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
 	text-decoration	: underline;
+}
+.rtl section.prd h2 span{
+	font-family	: yekan;
 }
 section.prd .links{
 	display: none;
