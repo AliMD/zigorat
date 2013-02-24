@@ -9,22 +9,22 @@
 			<div class="cols">
 				<div id="prdExhibition">
 					<div id="in">
-						<a href="exhibition-project.php">نمایشگاه</a>
+						<a href="exhibition-project.php">فروشگاهی</a>
 					</div>
 				</div>
 				<div id="prdOffice">
 					<div id="in">
-						<a href="office-project.php">اداره</a>
+						<a href="office-project.php">نمایشگاهی</a>
 					</div>
 				</div>
 				<div id="prdShopping">
 					<div id="in">
-						<a href="shopping-project.php">فروشگاه</a>
+						<a href="shopping-project.php">مسکونی</a>
 					</div>
 				</div>
 				<div id="prdHome">
 					<div id="in">
-						<a href="home-project.php">منازل</a>
+						<a href="home-project.php">اداری</a>
 					</div>
 				</div>
 			</div>
