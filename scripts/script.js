@@ -72,8 +72,11 @@ imageMapLink = function(target, href){
 
 pageLoadedAnimations = [];
 
-window.onload = function(){
-
+var pageloaded=false;
+window.pageonload = function(){
+	console.log("pageonload");
+	if(pageloaded) return false;
+	pageloaded=true;
 	setTimeout(function(){
 		$('body').removeClass('preload');
 
@@ -105,7 +108,9 @@ window.onload = function(){
 		return false; // prevent to load page.
 	});
 
-}
+};
+
+window.onload = pageonload;
 
 var page;
 
