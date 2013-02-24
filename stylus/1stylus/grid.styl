@@ -1,0 +1,73 @@
+
+/* Vertival Columns Grid
+-------------------------------------------------------------- */
+
+gridw(type,n,m=0)
+	sp = n*grid_width + n*grid_margin
+	sp -= m
+	if sp < 0
+		sp = 0
+	{type} sp px
+
+w(n,m=grid_margin)
+	gridw width n m
+
+for i in 0..grid_num
+	{'.w'+i}
+		w i
+		if i>0 && i<grid_num
+			margin-right grid_margin px
+
+	if i>0
+		{'input.w'+i+', textarea.w'+i}
+			w i 22 // 10mr+5+5+2*1 = 22
+			border-width 1px
+			padding-left 5px
+			padding-right 5px
+
+	{'.ml'+i}
+		gridw margin-left i
+
+	{'.mr'+i}
+		gridw margin-right i
+
+	{'.pl'+i}
+		gridw padding-left i
+
+	{'.pr'+i}
+		gridw padding-right i
+
+.wx
+	width 9999px
+
+.last
+	margin-right 0 !important
+
+
+/* Horizental Grid
+-------------------------------------------------- */
+
+gridh(type,n)
+	{type} n*10 px
+
+for i in 0..40
+	{'.h'+i}
+		gridh height i
+
+	{'.mh'+i}
+		gridh min-height i
+
+	{'.mt'+i}
+		gridh margin-top i
+
+	{'.mb'+i}
+		gridh margin-bottom i
+
+	{'.pt'+i}
+		gridh padding-top i
+
+	{'.pb'+i}
+		gridh padding-bottom i
+
+	{'.lh'+i}
+		gridh line-height i
