@@ -42,7 +42,7 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^projects_cat(\d)_.*$ index.php?page=projects_list&cat=$1 [L,NC,QSA,T=text/html]
+RewriteRule ^projects_cat(\d)_.*$ index.php?page=projects_list_fa&cat=$1 [L,NC,QSA,T=text/html]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

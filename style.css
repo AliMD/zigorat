@@ -1,14 +1,17 @@
 /* Fonts
 -------------------------------------------------- */
 @font-face {
-    font-family: 'MyriadProCondRegular';
-    src: url('fonts/myriadpro-cond-webfont.eot');
-    src: url('fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/myriadpro-cond-webfont.woff') format('woff'),
-         url('fonts/myriadpro-cond-webfont.ttf') format('truetype'),
-         url('fonts/myriadpro-cond-webfont.svg#MyriadProCondRegular') format('svg');
+    font-family: 'yekan';
+    src: url('fonts/BYekan.eot');
+    src: url('fonts/BYekan.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BYekan.woff') format('woff'),
+         url('fonts/BYekan.ttf') format('truetype'),
+         url('fonts/BYekan.svg#yekan') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+body:lang(fa),body:lang(fa-IR),body[lang|=fa] {
+	font-family:yekan;
 }
 
 /* Global Section
@@ -109,8 +112,8 @@ nav ul li.active a {
 	display			: block;
 	padding			: 15px 5px;
 	text-decoration	: none;
-	font-family		: 'MyriadProCondRegular';
-	font-size		: 19px;
+	font-family		: yekan;
+	font-size		: 18px;
 	letter-spacing	: -1px;
 	color			: #fff;
 	text-transform	: uppercase;
@@ -135,7 +138,75 @@ nav ul li.active a {
 	transition			: all 400ms ease-in-out;
 }
 
-
+/* Intro
+-------------------------------------------------- */
+body.intro-page {
+	-webkit-perspective:none; 
+	-moz-perspective:none; 
+	-o-perspective:none; 
+	-ms-perspective:none; 
+	perspective:none; 
+}
+section.intro {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	background-image: url('images/intro.jpg');
+ 	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	-webkit-background-size: cover;
+ 	     -o-background-size: cover;
+ 	        background-size: cover;
+}
+div.lang {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100px;
+	margin: auto;
+	height: 34px;
+}
+div.lang p {
+	color: #FFF;
+	float: left;
+	font-size: 24px;
+	margin-right: 50px;
+	font-family: 'Arial Narrow',sans-serif;
+	letter-spacing: 6px;
+}
+div.lang > a {
+	background-image: url('images/lang.png');
+	width: 117px;
+	height: 32px;
+	background-repeat: no-repeat; 
+	text-align: center;
+	line-height: 34px;
+	color: #FFF;
+	text-decoration: none;
+}
+div.lang a.en {
+		background-position: right 0;
+	float: right;
+	margin-left: -20px;
+}
+div.lang a.en:hover {
+	background-position: right bottom;
+}
+div.lang a.en:active {
+	background-position: right 0;
+}
+div.lang a.fa {
+	background-position: 0 0;
+	float: right;
+}
+div.lang a.fa:hover {
+	background-position: 0 bottom;
+}
+div.lang a.fa:active {
+	background-position: 0 0;
+}
 
 /* Home
 -------------------------------------------------- */
@@ -178,7 +249,7 @@ div.content div.home-slider > div {
 	background-size: 100% 100%;
 }
 
-body.home section.last_projects {
+body.home_fa section.last_projects {
 	position: absolute;
 	right: 100px;
 	bottom: 36px;
@@ -206,7 +277,7 @@ section.last_projects div.last_projectsImg > div {
 section.last_projects div.last_projectsDecs {
 	margin-right: 158px;
 	margin-top: 100px;
-	font-family: 'MyriadProCondRegular';
+	font-family: yekan;
 }
 section.last_projects div.last_projectsDecs h4 {
 	color: white;
@@ -299,7 +370,7 @@ div.top_menu div.cols > div div#in {
 }
 div#in a {
 	text-decoration	:none;
-	font-family		:'MyriadProCondRegular';
+	font-family		:yekan;
 	font-size		:14px;
 	color			:#fff;
 	text-transform	:uppercase;
@@ -387,7 +458,7 @@ div#Gallery0,div#Gallery01,div#Gallery02 {
 
 div.on_g a {
 	display			:block;
-	font-family		:'MyriadProCondRegular';
+	font-family		:yekan;
 	letter-spacing	:-1px;
 	text-transform	:uppercase;
 	color			:#fff;
@@ -579,7 +650,7 @@ section.prd-hover div.prd4-hover {
 
 
 .projects .hover-mode .title {
-	font-family		: 'MyriadProCondRegular';
+	font-family		: yekan;
 	font-size		: 25px;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
@@ -631,15 +702,17 @@ section.about-us div.right-inside div.right-side {
 section.about-us div.left-side div.about {
 	margin-left :50px;
 }
+section.about-us div.left-side div.about.custome {
+	margin-left :240px !important;
+}
 div.about div.line {
 	width			:212px;
 	height			:14px;
-	margin-left		:88px;
+	margin-right		:88px;
 	border-bottom	:2px solid #fff;
 }
 div.about h4 {
-	width			:65px;
-	font-family		:'MyriadProCondRegular';
+	font-family		:yekan;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
@@ -650,7 +723,7 @@ div.about div.desc {
 	min-height	:80px;
 	margin-top	:10px;
 	color		:#fff;
-	font-family	:"lucida sans unicode", "lucida grande", sans-serif;
+	font-family	:yekan;
 	font-size	:13px;
 	text-align	:justify;
 	line-height	:16px;
@@ -671,7 +744,9 @@ div.do div.left-side {
 }
 
 div.do div.line {
-	margin-left: 105px;
+	width: 430px;
+	margin-right: 170px;
+	margin-left: 10px;
 }
 
 div.do div.right-side {
@@ -683,10 +758,8 @@ div.whoWeAre div.left-side{
 	margin-top: 196px !important;
 }
 
-div.whoWeAre div.desc{
-	font-size	: 11px !important;
-	text-align	: justify !important;
-	line-height	: 13px !important;
+div.whoWeAre div.line {
+	width: 202px !important;
 }
 
 div.right-side div.about-pic{
@@ -695,10 +768,30 @@ div.right-side div.about-pic{
 div.right-side div.job-pic{
 	background :url('images/what-we-do.png') no-repeat;
 }
-div.right-side div.who-pic{
+div.right-side div.who-pics{
 	margin-top	: 135px !important;	
 	height		: 214px !important;
-	background :url('images/who-we-are.png') no-repeat;
+}
+div.right-side div.who-pics > div {	
+	float: left;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: inherit;
+}
+div.who-pics > div > p {
+	padding-top: 210px;
+	padding-right: 5px;
+	text-align: right;
+	color: #DDD;
+	line-height: 1.1;
+	font-size: 15px;
+}
+div.who-pics div.amjad {
+	background-image: url('images/amjad.png');
+}
+div.who-pics div.hosseini {
+	background-image: url('images/hosseini.png');
 }
 div.right-side div.do-pic{
 	width	: 600px !important;
@@ -738,7 +831,7 @@ div.right-side div.bot-arrow:hover {
 /* Our Customer
 -------------------------------------------------- */
 
-body.our-customers div.right-inside{
+body.our-customers_fa div.right-inside{
 	overflow :hidden;
 }
 
@@ -753,9 +846,9 @@ div.right-inside div.customer_title {
 }
 
 div.customer_title div.line {
-	width			:212px;
+	width			:180px;
 	height			:14px;
-	margin-left		:115px;
+	margin-right		:115px;
 	border-bottom	:2px solid #fff;
 }
 
@@ -767,7 +860,7 @@ div.customers-pic{
 	background-repeat: no-repeat;
 }
 
-body.our-customers section.right-col div.right-inside {
+body.our-customers_fa section.right-col div.right-inside {
 	margin-top	:150px;
 	height		:560px;
 	padding		:1px;
@@ -786,7 +879,7 @@ div.customer_scroll div.customer_container {
 div.customer_container div.left_panel {
 	width		: 300px;
 	color		: #fff;
-	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
+	font-family	: yekan;
 	font-size	: 13px;
 	text-align	: justify;
 	line-height	: 18px;
@@ -803,26 +896,26 @@ div.customer_container div.right_panel {
 	margin-top			: 58px;
 }
 
-body.our-customers div.right-inside div.left-side {
+body.our-customers_fa div.right-inside div.left-side {
 	float		:left;
 	width		:355px;
 	margin-top	:105px;
 	padding		:1px;
 }
 
-body.our-customers section.right-col div.top-arrow {
+body.our-customers_fa section.right-col div.top-arrow {
 	top		: 44px;
 	right	: 9px;
 }
 
-body.our-customers section.right-col div.bot-arrow {
+body.our-customers_fa section.right-col div.bot-arrow {
 	top		: 490px;
 	right	: 9px;
 }
 
 div.right-inside h4 {
-	width			:65px;
-	font-family		:'MyriadProCondRegular';
+	float: right;
+	font-family		:yekan;
 	font-size		:19px;
 	color			:#444;
 	text-transform	:uppercase;
@@ -832,10 +925,11 @@ div.right-inside div.desc {
 	width		: 300px;
 	margin-top	: 10px;
 	color		: #fff;
-	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
-	font-size	: 13px;
+	font-family	: yekan;
+	font-size	: 15px;
 	text-align	: justify;
 	line-height	: 18px;
+	direction: rtl;
 }
 
 div.scroll_customer {
@@ -846,7 +940,7 @@ div.scroll_customer div.scroll_txt {
 	width		: 300px;
 	margin-top	: 10px;
 	color		: #fff;
-	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
+	font-family	: yekan;
 	font-size	: 13px;
 	text-align	: justify;
 	line-height	: 18px;
@@ -961,7 +1055,7 @@ section.descriptions div.right-line {
 section.descriptions div.prj-name {
 	width			:185px;
 	height			:43px;
-	font-family		:'MyriadProCondRegular';
+	font-family		:yekan;
 	font-size		:41px;
 	color			:#fff;
 	text-transform	:capitalize;
@@ -1005,7 +1099,7 @@ section.top-desc div.desc-content {
 section.top-desc div.desc-content p {
 	padding		: 40px 70px 10px;
 	text-align	: justify;
-	font-family	: "lucida sans unicode", "lucida grande", sans-serif;
+	font-family	: yekan;
 	font-size	: 12px;
 	line-height	: 1.1;
 	color		: #fff;
@@ -1056,11 +1150,10 @@ section.form-holder form {
 }
 section.form-holder form label.label {
 	color			:#fff;
-	font-family		:'MyriadProCondRegular';
-	font-size		:19px;
+	font-family		:yekan;
+	font-size		:16px;
 	letter-spacing	:-1px;
 	text-transform	:capitalize;
-	margin-right	:8px;
 	vertical-align	:top;
 }
 section.form-holder form input[type=text] {
@@ -1120,9 +1213,8 @@ section.form-holder form textarea.nok {
 section.form-holder form input[type=submit] {
 	background-color:#fff;
 	color			:#444;
-	font-family		:'MyriadProCondRegular';
+	font-family		:yekan;
 	font-size		:17px;
-	letter-spacing	:-1px;
 	text-transform	:capitalize;
 	width			:70px;
 	border			:0px;
@@ -1157,29 +1249,32 @@ section.info div.info-pic1 {
 	float		:left;
 	background	:url('images/slash.png') no-repeat;
 }
-section.info div.info-pic2 a {
+section.info div.info-pic2 a,
+section.info div.info-pic3 a  {
 	display			:block;
 	text-decoration	:none;
 	width			:175px;
 	height			:25px;
+	line-height: 17px;
 	margin-top		:20px;
 	margin-left		:40px;
 	text-align		:center;
 	background		:url('images/employment_form.png') no-repeat;
 	color			:#fff;
-	font-family		:'MyriadProCondRegular';
-	font-size		:18px;
-	letter-spacing	:-1px;
+	font-family		:yekan;
+	font-size		:14px;
 	text-transform	:uppercase;
 	padding-top		:2px;
+}
+section.info div.info-pic3 a {
+	margin-top: 10px;
 }
 section.info div.desc {
 	margin-left		:50px;
 	height			:40px;
 	color			:#fff;
-	font-family		:"lucida sans unicode", "lucida grande", sans-serif;
-	font-size		:15px;
-	letter-spacing	:-1px;
+	font-family		:yekan;
+	font-size		:16px;
 	text-justify	:auto;
 }
 section.info div.desc a {
@@ -1418,7 +1513,7 @@ section.prd h1{
 	text-transform		: uppercase;
 	text-decoration		: underline;
 	letter-spacing		: -1px;
-	font-family			: 'MyriadProCondRegular';
+	font-family			: yekan;
 	background-image	: url('images/prd-top.png');
 	background-repeat	: no-repeat;
 	background-position	: top right;
@@ -1441,7 +1536,7 @@ section.prd h2 span{
 	font-size	: 21px;
 	text-align	: center;
 	margin-top	: 35px;
-	font-family	: 'MyriadProCondRegular';
+	font-family	: yekan;
 	letter-spacing	: -1px;
 	text-transform	: uppercase;
 	text-decoration	: underline;

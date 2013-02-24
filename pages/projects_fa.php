@@ -17,7 +17,7 @@
 						<div id="prdShopping" class="hover-mode">
 							<div class="bg-img1 backimg"></div>
 							<div class="fg-img"></div>
-							<div class='title'>shopping</div>
+							<div class='title'>فروشگاهی</div>
 						</div>
 					</div>
 				</div>
@@ -26,7 +26,7 @@
 						<div id="prdExhibition" class="hover-mode">
 							<div class="bg-img2 backimg"></div>
 							<div class="fg-img"></div>
-							<div class='title'>exhibition</div>
+							<div class='title'>نمایشگاهی</div>
 						</div>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 						<div id="prdHome" class="hover-mode">
 							<div class="bg-img3 backimg"></div>
 							<div class="fg-img"></div>
-							<div class='title'>home</div>
+							<div class='title'>مسکونی</div>
 						</div>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 						<div id="prdOffice" class="hover-mode">
 							<div class="bg-img4 backimg"></div>
 							<div class="fg-img"></div>
-							<div class='title'>office</div>
+							<div class='title'>اداری</div>
 						</div>
 					</div>
 				</div>
