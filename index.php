@@ -7,18 +7,18 @@ require_once('app/moduls.php');
 
 $template['page'] = $template['menu_url'] = get_page();
 
-if($template['page'] == 'projects_list'){
+if($template['page'] == 'projects_list_fa'){
 	$template['menu_url'] = 'projects';
 	$template['projects_arr'] = db_getrows('portfolio','*',"category=$_GET[cat]",'sort',30);
 	$template['projects'] = gen_projects_list($template['projects_arr']);
 }
 
-else if($template['page'] == 'our-customers'){
+else if($template['page'] == 'our-customers_fa'){
 	$template['customers_arr'] = db_getrows('customers','*',true,'page',15);
 	$template['customers'] = gen_customers_list($template['customers_arr']);
 }
 
-else if($template['page'] == 'home'){
+else if($template['page'] == 'home_fa'){
 	// Home page slider
 	$template['home_slider_arr'] = db_getrows('home_slider','*',true,'sort',15);
 	$template['home_slider'] = gen_home_list($template['home_slider_arr']);
