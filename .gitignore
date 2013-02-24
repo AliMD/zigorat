@@ -17,6 +17,7 @@ $RECYCLE.BIN/
 #Manager Files
 Designs/
 *.xmind
+style.css
 
 #admin panel and uplaod folder
 admin/
