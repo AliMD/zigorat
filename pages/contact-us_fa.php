@@ -28,16 +28,16 @@
 		<section class="info">
 			<div class="info-pic1"></div>
 			<div class="desc">
-				مشهد، میدان فلسطین
+				مشهد، فلسطین 7
 				<br/>
-				فلسطین 7، پلاک 86
+				پلاک 86، واحد یک
 			</div>
 			<br/>
 			<div class="info-pic1"></div>
 			<div class="desc">
-				+98 511 840 9894 : تلفن
+				 0511 840 9894 : تلفن
 				<br/>
-				+98 511 842 1139 : فکس
+				 0511 842 1139 : فکس
 			</div>
 			<br/>
 			<div class="info-pic1"></div>
@@ -48,6 +48,9 @@
 			</div>
 			<div class="info-pic2">
 				<a href="#" >فرم استخدام</a>
+			</div>
+			<div class="info-pic3">
+				<a href="#" >دریافت کاتالوگ دیجیتال</a>
 			</div>
 			<div class="clear"></div>
 		</section>

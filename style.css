@@ -140,6 +140,13 @@ nav ul li.active a {
 
 /* Intro
 -------------------------------------------------- */
+body.intro-page {
+	-webkit-perspective:none; 
+	-moz-perspective:none; 
+	-o-perspective:none; 
+	-ms-perspective:none; 
+	perspective:none; 
+}
 section.intro {
  	position: fixed;
  	top: 0;
@@ -1241,29 +1248,32 @@ section.info div.info-pic1 {
 	float		:left;
 	background	:url('images/slash.png') no-repeat;
 }
-section.info div.info-pic2 a {
+section.info div.info-pic2 a,
+section.info div.info-pic3 a  {
 	display			:block;
 	text-decoration	:none;
 	width			:175px;
 	height			:25px;
+	line-height: 17px;
 	margin-top		:20px;
 	margin-left		:40px;
 	text-align		:center;
 	background		:url('images/employment_form.png') no-repeat;
 	color			:#fff;
 	font-family		:yekan;
-	font-size		:18px;
-	letter-spacing	:-1px;
+	font-size		:14px;
 	text-transform	:uppercase;
 	padding-top		:2px;
+}
+section.info div.info-pic3 a {
+	margin-top: 10px;
 }
 section.info div.desc {
 	margin-left		:50px;
 	height			:40px;
 	color			:#fff;
 	font-family		:yekan;
-	font-size		:15px;
-	letter-spacing	:-1px;
+	font-size		:16px;
 	text-justify	:auto;
 }
 section.info div.desc a {
