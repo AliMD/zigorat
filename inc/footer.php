@@ -7,5 +7,6 @@
 <script type="text/javascript">
 	pagejs("<?php echo $template['page']; ?>");
 </script>
+<img src="images/background.jpg" onload="pageonload()" width="0" height="0" alt="zigorat background preloader" class="hidden" />
 </body>
 </html>
