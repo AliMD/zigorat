@@ -114,7 +114,7 @@ pagejs	= function(pg){
 
 	$(page).addClass('active');
 
-	if(page	=='home_fa'){
+	if(page=='home_fa' || page=='home' ){
 		// pages logo icons
 		pageLoadedAnimations.push(function(){
 			var delay	=1;
@@ -145,7 +145,7 @@ pagejs	= function(pg){
 
 	}
 
-	else if(page == 'projects_fa') {
+	else if(page == 'projects_fa' || page == 'projects') {
 		imageMapLink('#prdShopping', './projects_cat2_shopping');
 		imageMapLink('#prdExhibition', './projects_cat0_exhibition');
 		imageMapLink('#prdHome', './projects_cat3_home');
@@ -160,7 +160,7 @@ pagejs	= function(pg){
 		*/
 	}
 
-	else if(page == 'projects_list_fa') {
+	else if(page == 'projects_list_fa' || page == 'projects_list') {
 		
 		imageMapLink('#prdShopping', './projects_cat2_shopping');
 		imageMapLink('#prdExhibition', './projects_cat0_exhibition');
@@ -280,7 +280,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	else if(page=='about-us_fa'){
+	else if(page=='about-us_fa' || page == 'about-us'){
 		var aboutSlider={
 			first : -70,
 			len:4,
@@ -308,7 +308,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	else if(page=='our-customers_fa'){
+	else if(page=='our-customers_fa' || page=='our-customers'){
 		var customersSlider={
 			first : 0,
 			len:$('.customer_container').length,
@@ -344,7 +344,7 @@ pagejs	= function(pg){
 		}
 	}
 
-	else if(page=='contact-us_fa'){
+	else if(page=='contact-us_fa' || page=='contact-us'){
 		function validateText(str,len){
 			return str.length >= len;
 		}
@@ -409,7 +409,7 @@ pagejs	= function(pg){
 		});
 	}
 
-	if(page!=='home_fa'){
+	if(page!=='home_fa' ||page!=='home_fa'){
 		$('div.lines').css('opacity','0.2'); // move to css
 	}
 };
