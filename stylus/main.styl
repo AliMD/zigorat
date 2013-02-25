@@ -15,6 +15,12 @@
 body 
 	background-color   #cccccc
 
+h4
+	margin 0
+
+menu, ol, ul
+	padding 0
+	
 div.lines 
 	width		  900px
 	height		  720px
@@ -102,10 +108,10 @@ nav ul li.active a
 	margin-right	  10px
 	transition			  all 400ms ease-in-out
 
-.rtl .nav ul li a
+.rtl-layout .nav ul li a
 	font-family		  yekan
 
-.nav ul li a hover,.nav ul li a.active 
+.nav ul li a:hover,.nav ul li a.active 
 	color			#444
 	margin-right	15px
 	letter-spacing	.7px
@@ -114,7 +120,7 @@ nav ul li.active a
 /* Intro
 -------------------------------------------------- */
 body.intro-page 
-	perspective none 
+	perspective none !important 
 
 section.intro 
  	position  fixed
@@ -158,20 +164,20 @@ div.lang a.en
 	float  right
 	margin-left  -20px
 
-div.lang a.en hover 
+div.lang a.en:hover 
 	background-position  right bottom
 
-div.lang a.en active 
+div.lang a.en:active 
 	background-position  right 0
 
 div.lang a.fa 
 	background-position  0 0
 	float  right
 
-div.lang a.fa hover 
+div.lang a.fa:hover 
 	background-position  0 bottom
 
-div.lang a.fa active 
+div.lang a.fa:active 
 	background-position  0 0
 
 
@@ -235,7 +241,7 @@ section.last_projects div.last_projectsDecs
 	margin-top  100px
 	font-family  'Open Sans Condensed', sans-serif
 
-.rtl section.last_projects div.last_projectsDecs 
+.rtl-layout section.last_projects div.last_projectsDecs 
 		font-family  yekan
 
 section.last_projects div.last_projectsDecs h4 
@@ -285,7 +291,7 @@ div.about div.desc a
 	text-decoration	  none
 	transition			  color 500ms
 
-div.about div.desc a hover 
+div.about div.desc a:hover 
 	color			 #333
 	text-decoration	 none
 
@@ -320,11 +326,11 @@ div#in a
 	text-transform	 uppercase
 	margin			 0px 7px 0px 0px
 
-.rtl div#in a 
+.rtl-layout div#in a 
 	font-family   yekan
 
 /*
-div.top_menu div.cols div#bg hover 
+div.top_menu div.cols div#bg:hover 
 	cursor  pointer
 	background  url("images/top_project2.png") no-repeat
 */
@@ -404,7 +410,7 @@ div.on_g a
 	text-align		 center
 	text-decoration	 underline
 
-.rtl div.on_g a 
+.rtl-layout div.on_g a 
 	font-family yekan
 
 div.on_g a#g1 
@@ -427,7 +433,7 @@ section.right-col div.top-arrow
 	cursor		 pointer
 	z-index		  20
 
-section.right-col div.top-arrow hover 
+section.right-col div.top-arrow:hover 
 	background  url('images/hover_up.png') no-repeat
 
 section.right-col div.bot-arrow 
@@ -440,7 +446,7 @@ section.right-col div.bot-arrow
 	cursor		 pointer
 	z-index  20
 
-section.right-col div.bot-arrow hover 
+section.right-col div.bot-arrow:hover 
 	background  url('images/hover_down.png') no-repeat
 
 /* Index
@@ -557,7 +563,7 @@ section.prd-hover div.prd4-hover
 	right		  20px
 	width		  137px
 
-.rtl .projects .hover-mode .title 
+.rtl-layout .projects .hover-mode .title 
 	font-family		  yekan
 
 .projects .hover-mode.hover .title 
@@ -598,7 +604,7 @@ div.about div.line
 	margin-left		 88px
 	border-bottom	 2px solid #fff
 
-.rtl div.about div.line 
+.rtl-layout div.about div.line 
 	margin-right 88px
 	margin-left	 0
 
@@ -609,7 +615,7 @@ div.about h4
 	text-transform	 uppercase
 	white-space		 nowrap
 
-.rtl div.about h4 
+.rtl-layout div.about h4 
 	font-family		 yekan
 
 div.about div.desc 
@@ -622,7 +628,7 @@ div.about div.desc
 	text-align	 justify
 	line-height	 16px
 
-.rtl div.about div.desc 
+.rtl-layout div.about div.desc 
 	font-family yekan
 
 div.aboutPageContainer div.right-side > div 
@@ -639,8 +645,9 @@ div.do div.left-side
 
 div.do div.line 
 	margin-left  105px
+	width 490px
 
-.rtl div.do div.line 
+.rtl-layout div.do div.line 
 	width  430px
 	margin-right  170px
 	margin-left  10px
@@ -653,12 +660,9 @@ div.do div.right-side
 div.whoWeAre div.left-side
 	margin-top  196px !important
 
-div.whoWeAre div.desc
-	font-size	  11px !important
-	text-align	  justify !important
-	line-height	  13px !important
 
-.rtl div.whoWeAre div.line 
+
+.rtl-layout div.whoWeAre div.line 
 	width  202px !important
 
 div.right-side div.about-pic
@@ -672,18 +676,18 @@ div.right-side div.who-pic
 	height		  214px !important
 	background  url('images/who-we-are.png') no-repeat
 
-.rtl div.right-side div.who-pics
+.rtl-layout div.right-side div.who-pics
 	margin-top	  135px !important	
 	height		  214px !important
 
-.rtl div.right-side div.who-pics > div 	
+.rtl-layout div.right-side div.who-pics > div 	
 	float  left
 	background-position  center top
 	background-repeat  no-repeat
 	width  130px
 	height  inherit
 
-.rtl div.who-pics > div > p 
+.rtl-layout div.who-pics > div > p 
 	padding-top  210px
 	padding-right  5px
 	text-align  right
@@ -691,10 +695,10 @@ div.right-side div.who-pic
 	line-height  1.1
 	font-size  15px
 
-.rtl div.who-pics div.amjad 
+.rtl-layout div.who-pics div.amjad 
 	background-image  url('images/amjad.png')
 
-.rtl div.who-pics div.hosseini 
+.rtl-layout div.who-pics div.hosseini 
 	background-image  url('images/hosseini.png')
 
 div.right-side div.do-pic
@@ -702,6 +706,8 @@ div.right-side div.do-pic
 	height	  137px !important
 	background  url('images/how-we-do.png') no-repeat
 
+.rtl-layout div.right-side div.do-pic
+	background  url('images/how-we-do_fa.png') no-repeat
 div.right-side div.top-arrow 
 	position absolute
 	top		 180px
@@ -711,10 +717,10 @@ div.right-side div.top-arrow
 	cursor	 pointer
 	background  url('images/dir_up.png') no-repeat
 
-div.banner div.top-arrow hover 
+div.banner div.top-arrow:hover 
 	background  url('images/hover_up.png') no-repeat
 
-div.right-side div.top-arrow hover 
+div.right-side div.top-arrow:hover 
 	background  url('images/hover_up.png') no-repeat
 
 div.right-side div.bot-arrow 
@@ -726,7 +732,7 @@ div.right-side div.bot-arrow
 	cursor	 pointer
 	background  url('images/dir_down.png') no-repeat
 
-div.right-side div.bot-arrow hover 
+div.right-side div.bot-arrow:hover 
 	background  url('images/hover_down.png') no-repeat
 
 /* Our Customer
@@ -749,7 +755,7 @@ div.customer_title div.line
 	margin-left		 115px
 	border-bottom	 2px solid #fff
 
-.rtl div.customer_title div.line 
+.rtl-layout div.customer_title div.line 
 	margin-right 115px
 	margin-left	 0
 	width		 180px
@@ -786,7 +792,7 @@ div.customer_container div.left_panel
 	margin-top	  280px
 	margin-left	  50px
 
-.rtl div.customer_container div.left_panel 
+.rtl-layout div.customer_container div.left_panel 
 	font-family	  yekan
 
 div.customer_container div.right_panel 
@@ -820,7 +826,7 @@ div.right-inside h4
 	text-transform	 uppercase
 	white-space		 nowrap
 
-.rtl div.right-inside h4 
+.rtl-layout div.right-inside h4 
 	font-family		 yekan
 	float  right
 
@@ -833,7 +839,7 @@ div.right-inside div.desc
 	text-align	  justify
 	line-height	  18px
 
-.rtl div.right-inside div.desc 
+.rtl-layout div.right-inside div.desc 
 	direction  rtl
 	font-family	  yekan
 	font-size	  15px
@@ -848,7 +854,7 @@ div.scroll_customer div.scroll_txt
 	line-height	  18px
 	float		  left
 
-.rtl div.scroll_customer div.scroll_txt 
+.rtl-layout div.scroll_customer div.scroll_txt 
 	font-family	  yekan
 
 /* FullScreen
@@ -947,7 +953,7 @@ section.descriptions div.prj-name
 	font-weight		 bolder
 	text-align		 center
 
-.rtl section.descriptions div.prj-name 
+.rtl-layout section.descriptions div.prj-name 
 	font-family		 yekan
 
 section.descriptions div.counter 
@@ -983,7 +989,7 @@ section.top-desc div.desc-content p
 	line-height	  1.1
 	color		  #fff
 
-.rtl section.top-desc div.desc-content p 
+.rtl-layout section.top-desc div.desc-content p 
 	font-family	  yekan
 
 section.top-desc div.desc-bot 
@@ -1024,7 +1030,7 @@ section.form-holder form label.label
 	margin-right	 8px
 	vertical-align	 top
 
-.rtl section.form-holder form label.label
+.rtl-layout section.form-holder form label.label
 	font-family		 yekan
 	font-size		 16px
 	margin-right	 0
@@ -1083,11 +1089,11 @@ section.form-holder form input[type=submit]
 	margin-right	  18px
 	cursor			 pointer
 
-.rtl section.form-holder form input[type=submit] 
+.rtl-layout section.form-holder form input[type=submit] 
 	font-family		 yekan
 	letter-spacing	 0
 
-section.form-holder form input[type=submit] active 
+section.form-holder form input[type=submit]:active 
 	border  1px solid #333
 
 #ifrm 
@@ -1124,9 +1130,10 @@ section.info div.info-pic3 a
 	letter-spacing	 -1px
 	text-transform	 uppercase
 	padding-top		 2px
+	line-height 1.1
 
-.rtl section.info div.info-pic2 a,
-.rtl section.info div.info-pic3 a  
+.rtl-layout section.info div.info-pic2 a,
+.rtl-layout section.info div.info-pic3 a  
 	line-height  17px
 	font-family		 yekan
 	font-size		 14px
@@ -1143,7 +1150,7 @@ section.info div.desc
 	letter-spacing	 -1px
 	text-align	 justify
 
-.rtl section.info div.desc 
+.rtl-layout section.info div.desc 
 	font-family		 yekan
 	font-size		 16px
 
@@ -1307,7 +1314,7 @@ section.prd h1
 	background-repeat	  no-repeat
 	background-position	  top right
 
-.rtl section.prd h1
+.rtl-layout section.prd h1
 	font-family			  yekan
 
 section.prd h2
@@ -1331,7 +1338,7 @@ section.prd h2 span
 	text-transform	  uppercase
 	text-decoration	  underline
 
-.rtl section.prd h2 span
+.rtl-layout section.prd h2 span
 	font-family	  yekan
 
 section.prd .links
