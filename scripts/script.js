@@ -15,15 +15,12 @@ configs = {
 var	ease = !!window.Zepto ? 'ease-out' : 'swing';
 $.extend($.fn,{
 	fadeLoop :function(options){
-
 		options=$.extend({
 			duration : 2500,
 			freez : 1500,
 			delay : 10,
 			startIndex : 0,
-			fadeFirstImage : true,
-			zIndex : -3,
-			zIndexAct : -2
+			fadeFirstImage : true
 		},options);
 
 		options.startIndex--;
@@ -36,22 +33,20 @@ $.extend($.fn,{
 			fadeOut ={opacity:0};
 
 		var nextPic = function(){
-			pics.eq(indx).animate(fadeOut,options.duration,ease,function(){
-				 $(this).css({'z-index':options.zIndex});
-
-			});
+			pics.eq(indx).animate(fadeOut,options.duration,ease);
 			indx=indx<plen-1?indx+1:0;
 			setTimeout(function(){
-				pics.eq(indx).css({'z-index':options.zIndexAct}).animate(fadeIn,options.duration,ease,function(){
+				pics.eq(indx).animate(fadeIn,options.duration,ease,function(){
 					setTimeout(nextPic,options.freez);
 				});
 			},options.delay+10);
+			console.log(1);
 		};
 
-		pics.css(fadeOut).css({'z-index':options.zIndex});
+		pics.css(fadeOut);
 
 		if(!options.fadeFirstImage){
-			pics.eq(0).css(fadeIn).css({'z-index':options.zIndexAct});
+			pics.eq(0).css(fadeIn);
 			indx++;
 			setTimeout(nextPic,options.freez);
 		}else{
