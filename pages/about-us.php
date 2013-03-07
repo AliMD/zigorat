@@ -81,6 +81,7 @@
 	</section>
 
 	<?php inc('background'); ?>
+	</section>
 </section>
 
 <?php inc('footer'); ?>
