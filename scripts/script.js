@@ -1,5 +1,7 @@
 (function($,undefined){
 
+
+
 ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
 
 configs = {
@@ -111,6 +113,7 @@ window.pageonload = function(){
 };
 
 window.onload = pageonload;
+
 
 var page;
 
