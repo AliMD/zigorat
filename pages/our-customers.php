@@ -21,5 +21,6 @@
 		</div>
 	</section>
 	<?php include inc('background'); ?>
+	</section>
 </section>
 <?php include inc('footer'); ?>
