@@ -55,6 +55,10 @@ div.background{
 	top		: 0;
 }
 
+section.container-zoom{
+	position: relative;
+}
+
 .container {
 	width	: 900px;
 	height	: 720px;
@@ -1650,9 +1654,4 @@ section.prd .links.act{
 	100%{
 		opacity:0.3
 	}
-}
-
-
-section.container-zoom{
-	position: relative;
 }
