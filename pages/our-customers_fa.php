@@ -1,7 +1,7 @@
-<?php inc('header'); ?>
+<?php inc('header_fa'); ?>
 <section class="container">
 	<?php inc('left-side'); ?>
-	<?php inc('menus'); ?>
+	<?php inc('menus_fa'); ?>
 </section>
 	<section class="right-col">
 		<div class="right-inside overFlowHidden">

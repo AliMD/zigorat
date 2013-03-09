@@ -1,4 +1,4 @@
-<?php inc('header'); ?>
+<?php inc('header_fa'); ?>
 <section class="container projects">
 	<img id="transparentImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" usemap="#mapPrdMenu" alt="transparent" width="500" height="718"  title="" />
 	<map name="mapPrdMenu" id="mapPrdMenu">
@@ -8,7 +8,7 @@
 		<area id='prdOfficeMap' shape="poly" coords="412, 433, 172, 573, 170, 709, 414, 565" href="#" alt="" title="" />
 	</map>
 	<?php inc('left-side'); ?>
-	<?php inc('menus'); ?>
+	<?php inc('menus_fa'); ?>
 	<section class="right-col">
 		<section class="pics_right">
 			<section class="product-menu">
