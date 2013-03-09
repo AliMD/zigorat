@@ -21,6 +21,8 @@ h4
 menu, ol, ul
 	padding 0
 	
+p, pre
+	margin 0 
 div.lines 
 	width		  900px
 	height		  720px
@@ -160,7 +162,7 @@ div.lang > a
 	text-decoration  none
 
 div.lang a.en 
-		background-position  right 0
+	background-position  right 0
 	float  right
 	margin-left  -20px
 
@@ -180,7 +182,6 @@ div.lang a.fa:hover
 div.lang a.fa:active 
 	background-position  0 0
 
-
 /* Home
 -------------------------------------------------- */
 div.right-col div.pics_right 
@@ -192,12 +193,12 @@ div.pics_right section.newhome
 	margin	 0 auto
 	width	 553px
 	height	 510px
-	padding	 210px 0px 0px 0px
+	padding 210px 0px 0px 0px
 
 section.newhome div.content 
 	width	  553px
 	height	  505px
-	transition			  opacity 300ms
+	transition opacity 300ms
 	
 div.content div.home-slider 
 	width	 552px
@@ -208,8 +209,8 @@ div.content div.home-slider > div
 	width	 inherit
 	height	 inherit
 	position  absolute
-	top		  0
-	left	  0
+	top 0
+	left 0
 	background-repeat  no-repeat
 	background-size  100% 100%
 
@@ -752,8 +753,8 @@ div.right-inside div.customer_title
 div.customer_title div.line 
 	width			 212px
 	height			 14px
-	margin-left		 115px
 	border-bottom	 2px solid #fff
+	float left
 
 .rtl-layout div.customer_title div.line 
 	margin-right 115px
@@ -838,6 +839,7 @@ div.right-inside div.desc
 	font-size	  13px
 	text-align	  justify
 	line-height	  18px
+	clear left
 
 .rtl-layout div.right-inside div.desc 
 	direction  rtl
@@ -1220,12 +1222,12 @@ div.project_pics #transparentGalleryImg
 
 // 3d page loading effect
 body
-	perspective			  1000px
+	perspective	1000px
 
 body section.loadingContainer,
 body section.container 
-	background-color	  gray
-	transition			  transform 1500ms ease-in
+	background-color  gray
+	transition transform 1500ms ease-in
 
 //body section.container *
 
@@ -1417,35 +1419,42 @@ section.prd .links.act
 
 #circleG > div 
 	background-color  #000
-	float			  left
-	height			  32px
-	margin-left		  17px
-	width			  32px
-	opacity			  0.3
-	border-radius	  21px
-	animation-name						  bounce_circleG
-	animation-duration			1.95s
+	float		 left
+	height		 32px
+	margin-left	 17px
+	width		 32px
+	opacity	 0.3
+	border-radius 21px
+	animation-name bounce_circleG
+	animation-duration	1.95s
 	animation-iteration-count	infinite
-	animation-direction			normal
-	animation-direction			normal
+	animation-direction normal
+	animation-direction normal
 	animation-timing-function linear
 
 #circleG_1 
-	animation-delay			  0.39s
+	animation-delay 0.39s
 
 #circleG_2 
-	animation-delay			  0.91s
+	animation-delay 0.91s
 
 #circleG_3 
-	animation-delay			  1.17s
+	animation-delay 1.17s
 
 @keyframes bounce_circleG
 	0%
 		opacity 0.3
 
 	50%
-		opacity			 1
+		opacity 1
 		background-color #fff
 
 	100%
 		opacity 0.3
+
+/* iE FIX
+-------------------------------------------------- */
+
+.lt-ie10 body section.loadingContainer, 
+.lt-ie10 body section.container
+	background-color: transparent
