@@ -3,10 +3,10 @@
 - [X] All Page scroll fix mask (under menu)
 - [X] Home page images angles !
 - [X] Our Customer Text Mask 
-- [ ] Check Home page in all lang (en!)
-- [ ] Lang Font (helvetica)
-- [ ] Lang text left icon
+- [ ] Check Home page in all lang (en!) >> AliGH Check
+- [X] Lang Font (helvetica)
+- [X] Lang text left icon
 - [X] Lang swap icons hover
-- [ ] Add language page on first
-- [ ] ReExport All images
+- [ ] Add language page on first >> Mr AliMD Check
+- [X] ReExport All images
 - [ ] 3D fix
