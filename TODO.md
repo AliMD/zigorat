@@ -1,0 +1,12 @@
+### Project TODO
+- [x] Fix project TODO checkbox :D
+- [X] All Page scroll fix mask (under menu)
+- [X] Home page images angles !
+- [X] Our Customer Text Mask 
+- [ ] Check Home page in all lang (en!)
+- [ ] Lang Font (helvetica)
+- [ ] Lang text left icon
+- [X] Lang swap icons hover
+- [ ] Add language page on first
+- [ ] ReExport All images
+- [ ] 3D fix
