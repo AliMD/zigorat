@@ -121,66 +121,7 @@ nav ul li.active a
 
 /* Intro
 -------------------------------------------------- */
-body.intro-page 
-	perspective none !important 
 
-section.intro 
- 	position  fixed
- 	top  0
- 	left  0
- 	right  0
- 	bottom  0
- 	background-image  url('images/intro.jpg')
- 	background-repeat  no-repeat
- 	background-position  center center
- 	background-size  cover
-
-div.lang 
-	position  absolute
-	top  0
-	bottom  0
-	right  100px
-	margin  auto
-	height  34px
-
-div.lang p 
-	color  #FFF
-	float  left
-	font-size  24px
-	margin-right  50px
-	font-family  'Arial Narrow',sans-serif
-	letter-spacing  6px
-
-div.lang > a 
-	background-image  url('images/lang.png')
-	width  117px
-	height  32px
-	background-repeat  no-repeat 
-	text-align  center
-	line-height  34px
-	color  #FFF
-	text-decoration  none
-
-div.lang a.en 
-	background-position  right bottom
-	float  right
-	margin-left  -20px
-
-div.lang a.en:hover 
-	background-position  right 0
-
-div.lang a.en:active 
-	background-position  right bottom
-
-div.lang a.fa 
-	background-position  0 bottom
-	float  right
-
-div.lang a.fa:hover 
-	background-position  0 0
-
-div.lang a.fa:active 
-	background-position  0 bottom
 
 /* Home
 -------------------------------------------------- */
@@ -1460,6 +1401,6 @@ section.prd .links.act
 /* iE FIX
 -------------------------------------------------- */
 
-.lt-ie10 body section.loadingContainer, 
-.lt-ie10 body section.container
-	background-color: transparent
+.ie9 body section.loadingContainer, 
+.ie9 body section.container
+	background: transparent
