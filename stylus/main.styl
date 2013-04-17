@@ -111,7 +111,7 @@ nav ul li.active a
 	transition			  all 400ms ease-in-out
 
 .rtl-layout .nav ul li a
-	font-family		  yekan
+	font-family yekan
 
 .nav ul li a:hover,.nav ul li a.active 
 	color			#444
@@ -121,6 +121,32 @@ nav ul li.active a
 
 /* Intro
 -------------------------------------------------- */
+section.intro
+	background-image url("images/intro.jpg")
+	background-repeat no-repeat
+	background-position center center
+	div
+		position absolute
+		bottom 132px
+		a
+			display block
+			width 84px
+			height 24px
+			background-image url('images/lang.png')
+			background-repeat no-repeat
+		&.fa
+			right 207px
+			a
+				background-position 0 -27px
+				&:hover
+					background-position 0 0
+		&.en
+			right 137px
+			a
+				background-position right -27px
+				&:hover
+					background-position right 0
+
 
 
 /* Home
