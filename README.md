@@ -4,7 +4,8 @@ This is the source for the main Zigorat company website, found at [zigorat.co](h
 ## TEAM (1Devs Web Department)
 * [Mohammad Sedaghat `sedaghat`](https://github.com/sedaghat) Project Manager
 * [Ali Mihandoost `AliMD`](https://github.com/AliMD) Technical Manager / Developer
-* [Ali aGHasizadeh `AliGH`](https://github.com/AliGH) Developer / Programmer  
+* [Ali aGHasizadeh `AliGH`](https://github.com/AliGH) Developer / Programmer 
+* [Mohammad Reza Shariatzadeh `Mrshcom`](https://github.com/Mrshcom) Developer / Programmer  
 * [Mohammad Rahimpour `Rahimpour`](http://127.0.0.1) Graphic Designer
 
 ## THANKS (Contributors)
